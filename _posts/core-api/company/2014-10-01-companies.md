@@ -49,3 +49,9 @@ Deletes the Company.
 
 ***
 
+#### [core.company.delete]({{ site.baseurl }}{% post_url core-api/company/2014-10-01-core.company.regenerateField %})
+
+Regenerates various Company keys.
+
+***
+
