@@ -7,7 +7,7 @@ parent-order: 4
 order: 0
 ---
 
-#### [core.presentation.get](#{{ site.baseurl }}{% post_url /documentation/core-api/presentation/2014-10-01-core.presentation.get %})
+#### [core.presentation.get](#{% post_url /documentation/core-api/presentation/2014-10-01-core.presentation.get %})
 
 Returns the complete Presentation object by **id**.
 
