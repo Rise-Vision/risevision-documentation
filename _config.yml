@@ -36,6 +36,7 @@ exclude:
 sections: [
     ['documentation/core-api', 'Core Api'],
     ['documentation/widget-api', 'Widget Api'],
+    ['documentation/storage-api', 'Storage Api'],
     ['ref', 'Reference'],
     ['dev', 'Developers'],
     ['post', 'Posts']
