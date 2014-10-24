@@ -3,6 +3,7 @@
  * Created by rodrigopavezi on 10/6/14.
  */
 var env = process.env.NODE_ENV || "dev"
+//platform independence
 var platform = process.platform === "win32" ? true : false;
 
 var gulp        = require('gulp');
