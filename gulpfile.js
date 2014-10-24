@@ -3,6 +3,7 @@
  * Created by rodrigopavezi on 10/6/14.
  */
 var env = process.env.NODE_ENV || "dev"
+var platform = process.platform === "win32" ? true : false;
 
 var gulp        = require('gulp');
 var gutil       = require('gulp-util');
@@ -26,7 +27,7 @@ var messages = {
  */
 gulp.task('bundle-install', function (done) {
     browserSync.notify(messages.bundleInstall);
-	  var platform = process.platform === "win32" ? true : false;
+
 	  if( platform){
 		    return cp.exec('bundle', ['install'], {stdio: 'inherit'})
 			    .on('close', done);
@@ -45,7 +46,7 @@ gulp.task('bundle-install', function (done) {
  */
 gulp.task('jekyll-build', function (done) {
     browserSync.notify(messages.jekyllBuild);
-	  var platform = process.platform === "win32" ? true : false;
+
 	  var config = '';
     if( env === "prod"){
 	      config = '--config=_config.yml,_config_prod.yml';
