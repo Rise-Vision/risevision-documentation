@@ -9,6 +9,12 @@ order: 0
 
 #### [Channel](#{% post_url /documentation/viewer-api/notifications/2014-10-01-channel %})
 
-Viewer Data Bundle for a Display.
+Requesting Google Channels API Token
+
+***
+
+#### [Channel Signals](#{% post_url /documentation/viewer-api/notifications/2014-10-01-signals %})
+
+Receiving Signals over the Channel
 
 ***
