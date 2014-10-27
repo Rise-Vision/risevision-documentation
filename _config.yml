@@ -41,9 +41,7 @@ sections: [
     ['documentation/player-api', 'Player API'],
     ['documentation/widget-api', 'Widget API'],
     ['documentation/store-api', 'Store API'],
-    ['ref', 'Reference'],
-    ['dev', 'Developers'],
-    ['post', 'Posts']
+    ['documentation/storage-api', 'Storage Api']
 ]
 
 # Dates are not included in permalinks
