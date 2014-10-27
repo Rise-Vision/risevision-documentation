@@ -30,6 +30,8 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - risevision-documentation.iml
+  - karma.conf.js
+  - tests
 
 
 # Default categories (in order) to appear in the navigation

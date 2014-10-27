@@ -1,0 +1,41 @@
+<div class="col-md-offset-2">
+    <div class="row">
+        <div class="col-sm-10">
+            <alert ng-repeat="alert in alerts" type="{(alert.type)}" close="closeAlert($index)">{(alert.msg)}</alert>
+        </div>
+    </div>
+    <div class="row">
+        <h2>{('ADD_APP_TITLE' | translate)}</h2>
+        <form class="form-horizontal form" novalidate="">
+            <div class="form-group">
+                <label for="appNameField" id="appNameLabel" class="col-sm-2 control-label">{('APP_NAME' | translate)}</label>
+                <div class="col-sm-10">
+                    <input id="appNameField" type="text" ng-model="app.name"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="appDescriptionTextArea" id="appDescriptionLabel" class="col-sm-2 control-label">{('APP_DESCRIPTION' | translate)}</label>
+                <div class="col-sm-10">
+                    <textarea id="appDescriptionTextArea" ng-model="app.description"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="appClientIdField" id="appClientIdLabel" class="col-sm-2 control-label">{('APP_CLIENT_ID' | translate)}</label>
+                <div class="col-sm-10">
+                    <input id="appClientIdField" type="text" ng-model="app.clientId"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="appUrlField" id="appUrlLabel" class="col-sm-2 control-label">{('APP_URL' | translate)}</label>
+                <div class="col-sm-10">
+                    <input id="appUrlField" type="text" ng-model="app.url"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button class="btn btn-primary" ng-click="save(app)">{('SAVE_BUTTON' | translate)}</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

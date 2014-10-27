@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html ng-app="appDeveloperSpace">
+<html ng-app="risevision.developer.hub">
 
   {% include head.html %}
 
   <body>
-  <div ng-controller="CommonHeaderCtrl">
+  <div ng-controller="CommonHeaderNavbarCtrl">
       <common-header nav-options="navOptions"></common-header>
   </div>
       <div class="container-fluid">
         <div class="row">
 
-            <div ng-view></div>
+            <div ui-view></div>
 
 
         </div>

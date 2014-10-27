@@ -14,6 +14,11 @@ var bower       = require('bower');
 var del         = require('delete');
 var deploy      = require('gulp-gh-pages');
 var argv        = require('minimist')(process.argv.slice(2));
+var karma       = require('karma').server;
+var gp          = require("gulp-protractor");
+
+
+
 
 var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build',
@@ -68,7 +73,8 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
     browserSync({
         server: {
             baseDir: '_site'
-        }
+        },
+        port: 8000
     });
 });
 
@@ -125,10 +131,9 @@ gulp.task('bower-rm', function(){
  * Watch html/md files, run jekyll & reload BrowserSync
  */
 gulp.task('watch', function () {
-    gulp.watch('_scss/*.scss', ['sass']);
-    gulp.watch(['*.yml','index.html', '_layouts/*.html', '_includes/*.html', '_posts/**/*.md', 'assets/**/*'], ['jekyll-rebuild-dev']);
+    gulp.watch('_sass/*.scss', ['sass', 'jekyll-rebuild-dev']);
+    gulp.watch(['*.yml','index.html', '_layouts/*.html', '_includes/*.html', '_posts/**/*.md', 'assets/**/*', 'documentation/**/*', 'apps/**/*'], ['jekyll-rebuild-dev']);
 });
-
 
 //------------------------- Deployment --------------------------------
 var options = {
@@ -158,6 +163,34 @@ gulp.task("deploy", function () {
         .pipe(deploy(options[env]));
 });
 
+/**
+ * Run test once and exit
+ */
+gulp.task('test', function (done) {
+    karma.start({
+        configFile: __dirname + '/karma.conf.js',
+        singleRun: true
+    }, done);
+});
+
+// Downloads the selenium webdriver
+gulp.task('webdriver_update', ['browser-sync'], gp.webdriver_update);
+
+// Setting up the test task
+gulp.task('protractor', ['webdriver_update','browser-sync'], function(cb) {
+    gulp.src(['./tests/e2e/**/*.js']).pipe(gp.protractor({
+        configFile: 'protractor.conf.js'
+    })).on('error', function(e) {
+        browserSync.exit();
+        console.log(e);
+        cb();
+    }).on('end', function() {
+        browserSync.exit();
+        cb();
+    });
+});
+
+gulp.task('e2e-test', ['browser-sync','protractor']);
 /**
  * Do a bower clean install
  */

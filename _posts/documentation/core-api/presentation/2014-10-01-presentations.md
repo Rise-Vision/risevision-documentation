@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: summary
 title:  "Presentations"
 date:   2014-10-01 10:52:00
 category: documentation/core-api
