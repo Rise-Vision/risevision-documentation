@@ -39,6 +39,7 @@ sections: [
     ['documentation/player-api', 'Player API'],
     ['documentation/widget-api', 'Widget API'],
     ['documentation/store-api', 'Store API'],
+    ['documentation/common-header', 'Common Header'],
     ['ref', 'Reference'],
     ['dev', 'Developers'],
     ['post', 'Posts']
