@@ -3,6 +3,8 @@
  * Created by rodrigopavezi on 10/6/14.
  */
 var env = process.env.NODE_ENV || "dev"
+//platform independence
+var platform = process.platform === "win32" ? true : false;
 
 var gulp        = require('gulp');
 var gutil       = require('gulp-util');
@@ -31,8 +33,14 @@ var messages = {
  */
 gulp.task('bundle-install', function (done) {
     browserSync.notify(messages.bundleInstall);
-    return cp.spawn('bundle', ['install'], {stdio: 'inherit'})
-        .on('close', done);
+
+	  if( platform){
+		    return cp.exec('bundle', ['install'], {stdio: 'inherit'})
+			    .on('close', done);
+	  } else {
+		    return cp.spawn('bundle', ['install'], {stdio: 'inherit'})
+			    .on('close', done);
+	  }
 });
 
 
@@ -44,17 +52,24 @@ gulp.task('bundle-install', function (done) {
  */
 gulp.task('jekyll-build', function (done) {
     browserSync.notify(messages.jekyllBuild);
-    if( env === "prod"){
-        return cp.spawn('bundle', ['exec', 'jekyll', 'build', '--config=_config.yml,_config_prod.yml', '--trace'], {stdio: 'inherit'})
-            .on('close', done);
-    }else if(env === "stage"){
-        return cp.spawn('bundle', ['exec', 'jekyll', 'build', '--config=_config.yml,_config_stage.yml', '--trace'], {stdio: 'inherit'})
-            .on('close', done);
-    }else {
-        return cp.spawn('bundle', ['exec', 'jekyll', 'build', '--trace'], {stdio: 'inherit'})
-            .on('close', done);
-    }
 
+	  var config = '';
+    if( env === "prod"){
+	      config = '--config=_config.yml,_config_prod.yml';
+    }else if(env === "stage"){
+	      config = '--config=_config.yml,_config_stage.yml';
+
+    }else {
+	      config = ''
+    }
+	  if (platform){
+		    return cp.exec('bundle', ['exec','jekyll', 'build', config, '--trace'], {stdio: 'inherit'})
+		        .on('close',done);
+	  }
+	  else {
+		    return cp.spawn('bundle', ['exec','jekyll', 'build', config, '--trace'], {stdio: 'inherit'})
+	          .on('close',done);
+	  }
 });
 
 /**
