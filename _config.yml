@@ -43,6 +43,7 @@ sections: [
     ['documentation/widget-api', 'Widget API'],
     ['documentation/store-api', 'Store API'],
     ['documentation/storage-api', 'Storage Api'],
+    ['documentation/common-header', 'Common Header'],
     ['ref', 'Reference'],
     ['dev', 'Developers'],
     ['post', 'Posts']
