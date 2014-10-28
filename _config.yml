@@ -41,7 +41,7 @@ sections: [
     ['documentation/player-api', 'Player API'],
     ['documentation/widget-api', 'Widget API'],
     ['documentation/store-api', 'Store API'],
-    ['documentation/storage-api', 'Storage Api']
+    ['documentation/storage-api', 'Storage Api'],
     ['ref', 'Reference'],
     ['dev', 'Developers'],
     ['post', 'Posts']
