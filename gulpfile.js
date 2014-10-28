@@ -18,9 +18,7 @@ var deploy      = require('gulp-gh-pages');
 var argv        = require('minimist')(process.argv.slice(2));
 var karma       = require('karma').server;
 var gp          = require("gulp-protractor");
-
-
-
+var rename      = require("gulp-rename");
 
 var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build',
@@ -163,7 +161,7 @@ var options = {
 /**
  *  Deploy to gh-pages
  */
-gulp.task("deploy", function () {
+gulp.task("deploy",['cname'], function () {
 
     // Remove temp folder created by gulp-gh-pages
     if (argv.clean) {
@@ -206,6 +204,17 @@ gulp.task('protractor', ['webdriver_update','browser-sync'], function(cb) {
 });
 
 gulp.task('e2e-test', ['browser-sync','protractor']);
+
+/**
+ * Copy and rename CNAME file depending on the target environment
+ */
+gulp.task("cname", function() {
+    gulp.src("./cname-config/CNAME-"+env)
+    .pipe(rename("CNAME"))
+    .pipe(gulp.dest("./"));
+});
+
+
 /**
  * Do a bower clean install
  */

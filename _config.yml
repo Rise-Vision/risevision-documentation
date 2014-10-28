@@ -32,6 +32,7 @@ exclude:
   - risevision-documentation.iml
   - karma.conf.js
   - tests
+  - cname
 
 
 # Default categories (in order) to appear in the navigation
