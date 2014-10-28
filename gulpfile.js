@@ -211,7 +211,7 @@ gulp.task('e2e-test', ['browser-sync','protractor']);
 gulp.task("cname", function() {
     gulp.src("./cname-config/CNAME-"+env)
     .pipe(rename("CNAME"))
-    .pipe(gulp.dest("./"));
+    .pipe(gulp.dest("./_site"));
 });
 
 
