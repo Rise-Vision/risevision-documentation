@@ -48,7 +48,7 @@ gulp.task('bundle-install', function (done) {
 /**
  * Build the Jekyll Site
  */
-gulp.task('jekyll-build', function (done) {
+gulp.task('jekyll-build', ['cname'], function (done) {
     browserSync.notify(messages.jekyllBuild);
 
 	  var config = '';
@@ -161,7 +161,7 @@ var options = {
 /**
  *  Deploy to gh-pages
  */
-gulp.task("deploy",['cname'], function () {
+gulp.task("deploy", function () {
 
     // Remove temp folder created by gulp-gh-pages
     if (argv.clean) {
