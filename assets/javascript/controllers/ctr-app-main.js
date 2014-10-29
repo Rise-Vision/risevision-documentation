@@ -16,7 +16,7 @@ angular.module("risevision.developer.hub")
         $scope.registerAnApp = function() {
 
             if(userState.isLoggedIn()){
-                $state.go("apps.add");
+                $state.go("apps.list");
             }else{
                 $state.go("apps.userSignin");
             }
@@ -26,7 +26,7 @@ angular.module("risevision.developer.hub")
             function (newStatus){
                 if(newStatus) {
                     if(newStatus === "canManageApps") {
-                        $state.go("apps.add");
+                        $state.go("apps.list");
                     }
                 }
         });

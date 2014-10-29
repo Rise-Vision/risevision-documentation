@@ -5,7 +5,7 @@
 angular.module("risevision.common.app",
     [
         "risevision.common.gapi",
-        "risevision.common.util"
+        "risevision.core.util"
 
     ])
     .constant("APP_WRITABLE_FIELDS", [
