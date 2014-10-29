@@ -12,12 +12,12 @@ angular.module("risevision.common.app",
         "name", "description", "clientId", "url"
     ])
     .factory("listApps",
-    ["$q","coreAPILoader","$log",function($q, coreAPILoader, $log){
+    ["$q","riseAPILoader","$log",function($q, riseAPILoader, $log){
         return function(companyId) {
             $log.debug("listApps called", companyId);
 
             var deferred = $q.defer();
-            coreAPILoader().then(function (coreApi) {
+            riseAPILoader().then(function (coreApi) {
                 var criteria = {};
                 if (companyId) {
                     criteria.companyId = companyId;
@@ -39,12 +39,12 @@ angular.module("risevision.common.app",
         }
     }])
     .factory("getApp",
-    ["$q","coreAPILoader","$log", function($q, coreAPILoader, $log){
+    ["$q","riseAPILoader","$log", function($q, riseAPILoader, $log){
         return function(id) {
             $log.debug("getApp called", id);
 
             var deferred = $q.defer();
-            coreAPILoader().then(function (coreApi) {
+            riseAPILoader().then(function (coreApi) {
                 var criteria = {};
                 if (id) {
                     criteria.id = id;
@@ -65,12 +65,12 @@ angular.module("risevision.common.app",
         }
     }])
     .factory("createApp",
-    ["$q","coreAPILoader","$log", "pick", "APP_WRITABLE_FIELDS", function($q, coreAPILoader, $log, pick, APP_WRITABLE_FIELDS){
+    ["$q","riseAPILoader","$log", "pick", "APP_WRITABLE_FIELDS", function($q, riseAPILoader, $log, pick, APP_WRITABLE_FIELDS){
         return function(companyId,userId, app) {
             $log.debug("createApp called", companyId, userId, app);
 
             var deferred = $q.defer();
-            coreAPILoader().then(function (coreApi) {
+            riseAPILoader().then(function (coreApi) {
                 var fields = pick.apply(this, [app].concat(APP_WRITABLE_FIELDS));
                 var request = coreApi.app.add({
                     companyId: companyId,
@@ -91,12 +91,12 @@ angular.module("risevision.common.app",
         }
     }])
     .factory("updateApp",
-    ["$q","coreAPILoader","$log", "pick", "APP_WRITABLE_FIELDS", function($q, coreAPILoader, $log, pick, APP_WRITABLE_FIELDS){
+    ["$q","riseAPILoader","$log", "pick", "APP_WRITABLE_FIELDS", function($q, riseAPILoader, $log, pick, APP_WRITABLE_FIELDS){
         return function(id, app) {
             $log.debug("updateApp called", id, app);
 
             var deferred = $q.defer();
-            coreAPILoader().then(function (coreApi) {
+            riseAPILoader().then(function (coreApi) {
                 var fields = pick.apply(this, [app].concat(APP_WRITABLE_FIELDS));
                 var request = coreApi.app.update({
                     id: id,
@@ -116,12 +116,12 @@ angular.module("risevision.common.app",
         }
     }])
     .factory("deleteApp",
-    ["$q","coreAPILoader","$log", function($q, coreAPILoader, $log){
+    ["$q","riseAPILoader","$log", function($q, riseAPILoader, $log){
         return function(id) {
             $log.debug("deleteApp called", id);
 
             var deferred = $q.defer();
-            coreAPILoader().then(function (coreApi) {
+            riseAPILoader().then(function (coreApi) {
                 var criteria = {};
                 if(id) {
                     criteria.id = id;

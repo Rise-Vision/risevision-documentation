@@ -26,8 +26,8 @@
         <td>{( app.clientId )}</td>
         <td>{( app.url )}</td>
         <td>
-            <button class="btn btn-primary" ng-click="editApp($index)">{('EDIT_BUTTON' | translate)}</button>
-            <button class="btn btn-primary" ng-click="deleteApp($index)">{('DELETE_BUTTON' | translate)}</button>
+            <button class="btn btn-primary" ng-click="editApp(app.id)">{('EDIT_BUTTON' | translate)}</button>
+            <button class="btn btn-primary" ng-click="deleteApp(app.id)">{('DELETE_BUTTON' | translate)}</button>
         </td>
     </tr>
     </tbody>
