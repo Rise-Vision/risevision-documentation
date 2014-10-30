@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Player"
+title:  "Installer"
 date:   2014-10-01 10:52:00
 category: documentation/player-api
 parent-order: 0
