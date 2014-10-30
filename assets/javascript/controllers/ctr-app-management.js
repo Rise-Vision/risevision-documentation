@@ -6,6 +6,7 @@ angular.module("risevision.developer.hub")
     .controller("AppManagementController",
     ["$scope", "$state","listApps", "userState", "deleteApp", function($scope, $state, listApps, userState, deleteApp){
         $scope.apps = [];
+        $scope.showNoAppMessage = true;
         var toogleMessageAndTable = function(){
             if($scope.apps != null && $scope.apps.length > 0){
                 $scope.showNoAppMessage = false;

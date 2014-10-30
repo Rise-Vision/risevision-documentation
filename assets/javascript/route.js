@@ -35,7 +35,7 @@ angular.module("risevision.developer.hub")
             })
             .state('apps.edit', {
                 url: '/edit/:id',
-                templateUrl: 'apps/app-form.html',
+                templateUrl: 'apps/app-edit.html',
                 controller: 'EditAppController'
             })
             .state('documentation', {

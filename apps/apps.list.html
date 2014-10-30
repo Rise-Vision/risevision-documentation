@@ -1,34 +1,85 @@
-<div  class="row">
-    <div class="col-md-3">
-        <h4 ng-show="showNoAppMessage">{('APP_NO_APP_YET_MESSAGE' | translate)}</h4>
+<div id="appsPage" class="app-header">
+    <div class="app-title">
+        <a class="app-title-links" href="#/apps">
+          <i class="fa fa-home"></i> Developer
+        </a>
+        <h1>{('APPS' | translate)}</h1>
     </div>
-    <div class="col-md-2">
-        <button type="button" class="btn btn-success btn-fixed-width" ng-click="addNewApp()">
-            Add a New App
+
+    <div class="global-actions">
+        <button class="btn btn-lg btn-primary" ng-click="addNewApp()">
+          {('REGISTER_AN_APP' | translate)}
         </button>
     </div>
 </div>
 
-<table class="table table-striped" ng-show="showAppTable">
-    <thead>
-    <tr>
-        <th>{('APP_NAME' | translate)}</th>
-        <th>{('APP_DESCRIPTION' | translate)}</th>
-        <th>{('APP_CLIENT_ID' | translate)}</th>
-        <th>{('APP_URL' | translate)}</th>
-        <th>{('APP_ACTION' | translate)}</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr ng-repeat="app in apps">
-        <td>{( app.name )}</td>
-        <td>{( app.description )}</td>
-        <td>{( app.clientId )}</td>
-        <td>{( app.url )}</td>
-        <td>
-            <button class="btn btn-primary" ng-click="editApp(app.id)">{('EDIT_BUTTON' | translate)}</button>
-            <button class="btn btn-primary" ng-click="deleteApp(app.id)">{('DELETE_BUTTON' | translate)}</button>
-        </td>
-    </tr>
-    </tbody>
-</table>
+<div class="empty-state" ng-if="showNoAppMessage">
+    <div class="tag">
+        <!-- Icon -->
+        <i class="fa  fa-bolt fa-5x"></i>
+        <!-- Main Title -->
+        <h3>{('APP_NO_APP_YET_MESSAGE' | translate)}</h3>
+    </div>
+</div>
+
+<div class="responsive-table" ng-show="showAppTable">
+    <!-- Title Row -->
+    <div class="title-row row">
+        <div class="col-lg-2 col-xs-2" ng-click="sortBy('name')">
+            {('APP_NAME' | translate)}
+            <i ng-if="sortByCat == 'name'" class="fa" ng-class="{false: 'fa-sort-up', true: 'fa-sort-down'}[sortReverse]"></i>
+        </div>
+        <div class="col-lg-4 col-xs-4" ng-click="sortBy('description')">
+            {('APP_DESCRIPTION' | translate)}
+            <i ng-if="sortByCat == 'description'" class="fa" ng-class="{false: 'fa-sort-up', true: 'fa-sort-down'}[sortReverse]"></i>
+        </div>
+        <div class="col-lg-2 col-xs-2" ng-click="sortBy('clientId')">
+            {('APP_CLIENT_ID' | translate)}
+            <i ng-if="sortByCat == 'clientId'" class="fa" ng-class="{false: 'fa-sort-up', true: 'fa-sort-down'}[sortReverse]"></i>
+        </div>
+        <div class="col-lg-2 col-xs-2" ng-click="sortBy('url')">
+            {('APP_URL' | translate)}
+            <i ng-if="sortByCat == 'url'" class="fa" ng-class="{false: 'fa-sort-up', true: 'fa-sort-down'}[sortReverse]"></i>
+        </div>
+        <div class="col-lg-2 col-xs-2" ng-click="sortBy('modified')">
+            {('APP_MODIFIED' | translate)}
+            <i ng-if="sortByCat == 'modified'" class="fa" ng-class="{false: 'fa-sort-up', true: 'fa-sort-down'}[sortReverse]"></i>
+        </div>
+    </div>
+    <!-- Sample App -->
+    <a class="tr-row row" href="#/edit/123345677">
+        <div class="col-lg-2 col-xs-2 highlight">
+            My First App
+        </div>
+        <div class="col-lg-4 col-xs-4">
+            This is sample description text
+        </div>
+        <div class="col-lg-2 col-xs-2">
+            123345677
+        </div>
+        <div class="col-lg-2 col-xs-2">
+            urldomain.com
+        </div>
+        <div class="col-lg-2 col-xs-2">
+            27 Oct 2014 17:21
+        </div>
+    </a>
+    <!-- Apps -->
+    <a href="#/edit/{{app.id}}" class="tr-row row" ng-repeat="app in apps | orderBy:sortByCat:sortReverse">
+        <div class="col-lg-2 col-xs-2 highlight">
+            {( app.name )}
+        </div>
+        <div class="col-lg-4 col-xs-4">
+            {( app.description )}
+        </div>
+        <div class="col-lg-2 col-xs-2">
+            {( app.clientId )}
+        </div>
+        <div class="col-lg-2 col-xs-2">
+            {( app.url )}
+        </div>
+        <div class="col-lg-2 col-xs-2">
+            {( app.modified )}
+        </div>
+    </a>
+</div>

@@ -3,16 +3,16 @@
         <a class="app-title-links" href="#/apps">
             <i class="fa fa-home"></i> Developer
         </a>
-        <h1>{('APP_REGISTRATION' | translate)}</h1>
+        <h1>{('APPS' | translate)}</h1>
     </div>
 </div>
 
 <div class="row">
-    <div class="col-md-6 col-md-offset-3">
+    <div class="col-md-6">
         <form role="form" novalidate="">
             <!-- Name -->
             <div class="form-group">
-                <label for="appNameField" id="appNameLabel">{('APP_NAME' | translate)}*</label>
+                <label for="appNameField" id="appNameLabel">{('APP_NAME' | translate)}</label>
                 <input type="text" class="form-control" id="appNameField" ng-model="app.name">
             </div>
             <!-- Description -->
@@ -22,7 +22,7 @@
             </div>
             <!-- Client ID -->
             <div class="form-group">
-                <label for="appClientIdField" id="appClientIdLabel">{('APP_CLIENT_ID' | translate)} <span class=" fa fa-info-circle" ng-click="info()"></span></label>
+                <label for="appClientIdField" id="appClientIdLabel">{('APP_CLIENT_ID' | translate)}</label>
                 <input type="text" class="form-control" id="appClientIdField" ng-model="app.clientId">
             </div>
             <!-- url -->
@@ -30,6 +30,10 @@
                 <label for="appUrlField" id="appUrlLabel">{('APP_URL' | translate)}</label>
                 <input type="appUrlField" class="form-control" id="url" ng-model="app.url">
             </div>
+            <!-- Delete -->
+            <button class="btn btn-danger btn-fixed-width pull-right" ng-click="deleteApp(app.id)">
+                {('DELETE_BUTTON' | translate)} <i class="fa fa-white fa-trash-o icon-right"></i>
+            </button>
             <!-- Cancel -->
             <a href="#/list" class="btn btn-primary btn-fixed-width">
                 {('CANCEL_BUTTON' | translate)} <i class="fa fa-white fa-times icon-right"></i>

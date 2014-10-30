@@ -4,23 +4,15 @@
   {% include head.html %}
 
   <body>
-  <div ng-controller="CommonHeaderNavbarCtrl">
-      <common-header nav-options="navOptions"></common-header>
-  </div>
+    <common-header nav-options="navOptions" ng-controller="CommonHeaderNavbarCtrl"></common-header>
+
       <div class="container-fluid">
-        <div class="row">
-
             <div ui-view></div>
+      </div>
 
-
-        </div>
-    </div>
-
-      {% include footer.html %}
+      <!-- {% include footer.html %} -->
 
       {% include jscomponents.html %}
-
-
 
   </body>
 
