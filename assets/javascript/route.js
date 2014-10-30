@@ -23,6 +23,10 @@ angular.module("risevision.developer.hub")
                 templateUrl: 'apps/apps.userSignin.html',
                 controller: 'MainAppController'
             })
+            .state('apps.withoutPermission', {
+                url: '/userSignin',
+                templateUrl: 'apps/apps.withoutPermission.html'
+            })
             .state('apps.list', {
                 url: '/list',
                 templateUrl: 'apps/apps.list.html',

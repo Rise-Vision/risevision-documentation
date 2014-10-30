@@ -9,20 +9,31 @@ angular.module("risevision.developer.hub")
 
         $scope.registerAnApp = function() {
             uiStatusManager.invalidateStatus("canManageApps");
-            watchStatus();
+            watchStatus(registerHandler);
         }
 
-        function watchStatus() {
+        function watchStatus(handler) {
             $scope.$watch(function () { return uiStatusManager.getStatus(); },
                 function (newStatus){
                     if(newStatus) {
-                        if(newStatus === "canManageApps") {
-                            $state.go("apps.list");
-                        }else{
-                            $state.go("apps.userSignin");
-                        }
+                        handler(newStatus);
                     }
             });
+        }
+
+        function registerHandler(status){
+            if(status === "canManageApps") {
+                $state.go("apps.list");
+            }else{
+                $state.go("apps.userSignin");
+            }
+        }
+        function loginHandler(status){
+            if(status === "canManageApps") {
+                $state.go("apps.list");
+            }else{
+                $state.go("apps.withoutPermission");
+            }
         }
 
 
@@ -50,7 +61,7 @@ angular.module("risevision.developer.hub")
             userState.authenticate(true).then().finally(function(){
                 $loading.stopGlobal("auth-buttons-login");
                 uiStatusManager.invalidateStatus("canManageApps");
-                watchStatus();
+                watchStatus(loginHandler);
             });
         }
     }]);
