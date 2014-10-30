@@ -7,7 +7,7 @@ parent-order: 0
 order: 1
 ---
 
-Returns list of Installation Components with versions.
+Returns the list of Installation Components with versions.
 
 To request the list of components, send the following GET request **over SSL**:
 
