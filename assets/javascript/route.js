@@ -10,17 +10,18 @@ angular.module("risevision.developer.hub")
 
         $stateProvider
             .state('apps', {
+                template: "<div ui-view></div>",
+                abstract: true
+            })
+            .state('apps.main', {
                 url: '/apps',
                 templateUrl: 'apps/apps.html',
                 controller: 'MainAppController'
             })
-            .state('apps.registration', {
-                url: '/registration',
-                templateUrl: 'apps/apps.registration.html'
-            })
             .state('apps.userSignin', {
                 url: '/userSignin',
-                templateUrl: 'apps/apps.userSignin.html'
+                templateUrl: 'apps/apps.userSignin.html',
+                controller: 'MainAppController'
             })
             .state('apps.list', {
                 url: '/list',

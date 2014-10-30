@@ -1,1 +1,25 @@
-<div ui-view></div>
+<div id="appsPage" class="text-center col-md-4 col-md-offset-4">
+    <h1 id="appsTitle">{('APPS_TITLE' | translate)}</h1>
+    <h5 id="appsSubTitle">{('APPS_SUBTITLE' | translate)}</h5>
+
+    <div class="panel panel-default" >
+        <div class="panel-heading">
+            <button id="registerButton" class="btn btn-primary btn-lg" ng-click="registerAnApp()">{('REGISTER_AN_APP' | translate)}</button>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <span id="developerRegistrationText">{('DEVELOPER_REGISTRATION_TEXT' | translate)}</span>
+            </div>
+            <div class="row top-buffer">
+                <h4 id="gettingStartedTitle">{('GETTING_STARTED_TITLE' | translate)}</h4>
+                <div>
+                    <a id="appRegistrationDocumentationLink">{('APP_REGISTRATION_DOCUMENTATION_LINK' | translate)}</a>
+                </div>
+                <div>
+                    <a id="storeLink">{('RISE_VISION_STORE_LINK' | translate)}</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

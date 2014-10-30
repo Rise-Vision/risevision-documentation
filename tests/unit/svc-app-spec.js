@@ -14,7 +14,7 @@ describe("Module: risevision.common.app", function() {
         //stub services
         $provide.service("$q", function() {return Q;});
 
-        $provide.value("coreAPILoader", function() {
+        $provide.value("riseAPILoader", function() {
             var deffered = Q.defer();
             var gapi = {
                 app: {

@@ -4,10 +4,8 @@
 "use strict";
 angular.module("risevision.developer.hub")
     .controller("EditAppController",
-    ["$scope", "$location", "$stateParams", "$timeout", "getApp", "updateApp",
-    function($scope,$location, $stateParams, $timeout, getApp, updateApp){
-        $scope.alerts = [];
-        var successAlert = {type: 'success', msg: 'App edited successfully!'};
+    ["$scope", "$state", "$stateParams", "$timeout", "getApp", "updateApp",
+    function($scope,$state, $stateParams, $timeout, getApp, updateApp){
 
         getApp($stateParams.id).then(function (app) {
             $scope.app = app;
@@ -16,17 +14,8 @@ angular.module("risevision.developer.hub")
         $scope.save = function(app) {
 
             updateApp($stateParams.id,app).then(function(resp){
-                if($scope.alerts.indexOf(successAlert) == -1){
-                    $scope.alerts.push(successAlert);
-                }
-
-                $timeout( function() {
-                    $scope.alerts.splice($scope.alerts.indexOf(successAlert), 1);
-                }, 2000);
+                $state.go("apps.list");
             });
         }
 
-        $scope.closeAlert = function(index) {
-            $scope.alerts.splice(index, 1);
-        };
     }])
