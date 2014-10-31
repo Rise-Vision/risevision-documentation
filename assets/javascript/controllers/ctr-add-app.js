@@ -4,8 +4,8 @@
 "use strict";
 angular.module("risevision.developer.hub")
     .controller("AddAppController",
-    ["$scope", "$state", "$timeout", "createApp", "userState", "$modal",
-    function($scope, $state, $timeout, createApp, userState, $modal){
+    ["$scope", "$state", "$timeout", "createApp", "userState", "$modal", "$log",
+    function($scope, $state, $timeout, createApp, userState, $modal, $log){
 
         $scope.info = function() {
             $modal.open({
@@ -16,6 +16,9 @@ angular.module("risevision.developer.hub")
         $scope.save = function(app) {
             createApp(userState.getUserCompanyId(), userState.getUsername(), app).then(function(result) {
                 $state.go("apps.list");
+
+            }, function(errorResult) {
+                $log.debug("Error: " + errorResult.code + " - " + errorResult.message);
             });
-        }
-    }])
+        };
+    }]);
