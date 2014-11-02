@@ -65,7 +65,7 @@
         </div>
     </a>
     <!-- Apps -->
-    <a href="#/edit/{{app.id}}" class="tr-row row" ng-repeat="app in apps | orderBy:sortByCat:sortReverse">
+    <a href="#/edit/{(app.id)}" class="tr-row row" ng-repeat="app in apps | orderBy:sortByCat:sortReverse">
         <div class="col-lg-2 col-xs-2 highlight">
             {( app.name )}
         </div>

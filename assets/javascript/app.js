@@ -38,6 +38,8 @@ angular.module("risevision.developer.hub",["ui.router","ngRoute","risevision.com
     ])
     .config(['$translateProvider', function ($translateProvider) {
         $translateProvider.translations('en', {
+            'RV_DEVELOPER_HUB': 'Rise Vision Developer Hub',
+            'RV_DEVELOPER_HUB_SUB_TITLE': 'Everything You Need to Create Apps and Publish Them on the Rise Vision Store',
             'ADD_APP_TITLE': "Add a New App",
             'APP_NAME': "Name",
             'APP_CLIENT_ID': "Client ID",
@@ -63,7 +65,14 @@ angular.module("risevision.developer.hub",["ui.router","ngRoute","risevision.com
             'LOGIN_TO_REGISTER_TEXT': 'Sign in to your Rise Vision account to register',
             'LOGIN_WITH_GOOGLE_BUTTON': 'Sign in with Google',
             'DO_NOT_HAVE_ACCOUNT_LINK': "I don't have an account",
-            'DO_NOT_HAVE_PERMISSION': "You must have permission to register apps. Please contact your System Administrator."
+            'DO_NOT_HAVE_PERMISSION': "You must have permission to register apps. Please contact your System Administrator.",
+            'GET_INVOLVED': 'Get Involved',
+            'GET_INVOLVED_DETAIL': 'Helping us improve developer docs, submitting issues, etc.',
+            'GET_STARTED': 'Get Started',
+            'DEVELOPER_DOCUMENTATION': 'Developer Documentation',
+            'STYLE_GUIDE': 'Style Guide',
+            'API_EXPLORER': 'API Explorer',
+            'RV_CODEBASE': 'Rise Vision Codebase'
         });
 
 
