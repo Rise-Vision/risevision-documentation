@@ -13,6 +13,12 @@ angular.module("risevision.developer.hub")
             });
         };
 
+        $scope.info = function() {
+            $modal.open({
+                templateUrl: 'apps/client-id-info.html'
+            });
+        };
+
         $scope.save = function(app) {
             createApp(userState.getUserCompanyId(), userState.getUsername(), app).then(function(result) {
                 $state.go("apps.list");

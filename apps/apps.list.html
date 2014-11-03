@@ -1,4 +1,5 @@
-<div id="appsPage" class="app-header">
+
+<div id="appsPage" class="app-header add-bottom">
     <div class="app-title">
         <a class="app-title-links" href="#/apps">
           <i class="fa fa-home"></i> Developer
@@ -24,7 +25,8 @@
 
 <div class="responsive-table" ng-show="showAppTable">
     <!-- Title Row -->
-    <div class="title-row row">
+
+    <div class="title-row">
         <div class="col-lg-2 col-xs-2" ng-click="sortBy('name')">
             {('APP_NAME' | translate)}
             <i ng-if="sortByCat == 'name'" class="fa" ng-class="{false: 'fa-sort-up', true: 'fa-sort-down'}[sortReverse]"></i>
@@ -47,7 +49,8 @@
         </div>
     </div>
     <!-- Sample App -->
-    <a class="tr-row row" href="#/edit/123345677">
+
+    <a class="tr-row" href="#/edit/123345677">
         <div class="col-lg-2 col-xs-2 highlight">
             My First App
         </div>
@@ -65,7 +68,8 @@
         </div>
     </a>
     <!-- Apps -->
-    <a href="#/edit/{(app.id)}" class="tr-row row" ng-repeat="app in apps | orderBy:sortByCat:sortReverse">
+
+    <a href="#/edit/{(app.id)}" class="tr-row" ng-repeat="app in apps | orderBy:sortByCat:sortReverse">
         <div class="col-lg-2 col-xs-2 highlight">
             {( app.name )}
         </div>

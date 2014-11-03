@@ -16,9 +16,9 @@ var bower       = require('bower');
 var del         = require('delete');
 var deploy      = require('gulp-gh-pages');
 var argv        = require('minimist')(process.argv.slice(2));
+var rename      = require("gulp-rename");
 var karma       = require('karma').server;
 var gp          = require("gulp-protractor");
-var rename      = require("gulp-rename");
 
 var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build',
@@ -177,6 +177,19 @@ gulp.task("deploy", function () {
 });
 
 /**
+<<<<<<< HEAD
+=======
+ * Copy and rename CNAME file depending on the target environment
+ */
+gulp.task("build", ['jekyll-build'], function() {
+    gulp.src("./cname-config/CNAME-"+env)
+    .pipe(rename("CNAME"))
+    .pipe(gulp.dest("./_site"));
+});
+
+
+/**
+>>>>>>> feature/ux-prototype
  * Run test once and exit
  */
 gulp.task('test', function (done) {

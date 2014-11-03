@@ -30,9 +30,9 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - risevision-documentation.iml
+  - cname-config
   - karma.conf.js
   - tests
-  - cname-config
 
 
 # Default categories (in order) to appear in the navigation

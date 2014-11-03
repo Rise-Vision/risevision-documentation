@@ -72,7 +72,8 @@ angular.module("risevision.developer.hub",["ui.router","ngRoute","risevision.com
             'DEVELOPER_DOCUMENTATION': 'Developer Documentation',
             'STYLE_GUIDE': 'Style Guide',
             'API_EXPLORER': 'API Explorer',
-            'RV_CODEBASE': 'Rise Vision Codebase'
+            'RV_CODEBASE': 'Rise Vision Codebase',
+            'DEVELOPER_DOCS': 'Developer Documentation'
         });
 
 

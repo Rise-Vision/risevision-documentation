@@ -1,13 +1,34 @@
-
-{% include sidebar.html %}
-
-{% include search.result.html%}
-<div class="col-md-9">
-    <div class="content-col col-md-6">
-        {% include content.html %}
+<!-- App Header -->
+<div class="app-header">
+    <div class="app-title">
+        <a class="app-title-links" href="#/apps">
+            <i class="fa fa-home"></i> Developer
+        </a>
+        <h1>{('DEVELOPER_DOCS' | translate)}</h1>
     </div>
-    <div class="code-sample-col col-md-6">
+
+    <div class="global-actions">
+        {% include search.form.html%}
     </div>
+</div>
+
+<div class="row" style="position: relative;">
+
+    <!-- Docs Nav Sidebar -->
+    {% include sidebar.html %}
+
+    <!-- Search Results -->
+    {% include search.result.html%}
+
+    <!-- Main Content -->
+    <div class="col-xs-offset-3 col-xs-9">
+        <div class="content-col col-xs-6">
+            {% include content.html %}
+        </div>
+        <div class="code-sample-col col-xs-6">
+        </div>
+    </div>
+
 </div>
 
 
@@ -63,8 +84,8 @@
                     return a[0] - b[0];
                 });
 
-                // wraps the parent within a H3
-                var parentHeader = document.createElement("h3");
+                // wraps the parent within a H5
+                var parentHeader = document.createElement("h5");
                 parentHeader.appendChild(list[0][1].getElementsByTagName("a")[0]);
                 list[0][1].innerHTML = '';
                 list[0][1].appendChild(parentHeader);

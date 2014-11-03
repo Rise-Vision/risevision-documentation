@@ -4,7 +4,8 @@
         <p class="lead">{('RV_DEVELOPER_HUB_SUB_TITLE' | translate)}</p>
 
         <div class="body">
-            <a class="main-link" href="">
+
+            <a class="main-link" href="" ng-click="registerAnApp()">
                 {('REGISTER_AN_APP' | translate)}
             </a>
 
@@ -51,10 +52,12 @@
                 </div>
             </div>
         </div>
+
     </div>
 
-    <div class="alert alert-warning text-center">
-        <strong>{('GET_INVOLVED' | translate)}</strong><br/>
-        <p>{('GET_INVOLVED_DETAIL' | translate)}</p>
-    </div>
+    <a target="_blank" href="https://github.com/Rise-Vision" class="alert alert-link text-center">
+        <h2>{('GET_INVOLVED' | translate)}</h2>
+        <p class="lead">{('GET_INVOLVED_DETAIL' | translate)}</p>
+    </a>
+
 </div>

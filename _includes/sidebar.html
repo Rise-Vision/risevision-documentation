@@ -1,16 +1,23 @@
 <!-- sidebar -->
-<div id="navigation" class="col-md-3">
-    <ul class="nav nav-pills nav-stacked">
-        {% include search.form.html%}
+<div id="navigation" class="nav-side-bar col-xs-3">
+
+    <ul class="nav">
         {% for section in site.sections %}
             {% assign attr = section[0] %}
             {% assign label = section[1] %}
 
             {% for page in site.categories[attr] %}
                 {% if forloop.first %}
-                    <li class="nav-header"><h2>{{ label }}</h2></li>
+                    <li class="nav-header add-top-double">
+                        <h4>{{ label }}</h4>
+                    </li>
                 {% endif %}
-                <li parent-order="{{page.parent-order}}" data-order="{{ page.order }}"><a href="#{{ page.url }}">{{ page.title }}</a></li>
+                <li parent-order="{{page.parent-order}}" data-order="{{ page.order }}">
+                    <span class="text-muted">&boxur;</span>
+                    <a href="#{{ page.url }}">
+                        {{ page.title }}
+                    </a>
+                </li>
             {% endfor %}
 
         {% endfor %}
