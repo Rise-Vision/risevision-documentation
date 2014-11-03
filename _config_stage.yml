@@ -1,2 +1,2 @@
 # Production Site settings
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "/rv-doc-stage" # the subpath of your site, e.g. /blog/

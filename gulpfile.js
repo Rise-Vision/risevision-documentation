@@ -154,7 +154,7 @@ var options = {
                 remoteUrl: "git@github.com:Rise-Vision/rv-doc-prod.git"
             },
             stage: {
-                remoteUrl: "git@github.com:Rise-Vision/dev-hub-stage.git"
+                remoteUrl: "git@github.com:Rise-Vision/rv-doc-stage.git"
             }
         };
 
@@ -182,9 +182,9 @@ gulp.task("deploy", function () {
  * Copy and rename CNAME file depending on the target environment
  */
 gulp.task("build", ['jekyll-build'], function() {
-    gulp.src("./cname-config/CNAME-"+env)
+    /*gulp.src("./cname-config/CNAME-"+env)
     .pipe(rename("CNAME"))
-    .pipe(gulp.dest("./_site"));
+    .pipe(gulp.dest("./_site"));*/
 });
 
 
