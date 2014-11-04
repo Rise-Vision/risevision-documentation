@@ -66,7 +66,7 @@ Pay attention on the YALM front matter block when creating a new post:
 layout: post
 title:  "Companies"
 date:   2014-10-01 10:52:00
-category: documentation/core-api
+category: developer/core-api
 parent-order: 0
 order: 0
 ---

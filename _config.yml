@@ -37,13 +37,13 @@ exclude:
 
 # Default categories (in order) to appear in the navigation
 sections: [
-    ['documentation/core-api', 'Core API'],
-    ['documentation/viewer-api', 'Viewer API'],
-    ['documentation/player-api', 'Player API'],
-    ['documentation/widget-api', 'Widget API'],
-    ['documentation/store-api', 'Store API'],
-    ['documentation/storage-api', 'Storage Api'],
-    ['documentation/common-header', 'Common Header'],
+    ['developer/core-api', 'Core API'],
+    ['developer/viewer-api', 'Viewer API'],
+    ['developer/player-api', 'Player API'],
+    ['developer/widget-api', 'Widget API'],
+    ['developer/store-api', 'Store API'],
+    ['developer/storage-api', 'Storage Api'],
+    ['developer/common-header', 'Common Header'],
     ['ref', 'Reference'],
     ['dev', 'Developers'],
     ['post', 'Posts']
