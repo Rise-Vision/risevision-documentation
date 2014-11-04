@@ -31,7 +31,8 @@ are also provided to facilitate building of user interfaces.
 Core API is based on [Google Cloud Endpoints](https://cloud.google.com/appengine/docs/java/endpoints/) which you can easily consume from a [Javascript client](https://cloud.google.com/appengine/docs/java/endpoints/consume_js).  
   
 You can use Core API to build a wide range of apps from custom UIs for Rise Vision Platform to any kind of background content processing apps with little user interaction.
-It is important to keep in mind that Core API uses OAuth2 to authenticate the user and in most cases the user will be required to log in to start the app.     
+It is important to keep in mind that Core API uses OAuth2 to authenticate the user and in most cases the user will be required to log in to start the app.    
+In order to use Core API your app needs to have OAuth2 client Id ([here's how to obtain it](#{% post_url /developer/core-api/2014-10-01-clientId %})).
 
 *Applications that use Core API:* [Rise Vision Common Header](https://github.com/Rise-Vision/common-header)
 
