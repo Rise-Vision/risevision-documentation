@@ -1,10 +1,6 @@
 ---
 layout: documentation
 title:  "How To Obtain Client ID"
-date:   2014-10-01 10:55:00
-category: developer/core-api
-parent-order: 0
-order: 0
 ---
 
 1. Go to https://cloud.google.com/console/project
