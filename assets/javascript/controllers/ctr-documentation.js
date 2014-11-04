@@ -1,4 +1,4 @@
-angular.module("risevision.developer.hub")
+angular.module("risevision.documentation")
     .controller("DocumentationController", function($scope,$location){
 
     })

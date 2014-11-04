@@ -1,5 +1,5 @@
 {
-  "name": "rv-documentation",
+  "name": "risevision-documentation",
   "version": "1.0.0",
   "ignore": [
     "**/*.txt",
@@ -22,7 +22,6 @@
     "angular-ui-router": "0.2.11",
     "angular-local-storage": "0.0.7",
     "angular-translate": "2.4.1",
-    "angular-ui-router": "0.2.11",
     "angular-bootstrap": "~0.11.0"
   },
   "devDependencies": {
@@ -33,7 +32,7 @@
     "lunr.js": "0.5.5",
     "uri.js": "1.14.1"
   },
-  "homepage": "https://github.com/Rise-Vision/rv-documentation",
+  "homepage": "https://github.com/Rise-Vision/risevision-documentation",
   "authors": [
     "rodrigopavezi <rodrigopavezi@gmail.com>"
   ],
