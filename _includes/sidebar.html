@@ -1,5 +1,5 @@
 <!-- sidebar -->
-<div id="navigation" class="nav-side-bar col-xs-3">
+<div id="navigation" class="docs-sidebar hidden-xs hidden-sm">
 
     <ul class="nav">
         {% for section in site.sections %}
@@ -8,7 +8,7 @@
 
             {% for page in site.categories[attr] %}
                 {% if forloop.first %}
-                    <li class="nav-header add-top-double">
+                    <li class="nav-header add-top">
                         <h4>{{ label }}</h4>
                     </li>
                 {% endif %}

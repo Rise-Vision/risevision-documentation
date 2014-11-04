@@ -1,3 +1,37 @@
+.documentation {
+  img { width: 100%; }
+
+  pre {
+    background-color: #fff;
+    border-radius: 3px;
+    max-height: 600px;
+    overflow: scroll;
+  }
+}
+
+/**
+ * Documentation Sidebar
+ */
+.docs-sidebar {
+  position: absolute;
+  width: 25%;
+  top: 0;
+  left: 0;
+  display: block;
+  min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: visible;
+  background-color: darken(#f4f4f4, 3.25%);
+  padding: 0 0 20px 20px;
+
+  * {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
+
+
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
