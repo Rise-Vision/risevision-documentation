@@ -1,5 +1,6 @@
 ---
 layout: documentation
+type: developer
 ---
 ##Introduction
 

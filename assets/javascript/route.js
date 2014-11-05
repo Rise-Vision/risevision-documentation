@@ -14,11 +14,25 @@ angular.module("risevision.documentation")
                 templateUrl: 'developer/developer.html',
                 controller: 'DocumentationController'
             })
-            .state('post', {
+            .state('developer-post', {
                 url: '/developer/:category/:subCategory/:post',
                 templateUrl: function(params){ return "{{ site.baseurl }}/developer/" + params.category + "/" + params.subCategory + "/" + params.post; },
                 controller: 'DocumentationController'
             })
-
+            .state('user', {
+                url: '/user',
+                templateUrl: 'user/user.html',
+                controller: 'DocumentationController'
+            })
+            .state('user-post', {
+                url: '/user/:category/:post',
+                templateUrl: function(params){ return "{{ site.baseurl }}/user/" + params.category + "/" + params.post; },
+                controller: 'DocumentationController'
+            })
+            .state('user-post-sub', {
+                url: '/user/:category/:subCategory/:post',
+                templateUrl: function(params){ return "{{ site.baseurl }}/user/" + params.category + "/" + params.subCategory + "/" + params.post; },
+                controller: 'DocumentationController'
+            })
 
     }]);

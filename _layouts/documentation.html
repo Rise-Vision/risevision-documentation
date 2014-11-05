@@ -4,7 +4,11 @@
         <a class="app-title-links" href="#/apps">
             <i class="fa fa-home"></i> Developer
         </a>
-        <h1>{('DEVELOPER_DOCS' | translate)}</h1>
+        {% if page.type == 'developer' %}
+            <h1>{('DEVELOPER_DOCS' | translate)}</h1>
+        {% elsif page.type == 'user' %}
+            <h1>{('USER_DOCS' | translate)}</h1>
+        {% endif %}
     </div>
 
     <div class="global-actions">
@@ -46,7 +50,7 @@
             var subCat = $(subCats[i]);
             var category = subCat[0].getAttribute("category");
             var title = '' + subCat[0].getAttribute("title");
-            title = title.replace(/ /g,'');
+            title = title.replace(/ /g,'-');
 
             if (url.indexOf(category) === -1)
                 subCat.find(".js-sub-nav").hide();

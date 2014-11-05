@@ -1,5 +1,5 @@
 ---
-layout: summary
+layout: developer-summary
 title:  "System Messages"
 date:   2014-10-01 10:52:00
 category: developer/core-api/systemmessages

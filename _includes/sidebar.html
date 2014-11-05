@@ -22,39 +22,58 @@
 
         {% endfor %}
     </ul> -->
-
+    {% if page.type == 'developer' %}
+        {% assign sections = site.developerSections %}
+    {% elsif page.type == 'user' %}
+        {% assign sections = site.userSections %}
+    {% endif %}
     <ul class="nav">
-      {% for section in site.sections %}
+      {% for section in sections %}
             {% assign label = section[1] %}
             {% assign subSections = section[2] %}
 
             <li class="nav-header">
                 <h4>{{ label }}</h4>
 
-                {% for subSection in subSections %}
-                    {% assign attr = subSection[0] %}
-                    <ul class="nav">
-                        <li class="js-sub-cat" category="{{ attr }}" title="{{ subSection[1] }}">
-                            <h5><a href="">
-                                {{ subSection[1] }}
-                            </a></h5>
+                {% if subSections != null %}
 
-                            <ul class="list-unstyled half-bottom js-sub-nav">
-                            {% for page in site.categories[attr] reversed %}
-                                <li>
-                                    {% if page.title != subSection[1] %}
-                                        <span class="text-muted">&boxur;</span>
-                                        <a href="#{{ page.url }}">
-                                            {{ page.title }}
-                                        </a>
-                                    {% endif %}
-                                </li>
-                            {% endfor %}
-                            </ul>
-                        </li>
-                    </ul>
+                    {% for subSection in subSections %}
+                        {% assign attr = subSection[0] %}
+                        <ul class="nav">
+                            <li class="js-sub-cat" category="{{ attr }}" title="{{ subSection[1] }}">
+                                <h5><a href="">
+                                    {{ subSection[1] }}
+                                </a></h5>
 
-                {% endfor %}
+                                <ul class="list-unstyled half-bottom js-sub-nav">
+                                {% for page in site.categories[attr] reversed %}
+                                    <li>
+                                        {% if page.title != subSection[1] %}
+                                            <span class="text-muted">&boxur;</span>
+                                            <a href="#{{ page.url }}">
+                                                {{ page.title }}
+                                            </a>
+                                        {% endif %}
+                                    </li>
+                                {% endfor %}
+                                </ul>
+                            </li>
+                        </ul>
+
+                    {% endfor %}
+
+                {% else %}
+                    {% assign attr = section[0] %}
+                    {% for page in site.categories[attr] reversed %}
+                        <ul class="nav">
+                            <li class="js-sub-cat" category="{{ attr }}" title="{{ page.title }}">
+                                <h5><a href="">
+                                    {{ page.title }}
+                                </a></h5>
+                            </li>
+                        </ul>
+                    {% endfor %}
+                {% endif %}
 
             </li>
 

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: developer-post
 title:  "Save Property"
 date:   2014-10-01 10:52:00
 category: developer/player-api/player

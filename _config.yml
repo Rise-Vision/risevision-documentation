@@ -36,7 +36,7 @@ exclude:
 
 
 # Default categories (in order) to appear in the navigation
-sections: [
+developerSections: [
     ['developer/core-api', 'Core API', [
       ['developer/core-api/companies', 'Companies'],
       ['developer/core-api/displays', 'Displays'],
@@ -71,6 +71,32 @@ sections: [
     ['ref', 'Reference'],
     ['dev', 'Developers'],
     ['post', 'Posts']
+]
+
+userSections: [
+    ['user/getting-started', 'Getting Started'],
+    ['user/company', 'Company', [
+      ['user/company/management', 'Company Management'],
+    ]],
+    ['user/presentation', 'Presentation', [
+      ['user/presentation/management', 'Presentation Management'],
+    ]],
+    ['user/content', 'Content'],
+    ['user/display', 'Display', [
+      ['user/display/management', 'Display Management'],
+    ]],
+    ['user/user', 'User'],
+    ['user/schedule', 'Schedule', [
+       ['user/schedule/management', 'Schedule Management'],
+    ]],
+    ['user/player', 'Player'],
+    ['user/users', 'Users', [
+      ['user/users/management', 'User Management'],
+    ]],
+    ['user/storage', 'Storage', [
+      ['user/storage/management', 'Storage Management'],
+    ]],
+    ['user/alerts', 'Alerts'],
 ]
 
 # Dates are not included in permalinks

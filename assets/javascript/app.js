@@ -8,7 +8,8 @@ angular.module("risevision.documentation",["ui.router","risevision.common.header
     ])
     .config(['$translateProvider', function ($translateProvider) {
         $translateProvider.translations('en', {
-            'DEVELOPER_DOCS': 'Developer Documentation'
+            'DEVELOPER_DOCS': 'Developer Documentation',
+            'USER_DOCS': 'User Documentation'
         });
 
 

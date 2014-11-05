@@ -1,5 +1,5 @@
 ---
-layout: summary
+layout: developer-post
 title:  "Countries, States, Time Zones"
 date:   2014-10-01 10:52:00
 category: developer/core-api/countries

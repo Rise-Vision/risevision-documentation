@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: developer-post
 title:  "Events & Watches"
 date:   2014-10-01 10:52:00
 category: developer/common-header/usage
