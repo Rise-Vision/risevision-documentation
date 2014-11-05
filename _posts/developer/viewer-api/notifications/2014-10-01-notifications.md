@@ -2,7 +2,7 @@
 layout: post
 title:  "Notifications"
 date:   2014-10-01 10:52:00
-category: developer/viewer-api
+category: developer/viewer-api/notifications
 parent-order: 1
 order: 0
 ---

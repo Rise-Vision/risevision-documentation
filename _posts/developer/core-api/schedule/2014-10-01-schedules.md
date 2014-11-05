@@ -2,7 +2,7 @@
 layout: summary
 title:  "Schedules"
 date:   2014-10-01 10:52:00
-category: developer/core-api
+category: developer/core-api/schedules
 parent-order: 3
 order: 0
 ---

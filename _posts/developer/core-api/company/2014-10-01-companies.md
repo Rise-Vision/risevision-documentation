@@ -2,7 +2,7 @@
 layout: summary
 title:  "Companies"
 date:   2014-10-01 10:52:00
-category: developer/core-api
+category: developer/core-api/companies
 parent-order: 0
 order: 0
 ---

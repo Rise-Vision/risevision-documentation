@@ -1,0 +1,24 @@
+<div class="form-group add-top visible-xs visible-sm">
+    <select class="form-control docs-nav">
+      {% for section in site.sections %}
+            {% assign label = section[1] %}
+            {% assign subSections = section[2] %}
+
+            <optgroup label="{{ label }}">
+
+                {% for subSection in subSections %}
+                    {% assign attr = subSection[0] %}
+                        <optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;{{ subSection[1] }}">
+                            {% for page in site.categories[attr] %}
+                                <option value="#{{ page.url }}">
+                                    &nbsp;&nbsp;{{ page.title }}
+                                </option>
+                            {% endfor %}
+                        </optgroup>
+                {% endfor %}
+
+            </optgroup>
+
+        {% endfor %}
+    </select>
+</div>

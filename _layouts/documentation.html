@@ -12,6 +12,9 @@
     </div>
 </div>
 
+<!-- Docs nav for mobile -->
+{% include mobile-nav.html %}
+
 <div class="row documentation" style="position: relative;">
 
     <!-- Docs Nav Sidebar -->
@@ -23,112 +26,39 @@
     <!-- Main Content -->
     <div class="col-md-offset-3 col-md-9">
         <div class="row">
-            <div class="content-col col-xs-6">
+            <div class="content-col">
                 {% include content.html %}
             </div>
-            <div class="code-sample-col col-xs-6">
+            <div class="code-sample-col col-md-6">
             </div>
         </div>
     </div>
 
 </div>
 
+<script type="text/javascript">
+    $(function() {
+        var subCats = $(".js-sub-cat");
 
+        for (var i = subCats.length - 1; i >= 0; i--) {
 
-<script>
-    function orderNav() {
-        var list,
-                section,
-                header,
-                sections = [],
-                headers = {},
-                sectionLists = {};
+            var url = document.URL;
+            var subCat = $(subCats[i]);
+            var category = subCat[0].getAttribute("category");
+            var title = '' + subCat[0].getAttribute("title");
+            title = title.replace(/ /g,'');
 
+            if (url.indexOf(category) === -1)
+                subCat.find(".js-sub-nav").hide();
 
-        var navUl = document.querySelectorAll('#navigation ul')[0],
-                navLis = document.querySelectorAll('#navigation ul li');
+            subCat.find("h5 a").attr("href", "#/" + category + "/" + title + '.html');
 
-        if (!navUl) return;
+            $('.docs-nav option').filter(function() {
+                return (url.indexOf($(this).val()) !== -1);
+            }).prop('selected', true);
 
-        for (var i = 0; i < navLis.length; i++) {
-            var parentOrder,order, li = navLis[i];
-
-            if (li.classList.contains('nav-header')) {
-                section = li.textContent || li.innerText;
-                sections.push(section);
-                headers[section] = li;
-                continue;
-            }
-
-
-            if (!sectionLists[section]) {
-                sectionLists[section] = {};
-            }
-
-            parentOrder = parseFloat(li.getAttribute('parent-order'));
-
-            if(!sectionLists[section][parentOrder]){
-                sectionLists[section][parentOrder] = [];
-            }
-
-            order = parseFloat(li.getAttribute('data-order'));
-            sectionLists[section][parentOrder].push([order,li]);
-        }
-
-        for (var i = 0; i < sections.length; i++) {
-            section = sections[i];
-            var subsections = sectionLists[section];
-            if (header = headers[section]) {
-                navUl.appendChild(header);
-            }
-            for (var j in subsections) {
-                list = subsections[j].sort(function (a, b) {
-                    return a[0] - b[0];
-                });
-
-                // wraps the parent within a H5
-                var parentHeader = document.createElement("h5");
-                parentHeader.appendChild(list[0][1].getElementsByTagName("a")[0]);
-                list[0][1].innerHTML = '';
-                list[0][1].appendChild(parentHeader);
-                list[0][1].style.paddingLeft = "20px";
-                navUl.appendChild(list[0][1]);
-
-                // wrap the li's within a div with a collapse class
-                var divElement = document.createElement("div");
-                divElement.className = "collapse";
-
-                // check url path with link to add class 'in' to collapsed div.
-                var url = document.URL;
-                var isToggled = false;
-                if(url.indexOf(list[0 ][1].getElementsByTagName("a")[0].getAttribute("href")) > -1){
-                    isToggled = true;
-                }
-
-                //loop through all li and add them in order
-                // also check for url matching then add font-weight bold.
-                for (var k = 1; k < list.length; k++) {
-                    divElement.appendChild(list[k][1]);
-                    list[k][1].style.paddingLeft = "30px";
-
-                    var aElement = list[k][1].getElementsByTagName("a")[0];
-                   if(url.indexOf(aElement.getAttribute("href")) > -1){
-                        isToggled = true;
-                        aElement.style.fontWeight = "bold";
-                    }
-                }
-                navUl.appendChild(divElement);
-
-
-                if(isToggled){
-                    divElement.className = divElement.className + " in";
-                }
-            }
-
-        }
-    }
-
-    if (document.querySelectorAll) orderNav();
+        };
+    });
 </script>
 
 <script type="text/javascript">
@@ -139,6 +69,12 @@
             entries:  '.entries',                 // jQuery selector for the element to contain the results list, must be a child of the results element above.
             template: '#search-results-template'  // jQuery selector for the Mustache.js template
         });
+    });
+</script>
+
+<script type="text/javascript">
+    $("select.docs-nav").change(function() {
+        window.location = $(this).find("option:selected").val();
     });
 </script>
 
@@ -157,7 +93,13 @@
 
 
 <script>
+    var codeSampleWrapper = $(".code-sample-wrapper");
 
-    $(".code-sample-wrapper").appendTo(".code-sample-col");
+    if (codeSampleWrapper.length > 0) {
+        $(".code-sample-wrapper").appendTo(".code-sample-col");
+        $(".content-col").addClass("col-md-6");
+    } else {
+        $(".content-col").addClass("col-md-12");
+    }
 
 </script>

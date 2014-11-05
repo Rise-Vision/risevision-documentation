@@ -2,7 +2,7 @@
 layout: post
 title:  "Presentation"
 date:   2014-10-01 10:52:00
-category: developer/viewer-api
+category: developer/viewer-api/content
 parent-order: 0
 order: 2
 ---
@@ -64,8 +64,8 @@ charset=UTF-8">ntt<title></title>nt</head>nnt<body style="height:1080px;width:19
 overflow:hidden;"></div><div id="ph2" style="width:1920px;height:1080px;left:0px;top:0px;z-index:1;position:absolute;overflow:hidden;"></div>
 <div id="ph3" style="width:1920px;height:1080px;left:0px;top:0px;z-index:1;position:absolute;overflow:hidden;"></div></body>n</html>n",
 "publish": 0
-}}], 
-"company": {"authKey":"xyz"}, 
+}}],
+"company": {"authKey":"xyz"},
 "social":[ {"network":"facebook", "access": "ABCD1234", "location": null}, {"network": "foursquare", "access": "XYZ09876", "location": "sa232312edf00sd"}]}
 ```
 

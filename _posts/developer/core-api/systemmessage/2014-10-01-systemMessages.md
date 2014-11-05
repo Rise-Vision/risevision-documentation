@@ -2,7 +2,7 @@
 layout: summary
 title:  "System Messages"
 date:   2014-10-01 10:52:00
-category: developer/core-api
+category: developer/core-api/systemmessages
 parent-order: 5
 order: 0
 ---

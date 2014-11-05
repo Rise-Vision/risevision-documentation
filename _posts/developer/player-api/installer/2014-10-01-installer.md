@@ -2,7 +2,7 @@
 layout: post
 title:  "Installer"
 date:   2014-10-01 10:52:00
-category: developer/player-api
+category: developer/player-api/installer
 parent-order: 0
 order: 0
 ---

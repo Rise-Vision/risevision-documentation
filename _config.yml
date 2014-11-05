@@ -37,13 +37,37 @@ exclude:
 
 # Default categories (in order) to appear in the navigation
 sections: [
-    ['developer/core-api', 'Core API'],
-    ['developer/viewer-api', 'Viewer API'],
-    ['developer/player-api', 'Player API'],
-    ['developer/widget-api', 'Widget API'],
-    ['developer/store-api', 'Store API'],
-    ['developer/storage-api', 'Storage Api'],
-    ['developer/common-header', 'Common Header'],
+    ['developer/core-api', 'Core API', [
+      ['developer/core-api/companies', 'Companies'],
+      ['developer/core-api/displays', 'Displays'],
+      ['developer/core-api/users', 'Users'],
+      ['developer/core-api/countries', 'Countries'],
+      ['developer/core-api/presentations', 'Presentations'],
+      ['developer/core-api/schedules', 'Schedules'],
+      ['developer/core-api/systemmessages', 'System Messages']
+    ]],
+    ['developer/viewer-api', 'Viewer API', [
+      ['developer/viewer-api/content', 'Content'],
+      ['developer/viewer-api/notifications', 'Notifications']
+    ]],
+    ['developer/player-api', 'Player API', [
+      ['developer/player-api/cache', 'Cache'],
+      ['developer/player-api/installer', 'Installer'],
+      ['developer/player-api/player', 'Player'],
+      ['developer/player-api/viewer', 'Viewer']
+    ]],
+    ['developer/widget-api', 'Widget API', [
+      ['developer/widget-api/widget', 'Widget']
+    ]],
+    ['developer/store-api', 'Store API', [
+      ['developer/store-api/store', 'Store']
+    ]],
+    ['developer/storage-api', 'Storage Api', [
+      ['developer/storage-api/storage', 'Storage']
+    ]],
+    ['developer/common-header', 'Common Header', [
+      ['developer/common-header/usage', 'Usage']
+    ]],
     ['ref', 'Reference'],
     ['dev', 'Developers'],
     ['post', 'Posts']

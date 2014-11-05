@@ -1,7 +1,7 @@
 <!-- sidebar -->
 <div id="navigation" class="docs-sidebar hidden-xs hidden-sm">
 
-    <ul class="nav">
+<!--     <ul class="nav">
         {% for section in site.sections %}
             {% assign attr = section[0] %}
             {% assign label = section[1] %}
@@ -21,7 +21,46 @@
             {% endfor %}
 
         {% endfor %}
+    </ul> -->
+
+    <ul class="nav">
+      {% for section in site.sections %}
+            {% assign label = section[1] %}
+            {% assign subSections = section[2] %}
+
+            <li class="nav-header">
+                <h4>{{ label }}</h4>
+
+                {% for subSection in subSections %}
+                    {% assign attr = subSection[0] %}
+                    <ul class="nav">
+                        <li class="js-sub-cat" category="{{ attr }}" title="{{ subSection[1] }}">
+                            <h5><a href="">
+                                {{ subSection[1] }}
+                            </a></h5>
+
+                            <ul class="list-unstyled half-bottom js-sub-nav">
+                            {% for page in site.categories[attr] reversed %}
+                                <li>
+                                    {% if page.title != subSection[1] %}
+                                        <span class="text-muted">&boxur;</span>
+                                        <a href="#{{ page.url }}">
+                                            {{ page.title }}
+                                        </a>
+                                    {% endif %}
+                                </li>
+                            {% endfor %}
+                            </ul>
+                        </li>
+                    </ul>
+
+                {% endfor %}
+
+            </li>
+
+        {% endfor %}
     </ul>
+
 </div>
 
 
