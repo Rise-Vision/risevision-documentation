@@ -51,7 +51,7 @@
             if (url.indexOf(category) === -1)
                 subCat.find(".js-sub-nav").hide();
 
-            subCat.find("h5 a").attr("href", "#/" + category + "/" + title + '.html');
+            subCat.find("h5 a").attr("href", "#/" + category + "/" + title.toLowerCase() + '.html');
 
             $('.docs-nav option').filter(function() {
                 return (url.indexOf($(this).val()) !== -1);
