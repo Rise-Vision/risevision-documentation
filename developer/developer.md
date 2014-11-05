@@ -23,7 +23,7 @@ Relationships between these objects can be described as follows:
 
 Utility read-only objects, such as:
 
-- [System Message](#{% post_url /developer/core-api/systemmessage/2014-10-01-systemMessages %})
+- [System Message](#{% post_url /developer/core-api/systemmessage/2014-10-01-system-messages %})
 - [Country](#{% post_url /developer/core-api/country/2014-10-01-countries %})
 - [Time Zone](#{% post_url /developer/core-api/country/2014-10-01-countries %})
 

@@ -15,6 +15,11 @@ angular.module("risevision.documentation")
                 controller: 'DocumentationController'
             })
             .state('developer-post', {
+                url: '/developer/:category/:post',
+                templateUrl: function(params){ return "{{ site.baseurl }}/developer/" + params.category +"/" + params.post; },
+                controller: 'DocumentationController'
+            })
+            .state('developer-post-sub', {
                 url: '/developer/:category/:subCategory/:post',
                 templateUrl: function(params){ return "{{ site.baseurl }}/developer/" + params.category + "/" + params.subCategory + "/" + params.post; },
                 controller: 'DocumentationController'

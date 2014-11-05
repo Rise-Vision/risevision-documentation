@@ -99,6 +99,7 @@ userSections: [
     ['user/alerts', 'Alerts'],
 ]
 
+
 # Dates are not included in permalinks
 permalink: none
 
