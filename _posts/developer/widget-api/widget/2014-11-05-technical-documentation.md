@@ -13,19 +13,19 @@ The Bulletin Widget displays a bulletin from Google Drive that was created using
 
 ***
 
-#### [Weather](#{% /developer/widget-api/widget/2014-11-05-weather %})
+#### [Weather](#{% post_url /developer/widget-api/widget/2014-11-05-weather %})
 
 The Weather Widget allows you to pick from one of three pre-defined weather layouts to show the forecast for a particular location.
 
 ***
 
-#### [Web Page](#{% /developer/widget-api/widget/2014-11-05-web-page %})
+#### [Web Page](#{% post_url /developer/widget-api/widget/2014-11-05-web-page %})
 
 The Web Page Widget is used to display other web pages inside of a Presentation.
 
 ***
 
-#### [World Clock](#{% /developer/widget-api/widget/2014-11-05-world-clock %})
+#### [World Clock](#{% post_url /developer/widget-api/widget/2014-11-05-world-clock %})
 
 The World Clock Widget displays the local time, or the time in a specific time zone, in either digital or analog format.
 
