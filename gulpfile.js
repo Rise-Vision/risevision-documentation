@@ -177,16 +177,19 @@ gulp.task("deploy", function () {
 });
 
 /**
+<<<<<<< HEAD
+=======
  * Copy and rename CNAME file depending on the target environment
  */
 gulp.task("build", ['jekyll-build'], function() {
-    /*gulp.src("./cname-config/CNAME-"+env)
+    gulp.src("./cname-config/CNAME-"+env)
     .pipe(rename("CNAME"))
-    .pipe(gulp.dest("./_site"));*/
+    .pipe(gulp.dest("./_site"));
 });
 
 
 /**
+>>>>>>> feature/ux-prototype
  * Run test once and exit
  */
 gulp.task('test', function (done) {
@@ -214,6 +217,16 @@ gulp.task('protractor', ['webdriver_update','browser-sync'], function(cb) {
 });
 
 gulp.task('e2e-test', ['browser-sync','protractor']);
+
+/**
+ * Copy and rename CNAME file depending on the target environment
+ */
+gulp.task("build", ['jekyll-build'], function() {
+    gulp.src("./cname-config/CNAME-"+env)
+    .pipe(rename("CNAME"))
+    .pipe(gulp.dest("./_site"));
+});
+
 
 /**
  * Do a bower clean install

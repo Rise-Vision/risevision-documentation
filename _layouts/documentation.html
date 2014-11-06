@@ -5,9 +5,9 @@
             <i class="fa fa-home"></i> Developer
         </a>
         {% if page.type == 'developer' %}
-            <h1>{('DEVELOPER_DOCS' | translate)}</h1>
+            <h1>{% raw %}  {{'DEVELOPER_DOCS' | translate}} {% endraw %}</h1>
         {% elsif page.type == 'user' %}
-            <h1>{('USER_DOCS' | translate)}</h1>
+            <h1>{% raw %}{{'USER_DOCS' | translate}}{% endraw %}</h1>
         {% endif %}
     </div>
 

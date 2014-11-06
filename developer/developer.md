@@ -59,7 +59,7 @@ You can use Player API to create a custom Player app that can start Viewer (stan
 ###Widget API
 
 
-[to be added]
+[to be added ]
 
 
 ###Store API
