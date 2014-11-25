@@ -34,7 +34,7 @@ gulp.task('bundle-install', function (done) {
     browserSync.notify(messages.bundleInstall);
 
 	  if( platform){
-		    return cp.exec('bundle', ['install'], {stdio: 'inherit'})
+		    return cp.spawn('bundle.bat', ['install'], {stdio: 'inherit'})
 			    .on('close', done);
 	  } else {
 		    return cp.spawn('bundle', ['install'], {stdio: 'inherit'})
@@ -62,7 +62,7 @@ gulp.task('jekyll-build', function (done) {
 	      config = ''
     }
 	  if (platform){
-		    return cp.exec('bundle', ['exec','jekyll', 'build', config, '--trace'], {stdio: 'inherit'})
+		    return cp.spawn('bundle.bat', ['exec','jekyll.bat', 'build', config, '--trace'], {stdio: 'inherit'})
 		        .on('close',done);
 	  }
 	  else {
