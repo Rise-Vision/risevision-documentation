@@ -31,7 +31,7 @@ Adds a new Company.
 
 ***
 
-#### [core.company.update]({{site.hashTag}}{% post_url /developer/core-api/company/2014-10-01-core.company.update %})
+#### [core.company.patch]({{site.hashTag}}{% post_url /developer/core-api/company/2014-10-01-core.company.patch %})
 
 Updates the existing Company.
 
@@ -49,7 +49,7 @@ Deletes the Company.
 
 ***
 
-#### [core.company.delete]({{site.hashTag}}{% post_url /developer/core-api/company/2014-10-01-core.company.regenerateField %})
+#### [core.company.regenerateField]({{site.hashTag}}{% post_url /developer/core-api/company/2014-10-01-core.company.regenerateField %})
 
 Regenerates various Company keys.
 

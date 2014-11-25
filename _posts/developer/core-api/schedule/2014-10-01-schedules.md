@@ -25,7 +25,7 @@ Adds a new Schedule to the given Company.
 
 ***
 
-#### [core.schedule.update]({{site.hashTag}}{% post_url /developer/core-api/schedule/2014-10-01-core.schedule.update %})
+#### [core.schedule.patch]({{site.hashTag}}{% post_url /developer/core-api/schedule/2014-10-01-core.schedule.patch %})
 
 Updates the existing Schedule.
 

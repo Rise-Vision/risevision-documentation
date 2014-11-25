@@ -31,7 +31,7 @@ Adds a new Presentation to the given Company.
 
 ***
 
-#### [core.presentation.update]({{site.hashTag}}{% post_url /developer/core-api/presentation/2014-10-01-core.presentation.update %})
+#### [core.presentation.patch]({{site.hashTag}}{% post_url /developer/core-api/presentation/2014-10-01-core.presentation.patch %})
 
 Updates the existing Presentation.
 
