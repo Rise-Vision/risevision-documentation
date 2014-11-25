@@ -35,6 +35,12 @@ gulp.task('bundle-install', function (done) {
 
 	  if( platform){
 		    return cp.spawn('bundle.bat', ['install'], {stdio: 'inherit'})
+          .stdout.on('data', function(data){
+            console.log(data);
+          })
+          .stderr.on('data', function(data){
+            console.log('stderr: ' + data);
+          })
 			    .on('close', done);
 	  } else {
 		    return cp.spawn('bundle', ['install'], {stdio: 'inherit'})
