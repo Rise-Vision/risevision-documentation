@@ -3,7 +3,7 @@ layout: user-post
 title:  "Google Calendar Widget"
 date:   2014-10-13 10:52:00
 category: user/content
-order: 1
+order: 2
 ---
 
 ##What it does

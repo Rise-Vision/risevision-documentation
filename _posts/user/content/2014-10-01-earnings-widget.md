@@ -3,7 +3,7 @@ layout: user-post
 title:  "Earnings Widget"
 date:   2014-10-13 10:52:00
 category: user/content
-order: 2
+order: 3
 ---
 
 ##What it does
