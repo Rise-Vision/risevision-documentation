@@ -5,7 +5,7 @@
       image="{{site.metaImageUrl}}/{{page.type}}-documentation.png"></page>
 <!-- App Header -->
 <div class="app-header">
-    <div class="app-title">
+    <div class="title-block">
         {% if page.type == 'developer' %}
             <h1>{% raw %}  {{'DEVELOPER_DOCS' | translate}} {% endraw %}</h1>
         {% elsif page.type == 'user' %}
@@ -13,7 +13,7 @@
         {% endif %}
     </div>
 
-    <div class="global-actions no-breadcrumb">
+    <div class="global-actions">
         {% include search.form.html%}
     </div>
 </div>

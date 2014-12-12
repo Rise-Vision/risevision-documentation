@@ -1,14 +1,6 @@
 $brand-primary: #2d60ad;
 
-.app-header {
-  .app-title { width:  40% !important; }
-  .global-actions { width:  60% !important; }
 
-  @media(max-width: 992px) {
-    .app-title { width:  100% !important; }
-    .global-actions { float: none; width: 100% !important; }
-  }
-}
 
 .documentation {
   // padding-left: 15px;
