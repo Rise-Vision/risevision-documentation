@@ -7,7 +7,7 @@ order: 2
 ---
 
 ##Internationalization
-If you would like to see a Rise Vision Widget or Application displayed in a languate other than English, please follow the steps below.
+If you would like to see a Rise Vision Widget or Application displayed in a language other than English, please follow the steps below.
 
 1. Download the EN.PO file from the locales folder in the repository you wish to contribute a translation for. All Rise Vision repos can be found at [https://github.com/Rise-Vision](https://github.com/Rise-Vision).
 
