@@ -33,7 +33,7 @@
     "lunr.js": "0.5.5",
     "uri.js": "1.14.1",
     "angular-local-storage": "0.0.7",
-    "angular": "1.2.27"
+    "angular": ">=1"
   },
   "homepage": "https://github.com/Rise-Vision/risevision-documentation",
   "authors": [
