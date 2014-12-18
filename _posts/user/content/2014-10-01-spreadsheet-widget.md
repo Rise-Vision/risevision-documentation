@@ -12,7 +12,7 @@ Available in `Beta` release. See [here]("") for additional details.
 There are countless ways the Google Spreadsheet Widget can be used for digital signage. Any data you can put into a Google Spreadsheet can be shown on a digital display using the Google Spreadsheet Widget. For example, a restaurant manager can use a Google Spreadsheet to manage a digital Menu Board. As the manager updates prices in the Google Spreadsheet, those changes are updated automatically on the digital Menu Board so customers are always provided the most up to date information.
 
 ##Create a Google Spreadsheet
-The first step is to build your Google Spreadsheet. When your Google Spreadsheet is complete make sure it is published so the Widget can access the data.  Instructions and information on publishing a Google Spreadsheet can be found [here]("https://support.google.com/docs/answer/37579?hl=en"). As well as marking as published, ensure that the visibility is set to “Public” or “Anyone with the Link”.
+The first step is to build your Google Spreadsheet. When your Google Spreadsheet is complete make sure it is published so the Widget can access the data.  Instructions and information on publishing a Google Spreadsheet can be found [here](https://support.google.com/docs/answer/37579?hl=en). As well as marking as published, ensure that the visibility is set to “Public” or “Anyone with the Link”.
 
 ##How to configure it
 To configure this widget, open the properties window for the placeholder containing this widget, and click the widget's Configure link. If this is the only item in the placeholder's playlist, the Configure link is in the Settings area at the bottom of the placeholder window, right below the playlist. If there are multiple items in the playlist, clicking the name of this widget opens an Item window and the Configure link is in the Settings area of that window.
@@ -20,7 +20,7 @@ To configure this widget, open the properties window for the placeholder contain
 Clicking the Configure link opens a Google Spreadsheet Settings window, in which you can configure the following settings:
 
 #####Select Spreadsheet
-To start, you need to choose a spreadsheet that you want to use. The data that gets returned from this spreadsheet is what will be shown in the Presentation. Click on the Google Drive Picker icon and this will launch the modal window to select your spreadsheet directly from your Google Drive (authorization may be requested first). The spreadsheet must be [published to the web]("https://support.google.com/drive/answer/37579?hl=en") in order for the Google Spreadsheet Widget to be able to access it.
+To start, you need to choose a spreadsheet that you want to use. The data that gets returned from this spreadsheet is what will be shown in the Presentation. Click on the Google Drive Picker icon and this will launch the modal window to select your spreadsheet directly from your Google Drive (authorization may be requested first). The spreadsheet must be [published to the web](https://support.google.com/drive/answer/37579?hl=en) in order for the Google Spreadsheet Widget to be able to access it.
 
 Upon selecting a spreadsheet you are presented with several control settings for configuring the use of your spreadsheet.
 
@@ -64,7 +64,7 @@ Control the appearance of your table by changing the following values:
 Set a background color for the whole widget.
 
 #####Layout
-By default the Widget is built to handle a table layout. The [DataTables]("https://datatables.net/") plugin is used by the Widget for a table layout and is for things like setting the column width and visibility, and also for ensuring that the width of the header cells are the same as the width of the data cells, as these exist in separate tables (this is necessary in order for the headers to remain fixed while the data scrolls).
+By default the Widget is built to handle a table layout. The [DataTables](https://datatables.net/) plugin is used by the Widget for a table layout and is for things like setting the column width and visibility, and also for ensuring that the width of the header cells are the same as the width of the data cells, as these exist in separate tables (this is necessary in order for the headers to remain fixed while the data scrolls).
 
 You can choose to specify your own custom layout by deselecting the *Use Default Layout* checkbox and enter in the URL of the location to your custom layout HTML file. More information regarding custom layouts is below. The input field provided for you to enter your URL validates the URL you enter to ensure it is a valid URL. If for some reason you need this disabled because your URL is showing as invalid, you can disable this by deselecting the *Validate URL* checkbox.
 
@@ -111,7 +111,7 @@ The Widget will use the menu information pulled from a Google spreadsheet with t
 
 ![Spreadsheet]({{ site.baseurl }}/assets/images/google-spreadsheet-widget-images/spreadsheet1.png)
 
-First, we need to create a custom HTML layout as per below. The contents of the HTML apart from inside the `<body>` tag are not shown for the sake of brevity, but you can view the entire file [here]("https://github.com/Rise-Vision/widget-google-spreadsheet/blob/feature/custom-layouts/examples/list.md"):
+First, we need to create a custom HTML layout as per below. The contents of the HTML apart from inside the `<body>` tag are not shown for the sake of brevity, but you can view the entire file [here](https://github.com/Rise-Vision/widget-google-spreadsheet/blob/feature/custom-layouts/examples/list.md):
 
 ```
   <div id="scrollContainer">
