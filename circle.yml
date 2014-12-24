@@ -1,3 +1,6 @@
+machine:
+  ruby:
+    version: 2.1.5
 dependencies:
   post:
     - bower install --force-latest
