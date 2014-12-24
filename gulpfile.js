@@ -170,10 +170,10 @@ gulp.task('watch', function () {
 //------------------------- Deployment --------------------------------
 var options = {
             prod: {
-                remoteUrl: "git@github.com:Rise-Vision/rv-doc-prod.git"
+                remoteUrl: "https://github.com/Rise-Vision/rv-doc-prod.git"
             },
             stage: {
-                remoteUrl: "git@github.com:Rise-Vision/rv-doc-stage.git"
+                remoteUrl: "https://github.com/Rise-Vision/rv-doc-stage.git"
             }
         };
 
