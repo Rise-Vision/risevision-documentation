@@ -4,6 +4,8 @@ machine:
 dependencies:
   post:
     - bower install --force-latest
+    - git config --global user.email "jenkins@risevision.com"
+    - git config --global user.name "jenkins-rise"
 deployment:
   automerge:
     branch: /(feature|fix|chore|doc|build).*/
