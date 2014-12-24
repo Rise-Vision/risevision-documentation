@@ -5,7 +5,7 @@
     "main": "gulpfile.js",
     "scripts": {
         "ci-build": "gulp build",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 0"
     },
     "author": "rodrigopavezi <rodrigopavezi@gmail.com>",
     "license": "GNU",
