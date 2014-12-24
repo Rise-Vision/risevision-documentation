@@ -17,7 +17,9 @@ deployment:
     branch: stage
     commands:
           - NODE_ENV=stage npm run ci-build
+          - NODE_ENV=stage npm run ci-deploy
   production:
       branch: master
       commands:
         - NODE_ENV=prod npm run ci-build
+        - NODE_ENV=prod npm run ci-deploy

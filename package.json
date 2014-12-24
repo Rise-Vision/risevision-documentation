@@ -5,6 +5,7 @@
     "main": "gulpfile.js",
     "scripts": {
         "ci-build": "gulp build",
+        "ci-deploy": "gulp deploy --clean",
         "test": "echo \"Error: no test specified\" && exit 0"
     },
     "author": "rodrigopavezi <rodrigopavezi@gmail.com>",
