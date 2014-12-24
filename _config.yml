@@ -36,6 +36,7 @@ exclude:
   - cname-config
   - karma.conf.js
   - tests
+  - vendor
 
 
 # Default categories (in order) to appear in the navigation
