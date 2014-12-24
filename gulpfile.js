@@ -190,7 +190,7 @@ gulp.task("deploy", function () {
         gutil.log('Delete ' + gutil.colors.magenta(repoPath));
         del.sync(repoPath, {force: true});
     }
-    gutil.log('Repository ' + options[env]);
+    gutil.log('Repository ' + options[env]["remoteUrl"]);
 
     return gulp.src("./_site/**/*")
         .pipe(deploy(options[env]));
