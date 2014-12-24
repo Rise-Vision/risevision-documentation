@@ -1,0 +1,12 @@
+dependencies:
+  post:
+    - bower install --force-latest
+deployment:
+  staging:
+    branch: /(feature|fix|chore|doc).*/
+    commands:
+          - NODE_ENV=stage npm run ci-build
+  production:
+      branch: master
+      commands:
+        - NODE_ENV=prod npm run ci-build
