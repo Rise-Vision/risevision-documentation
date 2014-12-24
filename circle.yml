@@ -5,8 +5,13 @@ dependencies:
   post:
     - bower install --force-latest
 deployment:
-  staging:
+  automerge:
     branch: /(feature|fix|chore|doc|build).*/
+    commands:
+      - git checkout stage
+      - git merge $CIRCLE_BRANCH
+  staging:
+    branch: stage
     commands:
           - NODE_ENV=stage npm run ci-build
   production:
