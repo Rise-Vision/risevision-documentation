@@ -12,6 +12,7 @@ deployment:
     commands:
       - git checkout stage
       - git merge $CIRCLE_BRANCH -m "Merged $CIRCLE_BRANCH - commit $CIRCLE_SHA1"
+      - git push origin stage
   staging:
     branch: stage
     commands:
