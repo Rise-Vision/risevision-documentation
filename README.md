@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Rise vision Documentation is an application built with [Jekyll](http://jekyllrb.com/) its plugin and our [Common-header](https://github.com/Rise-Vision/common-header) to provide a space for all rise vision documentation.
+Rise Vision Documentation is an application built with [Jekyll](http://jekyllrb.com/) its plugin and our [Common-header](https://github.com/Rise-Vision/common-header) to provide a space for all rise vision documentation.
 
 Project Name works in conjunction with [Rise Vision](http://www.risevision.com), the [digital signage management application](http://rva.risevision.com/) that runs on [Google Cloud](https://cloud.google.com).
 
