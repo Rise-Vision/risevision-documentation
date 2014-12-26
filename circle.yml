@@ -11,6 +11,7 @@ dependencies:
     - unzip -p chromedriver.zip | sudo tee /usr/local/bin/chromedriver >> /dev/null
     - sudo chmod +x "/usr/local/bin/chromedriver"
   override:
+    - bundle install
     - npm install -g gulp
     - npm install -g protractor
     - npm install
