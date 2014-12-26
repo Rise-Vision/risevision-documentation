@@ -1,4 +1,4 @@
-# Rise Vision Developer Hub
+# Rise Vision Developer Hub [![Circle CI](https://circleci.com/gh/Rise-Vision/risevision-documentation.svg?style=svg)](https://circleci.com/gh/Rise-Vision/risevision-documentation)
 
 ## Introduction
 
