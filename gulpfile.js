@@ -17,9 +17,9 @@ var del         = require('delete');
 var deploy      = require('gulp-gh-pages');
 var argv        = require('minimist')(process.argv.slice(2));
 var rename      = require("gulp-rename");
-var karma       = require('karma').server;
-var gp          = require("gulp-protractor");
 var modRewrite  = require('connect-modrewrite');
+var factory     = require("widget-tester").gulpTaskFactory;
+var runSequence = require("run-sequence");
 
 var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
@@ -205,35 +205,16 @@ gulp.task("build", ['jekyll-build'], function() {
     .pipe(gulp.dest("./_site"));
 });
 
-
-/**
- * Run test once and exit
- */
-gulp.task('test', function (done) {
-    karma.start({
-        configFile: __dirname + '/karma.conf.js',
-        singleRun: true
-    }, done);
+//-------------------------- Test ----------------------------------
+gulp.task("server", ['jekyll-build'], factory.testServer({rootPath: "./_site"}));
+gulp.task("server-close", factory.testServerClose());
+gulp.task("test:webdrive_update", factory.webdriveUpdate());
+gulp.task("test:e2e:core", ["test:webdrive_update"], factory.testE2EAngular({
+    browser: "chrome"
+}));
+gulp.task("test:e2e", function (cb) {
+    runSequence("server", "test:e2e:core", "server-close", cb);
 });
-
-// Downloads the selenium webdriver
-gulp.task('webdriver_update', ['browser-sync'], gp.webdriver_update);
-
-// Setting up the test task
-gulp.task('protractor', ['webdriver_update','browser-sync'], function(cb) {
-    gulp.src(['./tests/e2e/**/*.js']).pipe(gp.protractor({
-        configFile: 'protractor.conf.js'
-    })).on('error', function(e) {
-        browserSync.exit();
-        console.log(e);
-        cb();
-    }).on('end', function() {
-        browserSync.exit();
-        cb();
-    });
-});
-
-gulp.task('e2e-test', ['browser-sync','protractor']);
 
 /**
  * Do a bower clean install
