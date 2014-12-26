@@ -1,32 +1,19 @@
 machine:
   ruby:
     version: 2.1.5
+  node:
+      version: 0.10.32
 dependencies:
-  pre:
-    - curl -L -o google-chrome-stable.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-    - sudo dpkg -i google-chrome-stable.deb
-    - sudo sed -i 's|HERE/chrome\"|HERE/chrome\" --disable-setuid-sandbox|g' /opt/google/chrome/google-chrome
-    - rm google-chrome-stable.deb
-    - curl -L -o chromedriver.zip "https://chromedriver.storage.googleapis.com/2.12/chromedriver_linux64.zip"
-    - unzip -p chromedriver.zip | sudo tee /usr/local/bin/chromedriver >> /dev/null
-    - sudo chmod +x "/usr/local/bin/chromedriver"
-  override:
-    - bundle install
-    - npm install -g gulp
-    - npm install -g protractor
-    - npm install
   post:
     - bower install --force-latest
     - git config --global user.email "jenkins@risevision.com"
     - git config --global user.name "jenkins-rise"
-    - wget http://selenium-release.storage.googleapis.com/2.44/selenium-server-standalone-2.44.0.jar
-    - nohup bash -c "java -jar selenium-server-standalone-2.44.0.jar &"
 deployment:
   automerge:
     branch: /(feature|fix|chore|doc|build).*/
     commands:
       - git checkout stage
-      - git merge $CIRCLE_BRANCH -m "Merged commit $CIRCLE_SHA1 into $CIRCLE_BRANCH"
+      - git merge $CIRCLE_BRANCH -m "Merged commit $CIRCLE_SHA1 into $CIRCLE_BRANCH - "
       - git push origin stage
   staging:
     branch: stage

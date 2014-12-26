@@ -34,9 +34,10 @@ exclude:
   - Gemfile.lock
   - risevision-documentation.iml
   - cname-config
-  - karma.conf.js
-  - tests
+  - test
+  - reports
   - vendor
+  - circle.yml
 
 
 # Default categories (in order) to appear in the navigation
