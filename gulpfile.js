@@ -12,18 +12,17 @@ var browserSync = require('browser-sync');
 var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
 var cp          = require('child_process');
-var bower       = require('bower');
+var bower       = require('gulp-bower');
 var del         = require('delete');
 var deploy      = require('gulp-gh-pages');
 var argv        = require('minimist')(process.argv.slice(2));
 var rename      = require("gulp-rename");
-var karma       = require('karma').server;
-var gp          = require("gulp-protractor");
 var modRewrite  = require('connect-modrewrite');
+var factory     = require("widget-tester").gulpTaskFactory;
+var runSequence = require("run-sequence");
 
 var messages = {
-    jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build',
-    bundleInstall: '<span style="color: grey">Running:</span> $ bundle install'
+    jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
 };
 
 //------------------------- Bundle Install ------------------------------
@@ -31,14 +30,24 @@ var messages = {
  * Install jekyll and its plugins
  */
 gulp.task('bundle-install', function (done) {
-  browserSync.notify(messages.bundleInstall);
-
   if( platform){
     return cp.spawn('bundle.bat', ['install'], {stdio: 'inherit'})
-      .on('close', done);
+        .on('exit', function (code) {
+            if (code) {
+                console.log("BUNDLE INSTALL ERROR:" + code);
+                process.exit(code);
+            }
+            done();
+        });
   } else {
     return cp.spawn('bundle', ['install'], {stdio: 'inherit'})
-      .on('close', done);
+        .on('exit', function (code) {
+            if (code) {
+                console.log("BUNDLE INSTALL ERROR:" + code);
+                process.exit(code);
+            }
+            done();
+        });
   }
 });
 
@@ -63,11 +72,23 @@ gulp.task('jekyll-build', function (done) {
   }
   if (platform){
     return cp.spawn('bundle.bat', ['exec','jekyll.bat', 'build', config, '--trace'], {stdio: 'inherit'})
-      .on('close',done);
+        .on('exit', function (code) {
+            if (code) {
+                console.log("JEKYLL BUILD ERROR:" + code);
+                process.exit(code);
+            }
+            done();
+        });
   }
   else {
     return cp.spawn('bundle', ['exec','jekyll', 'build', config, '--trace'], {stdio: 'inherit'})
-      .on('close',done);
+      .on('exit', function (code) {
+            if (code) {
+                console.log("JEKYLL BUILD ERROR:" + code);
+                process.exit(code);
+            }
+            done();
+      });
   }
 });
 
@@ -121,22 +142,13 @@ gulp.task('sass', function () {
 /**
  * Install bower dependencies
  */
-gulp.task('bower-install', ['bower-clean-cache', 'bower-rm'], function(){
-    return bower.commands.install([], {save: true}, {});
-        /*.on('end', function(installed){
-            cb(); // notify gulp that this task is finished
-        });*/
+gulp.task('bower-install', ['bower-rm'], function(cb){
+    return bower().on('error', function(err) {
+        console.log(err);
+        cb();
+    });
 });
 
-/**
- * Clean bower cache
- */
-gulp.task('bower-clean-cache', function(){
-    return bower.commands.cache.clean([], {}, {});
-        /*.on('end', function(clened){
-            cb(); // notify gulp that this task is finished
-        });*/
-});
 
 /**
  *  Remove all bower dependencies
@@ -158,10 +170,10 @@ gulp.task('watch', function () {
 //------------------------- Deployment --------------------------------
 var options = {
             prod: {
-                remoteUrl: "git@github.com:Rise-Vision/rv-doc-prod.git"
+                remoteUrl: "https://github.com/Rise-Vision/rv-doc-prod.git"
             },
             stage: {
-                remoteUrl: "git@github.com:Rise-Vision/rv-doc-stage.git"
+                remoteUrl: "https://github.com/Rise-Vision/rv-doc-stage.git"
             }
         };
 
@@ -178,6 +190,7 @@ gulp.task("deploy", function () {
         gutil.log('Delete ' + gutil.colors.magenta(repoPath));
         del.sync(repoPath, {force: true});
     }
+    gutil.log('Repository ' + options[env]["remoteUrl"]);
 
     return gulp.src("./_site/**/*")
         .pipe(deploy(options[env]));
@@ -192,40 +205,21 @@ gulp.task("build", ['jekyll-build'], function() {
     .pipe(gulp.dest("./_site"));
 });
 
-
-/**
- * Run test once and exit
- */
-gulp.task('test', function (done) {
-    karma.start({
-        configFile: __dirname + '/karma.conf.js',
-        singleRun: true
-    }, done);
+//-------------------------- Test ----------------------------------
+gulp.task("server", ['jekyll-build'], factory.testServer({rootPath: "./_site"}));
+gulp.task("server-close", factory.testServerClose());
+gulp.task("test:webdrive_update", factory.webdriveUpdate());
+gulp.task("test:e2e:core", ["test:webdrive_update"], factory.testE2EAngular({
+    browser: "chrome"
+}));
+gulp.task("test:e2e", function (cb) {
+    runSequence("server", "test:e2e:core", "server-close", cb);
 });
-
-// Downloads the selenium webdriver
-gulp.task('webdriver_update', ['browser-sync'], gp.webdriver_update);
-
-// Setting up the test task
-gulp.task('protractor', ['webdriver_update','browser-sync'], function(cb) {
-    gulp.src(['./tests/e2e/**/*.js']).pipe(gp.protractor({
-        configFile: 'protractor.conf.js'
-    })).on('error', function(e) {
-        browserSync.exit();
-        console.log(e);
-        cb();
-    }).on('end', function() {
-        browserSync.exit();
-        cb();
-    });
-});
-
-gulp.task('e2e-test', ['browser-sync','protractor']);
 
 /**
  * Do a bower clean install
  */
-gulp.task('bower-clean-install', ['bower-rm', 'bower-clean-cache','bower-install']);
+gulp.task('bower-clean-install', ['bower-rm', 'bower-install']);
 
 /**
  * Default task, running just `gulp` will compile the sass,

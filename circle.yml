@@ -1,0 +1,27 @@
+machine:
+  ruby:
+    version: 2.1.5
+  node:
+      version: 0.10.32
+dependencies:
+  post:
+    - bower install --force-latest
+    - git config --global user.email "jenkins@risevision.com"
+    - git config --global user.name "jenkins-rise"
+deployment:
+  automerge:
+    branch: /(feature|fix|chore|doc|build).*/
+    commands:
+      - git checkout stage
+      - git merge $CIRCLE_BRANCH -m "Merged commit $CIRCLE_SHA1 into $CIRCLE_BRANCH - "
+      - git push origin stage
+  staging:
+    branch: stage
+    commands:
+          - NODE_ENV=stage npm run ci-build
+          - NODE_ENV=stage npm run ci-deploy
+  production:
+      branch: master
+      commands:
+        - NODE_ENV=prod npm run ci-build
+        - NODE_ENV=prod npm run ci-deploy
