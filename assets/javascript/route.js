@@ -8,20 +8,7 @@
 angular.module("risevision.documentation")
     .config (["$stateProvider", "$urlRouterProvider", function ($stateProvider, $urlRouterProvider) {
 
-        $urlRouterProvider.rule(function ($injector, $location) {
-            var path = $location.url();
-
-            // check to see if the path has a trailing slash
-            if ('/' === path[path.length - 1]) {
-                return path.replace(/\/$/, '');
-            }
-
-            if (path.indexOf('/?') > 0) {
-                return path.replace('/?', '?');
-            }
-
-            return false;
-        });
+        $urlRouterProvider.otherwise("/user");
 
         $stateProvider
             .state('developer', {
