@@ -213,3 +213,51 @@ Moves a file or group of files to the trash folder given a company id and string
 Restores a file or group of files from the trash folder to their original path given a company id and strings of file names.
 
 ***
+
+#### [storage.tagdef.put]({{site.hashTag}}{% post_url /developer/storage-api/2015-01-06-storage.tagdef.put %})
+
+**PUT**
+
+**URI:** https://storage-dot-rvaserver2.appspot.com/_ah/api/storage/v0.01/tagdef?companyId={company-id}&name=(name)&type=(type)&values=(values+)
+
+**Sample URI:** https://storage-dot-rvaserver2.appspot.com/_ah/api/storage/v0.01/tagdef?companyId=e599b4e8-c8b9-41d5-7770-b4193c789883&name=TagName&type=Lookup&values=value1&values=value2
+
+Adds or modifies a tag definition with the given accepted values
+
+***
+
+#### [storage.tagdef.get]({{site.hashTag}}{% post_url /developer/storage-api/2015-01-06-storage.tagdef.get %})
+
+**GET**
+
+**URI:** https://storage-dot-rvaserver2.appspot.com/_ah/api/storage/v0.01/tagdef?id={tagdef-id}
+
+**Sample URI:** https://storage-dot-rvaserver2.appspot.com/_ah/api/storage/v0.01/tagdef?id=1234000000000e599b4e8
+
+Returns the tag definition with the given id, if it belongs to a company associated with the current user
+
+***
+
+#### [storage.tagdef.delete]({{site.hashTag}}{% post_url /developer/storage-api/2015-01-06-storage.tagdef.delete %})
+
+**DELETE**
+
+**URI:** https://storage-dot-rvaserver2.appspot.com/_ah/api/storage/v0.01/tagdef?id={tagdef-id}
+
+**Sample URI:** https://storage-dot-rvaserver2.appspot.com/_ah/api/storage/v0.01/tagdef?id=1234000000000e599b4e8
+
+Deletes the tag definition with the given id, if it belongs to a company associated with the current user
+
+***
+
+#### [storage.tagdef.list]({{site.hashTag}}{% post_url /developer/storage-api/2015-01-06-storage.tagdeflist.list %})
+
+**GET**
+
+**URI:** https://storage-dot-rvaserver2.appspot.com/_ah/api/storage/v0.01/tagdeflist?companyId={company-id}&search=(search)&limit=(limit)&sort=(sort)&cursor=(cursor)
+
+**Sample URI:** https://storage-dot-rvaserver2.appspot.com/_ah/api/storage/v0.01/tagdeflist?companyId=e599b4e8-c8b9-41d5-7770-b4193c789883&search=name:TagName&limit=10&sort=name&cursor=F34JNDAAD
+
+Returns the tag definitions matching the search criteria and belonging to the given company id (if associated with the current user)
+
+***
