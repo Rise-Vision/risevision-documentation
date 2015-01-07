@@ -222,7 +222,7 @@ Restores a file or group of files from the trash folder to their original path g
 
 **Sample URI:** https://storage-dot-rvaserver2.appspot.com/_ah/api/storage/v0.01/tagdef?companyId=e599b4e8-c8b9-41d5-7770-b4193c789883&name=TagName&type=Lookup&values=value1&values=value2
 
-Adds or modifies a tag definition with the given accepted values
+Adds or modifies a Tag Definition with the given accepted values
 
 ***
 
@@ -234,7 +234,7 @@ Adds or modifies a tag definition with the given accepted values
 
 **Sample URI:** https://storage-dot-rvaserver2.appspot.com/_ah/api/storage/v0.01/tagdef?id=1234000000000e599b4e8
 
-Returns the tag definition with the given id, if it belongs to a company associated with the current user
+Returns the Tag Definition with the given id, if it belongs to a company associated with the current user
 
 ***
 
@@ -246,7 +246,7 @@ Returns the tag definition with the given id, if it belongs to a company associa
 
 **Sample URI:** https://storage-dot-rvaserver2.appspot.com/_ah/api/storage/v0.01/tagdef?id=1234000000000e599b4e8
 
-Deletes the tag definition with the given id, if it belongs to a company associated with the current user
+Deletes the Tag Definition with the given id, if it belongs to a company associated with the current user
 
 ***
 
@@ -256,8 +256,56 @@ Deletes the tag definition with the given id, if it belongs to a company associa
 
 **URI:** https://storage-dot-rvaserver2.appspot.com/_ah/api/storage/v0.01/tagdeflist?companyId={company-id}&search=(search)&limit=(limit)&sort=(sort)&cursor=(cursor)
 
-**Sample URI:** https://storage-dot-rvaserver2.appspot.com/_ah/api/storage/v0.01/tagdeflist?companyId=e599b4e8-c8b9-41d5-7770-b4193c789883&search=name:TagName&limit=10&sort=name&cursor=F34JNDAAD
+**Sample URI:** https://storage-dot-rvaserver2.appspot.com/_ah/api/storage/v0.01/tagdeflist?companyId=e599b4e8-c8b9-41d5-7770-b4193c789883&search=name:tagname&limit=10&sort=name&cursor=F34JNDAAD
 
-Returns the tag definitions matching the search criteria and belonging to the given company id (if associated with the current user)
+Returns the Tag Definitions matching the search criteria and belonging to the given company id (if associated with the current user)
+
+***
+
+#### [storage.filetag.put]({{site.hashTag}}{% post_url /developer/storage-api/2015-01-06-storage.filetag.put %})
+
+**PUT**
+
+**URI:** https://storage-dot-rvaserver2.appspot.com/_ah/api/storage/v0.01/filetag?companyId={company-id}&name=(name)&type=(type)&objectId=(objectId)&values=(values+)
+
+**Sample URI:** https://storage-dot-rvaserver2.appspot.com/_ah/api/storage/v0.01/filetag?companyId=e599b4e8-c8b9-41d5-7770-b4193c789883&name=TagName&type=Lookup&objectId=image.png&values=value1&values=value2
+
+Adds or modifies a File Tag to an object with the given values
+
+***
+
+#### [storage.filetag.get]({{site.hashTag}}{% post_url /developer/storage-api/2015-01-06-storage.filetag.get %})
+
+**GET**
+
+**URI:** https://storage-dot-rvaserver2.appspot.com/_ah/api/storage/v0.01/filetag?id={filetag-id}
+
+**Sample URI:** https://storage-dot-rvaserver2.appspot.com/_ah/api/storage/v0.01/filetag?id=1234000000000e599b4e8
+
+Returns the File Tag with the given id, if it belongs to a company associated with the current user
+
+***
+
+#### [storage.filetag.delete]({{site.hashTag}}{% post_url /developer/storage-api/2015-01-06-storage.filetag.delete %})
+
+**DELETE**
+
+**URI:** https://storage-dot-rvaserver2.appspot.com/_ah/api/storage/v0.01/filetag?id={filetag-id}
+
+**Sample URI:** https://storage-dot-rvaserver2.appspot.com/_ah/api/storage/v0.01/filetag?id=1234000000000e599b4e8
+
+Deletes the File Tag with the given id, if it belongs to a company associated with the current user
+
+***
+
+#### [storage.filetag.list]({{site.hashTag}}{% post_url /developer/storage-api/2015-01-06-storage.filetaglist.list %})
+
+**GET**
+
+**URI:** https://storage-dot-rvaserver2.appspot.com/_ah/api/storage/v0.01/filetaglist?companyId={company-id}&search=(search)&limit=(limit)&sort=(sort)&cursor=(cursor)
+
+**Sample URI:** https://storage-dot-rvaserver2.appspot.com/_ah/api/storage/v0.01/filetaglist?companyId=e599b4e8-c8b9-41d5-7770-b4193c789883&search=name:tagname&limit=10&sort=name&cursor=F34JNDAAD
+
+Returns the File Tags matching the search criteria and belonging to the given company id (if associated with the current user)
 
 ***
