@@ -8,6 +8,7 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://help.risevision.com" # the base hostname & protocol for your site
 metaImageUrl: "https://s3.amazonaws.com/Store-Products/Meta"
+faviconUrl: "http://s3.amazonaws.com/Rise-Images/favicons"
 twitter_username: risevision
 github_username:  RiseVision
 hashTag: "#"
