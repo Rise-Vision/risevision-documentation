@@ -9,14 +9,6 @@ order: 4
 ##What it does
 The U.S. Earnings Calendar Widget provides a live stream of quarterly earnings announcements for NYSE and NASDAQ listed companies as they happen throughout the trading day. For each announcement, you will see analysts' consensus earnings per share and revenue estimates, as well as the company's actuals and year-over-year trends. Data for this widget is provided by [Analyst Ratings Network (ARN)](http://www.analystratings.net/). 
 
-##How to add it to a presentation
-To put this widget on a display:
-
-1. Add a new placeholder to a presentation.   
-2. In the placeholder's Properties window, click the Add link and select Content to open a new window showing the Rise Vision store.  
-3. Click the widget named U.S. Earnings Calendar. This takes you to the product’s description and pricing information.  
-4. Click the Add button to add it to your playlist.  This closes the store window and returns you to the Placeholder window, where U.S. Earnings Calendar now appears in the placeholder's playlist.
-
 ##How to configure it
 To configure this widget, click the Configure link.  If this is the only item in the placeholder's playlist, the Configure link is in the Settings area at the bottom of the Placeholder window, right below the playlist. If there are multiple items in the playlist, clicking the name of this widget opens an Item window and the Configure link is in the Settings area of that window.
 

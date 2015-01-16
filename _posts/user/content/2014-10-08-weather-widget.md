@@ -9,13 +9,6 @@ order: 8
 ##What it does
 The Weather Widget puts images and text describing the current weather conditions and/or the 3-day weather forecast onto your display, for the address or geographical location that you specify in the settings. 
 
-##How to add it to a presentation
-To put this widget on a display:
-
-1. In the placeholder's Properties window, click the Add link and select Content to open the Rise Vision store.  
-2. Click the widget named Weather. This takes you to the product’s description and pricing information.  
-3. Click the Add button to add it to your playlist.  This closes the store window and returns you to the Placeholder window, where Weather Widget now appears in the placeholder's playlist.
-
 ##How to configure it
 To configure this widget, click the Configure link.  If this is the only item in the placeholder's playlist, the Configure link is in the Settings area at the bottom of the Placeholder window, right below the playlist. If there are multiple items in the playlist, clicking the name of this widget opens an Item window and the Configure link is in the Settings area of that window.
 

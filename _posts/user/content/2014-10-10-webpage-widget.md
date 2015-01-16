@@ -3,19 +3,12 @@ layout: user-post
 title:  "Web Page Widget"
 date:   2014-12-01 10:52:00
 category: user/content
-order: 9
+order: 10
 ---
 
 ##What it does
 The Web Page Widget is another open source project that provides you with the ability to show a web page within your Presentation. To get started, add the Web Page Widget to your Presentation. Once added, open the Widget Settings and enter the URL of the web page to show in the Presentation. Further customization can be made if necessary, but the URL is the only required field. Once you’ve configured the Widget Settings, publish the Presentation for the web page to appear on your Displays!
  
-##How to add it to a presentation
-To put this widget on a display:
-
-1. In the placeholder's Properties window, click the Add link and select Content to open the Rise Vision store.  
-2. Click the widget named Weather. This takes you to the product’s description and pricing information.  
-3. Click the Add button to add it to your playlist.  This closes the store window and returns you to the Placeholder window, where Weather Widget now appears in the placeholder's playlist.
-
 ##How to configure it
 To configure this widget, click the Configure link.  If this is the only item in the placeholder's playlist, the Configure link is in the Settings area at the bottom of the Placeholder window, right below the playlist. If there are multiple items in the playlist, clicking the name of this widget opens an Item window and the Configure link is in the Settings area of that window.
 

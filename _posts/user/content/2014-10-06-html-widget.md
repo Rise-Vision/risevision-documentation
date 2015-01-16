@@ -1,9 +1,9 @@
 ---
 layout: user-post
 title:  "HTML Widget"
-date:   2015-01-13 20:00:00
+date:   2014-10-13 10:52:00
 category: user/content
-order: 10
+order: 6
 ---
 
 ##What it does
@@ -20,14 +20,6 @@ This widget allows you to embed many types of HTML content into your presentatio
 - images and slideshows from Flickr, Tumblr and other photo and art sites
 - buttons, widgets or entire boards from Pinterest
 - and any other type of web content for which an embed code can be obtained.
-
-##How to add it to a presentation
-To put this widget on a display:
-
-1. Add a new placeholder to a presentation.   
-2. In the placeholder's Properties window, click the Add link and select Content to open a new window showing the Rise Vision store.
-3. Find and click the widget named "HTML". This takes you to the widget’s description page.
-4. Click the green "Add +" button to add it to your playlist. This closes the store window and returns you to the Placeholder window, where HTML Widget now appears in the placeholder's playlist.
 
 ##How to configure it
 To configure this widget to show the desired HTML content, click its Configure link (in the placeholder window). If this is the only item in the placeholder's playlist, the Configure link is in the Settings area at the bottom of the placeholder window, right below the playlist. If there are multiple items in the playlist, clicking the name of this widget opens an Item window and the Configure link is in the Settings area of that window.
