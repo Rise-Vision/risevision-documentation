@@ -64,37 +64,22 @@ _ _ _
 The easiest way to call the API is to use the JQuery Ajax function. This Javascript code sample will call the Authorization API, interpret the result, and set up a timer for refreshing the APIs status:
 
 ```
-var url = "https://store-dot-rvaserver2.appspot.com/v1/widget/auth?id=" + displayId + "&pc=" + productCode;
-var HOUR_IN_MILLIS = 60 * 60 * 1000;
+var url = "https://store-dot-rvaserver2.appspot.com/v1/company/" + companyId + "/product/status?pc=" + productCode;
 
 $.ajax({
-  dataType: "json",
-  url: url,
-  success: function(data, textStatus) {
-    if (data && data.authorized) {
-      // authorized
-      
-      // check again for authorization one hour before it expires
-      var milliSeconds = new Date(data.expiry).getTime() - new Date().getTime() - HOUR_IN_MILLIS;
-      setTimeout(this.callApi, milliSeconds);
-    }
-    else if (data && !data.authorized) {
-      // not authorized
-
-      // check authoriztation every hour if failed
-      setTimeout(this.callApi, HOUR_IN_MILLIS);
-    }
-    else {
-      // API failed, try again in an hour
-      setTimeout(this.callApi, HOUR_IN_MILLIS);
-    }
-  },
-  error: function() {
-    // authorization failed
-    
-    // check authoriztation every hour if failed
-    setTimeout(this.callApi, HOUR_IN_MILLIS);
-  }
+dataType: "json",
+url: url,
+success: function(data, textStatus) {
+if (data && data[0]) {
+// API was successful
+// Product status is available via data[0].status
+else {
+// API failed, verify the request
+}
+},
+error: function() {
+// Server error
+}
 };
 ```
 
