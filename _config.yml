@@ -69,7 +69,10 @@ developerSections: [
       ['developer/player-api/player', 'Player'],
       ['developer/player-api/viewer', 'Viewer']
     ]],
-    ['developer/store-api', 'Store API'],
+    ['developer/store-api', 'Store API',[
+      ['developer/store-api/store-auth', 'Store Authorization'],
+      ['developer/store-api/subscription-status', 'Subscription Status']
+    ]],
     ['developer/storage-api', 'Storage API'],
     ['developer/presentations', 'Presentations', [
       ['developer/presentations/multi-page', 'Multi-Page Presentations'],
@@ -91,6 +94,9 @@ userSections: [
       ['user/player/chrome-app','Chrome App Player']
     ]],
     ['user/users', 'Users'],
+    ['user/store', 'Rise Vision Store',[
+      ['user/store/subscription','Subscription Management']
+    ]],
     ['user/storage', 'Storage'],
     ['user/alerts', 'Alerts'],
 ]
