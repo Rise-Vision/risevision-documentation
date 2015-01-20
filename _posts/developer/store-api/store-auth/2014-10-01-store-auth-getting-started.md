@@ -14,9 +14,9 @@ Before your products can be listed in the Rise Vision Store you will need to com
 _ _ _
 
 ####Obtain a Product Code
-If you will be selling a product that requires authorization from the Rise Vision Store, you will need to obtain a Product Code. The Product Code is an ID with your product when you register it in the Store. 
+If you will be selling a product that requires authorization from the Rise Vision Store, you will need to obtain a Product Code. A Product Code is a unique ID that is associated with your product when you register it in the Store. 
 
-A Product Code required by the API to determine which if a product should be authorized by Display (or Company). The API will throw an error if no Product Code or an incorrect Product Code are added to the request.
+A Product Code is required to use the Store Authorization API.
 
 To request a Product Code for your Application or Widget please complete the form here, http://www.risevision.com/store-api-request-form/.
 
