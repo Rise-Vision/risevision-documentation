@@ -9,11 +9,15 @@ order: 4
 The Store authorization process has been implemented in one of our common libraries:
 https://github.com/Rise-Vision/widget-common/
 
-To access it, add the following files from the dist folder to your HTML:
+To access it, add the following Javascript files from the dist folder to your HTML:
 
 *dist/config.js*
 
 *dist/store-auth.js*
+
+To correctly show the widget overlay, copy or add the CSS file to your HTML as well:
+
+*dist/css/store-auth.css*
 
 **Authorization starts by initializing the object:**
 
