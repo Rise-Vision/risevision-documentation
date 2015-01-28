@@ -94,9 +94,6 @@ userSections: [
       ['user/player/chrome-app','Chrome App Player']
     ]],
     ['user/users', 'Users'],
-    ['user/store', 'Rise Vision Store',[
-      ['user/store/subscription','Subscription Management']
-    ]],
     ['user/storage', 'Storage'],
     ['user/alerts', 'Alerts'],
 ]
