@@ -97,7 +97,9 @@ userSections: [
     ['user/store', 'Rise Vision Store',[
       ['user/store/subscription','Subscription Management']
     ]],
-    ['user/storage', 'Storage'],
+    ['user/storage', 'Storage',[
+      ['user/storage/tagging','Tagging']
+    ]],
     ['user/alerts', 'Alerts'],
 ]
 
