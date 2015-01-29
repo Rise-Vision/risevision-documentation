@@ -94,7 +94,9 @@ userSections: [
       ['user/player/chrome-app','Chrome App Player']
     ]],
     ['user/users', 'Users'],
-    ['user/storage', 'Storage'],
+    ['user/storage', 'Storage',[
+      ['user/storage/tagging','Tagging']
+    ]],
     ['user/alerts', 'Alerts'],
 ]
 
