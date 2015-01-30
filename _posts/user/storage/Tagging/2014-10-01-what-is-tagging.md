@@ -10,8 +10,6 @@ order: 1
 
 Tagging is currently in beta and is being made available as an early preview of new features. All features may not perform as described. Please report any issues you encounter in the [Community](http://community.risevision.com).
 
-Delivery of tagged files, from Rise Storage, to a Display, will be priced at $2 per Display, per Month when the Display Tagging and delivery functionality is cmoplete. The use of Tags within Rise Storage and the retrival of tagged files, without Display matching, will be included with a Storage Subscription. 
-
 If you are a 3rd party developer looking to create a Widget or Application that uses Tagging please take a look at the [Rise Vision Storage API](http://help.risevision.com/#/developer/storage-api/storage-api)
 
 For updates regarding the Tagging feature please follow our blog [here](http://www.risevision.com/blog/) or subscribe to the Product Updates section of our Community [here](https://community.risevision.com/rise_vision_inc/categories/rise_vision_inc_product_updates).
