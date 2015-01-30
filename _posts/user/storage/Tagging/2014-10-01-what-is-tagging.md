@@ -10,15 +10,14 @@ order: 1
 
 Tagging is currently in beta and is being made available as an early preview of new features. All features may not perform as described. Please report any issues you encounter in the [Community](http://community.risevision.com).
 
+Delivery of tagged files, from Rise Storage, to a Display, will be priced at $2 per Display, per Month when the Display Tagging and delivery functionality is cmoplete. The use of Tags within Rise Storage and the retrival of tagged files, without Display matching, will be included with a Storage Subscription. 
+
 If you are a 3rd party developer looking to create a Widget or Application that uses Tagging please take a look at the [Rise Vision Storage API](http://help.risevision.com/#/developer/storage-api/storage-api)
 
 For updates regarding the Tagging feature please follow our blog [here](http://www.risevision.com/blog/) or subscribe to the Product Updates section of our Community [here](https://community.risevision.com/rise_vision_inc/categories/rise_vision_inc_product_updates).
 
 
 * * *
-
-
-Tagging allows you to categorize files in Rise Storage and then distribute those files based upon their Tags to matching Displays, Presentations and Widgets. You can further use Timeline Tags to specify when the files should be shown on their target Displays and also attach metadata to the files with Freeform Tags. Best example of a Freeform Tag is to use it for captions on Images that you upload and you can show the caption with the Image in your Presentation.
 
 ###Types of Tags
 There are three types of Tags that can be created; a Lookup Tag, Freeform Tag and Timeline Tag.
