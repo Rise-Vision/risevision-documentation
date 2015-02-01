@@ -112,7 +112,37 @@ What you expected to happen.
 What actually happened. (screenshots / video captures always help)
 
 ## Contributing
-All contributions are greatly appreciated and welcome! If you would first like to sound out your contribution ideas please post your thoughts to our [community](http://community.risevision.com), otherwise submit a pull request and we will do our best to incorporate it
+All contributions are greatly appreciated and welcome! If you would first like to sound out your contribution ideas please post your thoughts to our [community](http://community.risevision.com), otherwise submit a pull request and we will do our best to incorporate it.
+
+Submitting a pull request begins with creating a branch off of master and should be named something relevant to the changes being made. For example, edits to this README could be called doc/readme-changes.
+```bash
+git branch doc/readme-changes
+```
+Remember to switch to the newly created branch before making any changes.
+```bash
+git checkout doc/readme-changes
+```
+Once changes have been made with your preferred markdown editor and saved, tell git to add the file(s) to your local staging area.
+```bash
+git add README.md
+```
+The current status can be checked at any point during the above steps with the following command:
+```bash
+git status
+```
+Be sure to set up your contact information if you haven't already:
+```bash
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+```
+To commit your changes in preparation for submitting the pull request to github, issue the commit command and be sure to include a message that describes the changes you've made:
+```bash
+git commit -m "updated readme to expand the contributing section"
+```
+Finally, you're ready to submit your changes:
+```bash
+git push origin doc/readme-changes
+```
 
 ### Languages
 
