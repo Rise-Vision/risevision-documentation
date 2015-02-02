@@ -6,8 +6,6 @@ category: user/content
 order: 9
 ---
 
-**Disclaimer:** Custom Layouts features is is only available in `Beta` release. See [here](https://community.risevision.com/rise_vision_inc/topics/google-spreadsheet-widget-new-beta-version) for additional details.
-
 ##What it does
 There are countless ways the Google Spreadsheet Widget can be used for digital signage. Any data you can put into a Google Spreadsheet can be shown on a digital display using the Google Spreadsheet Widget. For example, a restaurant manager can use a Google Spreadsheet to manage a digital Menu Board. As the manager updates prices in the Google Spreadsheet, those changes are updated automatically on the digital Menu Board so customers are always provided the most up to date information.
 
@@ -63,7 +61,7 @@ Control the appearance of your table by changing the following values:
 #####Background
 Set a background color for the whole widget.
 
-#####Layout (Beta Version)
+#####Layout
 By default the Widget is built to handle a table layout. The [DataTables](https://datatables.net/) plugin is used by the Widget for a table layout and is for things like setting the column width and visibility, and also for ensuring that the width of the header cells are the same as the width of the data cells, as these exist in separate tables (this is necessary in order for the headers to remain fixed while the data scrolls).
 
 You can choose to specify your own custom layout by deselecting the *Use Default Layout* checkbox and enter in the URL of the location to your custom layout HTML file. More information regarding custom layouts is below. The input field provided for you to enter your URL validates the URL you enter to ensure it is a valid URL. If for some reason you need this disabled because your URL is showing as invalid, you can disable this by deselecting the *Validate URL* checkbox.
@@ -73,7 +71,7 @@ You can choose to specify your own custom layout by deselecting the *Use Default
 2. Click the grey Save button at the bottom of the Placeholder window.
 3. Click the Save (floppy disk) icon in the top right area of the presentation page.
 
-###Custom Layouts (Beta Version)
+###Custom Layouts
 With a custom layout, in addition to showing standard text, it is possible to specify URL data to display an image or a QR Code. Alternatively, a layout could be created that shows columns in a different order than that of the spreadsheet, or that shows some, but not all, of the columns. The layout could even be list-based and not use an HTML table at all.
 
 To create a custom layout, create an HTML file and add the necessary CSS and HTML. To ensure that the appropriate HTML elements function as expected, use the following naming convention:
