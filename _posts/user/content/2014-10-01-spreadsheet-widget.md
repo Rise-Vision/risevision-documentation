@@ -6,8 +6,6 @@ category: user/content
 order: 9
 ---
 
-**Disclaimer:** Custom Layouts features is is only available in `Beta` release. See [here](https://community.risevision.com/rise_vision_inc/topics/google-spreadsheet-widget-new-beta-version) for additional details.
-
 ##What it does
 There are countless ways the Google Spreadsheet Widget can be used for digital signage. Any data you can put into a Google Spreadsheet can be shown on a digital display using the Google Spreadsheet Widget. For example, a restaurant manager can use a Google Spreadsheet to manage a digital Menu Board. As the manager updates prices in the Google Spreadsheet, those changes are updated automatically on the digital Menu Board so customers are always provided the most up to date information.
 
