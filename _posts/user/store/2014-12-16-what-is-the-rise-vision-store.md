@@ -16,6 +16,6 @@ The Rise Vision Store is the area of the platform where you can get and/or purch
 - **Services** such as Content Design and Priority Support.
 - **Training** such as personalized webinars to educate your users about how the platform works.
 
-The Rise Vision Store can be accessed in a number of ways. The quickest way is to click the Store link in the menu at the top of any Rise Vision page. You can also access the Store by adding new content (widgets) to a presentation (See [Add a Widget to your Presentation](http://help.risevision.com/#/user/content/add-a-widget-to-a-presentation)). 
+The Rise Vision Store can be accessed in a number of ways. The quickest way is to navigate to [store.risevision.com](https://store.risevision.com). You can also access the Store by adding new content (widgets) to a presentation (See [Add a Widget to your Presentation](http://help.risevision.com/#/user/content/add-a-widget-to-a-presentation)). 
 
 
