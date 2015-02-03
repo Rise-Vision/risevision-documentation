@@ -5,7 +5,7 @@ date:   2015-01-08 11:00:00
 category: user/store
 order: 2
 ---
-##How to purchase an item from the Store
+###How to purchase an item from the Store
 To purchase an item from the Rise Vision Store, navigate to the page of the desired product or service, click its Add to Cart button, and then go to your shopping cart page to complete your purchase.
 
 To navigate to an item:
