@@ -5,7 +5,7 @@ date:   2015-01-08 13:00:00
 category: user/store
 order: 5
 ---
-##How to purchase for a sub-company
+###How to purchase for a sub-company
 In addition to purchasing items for your own company from the Rise Vision Store, you can also purchase items for any one of your sub-companies. To do so, simply switch to the desired sub-company in the Store area of the platform before placing your order.
 
 To switch to a sub-company in the Store area:
