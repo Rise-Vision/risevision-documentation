@@ -3,7 +3,7 @@ layout: user-post
 title:  "How to View Your Active Subscriptions"
 date:   2015-01-08 18:00:00
 category: user/store
-order: 4
+order: 3
 ---
 ##How to view your active subscriptions
 Information about your company's active subscriptions is shown in the Account area of the Rise Vision Store.
