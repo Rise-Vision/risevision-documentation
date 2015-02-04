@@ -12,5 +12,5 @@ To permanently remove a file or folder from Storage:
 2. A pop-up window will appear asking you to “Please confirm PERMANENT deletion of: (file or folder name)”
 3. Click the Delete button to confirm deletion (or the Cancel button if you change your mind and don’t want to delete it).
 
-Deleting a file removes it completely from Storage, and also removes it from any presentations into which it had previously been placed.
+Deleting an item moves it to the Trash folder, and removes it from any presentations into which it had previously been placed.
 
