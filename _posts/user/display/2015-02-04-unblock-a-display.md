@@ -18,5 +18,5 @@ When a Display is blocked, a message will show on screen indicating that the Dis
 ###What to do if a Display becomes blocked:
 It is not possible to unblock a Display once it has become blocked. When a block expires in 3 hours or less, the Display will resume playing content, but will get blocked again if the Display attempts to request data more often than expected. If your Display becomes blocked, we recommend the following actions:
 
-1. Verify the Display has the appropriate firewall and proxy settings. You can find more about this [here](/index.html#/user/player/network-requirements).
+1. Verify the Display has the appropriate firewall and proxy settings. You can find more about this [here](/#/user/player/network-requirements).
 2. Ensure that a refresh meta tag is not included in your Presentation HTML, as this will result in a message showing on top of your Presentation stating “Multiple Display Instances found in this Browser session” every time the refresh action occurs, and can lead to the Display being blocked.
