@@ -250,7 +250,7 @@ Deletes the Tag Definition with the given id, if it belongs to a company associa
 
 ***
 
-#### [storage.tagdef.list]({{site.hashTag}}{% post_url /developer/storage-api/2015-01-06-storage.tagdeflist.list %})
+#### [storage.tagdef.list]({{site.hashTag}}{% post_url /developer/storage-api/2015-01-06-storage.tagdef.list %})
 
 **GET**
 
@@ -298,7 +298,7 @@ Deletes the File Tag with the given id, if it belongs to a company associated wi
 
 ***
 
-#### [storage.filetag.list]({{site.hashTag}}{% post_url /developer/storage-api/2015-01-06-storage.filetaglist.list %})
+#### [storage.filetag.list]({{site.hashTag}}{% post_url /developer/storage-api/2015-01-06-storage.filetag.list %})
 
 **GET**
 
