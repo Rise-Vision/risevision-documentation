@@ -309,3 +309,15 @@ Deletes the File Tag with the given id, if it belongs to a company associated wi
 Returns the File Tags matching the search criteria and belonging to the given company id (if associated with the current user)
 
 ***
+
+#### [storage.files.listbytags]({{site.hashTag}}{% post_url /developer/storage-api/2015-01-15-storage.files.listbytags %})
+
+**GET**
+
+**URI:** https://storage-dot-rvaserver2.appspot.com/_ah/api/storage/v0.01/filesbytag?companyId={company-id}&tags=(tags)&returnTags=(returnTags)
+
+**Sample URI:** https://storage-dot-rvaserver2.appspot.com/_ah/api/storage/v0.01/filesbytag?companyId=e599b4e8-c8b9-41d5-7770-b4193c789883&tags=tag1:value1&tags=tag2:value4&returnTags=false
+
+Returns the files matching the criteria provided as tagname:value pairs and belonging to the given company id (if associated with the current user). If returnTags is true, it also returns the associated tags for each file matching the given criteria.
+
+***
