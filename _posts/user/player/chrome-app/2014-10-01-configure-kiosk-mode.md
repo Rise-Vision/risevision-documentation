@@ -1,6 +1,6 @@
 ---
 layout: user-post
-title:  "Configure Kiosk Mode"
+title:  "Chrome Player for Chrome OS"
 date:   2014-10-13 10:52:00
 category: user/player/chrome-app
 order: 1
