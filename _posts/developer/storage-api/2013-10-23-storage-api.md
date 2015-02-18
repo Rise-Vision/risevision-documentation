@@ -262,62 +262,74 @@ Returns the Tag Definitions matching the search criteria and belonging to the gi
 
 ***
 
-#### [storage.filetag.put]({{site.hashTag}}{% post_url /developer/storage-api/2015-01-06-storage.filetag.put %})
+#### [storage.filetags.put]({{site.hashTag}}{% post_url /developer/storage-api/2015-01-06-storage.filetags.put %})
 
 **PUT**
 
-**URI:** https://storage-dot-rvaserver2.appspot.com/_ah/api/storage/v0.01/filetag?companyId={company-id}&name=(name)&type=(type)&objectId=(objectId)&values=(values+)
+**URI:** https://storage-dot-rvaserver2.appspot.com/_ah/api/storage/v0.01/filetags
 
-**Sample URI:** https://storage-dot-rvaserver2.appspot.com/_ah/api/storage/v0.01/filetag?companyId=e599b4e8-c8b9-41d5-7770-b4193c789883&name=TagName&type=Lookup&objectId=image.png&values=value1&values=value2
+**Sample URI:**
 
-Adds or modifies a File Tag to an object with the given values
+POST https://storage-dot-rvaserver2.appspot.com/_ah/api/storage/v0.01/filetags
+
+```javascript
+{
+ "companyId": "cf7c595e-021f-4a39-8583-1b32e4de6a47",
+ "objectId": "test_file.jpg",
+ "tags": [
+  {
+   "name": "brand",
+   "type": "LOOKUP",
+   "value": "levis"
+  },
+  {
+   "name": "address",
+   "type": "FREEFORM",
+   "value": "my address"
+  }
+ ]
+}
+```
+
+Creates or updates a storage object with the given tags in companyId, if it is associated with the current user
 
 ***
 
-#### [storage.filetag.get]({{site.hashTag}}{% post_url /developer/storage-api/2015-01-06-storage.filetag.get %})
+#### [storage.filetags.get]({{site.hashTag}}{% post_url /developer/storage-api/2015-01-06-storage.filetags.get %})
 
 **GET**
 
-**URI:** https://storage-dot-rvaserver2.appspot.com/_ah/api/storage/v0.01/filetag?id={filetag-id}
+**URI:** https://storage-dot-rvaserver2.appspot.com/_ah/api/storage/v0.01/filetags?id={filetag-id}
 
-**Sample URI:** https://storage-dot-rvaserver2.appspot.com/_ah/api/storage/v0.01/filetag?id=1234000000000e599b4e8
+**Sample URI:** https://storage-dot-rvaserver2.appspot.com/_ah/api/storage/v0.01/filetags?id=cf7c595e-021f-4a39-8583-1b32e4de6a47test_file.jpg
 
 Returns the File Tag with the given id, if it belongs to a company associated with the current user
 
 ***
 
-#### [storage.filetag.delete]({{site.hashTag}}{% post_url /developer/storage-api/2015-01-06-storage.filetag.delete %})
-
-**DELETE**
-
-**URI:** https://storage-dot-rvaserver2.appspot.com/_ah/api/storage/v0.01/filetag?id={filetag-id}
-
-**Sample URI:** https://storage-dot-rvaserver2.appspot.com/_ah/api/storage/v0.01/filetag?id=1234000000000e599b4e8
-
-Deletes the File Tag with the given id, if it belongs to a company associated with the current user
-
-***
-
-#### [storage.filetag.list]({{site.hashTag}}{% post_url /developer/storage-api/2015-01-06-storage.filetag.list %})
-
-**GET**
-
-**URI:** https://storage-dot-rvaserver2.appspot.com/_ah/api/storage/v0.01/filetaglist?companyId={company-id}&search=(search)&limit=(limit)&sort=(sort)&cursor=(cursor)
-
-**Sample URI:** https://storage-dot-rvaserver2.appspot.com/_ah/api/storage/v0.01/filetaglist?companyId=e599b4e8-c8b9-41d5-7770-b4193c789883&search=name:tagname&limit=10&sort=name&cursor=F34JNDAAD
-
-Returns the File Tags matching the search criteria and belonging to the given company id (if associated with the current user)
-
-***
-
 #### [storage.files.listbytags]({{site.hashTag}}{% post_url /developer/storage-api/2015-01-15-storage.files.listbytags %})
 
-**GET**
+**POST**
 
-**URI:** https://storage-dot-rvaserver2.appspot.com/_ah/api/storage/v0.01/filesbytag?companyId={company-id}&tags=(tags)&returnTags=(returnTags)
+**URI:** http://localhost:8888/_ah/api/storage/v0.01/storageobjectbytag
 
-**Sample URI:** https://storage-dot-rvaserver2.appspot.com/_ah/api/storage/v0.01/filesbytag?companyId=e599b4e8-c8b9-41d5-7770-b4193c789883&tags=tag1:value1&tags=tag2:value4&returnTags=false
+**Sample:**
 
-Returns the files matching the criteria provided as tagname:value pairs and belonging to the given company id (if associated with the current user). If returnTags is true, it also returns the associated tags for each file matching the given criteria.
+POST http://localhost:8888/_ah/api/storage/v0.01/storageobjectbytag
+
+```javascript
+{
+ "companyId": "cf7c595e-021f-4a39-8583-1b32e4de6a47",
+ "tags": [
+  {
+   "name": "brand",
+   "type": "LOOKUP",
+   "value": "levis"
+  }
+ ]
+}
+```
+
+Returns the files matching the criteria provided as { name: "", type: "", value: "" } objects and belonging to the given company id (if associated with the current user). 
 
 ***
