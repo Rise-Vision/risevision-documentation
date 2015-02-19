@@ -3,7 +3,7 @@ layout: user-post
 title:  "Image Widget"
 date:   2014-12-01 10:52:00
 category: user/content
-order: 10
+order: 8
 ---
 
 ##What it does

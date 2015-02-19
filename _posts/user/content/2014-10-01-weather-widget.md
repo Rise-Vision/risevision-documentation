@@ -3,7 +3,7 @@ layout: user-post
 title:  "Weather Widget"
 date:   2014-12-01 10:52:00
 category: user/content
-order: 8
+order: 12
 ---
 
 ##What it does
