@@ -3,7 +3,7 @@ layout: user-post
 title:  "Google Spreadsheet Widget"
 date:   2014-10-13 10:52:00
 category: user/content
-order: 10
+order: 7
 ---
 
 ##What it does

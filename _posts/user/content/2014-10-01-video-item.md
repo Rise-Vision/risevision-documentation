@@ -1,6 +1,6 @@
 ---
 layout: user-post
-title:  "Video"
+title:  "Video Item"
 date:   2014-10-13 10:52:00
 category: user/content
 order: 11
