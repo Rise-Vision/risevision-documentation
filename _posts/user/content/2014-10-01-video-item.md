@@ -3,8 +3,12 @@ layout: user-post
 title:  "Video"
 date:   2014-10-13 10:52:00
 category: user/content
-order: 10
+order: 11
 ---
+
+```
+Please note that this Widget is being deprecated and will not be accessible after March 16, 2015. Please migrate to the HTML5 Video Widget.
+```
 
 ##What it does
 The Video item allows you to add video directly into your Presentation. This can be a video from Storage, your server or a 3rd party server.
