@@ -1,10 +1,9 @@
 ---
 layout: user-post
-title:  "What is the Rise Vision Store?"
+title:  "What is the Store?"
 date:   2014-12-16 10:52:00
 category: user/store
-parent-order: 1
-order: 1
+order: 2
 ---
 
 The Rise Vision Store is the area of the platform where you can get and/or purchase the following types of items for your displays:
@@ -16,7 +15,7 @@ The Rise Vision Store is the area of the platform where you can get and/or purch
 - **Services** such as Content Design and Priority Support.
 - **Training** such as personalized webinars to educate your users about how the platform works.
 
-The Rise Vision Store can be accessed in a number of ways. The quickest way is to click the Store link in the menu at the top of any Rise Vision page. You can also access the Store by adding new content (widgets) to a presentation (See [Add a Widget to your Presentation](http://help.risevision.com/#/user/content/add-a-widget-to-a-presentation)). 
+The Rise Vision Store can be accessed in a number of ways. The quickest way is to click the Store link in the menu at the top of any Rise Vision page. You can also access the Store by adding new content (widgets) to a presentation (See [Add a Widget to your Presentation](http://help.risevision.com/#/user/content/add-a-widget-to-a-presentation)).
 
 
 ###What is the Account page?
@@ -28,7 +27,7 @@ To access your Account page:
 
 ####Account Page Sections##
 ####Orders####
-This area shows a list of purchases made by your company for products and/or services that must be fulfilled by the vendor.  For example, a media player that must be shipped to you, or a service (like training or content design) that must be provided to you, by the seller. 
+This area shows a list of purchases made by your company for products and/or services that must be fulfilled by the vendor.  For example, a media player that must be shipped to you, or a service (like training or content design) that must be provided to you, by the seller.
 
 Details listed for each order include the date, order ID, product name, quantity ordered, total cost and the current status of the order.  The status field will either show Open for those orders still pending fulfillment, or Closed for orders that have already been fulfilled.
 

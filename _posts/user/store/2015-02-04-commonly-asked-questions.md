@@ -1,15 +1,9 @@
 ---
-
 layout: user-post
-
-title:  "Commonly Asked Questions"
-
+title:  "Store Commonly Asked Questions"
 date:   2015-02-04 21:37:00
-
 category: user/store
-
-order: 5
-
+order: 1
 ---
 
 ##How can I talk to someone at Rise?
