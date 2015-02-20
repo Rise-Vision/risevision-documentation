@@ -1,6 +1,6 @@
 ---
 layout: user-post
-title:  "Video Widget"
+title:  "HTML5 Video Widget"
 date:   2014-12-01 10:52:00
 category: user/content
 order: 8
