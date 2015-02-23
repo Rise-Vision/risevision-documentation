@@ -3,7 +3,7 @@ layout: user-post
 title:  "How to Purchase an Item"
 date:   2015-01-08 11:00:00
 category: user/store
-order: 2
+order: 3
 ---
 ###How to purchase an item from the Store
 To purchase an item from the Rise Vision Store, navigate to the page of the desired product or service, click its Add to Cart button, and then go to your shopping cart page to complete your purchase.
@@ -11,13 +11,13 @@ To purchase an item from the Rise Vision Store, navigate to the page of the desi
 #####To navigate to an item:
 
 1. Go to the Store by clicking the Store link in the top menu of any Rise Vision page.  (You can also access the Store from the Presentations area of the platform, by adding new content to a placeholder. See [Add a Widget to your Presentation](http://help.risevision.com/#/user/content/add-a-widget-to-a-presentation).)
-2. Find the desired product or service by either browsing the items on the Store's home page, or by using the "Search Products" field at the top of the page. 
+2. Find the desired product or service by either browsing the items on the Store's home page, or by using the "Search Products" field at the top of the page.
 3. Select the item you wish to purchase by clicking on either its image or its price. This takes you to the product page for that item.
 
 
 #####To add the item to your cart:
 
-1. If more than one price option is listed on the product page (for example, payment for a month vs. payment for a year), select the one you want. 
+1. If more than one price option is listed on the product page (for example, payment for a month vs. payment for a year), select the one you want.
 2. If the item has a Quantity field (shown as "Qty.") and you want to buy more than one, replace the default value (usually "1") with the number of units you want to buy.
 3. When you're ready to purchase the item, click the Add To Cart button. This adds the item to your shopping cart, changes the button into a "Go To Cart" button, and also adds a blue box with a number (indicating the total number of products in your cart) to the shopping cart icon at the top of the page.
 4. If you want to buy other items from the Store before checking out, click the "Continue Shopping" button at the bottom of the product page (or the Store link at the top of the page) to return to the Store's home page.
