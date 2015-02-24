@@ -8,7 +8,7 @@ order: 4
 
 
 ###Raspberry Pi 2
-The Raspberry Pi 2 can make for a great media player to run basic content, including video support. The steps below show how to configure a Raspberry Pi 2 for the Rise Vision Chrome App running  Ubuntu 14.10.
+The Raspberry Pi 2 can make for a great media player to run basic content, including video support. The steps below show how to configure a Raspberry Pi 2 for the Rise Vision Chrome App running Ubuntu 14.10.
 
 You can skip the process of manually configuring your Pi 2, per the instructions below, using a pre built image that can be downloaded from [here](https://s3.amazonaws.com/publicdownload/raspberrypi2.img.zip). Once downloaded, the image can be installed on the SD card for your Raspberry Pi 2 following the instructions [here](http://www.raspberrypi.org/documentation/installation/installing-images/README.md).
 
@@ -95,6 +95,7 @@ hdmi_drive=2
 1. From Terminal, type the following command to edit /etc/lxdm/lxdm.conf
 2. `sudo leafpad /etc/lxdm/lxdm.conf`
 3. Edit the file to look like this (save and closing when done):
+
 ```
 [base]
 autologin=linaro
@@ -104,6 +105,7 @@ autologin=linaro
 - Create new file in home folder name disable_screen_timeout.sh by typing the following in Terminal:
 - `leafpad /home/linaro/disable_screen_timeout.sh`
 - Then put the following in the text file:
+
 ```
 #!/bin/sh
 xset s off
@@ -114,7 +116,8 @@ xset -dpms
 - `chmod +x /home/linaro/disable_screen_timeout.sh`
 - Then create another text file with the following command:
 - ` sudo leafpad /usr/share/applications/disable_screen_timeout.desktop`
-- Filling with this:
+- And fill it in with this:
+
 ```
 [Desktop Entry]
 Name=Disable Screen Timeout
