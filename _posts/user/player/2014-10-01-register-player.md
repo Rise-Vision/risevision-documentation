@@ -3,7 +3,7 @@ layout: user-post
 title:  "Register Player"
 date:   2014-10-13 10:52:00
 category: user/player
-order: 5
+order: 4
 ---
 
 

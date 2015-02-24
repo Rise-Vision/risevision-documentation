@@ -3,7 +3,7 @@ layout: user-post
 title:  "Chrome Player for MAC"
 date:   2014-10-13 10:52:00
 category: user/player/chrome-app
-order: 4
+order: 3
 ---
 
 #####Install Chrome App Player
