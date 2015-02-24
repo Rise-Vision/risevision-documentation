@@ -94,8 +94,7 @@ hdmi_drive=2
 #####Configure Ubuntu to auto login
 1. From Terminal, type the following command to edit /etc/lxdm/lxdm.conf
 2. `sudo leafpad /etc/lxdm/lxdm.conf`
-2. Edit the file to look like this (save and closing when done):
-
+3. Edit the file to look like this (save and closing when done):
 ```
 [base]
 autologin=linaro
@@ -105,7 +104,6 @@ autologin=linaro
 - Create new file in home folder name disable_screen_timeout.sh by typing the following in Terminal:
 - `leafpad /home/linaro/disable_screen_timeout.sh`
 - Then put the following in the text file:
-- 
 ```
 #!/bin/sh
 xset s off
@@ -117,7 +115,6 @@ xset -dpms
 - Then create another text file with the following command:
 - ` sudo leafpad /usr/share/applications/disable_screen_timeout.desktop`
 - Filling with this:
-- 
 ```
 [Desktop Entry]
 Name=Disable Screen Timeout
