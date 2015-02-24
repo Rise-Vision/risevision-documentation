@@ -3,7 +3,7 @@ layout: user-post
 title:  "Image Folder Widget"
 date:   2015-02-17 18:20:00
 category: user/content
-order: 14
+order: 9
 ---
 
 ##What it does
@@ -16,6 +16,7 @@ Clicking the Configure link opens the **Image Folder Settings** window.
 
 #####Save/Cancel/Contribute
 At the top of the window there are three buttons:
+
 - **Save:**  This saves your settings for this widget.
 - **Cancel:**  This cancels any changes you’ve made to your settings since you last saved them.
 - **Contribute:**  This takes you to the GitHub repository for this widget.  As an open source project, all code for this widget is available on GitHub, allowing you to contribute your own versions or modifications if you wish to do so.
