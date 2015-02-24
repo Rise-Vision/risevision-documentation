@@ -3,7 +3,7 @@ layout: user-post
 title:  "Financial Table - Stocks Only Widget"
 date:   2014-10-01 10:52:00
 category: user/content
-order: 4
+order: 3
 ---
 
 ##What it does
