@@ -166,6 +166,18 @@ Gets the upload URI for the given company id and filename. (requires Authorizati
 
 ***
 
+#### [storage.getSignedDownloadURI]({{site.hashTag}}{% post_url /developer/storage-api/2015-02-23-storage.getSignedDownloadURI %})
+
+**GET**
+
+**URI:** https://storage-dot-rvaserver2.appspot.com/_ah/api/storage/v0.01/getSignedDownloadURI?companyId={companyId}&fileName=(fileName)
+
+**Sample URI:** https://storage-dot-rvaserver2.appspot.com/_ah/api/storage/v0.01/getSignedDownloadURI?companyId=e599b4e8-c8b9-41d5-7770-b4193c789883&fileName=myPic.png
+
+Gets a signed download URI for the given company id and filename. (requires Authorization)
+
+***
+
 #### [storage.files.delete]({{site.hashTag}}{% post_url /developer/storage-api/2014-10-23-storage.files.delete %})
 
 **POST**
