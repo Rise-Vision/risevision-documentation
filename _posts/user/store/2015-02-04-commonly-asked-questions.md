@@ -7,7 +7,7 @@ order: 1
 ---
 
 ##How can I talk to someone at Rise?
-Send us your question using the form below or email us at store@risevision.com. We are available Monday to Friday, 8am to 5pm CST, holidays excluded and will try to always get back to you within 24 hours or the following business day if it falls on the weekend or holiday. You can also reach us by phone at 866-770-1150.
+Send us your question using the form below or email us at [store@risevision.com](mailto:store@risevision.com). We are available Monday to Friday, 8am to 5pm CST, holidays excluded and will try to always get back to you within 24 hours or the following business day if it falls on the weekend or holiday. You can also reach us by phone at 866-770-1150.
 
 ##Can I buy using a purchase order?
 Not at this time. We are working on adding this as a payment option. Currently all purchases have to made with a credit card.
@@ -19,7 +19,7 @@ Not at this time. Currently all purchases have to be made through [store.risevis
 Visa, MasterCard, and American Express.
 
 ##The status of my subscription hasn’t changed even though I paid for it?
-Refresh the page in your browser and it should update to reflect the current status. If it doesn’t contact us using the form below or email us at store@risevision.com.
+Refresh the page in your browser and it should update to reflect the current status. If it doesn’t contact us using the form below or email us at [store@risevision.com](mailto:store@risevision.com).
 
 ##I purchased a subscription for the wrong company, how do I move it?
 We can’t move an existing subscription to a different company so you’ll need to purchase it for the company you want and we’ll refund the original charge. Once you made the purchase cancel the original subscription that is under the wrong company and send us the invoice number for the original charge that you’d like refunded.
