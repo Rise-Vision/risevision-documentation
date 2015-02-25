@@ -2,7 +2,7 @@
 layout: user-post
 title:  "Chrome Player for Raspberry Pi 2"
 date:   2014-10-13 10:52:00
-category: user/player
+category: user/player/chrome-app
 order: 4
 ---
 
