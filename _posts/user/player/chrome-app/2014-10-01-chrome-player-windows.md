@@ -3,7 +3,7 @@ layout: user-post
 title:  "Chrome Player for Windows"
 date:   2014-10-13 10:52:00
 category: user/player/chrome-app
-order: 2
+order: 5
 ---
 
 #####Install Chrome App Player

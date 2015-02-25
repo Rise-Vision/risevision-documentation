@@ -3,7 +3,7 @@ layout: user-post
 title:  "Chrome Player for Linux"
 date:   2014-10-13 10:52:00
 category: user/player/chrome-app
-order: 3
+order: 2
 ---
 
 #####Install Chrome App Player
