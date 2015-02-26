@@ -10,7 +10,12 @@ order: 4
 ###Raspberry Pi 2
 The Raspberry Pi 2 can make for a great media player to run basic content, including video support. The steps below show how to configure a Raspberry Pi 2 for the Rise Vision Chrome App running Ubuntu 14.10.
 
-You can skip the process of manually configuring your Pi 2, per the instructions below, using a pre built image that can be downloaded from [here](https://s3.amazonaws.com/publicdownload/raspberrypi2.img.zip). Once downloaded, the image can be installed on the SD card for your Raspberry Pi 2 following the instructions [here](http://www.raspberrypi.org/documentation/installation/installing-images/README.md).
+You can skip the process of manually configuring your Pi 2, per the instructions below, using a pre built image that can be downloaded from the links below:
+
+- For Linux and Mac, use [this](https://s3.amazonaws.com/publicdownload/raspberrypi2.img.zip) link.
+- For Windows, use [this](https://s3.amazonaws.com/publicdownload/raspberrypi2_Windows.zip) link.
+
+Once downloaded, the image can be installed on the SD card for your Raspberry Pi 2 following the instructions [here](http://www.raspberrypi.org/documentation/installation/installing-images/README.md).
 
 If you prefer to manually setup your Raspberry Pi 2, follow the directions below.
 
