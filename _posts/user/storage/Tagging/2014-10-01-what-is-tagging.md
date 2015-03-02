@@ -10,35 +10,41 @@ order: 1
 
 Tagging is currently in beta and is being made available as an early preview of new features. All features may not perform as described. Please report any issues you encounter in the [Community](http://community.risevision.com).
 
-If you are a 3rd party developer looking to create a Widget or Application that uses Tagging please take a look at the [Rise Vision Storage API](http://help.risevision.com/#/developer/storage-api/storage-api)
+If you are a 3rd party developer looking to create a widget or application that uses tagging, please take a look at the [Rise Vision Storage API](http://help.risevision.com/#/developer/storage-api/storage-api)
 
 For updates regarding the Tagging feature please follow our blog [here](http://www.risevision.com/blog/) or subscribe to the Product Updates section of our Community [here](https://community.risevision.com/rise_vision_inc/categories/rise_vision_inc_product_updates).
 
 
 * * *
 
+###Overview
+Tagging is a method by which you can label (i.e., tag) display items, like images and videos, to gain additional control over where and when those items are displayed.  By also tagging your widgets, presentations and displays (which is new functionality now being built into the Rise Vision platform), you will soon be able to display specific items on specific screens at specific times by assigning matching tags to both items and screens.  
+
+This gives you an alternative to the traditional method of using scheduling and display distribution to control where and when an item appears on a display.
+
 ###Types of Tags
-There are three types of Tags that can be created; a Lookup Tag, Freeform Tag and Timeline Tag.
+There are three types of tags that can be created: a Lookup tag, a Freeform tag and a Timeline tag.
 
-To better explain what each Tag is, and how it can be used, let’s cover how each tag could be used in a real life scenario. 
+To better explain what each tag is, and how it can be used, let’s cover how each type of tag could be used in a real life scenario. 
+_ _ _
 
-You are responsible for managing the Digital Signage Network for stores nationwide at Acme Clothing. The Digital Signage Network is used to promote the products; Levi, Nike and Northface using Images and Videos.
+Let's say you're responsible for managing the digital signage network for stores nationwide at the Acme Clothing company. The digital signage network is used to promote three products – Levi's, Nike and Northface – using images and videos.
 
-Within each Store, a Display can be found by the Cashier, Window and the Shoe Rack.  Each Store falls into one of four regions; Northeast, Southeast, Southwest and Northwest. 
+Within each store, there are three displays: at the cashier, at the window and at the shoe rack.  And each store is located in one of four regions: Northeast, Northwest, Southeast or Southwest. 
 
-As part of your responsibilities, you need to update the promotional Images and Videos in each Store based on the Display location (Cashier, Window, Shoe Rack) and by region. 
+As part of your responsibilities, you need to update the promotional images and videos in each store based on both the display location (cashier, window, or shoe rack) and the region. 
 
-For example, you have just been asked to update all Shoe Rack Display’s in the Northeast region with Images to promote a new Nike product.
+For example, let's say you have just been asked to update all shoe rack displays in the Northeast region with images to promote a new Nike product.
 
-Using Lookup Tags, we can easily handle this task.
+We can easily handle this task using Lookup tags.
 
 _ _ _
 
 ####Lookup Tag
 
-A Lookup Tag is made up of a Name and one or more Lookup Values. The Lookup Values can then be assigned to a Image or Video in Rise Storage.
+A Lookup Tag is made up of a name and one or more lookup values. The lookup values can be assigned to images or videos in Rise Storage.
 
-Based on the information in our scenario above, we are going to create three Lookup Tag’s; Product, Display Location and Region.  The Lookup Values associated with each Lookup Tag is reflected in the table below. 
+Based on the information in our scenario above, we are going to create three lookup tags: Product, Display Location and Region.  The lookup values associated with each lookup tag are shown in the table below. 
 
 | Product |  Display Location  | Region |
 |---------|-------|------------|-----------|
@@ -48,7 +54,7 @@ Based on the information in our scenario above, we are going to create three Loo
 |                 |            | Southwest
 
 
-After creating the Lookup Tags above, the following Lookup Values will be available to Tag an Image or Video.
+After creating the Lookup tags above, the following lookup values will be available to tag an image or a video.
 
 |  Tag Name: Lookup Value |  Tag Name: Lookup Value  | Tag Name: Lookup Value |
 |---------|-------|------------|-----------|
@@ -57,35 +63,38 @@ After creating the Lookup Tags above, the following Lookup Values will be availa
 |    product: levi         | display location: shoe rack  | region: southeast
 |                          |                              | region: southwest
 
-Going back to our task, we need to update all Shoe Rack Displays in the Northeast region with Images to promote a new Nike product.
+Going back to our task, we need to update all Shoe Rack displays in the Northeast region with images to promote a new Nike product.
 
-First step, upload the Images to Rise Storage and for each Image we’ll add the following Lookup Value’s 
+First, upload the images to Rise Storage.  Then, for each image, add the following Lookup values:
 
 |  Tag Name: Lookup Value |  Tag Name: Lookup Value  | Tag Name: Lookup Value |
 |---------|-------|------------|-----------|
 |             | display location: window     | region: northeast
 
 
-The tagged Image will now appear on any Display, Presentation or Widget that has the display location: shoe rack and region: northeast Tags. 
+The tagged image will now appear on any display, presentation or widget that has "display location: shoe rack" and "region: northeast" tags. 
+_ _ _
 
 
-Now let’s say that you need to run a promotion where you are discounting a Northface product, nationwide, by 15% for all Display Locations. To do this, you would like to add the discount amount, as an overlay on the Image of the Northface product being discounted. 
+Now, let’s say that you need to run a promotion where you are discounting a Northface product, nationwide, by 15% for all display locations. To do this, you would like to add the discount amount as an overlay on the image of the Northface product being discounted. 
 
-To achieve this, we’ll use a Freeform Tag.
-
+To achieve this, we’ll use a Freeform tag.
 _ _ _
 
 ####Freeform Tag
 
-A Freeform tag is made up of a Name and Freeform Text. As you tag an Image or Video with a Freeform Tag, you will specify what the Freeform Text is on-the-fly, as you tag your Image. That Freeform Text is then available as metadata where it can be appear as an overlay onto the Image you’ve tagged.
+A Freeform tag is made up of a name and some freeform text. When you tag an image or video with a Freeform tag, you can specify the freeform text on the fly, when you tag your image. That freeform text is then available as metadata, where it can be made to appear as an overlay onto the image that you’ve tagged.
 
-As a comparison, when we setup our Lookup Tags we predefined the Lookup Values. For our Product Lookup Tag, the Lookup Values were Nike, Northface and Levi. 
+As a comparison, when we setup our Lookup tags we predefined the Lookup values. For our Product Lookup Tag, the Lookup values were Nike, Northface and Levi. 
 
-Freeform Tags on the other hand, have no Lookup Value. The Freeform Text could be considered the equivalent to a Lookup Value with one key difference, Freeform Value are created on-the-fly as you Tag an Image or Video.  
+Freeform tags, on the other hand, have no Lookup value. The freeform text could be considered the equivalent to a Lookup value with one key difference: freeform values are created on the fly as you tag an image or a video.
+_ _ _
 
-First, we need to create a new Freeform Tag. We’ll name it, Discount. The Table below represents a complete inventory of all Tags we’ll have afterwards.
+First, create a new Freeform tag. Name it "discount". The table below represents a complete inventory of all tags we’ll have afterwards.
 
-Notice the Freeform Tag “discount:” has no Freeform Value. The Freeform Value will be defined when you add the Freeform Tag to the Image.
+Notice that the Freeform Tag “discount:” has no Freeform value. The Freeform value will be defined when you add the Freeform tag to the image.
+
+With the Freeform tag created, you can now tag the image(s) of the Northface product that is being discounted. Once complete, the image will have the following tags:
 
 | Tag Name |  Tag Name: Lookup Value |  Tag Name: Lookup Value  | Tag Name: Lookup Value |
 |----------|-------------------------|--------------------------|------------------------|
@@ -95,9 +104,7 @@ Notice the Freeform Tag “discount:” has no Freeform Value. The Freeform Valu
 |          |                         |                              | region: southwest  |
 
 
-With the Freeform Tag created, we’ll proceed with tagging the Image(s) of the Northface product that is being discounted. Once complete the Image will have the following Tags.
-
-When the Freeform Tag, discount, was added to the Image, the text of “15% off” is entered. This is now our Freeform Value that will be overlaid on top of the Image.
+When the Freeform Tag "discount" is added to the image, we also enter the text “15% off”. This is now our Freeform value that will be overlaid on top of the image.
 
 | Tag Name |  Tag Name: Lookup Value |  Tag Name: Lookup Value  | Tag Name: Lookup Value |
 |----------|-------------------------|--------------------------|------------------------|
@@ -106,20 +113,19 @@ When the Freeform Tag, discount, was added to the Image, the text of “15% off�
 |          |    product: levi        | display location: shoe rack  | region: southeast  |
 |          |                         |                              | region: southwest  |
 
-The tagged Image will now appear on any Display, Presentation or Widget that has the Tags; discount:, product:, display: and region: with any combination of the Lookup Values.
+The tagged image will now appear on any display, presentation or widget that has the tags "discount:", "product:", "display:" and "region:", with any combination of those tags' lookup values.
+_ _ _
 
-Unfortunately, discounts don’t run forever and we don’t want the headache of having to remember to go back and remove our discount promotion. 
-
-To automate the process of removing the item on a certain date, we’ll use Timeline Tags.
+Unfortunately, discounts don’t run forever and we don’t want the headache of having to remember to go back and remove our discount promotion. To automate the process of removing the item on a certain date, we’ll use Timeline tags.
 
 _ _ _
 
 ####Timeline Tags
-Timeline Tags provide you with the ability to specify when a tagged item should play, when it should end and the times the item should appear. By default, a tagged item will be all day, everyday. 
+Timeline tags provide you with the ability to specify display times for a tagged item: when it should play, when it should end, and what specific times it should appear. Without timeline tags, a tagged item will be displayed all day, every day. 
 
-Using the previous example, let’s update what we’ve already setup to include a Start Date and End Date.
+Using the previous example, let’s update what we’ve already set up to include a start date and an end date.
 
-As a recap, we currently have the following Tags setup on the Image for the Northface product. We are now going to add a Timeline Tag so that the Image only appears during the Date range specified.
+To recap, we currently have the following tags set up on the image for the Northface product:
 
 | Tag Name |  Tag Name: Lookup Value |  Tag Name: Lookup Value  | Tag Name: Lookup Value |
 |----------|-------------------------|--------------------------|-----------------------
@@ -128,9 +134,11 @@ As a recap, we currently have the following Tags setup on the Image for the Nort
 | |    product: levi         | display location: shoe rack  | region: southeast
 | |                         |                              | region: southwest
 
-When we add our Timeline Tag, we’ll specify the Start Date for Feb-3-2015 and and End Date for Feb-07-2015. As an added benefit, whenever a End Date is specified, you can optionally have the file moved into Trash once the End Date has passed. By doing this, you can eliminate any risk with that Image being reused in the future.
+We are now going to add a Timeline tag so that the image only appears during the date range specified.
 
-After adding the Timeline Tag,  our Image will now have the following Tags
+When we add our Timeline tag, we’ll specify the start date of Feb-3-2015 and the end date of Feb-07-2015. As an added benefit, whenever an end date is specified, you have the additional option of having the file moved into Trash once the end date has passed. By doing this, you can eliminate any risk of that image being reused in the future.
+
+After adding the Timeline tag,  our image will now have the following tags:
 
 |Timeline| Tag Name |  Tag Name: Lookup Value |  Tag Name: Lookup Value  | Tag Name: Lookup Value |
 |---|----------|-------------------------|--------------------------|-----------------------
@@ -139,10 +147,4 @@ After adding the Timeline Tag,  our Image will now have the following Tags
 || |    product: levi         | display location: shoe rack  | region: southeast
 | | |                         |                              | region: southwest
 
-The tagged Image will now appear on any Display, Presentation or Widget that has the Tags; discount:, product:, display: and region: with any combination of the Lookup Values and according to the Timeline Tag you’ve defined. 
-
-
-
-
-
-
+The tagged image will now appear on any display, presentation or widget that has the tags "discount:", "product:", "display:" and "region:", with any combination of their Lookup values, and according to the Timeline tag that you’ve defined. 
