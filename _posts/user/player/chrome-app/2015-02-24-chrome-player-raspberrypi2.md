@@ -132,3 +132,11 @@ Terminal=false
 ```
 - Add the file to the startup applications by executing this command:
 - `cp /usr/share/applications/disable_screen_timeout.desktop /home/linaro/.config/autostart`
+
+
+#####Configure a scheduled reboot
+1. Open terminal
+2. Type sudo crontab -e
+3. Select your editor
+4. At the bottom, type 0 3 * * * /sbin/shutdown -r now
+5. This will reboot your player at 3AM. I fyou would like to reboot at a different time, simply replace that with the hour you would prefer
