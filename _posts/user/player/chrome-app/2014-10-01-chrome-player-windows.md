@@ -19,7 +19,7 @@ order: 5
 2. Go to the compatibility tab and clear the check box for “Disable scaling on high DPI settings.”
 3. Click on OK to close the Properties Window.
 
-#####Schedule Reboot on Windows
+#####Configure a scheduled reboot
 1. Press WinKey+R > type taskschd.msc and press Enter (this launches Task Scheduler)
 2. Left click from the right pane on the Task Scheduler Library > open Action from the top menu > New Folder... > name it MyTasks > click OK
 3. Left click on the MyTasks > choose Action from menu > Create Basic Task... (this will open task wizard)

@@ -15,3 +15,9 @@ order: 2
 2. From the Dash search button, search for Startup Applications, and open it. Drag the Desktop shortcut into the Startup Applications window, and restart your Display. The Rise Vision Chrome App Player will start automatically.
 
 
+#####Configure a scheduled reboot
+1. Open terminal
+2. Type sudo crontab -e
+3. Select your editor
+4. At the bottom, type 0 3 * * * /sbin/shutdown -r now
+5. This will reboot your player at 3AM. I fyou would like to reboot at a different time, simply replace that with the houryour would prefer.
