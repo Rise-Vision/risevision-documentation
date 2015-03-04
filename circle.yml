@@ -1,27 +1,22 @@
 machine:
   ruby:
     version: 2.1.5
-  node:
-      version: 0.10.32
+general:
+  artifacts:
+    - dist.tar.gz
 dependencies:
   post:
     - bower install --force-latest
-    - git config --global user.email "jenkins@risevision.com"
-    - git config --global user.name "jenkins-rise"
 deployment:
-  automerge:
+  staging:
     branch: /(feature|fix|chore|doc|build).*/
     commands:
-      - git checkout stage
-      - git merge $CIRCLE_BRANCH -m "Merged commit $CIRCLE_SHA1 into $CIRCLE_BRANCH - "
-      - git push origin stage
-  staging:
-    branch: stage
-    commands:
-          - NODE_ENV=stage npm run ci-build
-          - NODE_ENV=stage npm run ci-deploy
+      - NODE_ENV=stage npm run ci-build
+      - rsync -rptz -e ssh --delete _site documentation@webserver-stage.risevision.com:/rise-front-end/help/$(echo -n $CIRCLE_BRANCH |sed 's/\//-/g')
+      - tar czvf dist.tar.gz _site
   production:
       branch: master
       commands:
         - NODE_ENV=prod npm run ci-build
-        - NODE_ENV=prod npm run ci-deploy
+        - rsync -rptz -e ssh --delete _site documentation@webserver.risevision.com:/rise-front-end/help
+        - tar czvf dist.tar.gz _site
