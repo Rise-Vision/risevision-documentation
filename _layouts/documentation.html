@@ -1,7 +1,7 @@
 
 <page title="{{page.title}}"
       description="{{page.excerpt | strip_html}}"
-      url="{{site.url}}{{site.baseurl}}/{{site.hashTag}}{{page.url}}"
+      url="{{site.url}}{{site.baseurl}}{{site.hashTag}}{{page.url}}"
       image="{{site.metaImageUrl}}/{{page.type}}-documentation.png"
       favicon="{{site.faviconUrl}}/{{page.favicon}}"></page>
 <!-- App Header -->
@@ -127,7 +127,7 @@
 <script type="text/javascript">
     $(function() {
        $("#search-query").lunrSearch({
-            indexUrl: "{{ site.baseurl }}/search.json",             // URL of the `search.json` index data for your site
+            indexUrl: "{{ site.baseurl }}search.json",             // URL of the `search.json` index data for your site
             results:  "#search-results",          // jQuery selector for the search results container
             entries:  ".entries",                 // jQuery selector for the element to contain the results list, must be a child of the results element above.
             template: "#search-results-template",  // jQuery selector for the Mustache.js template
