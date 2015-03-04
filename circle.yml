@@ -12,11 +12,11 @@ deployment:
     branch: /(feature|fix|chore|doc|build).*/
     commands:
       - NODE_ENV=stage npm run ci-build
-      - rsync -rptz -e ssh --delete _site documentation@webserver-stage.risevision.com:/rise-front-end/help/$(echo -n $CIRCLE_BRANCH |sed 's/\//-/g')
+      - rsync -rptz -e ssh --delete _site help@webserver-stage.risevision.com:/rise-front-end/help/$(echo -n $CIRCLE_BRANCH |sed 's/\//-/g')
       - tar czvf dist.tar.gz _site
   production:
       branch: master
       commands:
         - NODE_ENV=prod npm run ci-build
-        - rsync -rptz -e ssh --delete _site documentation@webserver.risevision.com:/rise-front-end/help
+        - rsync -rptz -e ssh --delete _site help@webserver.risevision.com:/rise-front-end/help
         - tar czvf dist.tar.gz _site
