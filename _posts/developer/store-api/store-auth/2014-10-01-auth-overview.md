@@ -15,9 +15,9 @@ Store Authorization also provides the ability to authorize Apps (successfully au
 
 ###How it all works (The Big Picture)
 
-![Apps (Widgets) that are used on individual Displays]({{ site.baseurl }}/assets/images/store-auth-widget.png)
+![Apps (Widgets) that are used on individual Displays]({{ site.baseurl }}assets/images/store-auth-widget.png)
 
-![Apps that are NOT used on individual Displays]({{ site.baseurl }}/assets/images/store-auth-app.png)
+![Apps that are NOT used on individual Displays]({{ site.baseurl }}assets/images/store-auth-app.png)
 
 **Viewer** is a web app that runs content on Displays. Widgets you develop will be incorporated into that content.
 
