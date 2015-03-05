@@ -25,24 +25,7 @@ For more details on managing Chrome devices using Chrome Device Management, plea
 8. In the Auto-Launch Kiosk App dropdown menu select Rise Vision Chrome App Player
 9. Save the settings
 
-Devices enrolled and assigned to the organizational until with the configuration above will have the Rise Vision Chrome App automatically installed and configured to run on start up.
-
-###Configure Single App Kiosk Mode for Non-Managed Devices
-
-**This must be done on a freshly wiped device**
-
-1. Power on fresh device, At the welcome screen input your network information, **do not log in**.
-2. At the login screen press CTRL+ALT+K and enable kiosk mode 
-3. Log in to Chromebox
-4. Open a new tab in Chrome, enter chrome://extensions in the address bar. Press enter.
-5. Check the box next to Developer Mode
-6. Click add kiosk application, enter the ID mfpgpdablffhbfofnhlpgmokokbahooi
-7. Mouse over the app and select "auto launch"
-8. Press enter or click done
-9. Reboot when asked, enable app for Kiosk mode
-10. Now the app will launch automatically when the Chromebox is rebooted.
-11. To turn off kiosk mode, reboot the Chromebox. While the device is starting up, press CTRL+ALT+S to interrupt the process and return to the log in screen.
-
+Devices enrolled and assigned to the organizational unit with the configuration above will have the Rise Vision Chrome App automatically installed and configured to run on start up.
 
 More information about Single App Kiosk Mode can be found [here](https://support.google.com/chromebook/answer/3134673?hl=en).
 
