@@ -28,9 +28,11 @@ For more details on managing Chrome devices using Chrome Device Management, plea
 Devices enrolled and assigned to the organizational until with the configuration above will have the Rise Vision Chrome App automatically installed and configured to run on start up.
 
 ###Configure Single App Kiosk Mode for Non-Managed Devices
+
 **This must be done on a freshly wiped device**
+
 1. Power on fresh device, At the welcome screen input your network information, **do not log in**.
-2. At the login screen press CTRL+ALT+K and enable kiosk mode
+2. At the login screen press CTRL+ALT+K and enable kiosk mode 
 3. Log in to Chromebox
 4. Open a new tab in Chrome, enter chrome://extensions in the address bar. Press enter.
 5. Check the box next to Developer Mode
