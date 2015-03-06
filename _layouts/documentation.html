@@ -82,21 +82,21 @@
         });
 
         // Go to Sub Nav Level 1
-        $(".nav-level-1-link").click(function(e) {
+        $(".nav-level-1-link").on('click',function(e) {
             docsSidebar.css({
                 left: "-100%"
             });
             $(this).siblings(".sub-nav.nav-level-1").toggleClass("in");
-            e.stopPropagation();
         });
         // Go to Sub Nav Level 2
-        $(".nav-level-2-link").click(function(e) {
+
+        $(".nav-level-2-link").on('click', function(e) {
             docsSidebar.css({
                 left: "-200%"
             });
             $(this).siblings(".sub-nav.nav-level-2").toggleClass("in");
-            e.stopPropagation();
         });
+
         // Back from level 1
         $(".back-level-1").click(function(e) {
             docsSidebar.css({

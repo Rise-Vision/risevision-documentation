@@ -111,7 +111,7 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
             baseDir: '_site',
             middleware: [
                 modRewrite([
-                    '!\\.\\w+$ /index.html [L]'
+                    '!\\.html|\\.js|\\.css|\\.png|\\.jpg|\\.eot|\\.woff|\\.htm|\\.svg|\\.otf|\\.ttf|\\.gif$ /index.html [L]'
                 ])
             ]
         },
