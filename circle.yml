@@ -7,7 +7,7 @@ general:
 dependencies:
   post:
     - bower install --force-latest
-    - echo -n 'basehref: /$(echo -n $CIRCLE_BRANCH |sed 's/\//-/g')/_site/' >> _config_stage.yml
+    - echo -n "basehref: /$(echo -n $CIRCLE_BRANCH |sed 's/\//-/g')/_site/" >> _config_stage.yml
 deployment:
   staging:
     branch: /(feature|fix|chore|doc|build).*/
