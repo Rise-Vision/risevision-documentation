@@ -49,7 +49,7 @@ A way to build your own applications with the capability of utilizing our Rise V
    
     Fill out the form with your new App name, description, client Id and Url as in the image above.
    
-    If you do not know what is a client Id and how to get it please follow the instruction on [How To Obtain OAuth2 Client ID]({{site.hashTag}}{% post_url /developer/getting-started/registration/2014-10-01-clientId %}) 
+    If you do not know what is a client Id and how to get it please follow the instruction on [How To Obtain OAuth2 Client ID]({{site.hashTag}}developer/getting-started/registration/clientId) 
       
 6. After clicking on Save, your app will be added to the list of apps and you will be able to see and edit it.
  
