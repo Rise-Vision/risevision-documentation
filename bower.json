@@ -27,7 +27,7 @@
     "angular-local-storage": "~0.1.4",
     "bootstrap": "~3.2.0",
     "jquery": "~1.11.2",
-    "rv-common-style": "https://github.com/Rise-Vision/common-style.git#v1.1.11",
+    "rv-common-style": "https://github.com/Rise-Vision/common-style.git#v1.1.12",
     "lunr.js": "0.5.5",
     "date.format": "1.2.3",
     "uri.js": "1.14.1",
