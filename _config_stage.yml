@@ -1,3 +1,4 @@
 # Production Site settings
 url: "http://help-stage.risevision.com"
 baseurl: "" # the subpath of your site, e.g. /blog/
+basehref: ""
