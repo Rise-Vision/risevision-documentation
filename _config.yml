@@ -13,6 +13,7 @@ twitter_username: risevision
 github_username:  RiseVision
 hashTag: ""
 html5mode: "true"
+basehref: "/"
 
 # Build settings
 markdown: redcarpet
