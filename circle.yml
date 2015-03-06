@@ -7,7 +7,7 @@ general:
 dependencies:
   post:
     - bower install --force-latest
-    - echo -n "basehref: /feature-metatag/_site/" >> _config_stage.yml
+    - echo "basehref /feature-metatag/_site/" >> _config_stage.yml
 deployment:
   staging:
     branch: /(feature|fix|chore|doc|build).*/
