@@ -11,7 +11,7 @@ deployment:
   staging:
     branch: /(feature|fix|chore|doc|build).*/
     commands:
-      - echo 'basehref: "/$(echo -n $CIRCLE_BRANCH |sed 's/\//-/g')/_site/"' >> _config_stage.yml
+      - echo "basehref: \"/$(echo -n $CIRCLE_BRANCH |sed 's/\//-/g')/_site/\"" >> _config_stage.yml
       - NODE_ENV=stage npm run ci-build
       - rsync -rptz -e ssh --delete _site help@webserver-stage.risevision.com:/rise-front-end/help/$(echo -n $CIRCLE_BRANCH |sed 's/\//-/g')
       - tar czvf dist.tar.gz _site
