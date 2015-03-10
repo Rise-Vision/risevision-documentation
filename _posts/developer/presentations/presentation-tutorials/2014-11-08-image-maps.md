@@ -43,7 +43,7 @@ Let’s break this down to see what the code is doing. The first line is:
 var backgroundImage = getPlaceholderIFrameIds("CampusNewsBackground")[0];
 ```
 
-We’ve talked about `getPlaceholderIFrameIds` [before]((#{% post_url /developer/presentations/presentation-tutorials/2014-11-06-iframe-id %})). This line gets the first `iframe` that is inside the Placeholder named `CampusNewsBackground`. In this case, the first (and only) Item in that Placeholder is an image item containing the background image.
+We’ve talked about `getPlaceholderIFrameIds` [before](developer/presentations/presentation-tutorials/iframe-id). This line gets the first `iframe` that is inside the Placeholder named `CampusNewsBackground`. In this case, the first (and only) Item in that Placeholder is an image item containing the background image.
 
 Next, the image map is defined. This is where the hot spot coordinates are used:
 

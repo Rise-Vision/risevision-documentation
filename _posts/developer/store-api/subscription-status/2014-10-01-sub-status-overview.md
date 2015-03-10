@@ -13,4 +13,4 @@ As an example, the Rise Vision appplication, Rise Storage(storage.risevision.com
 Using Subscription Status we can communicate the current status in the UI for a User that logs into the application. In the example below, the status returned was Subscribed.
 
 
-![Subscripton Status Example]({{ site.baseurl }}/assets/images/subscription-status/status-example.png)
+![Subscripton Status Example]({{ site.baseurl }}assets/images/subscription-status/status-example.png)

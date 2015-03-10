@@ -8,7 +8,7 @@ order: 2
 ---
 
 Enables the Viewer to tell the Player that it is running. Rise Player will restart the Viewer if there is no heartbeat after three minutes.
-This is identical to [Ping]({{site.hashTag}}{% post_url /developer/player-api/player/2014-10-01-ping %}), but Ping allows other applications (such as InstallScript) to ping the Player without interfering with Heartbeats from the Viewer.
+This is identical to [Ping]({{site.hashTag}}developer/player-api/player/ping), but Ping allows other applications (such as InstallScript) to ping the Player without interfering with Heartbeats from the Viewer.
 
 To send heartbeat to the Player, send the following GET request to localhost:
 

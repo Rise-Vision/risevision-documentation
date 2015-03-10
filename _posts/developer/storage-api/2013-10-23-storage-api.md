@@ -18,7 +18,7 @@ It is an implementation of [Google Cloud Storage](https://cloud.google.com/stora
 There are many ways to access storage in your application. Authorization is not required. You can retrieve a list of files using these components and APIs:
 
 - [rise-storage web component](http://rise-vision.github.io/web-component-rise-storage/components/web-component-rise-storage/rise-storage/)
-- [storage.files.get]({{site.hashTag}}{% post_url /developer/storage-api/2014-10-23-storage.files.get %}) (RiseVision API)
+- [storage.files.get]({{site.hashTag}}developer/storage-api/storage.files.get) (RiseVision API)
 - [storage.objects.get](https://cloud.google.com/storage/docs/json_api/v1/objects/get) (Google API)
 - Files can be accessed directly by their URL.
 
@@ -105,7 +105,7 @@ _This uses an example Company Id: e78d4e89-fb21-3411-a20f-8b5a73bc3693. Use your
 
 Below are the available methods with gapi.client once gapi is properly loaded:
 
-#### [storage.createBucket]({{site.hashTag}}{% post_url /developer/storage-api/2014-10-23-storage.createBucket %})
+#### [storage.createBucket]({{site.hashTag}}developer/storage-api/storage.createBucket)
 
 **POST**
 
@@ -118,7 +118,7 @@ Adds a new bucket under the given company-id. (requires Authorization)
 
 ***
 
-#### [storage.createFolder]({{site.hashTag}}{% post_url /developer/storage-api/2014-10-23-storage.createFolder %})
+#### [storage.createFolder]({{site.hashTag}}developer/storage-api/storage.createFolder)
 
 **POST**
 
@@ -130,7 +130,7 @@ Adds a new folder under the given company-id and folder. (requires Authorization
 
 ***
 
-#### [storage.deleteBucket]({{site.hashTag}}{% post_url /developer/storage-api/2014-10-23-storage.deleteBucket %})
+#### [storage.deleteBucket]({{site.hashTag}}developer/storage-api/storage.deleteBucket)
 
 **DELETE**
 
@@ -142,7 +142,7 @@ Deletes the bucket under the given company-id. (requires Authorization)
 
 ***
 
-#### [storage.getBucketBandwidth]({{site.hashTag}}{% post_url /developer/storage-api/2014-10-23-storage.getBucketBandwidth %})
+#### [storage.getBucketBandwidth]({{site.hashTag}}developer/storage-api/storage.getBucketBandwidth)
 
 **GET**
 
@@ -154,7 +154,7 @@ Gets the bandwidth of the google storage bucket for the given company-id. (requi
 
 ***
 
-#### [storage.getResumableUploadURI]({{site.hashTag}}{% post_url /developer/storage-api/2014-10-23-storage.getResumableUploadURI %})
+#### [storage.getResumableUploadURI]({{site.hashTag}}developer/storage-api/storage.getResumableUploadURI)
 
 **GET**
 
@@ -166,7 +166,7 @@ Gets the upload URI for the given company id and filename. (requires Authorizati
 
 ***
 
-#### [storage.getSignedDownloadURI]({{site.hashTag}}{% post_url /developer/storage-api/2015-02-23-storage.getSignedDownloadURI %})
+#### [storage.getSignedDownloadURI]({{site.hashTag}}developer/storage-api/storage.getSignedDownloadURI)
 
 **GET**
 
@@ -178,7 +178,7 @@ Gets a signed download URI for the given company id and filename. (requires Auth
 
 ***
 
-#### [storage.files.delete]({{site.hashTag}}{% post_url /developer/storage-api/2014-10-23-storage.files.delete %})
+#### [storage.files.delete]({{site.hashTag}}developer/storage-api/storage.files.delete)
 
 **POST**
 
@@ -190,7 +190,7 @@ Deletes a file or group of files for the given company id and strings of file na
 
 ***
 
-#### [storage.files.get]({{site.hashTag}}{% post_url /developer/storage-api/2014-10-23-storage.files.get %})
+#### [storage.files.get]({{site.hashTag}}developer/storage-api/storage.files.get)
 
 **GET**
 
@@ -202,7 +202,7 @@ gets and returns the list of files given a company id and optional folder name.
 
 ***
 
-#### [storage.trash.move]({{site.hashTag}}{% post_url /developer/storage-api/2014-11-21-storage.trash.move %})
+#### [storage.trash.move]({{site.hashTag}}developer/storage-api/storage.trash.move)
 
 **POST**
 
@@ -214,7 +214,7 @@ Moves a file or group of files to the trash folder given a company id and string
 
 ***
 
-#### [storage.trash.restore]({{site.hashTag}}{% post_url /developer/storage-api/2014-11-21-storage.trash.restore %})
+#### [storage.trash.restore]({{site.hashTag}}developer/storage-api/storage.trash.restore)
 
 **PUT**
 
@@ -226,7 +226,7 @@ Restores a file or group of files from the trash folder to their original path g
 
 ***
 
-#### [storage.tagdef.put]({{site.hashTag}}{% post_url /developer/storage-api/2015-01-06-storage.tagdef.put %})
+#### [storage.tagdef.put]({{site.hashTag}}developer/storage-api/storage.tagdef.put)
 
 **PUT**
 
@@ -238,7 +238,7 @@ Adds or modifies a Tag Definition with the given accepted values
 
 ***
 
-#### [storage.tagdef.get]({{site.hashTag}}{% post_url /developer/storage-api/2015-01-06-storage.tagdef.get %})
+#### [storage.tagdef.get]({{site.hashTag}}developer/storage-api/storage.tagdef.get)
 
 **GET**
 
@@ -250,7 +250,7 @@ Returns the Tag Definition with the given id, if it belongs to a company associa
 
 ***
 
-#### [storage.tagdef.delete]({{site.hashTag}}{% post_url /developer/storage-api/2015-01-06-storage.tagdef.delete %})
+#### [storage.tagdef.delete]({{site.hashTag}}developer/storage-api/storage.tagdef.delete)
 
 **DELETE**
 
@@ -262,7 +262,7 @@ Deletes the Tag Definition with the given id, if it belongs to a company associa
 
 ***
 
-#### [storage.tagdef.list]({{site.hashTag}}{% post_url /developer/storage-api/2015-01-06-storage.tagdef.list %})
+#### [storage.tagdef.list]({{site.hashTag}}developer/storage-api/storage.tagdef.list)
 
 **GET**
 
@@ -274,7 +274,7 @@ Returns the Tag Definitions matching the search criteria and belonging to the gi
 
 ***
 
-#### [storage.filetags.put]({{site.hashTag}}{% post_url /developer/storage-api/2015-01-06-storage.filetags.put %})
+#### [storage.filetags.put]({{site.hashTag}}developer/storage-api/storage.filetags.put)
 
 **PUT**
 
@@ -307,7 +307,7 @@ Creates or updates a storage object with the given tags in companyId, if it is a
 
 ***
 
-#### [storage.filetags.get]({{site.hashTag}}{% post_url /developer/storage-api/2015-01-06-storage.filetags.get %})
+#### [storage.filetags.get]({{site.hashTag}}developer/storage-api/storage.filetags.get)
 
 **GET**
 
@@ -319,7 +319,7 @@ Returns the File Tag with the given id, if it belongs to a company associated wi
 
 ***
 
-#### [storage.files.listbytags]({{site.hashTag}}{% post_url /developer/storage-api/2015-01-15-storage.files.listbytags %})
+#### [storage.files.listbytags]({{site.hashTag}}developer/storage-api/storage.files.listbytags)
 
 **POST**
 

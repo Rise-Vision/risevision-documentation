@@ -23,12 +23,12 @@ angular.module("risevision.documentation")
             })
             .state('developer-post', {
                 url: '/developer/:category/:post',
-                templateUrl: function(params){ return "{{ site.baseurl }}/developer/" + params.category +"/" + params.post + ".html"; },
+                templateUrl: function(params){ return "{{ site.baseurl }}developer/" + params.category +"/" + params.post + ".html"; },
                 controller: 'DocumentationController'
             })
             .state('developer-post-sub', {
                 url: '/developer/:category/:subCategory/:post',
-                templateUrl: function(params){ return "{{ site.baseurl }}/developer/" + params.category + "/" + params.subCategory + "/" + params.post + ".html"; },
+                templateUrl: function(params){ return "{{ site.baseurl }}developer/" + params.category + "/" + params.subCategory + "/" + params.post + ".html"; },
                 controller: 'DocumentationController'
             })
             .state('user', {
@@ -43,12 +43,12 @@ angular.module("risevision.documentation")
             })
             .state('user-post', {
                 url: '/user/:category/:post',
-                templateUrl: function(params){ return "{{ site.baseurl }}/user/" + params.category + "/" + params.post + ".html"; },
+                templateUrl: function(params){ return "{{ site.baseurl }}user/" + params.category + "/" + params.post + ".html"; },
                 controller: 'DocumentationController'
             })
             .state('user-post-sub', {
                 url: '/user/:category/:subCategory/:post',
-                templateUrl: function(params){ return "{{ site.baseurl }}/user/" + params.category + "/" + params.subCategory + "/" + params.post + ".html"; },
+                templateUrl: function(params){ return "{{ site.baseurl }}user/" + params.category + "/" + params.subCategory + "/" + params.post + ".html"; },
                 controller: 'DocumentationController'
             })
 
