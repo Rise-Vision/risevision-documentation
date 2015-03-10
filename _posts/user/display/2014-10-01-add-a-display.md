@@ -6,23 +6,28 @@ category: user/display
 order: 2
 ---
 
+To create a display in the Rise Vision platform;
 
+1. Within Rise Vision, click the “Displays” link at the top of any page
+2. Then click the “Add Display” button in the top right corner of the page.
+3. Give your display a name and click the Save button.
 
-1. Click the Displays link at the top of the Rise Vision page, and then click the Add Display button in the top right corner.
-2. In the Name field, type a name that will help you to identify the new display.  
-3. In the Status field, the default status for new displays is Active, but you have the option to make it Inactive if necessary.  
+Once saved, a Display ID is generated and will be shown on the dipslay settings page. This ID used to uniquly identify a Display.
 
-	Next to the Status field, the color of the Heartbeat (heart) icon indicates the current state of the display: green for Online,  red for Offline, and black for Not Installed (meaning that no Player software is installed on the display yet).
-    
-    Next to the Heartbeat icon, the Last Update Time is shown.  If the display state is Online, it shows the last time the display’s content was updated.  If the display state is Offline, it shows the time that the system detected the disconnection.  If the display state is Not Installed, no time is shown.
+If this is the first time you’re adding a display to the platform, a message will appear in red saying “Warning: No Player software is installed on the Display”. This is simply a reminder that Rise Vision Player application must be installed on the computer that’s connected to your display.
 
-4. In the Resolution field, the default value of 1920×1080 is shown initially, but if the actual size of the screen is different, Rise Player will detect and show the correct resolution when it starts on the display.
+####Install Player
+What is Rise Vision Player?
 
-5. Leave the Use Company Address field checked if this display is located at the same address that’s listed for your company in the Settings area of the platform.  Otherwise, uncheck this box and in the fields that become editable below, enter the details of the location of this display.  This address will be used by any widgets that send location-specific data to the display.
+Player is the application that you install on your computer or media player in order to play presentations on your displays.
 
-6. The Social Connections field shows the Twitter and Foursquare connections that are listed for your company in the Settings area of the platform.  You can select the Token if multiple choices are available, and you can specify the Venue ID, which is the unique ID assigned by Foursquare for each specific venue.
+To install Player, navigate to http://www.risevision.com/player and select the Rise Vision Player application download link appropriate for your media player.
 
-7. Click the Save button to the right of the Name field.  This adds the new display to your company’s list of displays, and reveals additional fields – including Monitor, Operating System, Player Version, Viewer Version, Player Browser, Installed Browser – some of which will remain blank until you have installed Player and it starts reporting the status of the display.  See Display Settings below for an explanation of each field.
+To assign a Display ID to a display;
+
+1. Start the Rise Vision Player application
+2. Click the "Enter Display ID" button and enter the Display ID for the display created on the Displays page in the Rise Vision Platform
+3. Click on the "Apply" button. The Player application will restart and begin to Play the presentation that has been defined according its Schedule.
 
 ###Display Settings
 **Status:**  In this field, the default status for new displays is Active, but you have the option to make it Inactive if necessary.  
