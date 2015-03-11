@@ -1,5 +1,5 @@
 "use strict";
-angular.module("risevision.documentation",["ui.router","risevision.common.header","JSONedit", "pascalprecht.translate", "ui.bootstrap","risevision.google-analytics"])
+angular.module("risevision.documentation",["ui.router","risevision.common.header", "pascalprecht.translate", "ui.bootstrap","ui.bootstrap.tpls","risevision.google-analytics"])
     .config(['$translateProvider', function ($translateProvider) {
         $translateProvider.translations('en', {
             'DEVELOPER_DOCS': 'Developer Documentation',
