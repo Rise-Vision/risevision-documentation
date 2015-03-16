@@ -7,4 +7,4 @@ parent-order: 0
 order: 0
 ---
 
-#### [Store Authorization]({{site.hashTag}}{% post_url /developer/core-api/company/2014-10-01-core.company.lookup %})
+#### [Store Authorization]({{site.hashTag}}developer/core-api/company/core.company.lookup)

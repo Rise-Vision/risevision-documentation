@@ -11,11 +11,11 @@ The Google Calendar Widget puts events from any public Google Calendar onto your
 
 For example, an event from your Google Calendar like this:
 
-  ![Step 1]({{ site.baseurl }}/assets/images/google-calendar-widget-images/calendar-event.png)
+  ![Step 1]({{ site.baseurl }}assets/images/google-calendar-widget-images/calendar-event.png)
 
 will appear in your presentation like this:
 
-![Step 1]({{ site.baseurl }}/assets/images/google-calendar-widget-images/presentation-event.png)
+![Step 1]({{ site.baseurl }}assets/images/google-calendar-widget-images/presentation-event.png)
 
 ##How to configure it
 To configure this widget, open the properties window for the placeholder containing this widget, and click the widget's Configure link.  If this is the only item in the placeholder's playlist, the Configure link is in the Settings area at the bottom of the placeholder window, right below the playlist. If there are multiple items in the playlist, clicking the name of this widget opens an Item window and the Configure link is in the Settings area of that window.
@@ -26,9 +26,9 @@ To start, you need to identify which Google Calendar you want to use, by specify
 
 1. Open your Google Calendar in another tab of your browser.
 2. Under My Calendars on the left side, click the down arrow beside the name of your chosen calendar and select 'Calendar settings'.
-![Step 1]({{ site.baseurl }}/assets/images/google-calendar-widget-images/calendar-settings.png)
+![Step 1]({{ site.baseurl }}assets/images/google-calendar-widget-images/calendar-settings.png)
 3. To find the Calendar ID, look in the Calendar Address field in the Calendar Details tab. Select and copy the part in brackets after 'Calendar ID:'
-![Step 1]({{ site.baseurl }}/assets/images/google-calendar-widget-images/get-cal-id.png)
+![Step 1]({{ site.baseurl }}assets/images/google-calendar-widget-images/get-cal-id.png)
 4. Return to the browser tab showing the widget's Google Calendar Settings and paste that Calendar ID into the top field.
 
 Keep in mind that the Google Calendar that you select for use with this widget must be one whose sharing settings are set to "Make this calendar public". To ensure that your calendar is public:
@@ -37,7 +37,7 @@ Keep in mind that the Google Calendar that you select for use with this widget m
 2. Under My Calendars on the left side, click the down arrow beside the name of your chosen calendar and select 'Calendar settings'.
 3. Click the 'Share this Calendar' link at the top of the page.
 4. Make sure the checkbox beside 'Make this calendar public' is checked.
-![Step 1]({{ site.baseurl }}/assets/images/google-calendar-widget-images/set-cal-public.png)
+![Step 1]({{ site.baseurl }}assets/images/google-calendar-widget-images/set-cal-public.png)
 
 #####Scroll
 In this area you can control if and how the calendar data will scroll on your display. Options are:

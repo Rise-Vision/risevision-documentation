@@ -68,7 +68,7 @@ module Jekyll
         figure = "<figure>"
       end
 
-      figure += "<img src=\"#{@base_url}\/#{@src}\" alt=\"#{@alt}\"/>"
+      figure += "<img src=\"#{@base_url}#{@src}\" alt=\"#{@alt}\"/>"
 
       if @caption
         figure += "<figcaption>#{@caption}</figcaption>"

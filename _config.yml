@@ -11,8 +11,9 @@ metaImageUrl: "https://s3.amazonaws.com/Store-Products/Meta"
 faviconUrl: "http://s3.amazonaws.com/Rise-Images/favicons"
 twitter_username: risevision
 github_username:  RiseVision
-hashTag: "#"
-html5mode: "false"
+hashTag: ""
+html5mode: "true"
+basehref: "/"
 
 # Build settings
 markdown: redcarpet
@@ -104,6 +105,7 @@ userSections: [
 
 # Dates are not included in permalinks
 permalink: /:categories/:title
+relative_permalinks: true
 
 gems:
   - jekyll-sitemap

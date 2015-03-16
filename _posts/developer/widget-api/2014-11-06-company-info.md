@@ -16,7 +16,7 @@ To request the Company ID, make the following RPC call:
 gadgets.rpc.call("", "rsparam_get", null, id, "companyId");
 ```
 
-where `id` is the ID of the Widget. You can read about how to retrieve a Widget's ID [here](#{% post_url /developer/widget-api/2014-11-06-widget-parameters %}).
+where `id` is the ID of the Widget. You can read about how to retrieve a Widget's ID [here](developer/widget-api/widget-parameters).
 
 ## Requesting a Social Connector
 To retrieve a social connector, use this RPC call for Foursquare:

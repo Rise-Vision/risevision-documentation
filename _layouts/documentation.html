@@ -1,7 +1,7 @@
 
 <page title="{{page.title}}"
       description="{{page.excerpt | strip_html}}"
-      url="{{site.url}}{{site.baseurl}}/{{site.hashTag}}{{page.url}}"
+      url="{{site.url}}{{site.baseurl}}{{site.hashTag}}{{page.url}}"
       image="{{site.metaImageUrl}}/{{page.type}}-documentation.png"
       favicon="{{site.faviconUrl}}/{{page.favicon}}"></page>
 <!-- App Header -->
@@ -82,21 +82,21 @@
         });
 
         // Go to Sub Nav Level 1
-        $(".nav-level-1-link").click(function(e) {
+        $(".nav-level-1-link").on('click',function(e) {
             docsSidebar.css({
                 left: "-100%"
             });
             $(this).siblings(".sub-nav.nav-level-1").toggleClass("in");
-            e.stopPropagation();
         });
         // Go to Sub Nav Level 2
-        $(".nav-level-2-link").click(function(e) {
+
+        $(".nav-level-2-link").on('click', function(e) {
             docsSidebar.css({
                 left: "-200%"
             });
             $(this).siblings(".sub-nav.nav-level-2").toggleClass("in");
-            e.stopPropagation();
         });
+
         // Back from level 1
         $(".back-level-1").click(function(e) {
             docsSidebar.css({
@@ -127,7 +127,7 @@
 <script type="text/javascript">
     $(function() {
        $("#search-query").lunrSearch({
-            indexUrl: "{{ site.baseurl }}/search.json",             // URL of the `search.json` index data for your site
+            indexUrl: "{{ site.baseurl }}search.json",             // URL of the `search.json` index data for your site
             results:  "#search-results",          // jQuery selector for the search results container
             entries:  ".entries",                 // jQuery selector for the element to contain the results list, must be a child of the results element above.
             template: "#search-results-template",  // jQuery selector for the Mustache.js template

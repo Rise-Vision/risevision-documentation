@@ -3,7 +3,7 @@ layout: user-post
 title:  "Widget Internationalization"
 date:   2014-10-13 10:52:00
 category: user/content
-order: 14
+order: 15
 ---
 
 ##Internationalization

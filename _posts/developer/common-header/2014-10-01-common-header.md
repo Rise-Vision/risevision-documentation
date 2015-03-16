@@ -17,8 +17,8 @@ Rise Vision Common Header works in conjunction with Rise Vision, the digital sig
 
 At this stage Chrome is the only browser that this project and Rise Vision supports.
 
-- [Development FAQ]({{site.hashTag}}{% post_url /developer/common-header/2014-10-01-development-faq %})
-- [Basic Setup Guide]({{site.hashTag}}{% post_url /developer/common-header/2014-10-01-basic-setup-guide %})
-- [userState]({{site.hashTag}}{% post_url /developer/common-header/2014-10-01-userstate %})
-- [Events & Watches]({{site.hashTag}}{% post_url /developer/common-header/2014-10-01-events-watches %})
-- [Setting Up Test Environment]({{site.hashTag}}{% post_url /developer/common-header/2014-10-01-setting-up-test-environment %})
+- [Development FAQ]({{site.hashTag}}developer/common-header/development-faq)
+- [Basic Setup Guide]({{site.hashTag}}developer/common-header/basic-setup-guide)
+- [userState]({{site.hashTag}}developer/common-header/userstate)
+- [Events & Watches]({{site.hashTag}}developer/common-header/events-watches)
+- [Setting Up Test Environment]({{site.hashTag}}developer/common-header/setting-up-test-environment)

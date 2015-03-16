@@ -13,7 +13,7 @@
                     {% assign subSections = section[2] %}
 
                     <li>
-                        <a class="nav-level-1-link" href="" id="{{ label | replace: ' ', ''}}Link">
+                        <a class="nav-level-1-link" ng-href="" id="{{ label | replace: ' ', ''}}Link">
                             <span class="pull-right"><i class="fa fa-chevron-right"></i></span> {{ label }}
                         </a>
                             <!-- Sub Nav Level 1 -->
@@ -21,23 +21,23 @@
                                 {% for subSection in subSections %}
                                     {% assign attr = subSection[0] %}
                                     <li class="js-sub-cat" category="{{ attr }}" title="{{ subSection[1] }}">
-                                        <a href="" id="{{ subSection[0] | replace: '/', '-'}}Link" class="nav-level-2-link">
+                                        <a ng-href="" id="{{ subSection[0] | replace: '/', '-'}}Link" class="nav-level-2-link">
                                             <span class="pull-right"><i class="fa fa-chevron-right"></i></span> {{ subSection[1] }}
                                         </a>
                                         <!-- Sub Nav Level 2 -->
                                         <ul class="sub-nav nav-level-2">
                                             {% assign pages = site.categories[attr] | sort:"order"  %}
-                                            <script> $("#{{ subSection[0] | replace: '/', '-'}}Link").attr("href","{{site.hashTag}}{{ pages[0].url }}") </script>
+                                            <script> $("#{{ subSection[0] | replace: '/', '-'}}Link").attr("ng-href","{{site.hashTag}}{{ pages[0].url | replace_first: '/', ''}}") </script>
                                             {% for page in pages %}
                                                 {% if page.title == subSection[1] %}
                                                     <li>
-                                                        <a class="sub-nav-link" href="{{site.hashTag}}{{ page.url }}">
+                                                        <a class="sub-nav-link" href="{{site.hashTag}}{{ page.url | replace_first: '/', ''}}">
                                                             Overview
                                                         </a>
                                                     </li>
                                                 {% else %}
                                                     <li>
-                                                        <a class="sub-nav-link"  href="{{site.hashTag}}{{ page.url }}">
+                                                        <a class="sub-nav-link"  href="{{site.hashTag}}{{ page.url | replace_first: '/', ''}}">
                                                             {{ page.title }}
                                                         </a>
                                                     </li>
@@ -56,19 +56,19 @@
                                 {% assign attr = section[0] %}
                                 {% if site.categories[attr] != null %}
                                     {% assign pages = site.categories[attr] | sort:"order"  %}
-                                    <script> $("#{{ label | replace: ' ', ''}}Link").attr("href","{{site.hashTag}}{{ pages[0].url }}") </script>
+                                    <script> $("#{{ label | replace: ' ', ''}}Link").attr("ng-href","{{site.hashTag}}{{ pages[0].url | replace_first: '/', ''}}") </script>
                                     {% for page in pages %}
 
                                         {% if page.title == section[1] %}
                                             <li>
-                                                <a class="sub-nav-link" href="{{site.hashTag}}{{ page.url }}">
+                                                <a class="sub-nav-link" href="{{site.hashTag}}{{ page.url | replace_first: '/', ''}}">
                                                     Overview
                                                 </a>
                                             </li>
                                         {% else %}
 
                                             <li category="{{ attr }}" title="{{ page.title }}">
-                                                <a class="sub-nav-link" href="{{site.hashTag}}{{ page.url }}">
+                                                <a class="sub-nav-link" href="{{site.hashTag}}{{ page.url | replace_first: '/', ''}}">
                                                     {{ page.title }}
                                                 </a>
                                             </li>
