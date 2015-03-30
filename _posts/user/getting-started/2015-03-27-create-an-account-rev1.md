@@ -24,6 +24,7 @@ Go to: http://rva.risevision.com/ and follow the prompts:
 
 ###The Rise Vision Interface
 After creating your Rise Vision account and logging in for the first time, you’ll see the Rise Vision interface, with a number of links at the very top of the page.  These header links include, from left to right:  
+
 1. The Rise Vision logo, which links to the company's website (www.risevision.com).
 2. The main menu items to the right of the logo: Presentations | Gadgets | Displays | Schedules | Settings | Network.
 3. The App Launcher: this is the icon that looks like a 3x3 grid of black dots (to the left of the username icon). Clicking on the App Launcher open a sub-menu with further links to the following areas: Editor, Store, Storage, Displays, Schedules, Support, Community, Documentation, Developer and About.

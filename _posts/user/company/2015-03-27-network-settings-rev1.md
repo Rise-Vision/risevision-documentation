@@ -35,16 +35,27 @@ Don’t forget to save!  Once you’ve entered all of your network settings, cli
 N.B. With changes made to the platform in March 2015, some fields previously found in the Network area are no longer available:
 
 **Logo URL:**   *(Deprecated. No longer available.)*
+
  **Logo Target URL:**    *(Deprecated. No longer available.)*
+ 
  **Use DoubleClick Banner:**   *(Deprecated. No longer available.)*
+ 
  **Banner URL:**   *(Deprecated. No longer available.)*
+ 
  **Banner Target URL:**   *(Deprecated. No longer available.)*
+ 
  **Header Background Color:**   *(Deprecated. No longer available.)*
+ 
  **Help URL/Email:**   *(Deprecated. No longer available.)*
+ 
  **Support URL/Email:**   *(Deprecated. No longer available.)*
+ 
  **Sales URL/Email:**   *(Deprecated. No longer available.)*
+ 
  **News URL:**   *(Deprecated. No longer available.)*
+ 
  **Logout URL:**    *(Deprecated. No longer available.)*
+ 
  **Tutorial URL:**   *(Deprecated. No longer available.)*
  
 
