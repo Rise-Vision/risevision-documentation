@@ -1,0 +1,20 @@
+---
+layout: user-post
+title:  "Add a User"
+date:   2015-03-27 10:52:00
+category: user/users
+order: 3
+---
+
+
+###Add a User
+1. Click your username icon in the top right header area of any page. This opens a sub-menu of company-related items.
+2. Click the Company Users link. This opens a new Company Users window.
+3. Click the green "Add User +" button. This opens a new Add User window.
+4. In the Username field, type the Google account email address for the new user. For example, 'bob.jones@gmail.com'.
+5. In the First Name, Last Name and Phone fields, type the new user’s name and telephone number.
+6. In the Email field, type the user’s preferred email address. It does not have to be the same email address used in the Username field, if he/she prefers to receive emails at a different address.
+7. Click the Subscribe To Email Updates checkbox if you'd like this user to be included in the list of recipients of any email notifications sent by the platform.
+8. In the Roles field, select the role(s) you want to assign to this user. More than one role can be assigned to a user. See the [User Roles page](https://help.risevision.com/user/users/user-roles) for an explanation of each role. 
+9. Click the green Save button to create the new user. This closes the Add User window and returns you to the Company Users window.
+10. When you're done adding users, click the grey Cancel button to close the Company Users window.
