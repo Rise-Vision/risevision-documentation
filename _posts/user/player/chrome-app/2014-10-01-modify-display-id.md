@@ -3,7 +3,7 @@ layout: user-post
 title:  "Modify Display or Claim ID"
 date:   2014-10-13 10:52:00
 category: user/player/chrome-app
-order: 7
+order: 8
 ---
 
 ###To change the Display or Claim ID on your Display, do the following:
