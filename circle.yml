@@ -28,4 +28,4 @@ deployment:
         - echo "deploying to production webserver.risevision.com";
         - ssh help@webserver.risevision.com 'mkdir -p /rise-front-end/help';
         - rsync -rptz -e ssh --delete _site help@webserver.risevision.com:/rise-front-end/help;
-        - tar czvf dist.tar.gz web
+        - tar czvf dist.tar.gz _site
