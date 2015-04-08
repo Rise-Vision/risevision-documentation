@@ -7,7 +7,7 @@ order: 12
 ---
 
 ```
-Please note that this Widget is being deprecated and will not be accessible after March 16, 2015. Please migrate to the HTML5 Video Widget.
+Please note that this Widget is being deprecated and will not be accessible after June 30th, 2015. Please migrate to the HTML5 Video Widget.
 ```
 
 ##What it does
