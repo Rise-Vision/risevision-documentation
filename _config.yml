@@ -91,7 +91,8 @@ userSections: [
     ['user/content', 'Content'],
     ['user/display', 'Display'],
     ['user/player', 'Player',[
-      ['user/player/chrome-app','Chrome App Player']
+      ['user/player/chrome-app','Chrome App Player'],
+      ['user/player/native-player','Native Player']
     ]],
     ['user/presentation', 'Presentation'],
     ['user/schedule', 'Schedule'],
