@@ -6,7 +6,6 @@ category: user/display
 order: 5
 ---
 
-##Display Monitoring
 The Rise Vision platform has the capacity to monitor your displays and to notify you if one of them fails. This display monitoring feature lets you configure your Rise Vision account to send you an email notification as soon as it detects that any of your displays' Rise Vision Chrome App Player has not checked in for content updates in the last 30 minutes.
 
 In other words, if 30 minutes goes by and the system has not received a request from one of your display's players, an email message is sent to you to inform you of the display's lack of activity. This gives you the chance to check the display and troubleshoot any problems if necessary.
