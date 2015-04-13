@@ -7,7 +7,7 @@ order: 9
 ---
 
 ##What it does
-The Image Folder Widget allows you to create a playlist of images (essentially, a slideshow) simply by selecting the folder from your Rise Vision Storage area that contains all of the desired images.  Add the widget to your placeholder in the usual way (see [Add a Widget to your Presentation](http://help.stage.risevision.com/#/user/content/add-a-widget-to-a-presentation)), and then configure it as described below to select which folder to use.
+The Image Folder Widget allows you to create a playlist of images (essentially, a slideshow) simply by selecting the folder from your Rise Vision Storage area that contains all of the desired images.  Add the widget to your placeholder in the usual way (see [Add a Widget to your Presentation](http://help.risevision.com/#/user/content/add-a-widget-to-a-presentation)), and then configure it as described below to select which folder to use.
 
 ##How to configure it
 To configure this widget, open the properties window for the placeholder containing this widget, and click the widget's Configure link.  If this is the only item in the placeholder's playlist, the Configure link is in the Settings area at the bottom of the placeholder window, right below the playlist. If there are multiple items in the playlist, clicking the name of this widget opens an Item window and the Configure link is in the Settings area of that window.
