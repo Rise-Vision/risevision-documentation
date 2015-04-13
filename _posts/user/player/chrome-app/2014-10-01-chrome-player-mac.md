@@ -21,3 +21,10 @@ order: 3
 1. Choose Apple menu > System Preferences, then click Energy Saver
 2. Click Schedule, select the bottom checkbox, change the first box to Restart, second box to every day, and select your preferred reboot time.
 3. Click ok.
+
+#####Chrome App Player (first run)
+When the Player is launched for the first time you will be warned that the Display ID is not found.
+
+You will need a uniqe ID for each player in your company. This ID can be obtained by clicking on the Displays link from within the [RVA interface,](http://rva.risevision.com/) and clicking on an existing Display (if replacing one) or the "Add Display" button (if adding a new one). More information can be found [here.](/#/user/player/register-player)
+
+You assign this ID by clicking on the "Enter Display ID" button and entering the sequence obtained from RVA Displays, mentioned above.
