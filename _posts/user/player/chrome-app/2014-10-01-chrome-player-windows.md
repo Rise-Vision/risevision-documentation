@@ -30,3 +30,10 @@ Now you can specify the day, the hour and set to recur every day, now press Next
 6. In Action section you can choose what you want to run, for example restart your system:
 Choose Start a program, press Next
 in the Program/script field type shutdown /r , and press Next, press finish.
+
+#####Chrome App Player (first run)
+When the Player is launched for the first time you will be warned that the Display ID is not found.
+
+You will need a uniqe ID for each player in your company. This ID can be obtained by clicking on the Displays link from within the [RVA interface,](http://rva.risevision.com/) and clicking on an existing Display (if replacing one) or the "Add Display" button (if adding a new one). More information can be found [here.](http://help.risevision.com/#/user/player/register-player)
+
+You assign this ID by clicking on the "Enter Display ID" button and entering the sequence obtained from RVA Displays, mentioned above.
