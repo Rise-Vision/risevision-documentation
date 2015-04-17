@@ -8,7 +8,17 @@
 angular.module("risevision.documentation")
     .config (["$stateProvider", "$urlRouterProvider", function ($stateProvider, $urlRouterProvider) {
 
-        $urlRouterProvider.otherwise("/user");
+        $urlRouterProvider.otherwise(function($injector, $location){
+            $location.path("/404");
+            var destinationUrl = $location.absUrl();
+            $injector.invoke(function($window) {
+                $window.location.replace(destinationUrl);
+            });
+            return true;
+        });
+
+        $urlRouterProvider.when('/', '/user');
+        $urlRouterProvider.when('/index.html', '/user');
 
         $stateProvider
             .state('developer', {
@@ -50,6 +60,10 @@ angular.module("risevision.documentation")
                 url: '/user/:category/:subCategory/:post',
                 templateUrl: function(params){ return "{{ site.baseurl }}user/" + params.category + "/" + params.subCategory + "/" + params.post + ".html"; },
                 controller: 'DocumentationController'
+            })
+            .state('page-not-found', {
+                url: '/404',
+                templateUrl: '404.html'
             })
 
     }]);
