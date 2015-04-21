@@ -10,7 +10,7 @@ order: 1
 
 Tagging is currently in beta and is being made available as an early preview of new features. All features may not perform as described. Please report any issues you encounter in the [Community](http://community.risevision.com).
 
-If you are a 3rd party developer looking to create a widget or application that uses tagging, please take a look at the [Rise Vision Storage API](http://help.risevision.com/#/developer/storage-api/storage-api)
+If you are a 3rd party developer looking to create a widget or application that uses tagging, please take a look at the [Rise Vision Storage API]({{site.absoluteurl}}developer/storage-api/storage-api)
 
 For updates regarding the Tagging feature please follow our blog [here](http://www.risevision.com/blog/) or subscribe to the Product Updates section of our Community [here](https://community.risevision.com/rise_vision_inc/categories/rise_vision_inc_product_updates).
 

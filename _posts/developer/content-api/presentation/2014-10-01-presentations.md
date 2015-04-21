@@ -7,7 +7,7 @@ parent-order: 0
 order: 0
 ---
 
-#### [content.presentation.get]({{site.hashTag}}developer/content-api/presentation/content.presentation.get)
+#### [content.presentation.get]({{site.absoluteurl}}developer/content-api/presentations/content.presentation.get)
 
 Returns the data necessary to render a Presentation by **id**.
 

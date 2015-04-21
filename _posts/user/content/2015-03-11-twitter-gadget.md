@@ -19,7 +19,7 @@ To put this Gadget on a display:
 ##How to configure it
 If this is the only item in the Placeholder's playlist, the Settings area should already be visible at the bottom of the Placeholder window, right below the playlist. If there are multiple items in the playlist, clicking the name of this Gadget opens an Item window showing the Settings area.
 
-Before you can use the Twitter Gadget in your Presentation, you need to add a Twitter Social Connector to your Company. You can learn more about Social Connectors [here](https://help.risevision.com/user/company/company-settings).
+Before you can use the Twitter Gadget in your Presentation, you need to add a Twitter Social Connector to your Company. You can learn more about Social Connectors [here]({{site.absoluteurl}}user/company/company-settings).
 
 In the Settings area you can configure the following options:
 

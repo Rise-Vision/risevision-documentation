@@ -16,7 +16,7 @@
                         {% assign attr = subSection[0] %}
                             <optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;{{ subSection[1] }}">
                                 {% for page in site.categories[attr] %}
-                                    <option value="#{{ page.url }}">
+                                    <option value="{{site.absoluteurl}}{{ page.url }}">
                                         &nbsp;&nbsp;{{ page.title }}
                                     </option>
                                 {% endfor %}
@@ -29,7 +29,7 @@
                 {% else %}
                     {% assign attr = section[0] %}
                     {% for page in site.categories[attr] reversed %}
-                        <option value="#{{ page.url }}">
+                        <option value="{{site.absoluteurl}}{{ page.url }}">
                             &nbsp;&nbsp;{{ page.title }}
                         </option>
                     {% endfor %}

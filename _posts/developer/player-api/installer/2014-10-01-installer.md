@@ -7,7 +7,7 @@ parent-order: 0
 order: 0
 ---
 
-#### [Components]({{site.hashTag}}developer/player-api/installer/components)
+#### [Components]({{site.absoluteurl}}developer/player-api/installer/components)
 
 The Installer uses the Components API to tell it which components to install or upgrade.
 
