@@ -29,3 +29,5 @@ deployment:
         - ssh help@webserver.risevision.com 'mkdir -p /rise-front-end/help';
         - rsync -rptz -e ssh --delete _site help@webserver.risevision.com:/rise-front-end/help;
         - tar czvf dist.tar.gz _site
+        # Clean up stage by removing the branch directory from the server
+        - ssh help@webserver-stage.risevision.com 'rm -rf /rise-front-end/help/$(git log -1 --pretty=%B | grep Merge | sed -e 's/.*from Rise-Vision\///g' | sed 's/\//-/g')';
