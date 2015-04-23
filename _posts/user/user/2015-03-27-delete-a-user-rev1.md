@@ -13,4 +13,3 @@ order: 4
 4. At the bottom left corner of the User Settings window, click the red Delete button (with the garbage can icon). This opens a pop-up window that says "Are you sure you want to delete this user?"
 5. If you are sure, click the OK button.  This removes the user, closes the User Settings window and returns you to the Company Users window showing the list of remaining users.
 6. Click the grey Cancel button to close the Company Users window.
-
