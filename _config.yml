@@ -1,19 +1,13 @@
 # Site settings
 title: Rise Vision Documentation
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://help.risevision.com" # the base hostname & protocol for your site
+url: "http://localhost:8000" # the base hostname & protocol for your site
 metaImageUrl: "https://s3.amazonaws.com/Store-Products/Meta"
 faviconUrl: "http://s3.amazonaws.com/Rise-Images/favicons"
-twitter_username: risevision
-github_username:  RiseVision
 hashTag: ""
 html5mode: "true"
 basehref: "/"
+absoluteurl: "http://localhost:8000/"
 
 # Build settings
 markdown: redcarpet

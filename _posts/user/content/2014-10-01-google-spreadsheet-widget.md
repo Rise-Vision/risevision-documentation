@@ -103,11 +103,11 @@ In the above example, column A would contain text, column B a URL to an image, a
 #####Custom Layout Example
 As an example, let’s customize the Widget to render a restaurant menu that looks like this:
 
-![Menu]({{ site.baseurl }}assets/images/google-spreadsheet-widget-images/menu.png)
+![Menu]({{site.absoluteurl}}assets/images/google-spreadsheet-widget-images/menu.png)
 
 The Widget will use the menu information pulled from a Google spreadsheet with the following structure:
 
-![Spreadsheet]({{ site.baseurl }}assets/images/google-spreadsheet-widget-images/spreadsheet1.png)
+![Spreadsheet]({{site.absoluteurl}}assets/images/google-spreadsheet-widget-images/spreadsheet1.png)
 
 First, we need to create a custom HTML layout as per below. The contents of the HTML apart from inside the `<body>` tag are not shown for the sake of brevity, but you can view the entire file [here](https://github.com/Rise-Vision/widget-google-spreadsheet/blob/feature/custom-layouts/examples/list.md):
 

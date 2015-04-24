@@ -7,7 +7,7 @@ title: "Rise Vision User Documentation | Rise Vision Help Documentation"
 ---
 
 #Welcome to Rise Vision Documentation
-This documentation area provides explanations of all main aspects and areas of the Rise Vision platform. It's intended for end users of the platform. If you're looking for documentation for developers instead, that can be found [here](developer).
+This documentation area provides explanations of all main aspects and areas of the Rise Vision platform. It's intended for end users of the platform. If you're looking for documentation for developers instead, that can be found [here]({{site.absoluteurl}}developer).
 
 ###How to use this Help area
 Click any topic in the menu on the left to reveal its sub-menu of Help pages. Click any sub-menu link to read the instructions about that item. 

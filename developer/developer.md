@@ -14,11 +14,11 @@ Rise Vision provides a number of APIs to help you build digital signage applicat
 
 Allows client applications to view and update digital signage-related objects supported by the Rise Vision platform:
 
-- [Company]({{site.hashTag}}developer/core-api/company/company)
-- [Display]({{site.hashTag}}developer/core-api/display/display)
-- [User]({{site.hashTag}}developer/core-api/user/user)
-- [Schedule]({{site.hashTag}}developer/core-api/schedule/schedule)
-- [Presentation]({{site.hashTag}}developer/core-api/presentation/presentation)
+- [Company]({{site.absoluteurl}}developer/core-api/company/company)
+- [Display]({{site.absoluteurl}}developer/core-api/display/display)
+- [User]({{site.absoluteurl}}developer/core-api/user/user)
+- [Schedule]({{site.absoluteurl}}developer/core-api/schedule/schedule)
+- [Presentation]({{site.absoluteurl}}developer/core-api/presentation/presentation)
   
 
 Relationships between these objects can be described as follows:
@@ -27,9 +27,9 @@ Relationships between these objects can be described as follows:
 
 Utility read-only objects, such as:
 
-- [System Message]({{site.hashTag}}developer/core-api/systemmessage/system-message)
-- [Country]({{site.hashTag}}developer/core-api/country/country)
-- [Time Zone]({{site.hashTag}}developer/core-api/timezone/timezone)
+- [System Message]({{site.absoluteurl}}developer/core-api/systemmessage/system-message)
+- [Country]({{site.absoluteurl}}developer/core-api/country/country)
+- [Time Zone]({{site.absoluteurl}}developer/core-api/timezone/timezone)
 
 are also provided to facilitate building of user interfaces.
 
@@ -38,7 +38,7 @@ Core API is based on [Google Cloud Endpoints](https://cloud.google.com/appengine
 You can use Core API to build a wide range of apps from custom UIs for Rise Vision Platform to any kind of background content processing apps with little user interaction.
 
 It is important to keep in mind that Core API uses OAuth2 to authenticate the user and in most cases the user will be required to log in to start the app.    
-In order to use Core API your app needs to have OAuth2 client Id ([here's how to obtain it]({{site.hashTag}}{% post_url /developer/getting-started/registration/2014-10-01-clientId %})).
+In order to use Core API your app needs to have OAuth2 client Id ([here's how to obtain it]({{site.absoluteurl}}/developer/getting-started/registration/clientId)).
 
 *Applications that use Core API:* [Rise Vision Common Header](https://github.com/Rise-Vision/common-header)
 

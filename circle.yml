@@ -19,12 +19,13 @@ deployment:
   production:
       branch: master
       commands:
-        - NODE_ENV=prod npm run ci-build
         # It deploys to production server 2.
+        - NODE_ENV=prod2 npm run ci-build
         - echo "deploying to production webserver1.risevision.com";
         - ssh help@webserver1.risevision.com 'mkdir -p /rise-front-end/help';
         - rsync -rptz -e ssh --delete _site help@webserver1.risevision.com:/rise-front-end/help;
         # It then deploys to production server 1.
+        - NODE_ENV=prod npm run ci-build
         - echo "deploying to production webserver.risevision.com";
         - ssh help@webserver.risevision.com 'mkdir -p /rise-front-end/help';
         - rsync -rptz -e ssh --delete _site help@webserver.risevision.com:/rise-front-end/help;

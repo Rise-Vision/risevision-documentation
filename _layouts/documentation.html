@@ -1,7 +1,7 @@
 
 <page title="{{page.title}}"
       description="{{page.excerpt | strip_html}}"
-      url="{{site.url}}{{site.baseurl}}{{site.hashTag}}{{page.url}}"
+      url="{{site.absoluteurl}}{{page.url}}"
       image="{{site.metaImageUrl}}/{{page.type}}-documentation.png"
       favicon="{{site.faviconUrl}}/{{page.favicon}}"></page>
 <!-- App Header -->
@@ -147,7 +147,7 @@
           {{#entries}}
             <article>
               <h3>
-                <a href="{% endraw %}{{site.hashTag}}{% raw %}{{url}}">{{title}}</a>
+                <a href="{% endraw %}{{site.absoluteurl}}{% raw %}{{url}}">{{title}}</a>
               </h3>
             </article>
           {{/entries}}

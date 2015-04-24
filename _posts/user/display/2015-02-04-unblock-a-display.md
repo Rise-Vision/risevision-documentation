@@ -18,7 +18,7 @@ When a Display is blocked, a message will show on screen indicating that the Dis
 ###What to do if a Display becomes blocked:
 It is not possible to unblock a Display once it has become blocked. When a block expires in 3 hours or less, the Display will resume playing content, but will get blocked again if the Display attempts to request data more often than expected. If your Display becomes blocked, we recommend the following actions:
 
-1. Verify the Display has the appropriate firewall and proxy settings. You can find more about this [here](/#/user/player/network-requirements).
+1. Verify the Display has the appropriate firewall and proxy settings. You can find more about this [here]({{site.absoluteurl}}user/player/network-requirements).
 2. Ensure that your media player is not running out of memory (RAM). If Chrome runs out of resources during operations, it will restart and make additional connections to the Rise Vision Platform.
 3. Ensure that a refresh meta tag is not included in your Presentation HTML, as this will result in a message showing on top of your Presentation stating “Multiple Display Instances found in this Browser session” every time the refresh action occurs, and can lead to the Display being blocked.
 4. Ensure that only one instance of the Rise Vision Player is configured to start automatically. This can be checked by clicking on the Windows start button in the bottom left corner, clicking on "All Programs", then clicking on "Startup".  If you see more than one entry for Rise Vision Player (or Rise Vision Chrome App Player), right click on it and select "Delete". Do this until only one entry remains.
