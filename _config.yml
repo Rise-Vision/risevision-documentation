@@ -90,9 +90,7 @@ userSections: [
     ]],
     ['user/presentation', 'Presentation'],
     ['user/schedule', 'Schedule'],
-    ['user/storage', 'Storage',[
-      ['user/storage/tagging','Tagging']
-    ]],
+    ['user/storage', 'Storage',
     ['user/store', 'Store'],
     ['user/users', 'Users'],
 ]
