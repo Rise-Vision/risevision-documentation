@@ -87,9 +87,10 @@ userSections: [
     ['user/player', 'Player',[
       ['user/player/chrome-app','Chrome App Player'],
       ['user/player/native-player','Native Player']
+    ]],
     ['user/presentation', 'Presentation'],
     ['user/schedule', 'Schedule'],
-    ['user/storage', 'Storage',
+    ['user/storage', 'Storage',],
     ['user/store', 'Store'],
     ['user/users', 'Users'],
 ]
