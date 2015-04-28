@@ -8,11 +8,11 @@ angular.module("risevision.documentation")
         },
         {
             title: "User Documentation",
-            link: $state.href("user")
+            link: $state.href("user", {}, {absolute: true})
         },
         {
             title: "Developer Documentation",
-            link: $state.href("developer")
+            link: $state.href("developer", {}, {absolute: true})
         }];
     });
 
