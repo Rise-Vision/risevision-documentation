@@ -20,7 +20,7 @@ order: 2
 2. Type sudo gedit /etc/crontab
 3. At the bottom, type 0 3 * * * root /sbin/shutdown -r now
 4. Save and exit.
-5. This will reboot your player at 3AM. If you would like to reboot at a different time, simply replace that with the hour you would prefer.
+5. This will reboot your player at 3AM. If you would like to reboot at a different time, simply replace the 0 and 3 with your choice of minute and hour.
 
 #####Chrome App Player (first run)
 When the Player is launched for the first time you will be warned that the Display ID is not found.
