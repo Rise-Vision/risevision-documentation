@@ -52,7 +52,8 @@ developerSections: [
       ['developer/core-api/systemmessage', 'System Message']
     ]],
     ['developer/content-api', 'Content API', [
-      ['developer/content-api/presentations', 'Presentations']
+      ['developer/content-api/presentations', 'Presentations'],
+      ['developer/content-api/displays', 'Displays']
     ]],
     ['developer/viewer-api', 'Viewer API', [
       ['developer/viewer-api/content', 'Content'],
