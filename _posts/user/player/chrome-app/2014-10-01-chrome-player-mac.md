@@ -28,3 +28,6 @@ When the Player is launched for the first time you will be warned that the Displ
 You will need a uniqe ID for each player in your company. This ID can be obtained by clicking on the Displays link from within the [RVA interface,](http://rva.risevision.com/) and clicking on an existing Display (if replacing one) or the "Add Display" button (if adding a new one). More information can be found [here.](http://help.risevision.com/#/user/player/register-player)
 
 You assign this ID by clicking on the "Enter Display ID" button and entering the sequence obtained from RVA Displays, mentioned above.
+
+###Supported Versions
+Rise Vision can only support the latest Stable Channel releases of Google Chrome. We do not reccommend running Chrome App Player on the Beta or Development channels.
