@@ -12,7 +12,10 @@ Display Control is a feature, built into the Rise Vision Chrome App Player, that
 Display Control sends on and off commands using a serial port. In order to utilize this feature, a serial connection needs to be made between the Media Player and LCD Display.
 
 ##How to configure Display Control commands
-1. From the Presentations page, add a new Presentation from template. Select the Presentation: Display Control Settings for Rise Vision Chrome App Player.
+1. From the Presentations page, add a new Presentation.
+2. Add a placeholder to the presentation, then click "Add" and choose "Content by URL".
+3. Change the Type to URL and enter "http://localhost:9449/dc" (without the quotes) and click Save.
+4. You'll want to make sure the placeholder is at least 600x300 to ensure all the controls are visible.
 2. Assign the Presentation to the Schedule assigned to your Display running the Rise Vision Chrome App Player.
 3. When the Presentation loads, a configuration page will appear that looks like this:
 ![Step 1]({{site.absoluteurl}}assets/images/player/display-control.png)
