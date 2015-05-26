@@ -9,7 +9,7 @@ order: 1
 An application on Chrome OS must be configured for single app kiosk mode using **Chrome Device Management** in order for it to start up automatically when the device is powered on or rebooted.
 
 ###What is Chrome Device Management?
-Chrome device management gives Chrome for Work administrators the ability to configue policies for a Chrome device, such as configuring an application to start automatically on boot up.
+Chrome device management gives Chrome for Work administrators the ability to configure policies for a Chrome device, such as configuring an application to start automatically on boot up.
 
 For more details on managing Chrome devices using Chrome Device Management, please see the documentation at https://support.google.com/chrome/a/answer/1289314?hl=en
 
@@ -47,9 +47,9 @@ More information about Single App Kiosk Mode can be found [here](https://support
 ###Chrome App Player (first run)
 When the Player is launched for the first time, you will be warned that the Display ID is not found.
 
-You will need a uniqe ID for each player in your company. This ID can be obtained by clicking on the Displays link from within the [Rise Vision interface,](http://rva.risevision.com/) and then clicking on an existing Display (if you're replacing one) or the "Add Display" button (if you're adding a new one). More information can be found [here]({{site.absoluteurl}}user/player/register-player).
+You will need a unique ID for each player in your company. This ID can be obtained by clicking on the Displays link from within the [Rise Vision interface,](http://rva.risevision.com/) and then clicking on an existing Display (if you're replacing one) or the "Add Display" button (if you're adding a new one). More information can be found [here]({{site.absoluteurl}}user/player/register-player).
 
 You assign this ID by clicking on the "Enter Display ID" button (in the Chrome App Player) and entering the sequence that you obtained from the Rise Vision Displays area, as described above.
 
 #####Supported Versions
-Rise Vision can only support the latest Stable Channel releases of Google Chrome. We do not reccommend running Chrome App Player on the Beta or Development channels.
+Rise Vision can only support the latest Stable Channel releases of Google Chrome. We do not recommend running Chrome App Player on the Beta or Development channels.
