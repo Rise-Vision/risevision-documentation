@@ -24,7 +24,7 @@ To purchase an item from the Rise Vision Store, navigate to the page of the desi
 
 #####To go to your shopping cart page:
 
-1. When you're ready to check out and ay for your item(s), go to your shopping cart page by clicking on either the "Go To Cart" button at the bottom of an added-to-cart item's product page, or the shopping cart icon at the top of any Store page.  This take you to your shopping cart page.
+1. When you're ready to check out and pay for your item(s), go to your shopping cart page by clicking on either the "Go To Cart" button at the bottom of an added-to-cart item's product page, or the shopping cart icon at the top of any Store page.  This take you to your shopping cart page.
 2. Review the Bill To and Ship To addresses shown, and click the Edit Address icons (the pencil icons) if you wish to make changes to them.  If your address information is incomplete or incorrect, the problems will be listed in an "Address Validation Error" message in a light red box on this page. Click the Edit Address icon to supply the missing information; doing so will remove the error message and allow you to place the order.
 3. Review the details of your order in the "Review Your Order" area. Here, you can remove an item from your cart by clicking the red circle (with the minus sign icon) to the left of the item's name.  You can also change the quantity of any item that allows multiple units to be purchased.
 

@@ -16,7 +16,7 @@ To create a display in the Rise Vision platform;
 2. Then click the “Add Display” button in the top right corner of the page. 
 3. Give your display a name and click the Save button.  
 
-Once saved, a Display ID is generated and will be shown on the dipslay settings page. This ID used to uniquly identify a Display.
+Once saved, a Display ID is generated and will be shown on the display settings page. This ID used to uniquely identify a Display.
 
 If this is the first time you’re adding a display to the platform, a message will appear in red saying “Warning: No Player software is installed on the Display”.  This is simply a reminder that Rise Vision Player application must be installed on the computer that’s connected to your display.
 
