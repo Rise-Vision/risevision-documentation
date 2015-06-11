@@ -11,6 +11,25 @@
             {% endif %}
             <!-- Docs Categories -->
             <ul class="nav-top-ul">
+                {% if site.categories[page.type] != null %}
+                    {% assign pages = site.categories[page.type] | sort:"order"  %}
+
+                    <li>
+                        <div id="linkLevel1-{{ page.type | replace: ' ', ''}}" itemscope itemtype="http://data-vocabulary.org/Breadcrumb" itemprop="child">
+                            <ul>
+                                {% for page in pages %}
+                                <li category="{{ page.type }}" title="{{ page.title }}">
+                                    <div id="linkLevel1{{ page.title | replace: ' ', '-'}}" itemscope itemtype="http://data-vocabulary.org/Breadcrumb" itemprop="child">
+                                        <a class="sub-nav-link-level-1" href="{{site.absoluteurl}}{{ page.url | replace_first: '/', ''}}" itemprop="url">
+                                            <span itemprop="title">{{ page.title }}</span>
+                                        </a>
+                                    </div>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </li>
+                {% endif %}
               {% for section in sections %}
                     {% assign label = section[1] %}
                     {% assign subSections = section[2] %}
@@ -96,6 +115,7 @@
                                     </a>
                                 </li>
                             </ul>
+
                         </div>
                     </li>
                 {% endfor %}
