@@ -18,7 +18,8 @@
     describe("Go to User Documentation", function () {
 
         beforeEach(function () {
-            browser.get('/#/user');
+            browser.get('/user');
+            browser.sleep(30000);
         });
 
 

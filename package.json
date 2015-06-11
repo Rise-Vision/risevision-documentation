@@ -6,7 +6,7 @@
     "scripts": {
         "ci-build": "gulp build",
         "ci-deploy": "gulp deploy --clean",
-        "test": "echo disabled"
+        "test": "NODE_ENV=test gulp test:e2e"
     },
     "author": "rodrigopavezi <rodrigopavezi@gmail.com>",
     "license": "GNU",

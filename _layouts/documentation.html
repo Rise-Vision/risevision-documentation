@@ -1,9 +1,14 @@
-
+{% if page.notFound %}
+    {% assign httpCode = 444 %}
+{% else %}
+    {% assign httpCode = 200 %}
+{% endif %}
 <page title="{{page.title}}"
       description="{{page.excerpt | strip_html}}"
       url="{{site.absoluteurl}}{{page.url}}"
       image="{{site.metaImageUrl}}/{{page.type}}-documentation.png"
-      favicon="{{site.faviconUrl}}/{{page.favicon}}"></page>
+      favicon="{{site.faviconUrl}}/{{page.favicon}}"
+      httpcode="{{httpCode}}"></page>
 <!-- App Header -->
 <div class="app-header">
     <div class="title-block">

@@ -3,6 +3,5 @@ _site
 node_modules
 .idea
 assets/components
-Gemfile.lock
 .project
 /*.iml

@@ -8,17 +8,24 @@
 angular.module("risevision.documentation")
     .config (["$stateProvider", "$urlRouterProvider", function ($stateProvider, $urlRouterProvider) {
 
-        $urlRouterProvider.otherwise(function($injector, $location){
-            $location.path("/404");
-            var destinationUrl = $location.absUrl();
-            $injector.invoke(function($window) {
-                $window.location.replace(destinationUrl);
-            });
-            return true;
-        });
+        $urlRouterProvider.otherwise('/404');
 
         $urlRouterProvider.when('/', '/user');
         $urlRouterProvider.when('/index.html', '/user');
+
+        $urlRouterProvider.rule(function($injector, $location) {
+
+          var path = $location.path();
+          var hasTrailingSlash = path[path.length-1] === '/';
+
+          if(hasTrailingSlash) {
+
+            //if last charcter is a slash, return the same url without the slash
+            var newPath = path.substr(0, path.length - 1);
+            return newPath;
+          }
+
+        });
 
         $stateProvider
             .state('developer', {
