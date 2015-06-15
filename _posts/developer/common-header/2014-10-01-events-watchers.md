@@ -57,6 +57,11 @@ Fires when User’s Company/Sub-Company have been initialized and when a Sub-Com
 
 Fires when the Selected Company info is updated/modified by Users
 
+***
+#### ```'risevision.user.updated'```
+
+Fires on Save in User Settings modal when user edits its own profile.
+
 
 ### Method Two: Apply ```$scope.$watch()``` to ```userState``` methods 
 
