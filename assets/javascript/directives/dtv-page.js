@@ -13,6 +13,7 @@ angular.module("risevision.documentation")
                 scope.$root.url = attr.url;
                 scope.$root.image = attr.image;
                 scope.$root.favicon = attr.favicon;
+                scope.$root.httpcode = attr.httpcode;
 
             }
         }

@@ -1,0 +1,4 @@
+# Production Site settings
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://localhost:8099"
+absoluteurl: "http://localhost:8099/"

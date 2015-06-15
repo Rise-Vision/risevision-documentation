@@ -18,7 +18,7 @@
     describe("Go to Developer Documentation", function () {
 
         beforeEach(function () {
-            browser.get('/#/developer');
+            browser.get('/developer');
         });
 
 

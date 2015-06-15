@@ -64,8 +64,14 @@ gulp.task('jekyll-build', function (done) {
   var config = '';
   if( env === "prod"){
     config = '--config=_config.yml,_config_prod.yml';
+  }else if(env === "prod2"){
+    config = '--config=_config.yml,_config_prod2.yml';
+
   }else if(env === "stage"){
     config = '--config=_config.yml,_config_stage.yml';
+
+  }else if(env === "test"){
+    config = '--config=_config.yml,_config_test.yml';
 
   }else {
     config = ''
@@ -164,7 +170,7 @@ gulp.task('bower-rm', function(){
  */
 gulp.task('watch', function () {
     gulp.watch('_sass/*.scss', ['sass', 'jekyll-rebuild-dev']);
-    gulp.watch(['*.yml','index.html', '_layouts/*.html', '_includes/*.html', '_posts/**/*.md', 'assets/**/*', 'developer/**/*', 'user/**/*'], ['jekyll-rebuild-dev']);
+    gulp.watch(['*.yml','index.html', '_layouts/*.html', '_includes/*.html', '_posts/**/*.md', 'assets/**/*', 'developer/**/*', 'user/**/*', '404.md'], ['jekyll-rebuild-dev']);
 });
 
 //------------------------- Deployment --------------------------------
@@ -206,7 +212,10 @@ gulp.task("build", ['jekyll-build'], function() {
 });
 
 //-------------------------- Test ----------------------------------
-gulp.task("server", ['jekyll-build'], factory.testServer({rootPath: "./_site"}));
+gulp.task("server", ['jekyll-build'], factory.testServer({
+  rootPath: "./_site",
+  html5mode: true
+}));
 gulp.task("server-close", factory.testServerClose());
 gulp.task("test:webdrive_update", factory.webdriveUpdate());
 gulp.task("test:e2e:core", ["test:webdrive_update"], factory.testE2EAngular({
