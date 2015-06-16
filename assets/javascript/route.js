@@ -8,7 +8,7 @@
 angular.module("risevision.documentation")
     .config (["$stateProvider", "$urlRouterProvider", function ($stateProvider, $urlRouterProvider) {
 
-        $urlRouterProvider.otherwise('/404');
+        $urlRouterProvider.otherwise('/page-not-found');
 
         $urlRouterProvider.when('/', '/user');
         $urlRouterProvider.when('/index.html', '/user');
@@ -79,8 +79,8 @@ angular.module("risevision.documentation")
                 controller: 'DocumentationController'
             })
             .state('page-not-found', {
-                url: '/404',
-                templateUrl: '404.html'
+                url: '/page-not-found',
+                templateUrl: 'page-not-found.html'
             })
 
     }]);

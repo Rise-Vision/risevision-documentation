@@ -27,17 +27,17 @@
 
     it("should go to 404 URL when page is not found", function() {
       browser.get('/anyThingThatDoesNotExistPage');
-      expect(browser.getLocationAbsUrl()).to.eventually.have.string("/404");
+      expect(browser.getLocationAbsUrl()).to.eventually.have.string("/page-not-found");
     });
 
     it("should go to 404 URL when page is not found and link starts with user", function() {
       browser.get('/user/anyThingThatDoesNotExistPage');
-      expect(browser.getLocationAbsUrl()).to.eventually.have.string("/404");
+      expect(browser.getLocationAbsUrl()).to.eventually.have.string("/page-not-found");
     });
 
     it("should go to 404 URL when page is not found and link starts with developer", function() {
       browser.get('/developer/anyThingThatDoesNotExistPage');
-      expect(browser.getLocationAbsUrl()).to.eventually.have.string("/404");
+      expect(browser.getLocationAbsUrl()).to.eventually.have.string("/page-not-found");
     });
 
     it("should show the not found title", function() {
@@ -48,7 +48,7 @@
     it("should contain the prerender.io metadata tag", function() {
       browser.get('/anyThingThatDoesNotExistPage');
       expect(notFoundPage.getPrerenderStatusCodeMetaTag().isPresent()).to.eventually.be.true;
-      expect(notFoundPage.getPrerenderStatusCodeMetaTag().getAttribute('content')).to.eventually.equal("444");
+      expect(notFoundPage.getPrerenderStatusCodeMetaTag().getAttribute('content')).to.eventually.equal("404");
     });
 
   });
