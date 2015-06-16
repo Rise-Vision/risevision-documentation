@@ -91,7 +91,7 @@ userSections: [
       ['user/storage', 'Storage',],
       ['user/store', 'Store'],
       ['user/users', 'Users'],
-]]
+]]]
 
 
 # Dates are not included in permalinks
