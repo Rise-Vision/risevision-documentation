@@ -80,21 +80,18 @@ developerSections: [
 ]
 
 userSections: [
-    ['user/getting-started', 'Getting Started'],
-    ['user/alerts', 'Alerts'],
-    ['user/company', 'Company'],
-    ['user/content', 'Content'],
-    ['user/display', 'Display'],
-    ['user/player', 'Player',[
-      ['user/player/chrome-app','Chrome App Player'],
-      ['user/player/native-player','Native Player']
-    ]],
-    ['user/presentation', 'Presentation'],
-    ['user/schedule', 'Schedule'],
-    ['user/storage', 'Storage',],
-    ['user/store', 'Store'],
-    ['user/users', 'Users'],
-]
+    ['user/advanced', 'Advanced',[
+      ['user/alerts', 'Alerts'],
+      ['user/company', 'Company'],
+      ['user/content', 'Content'],
+      ['user/display', 'Display'],
+      ['user/player', 'Player'],
+      ['user/presentation', 'Presentation'],
+      ['user/schedule', 'Schedule'],
+      ['user/storage', 'Storage',],
+      ['user/store', 'Store'],
+      ['user/users', 'Users'],
+]]
 
 
 # Dates are not included in permalinks
