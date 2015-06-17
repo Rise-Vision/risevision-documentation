@@ -30,4 +30,5 @@ Note that if you’re using a non-supported operating system you’ll need to ma
 configuring the Rise Player App to start automatically after a reboot. Rise Player is a Chrome Application that can run anywhere Chrome runs but please take 
 note we only support Ubuntu, Windows, Chrome OS and Mac OS X.
 
-Have questions? Let us know in the [Community](http://community.risevision.com) or join us on our weekly live webinar!
+Have questions? Let us know in the [Community](http://community.risevision.com) or join us on our weekly live [Webinar](http://www.risevision.com/user-training/)
+!

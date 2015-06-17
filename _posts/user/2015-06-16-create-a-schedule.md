@@ -12,6 +12,8 @@ is a selection of one or more Displays you’ve created, and a list of Presentat
 
 ###Add a Schedule
 From Rise Vision select **Schedules** and then **Add** in the top right. Give your Schedule a name then edit the **Distribution** to specify which Displays to 
-control. Next, specify which Presentation(s) or HTML Pages should appear by adding them to the Presentation/URL section. Select **Save** and the Displays defined in the Distribution begin showing your presentations. That’s it! You’re now all set up and displaying on your own digital signage!
+control. Next, specify which Presentation(s) or HTML Pages should appear by adding them to the Presentation/URL section. Select **Save** and the Displays 
+defined in the Distribution begin showing your presentations. That’s it! You’re now all set up and displaying on your own digital signage!
 
-Have questions? Let us know in the [Community](http://community.risevision.com) or join us on our weekly live webinar!
+Have questions? Let us know in the [Community](http://community.risevision.com) or join us on our weekly live [Webinar](http://www.risevision.com/user-training/)
+!
