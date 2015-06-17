@@ -85,7 +85,6 @@ userSections: [
       ['user/company', 'Company'],
       ['user/content', 'Content'],
       ['user/display', 'Display'],
-      ['user/player', 'Player'],
       ['user/presentation', 'Presentation'],
       ['user/schedule', 'Schedule'],
       ['user/storage', 'Storage',],
