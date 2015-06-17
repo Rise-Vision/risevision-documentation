@@ -42,6 +42,7 @@ We support Ubuntu 14.04 running the latest stable version of Chrome
 1. Open a Terminal window
 2. Type gedit /home/rise/rise_player_watchdog.sh
 3. Paste the following into the new document
+
 	```
 	#!/bin/bash
 	CHROME_PS_CHECK=`ps ax | grep chrome | grep app-id=mfpgpdablffhbfofnhlpgmokokbahooi | grep Sl`
@@ -53,6 +54,7 @@ We support Ubuntu 14.04 running the latest stable version of Chrome
    /opt/google/chrome/chrome \"--profile-directory=Profile 1\" --app-id=mfpgpdablffhbfofnhlpgmokokbahooi &>/dev/null &
 	fi
 	```
+	
 4. **Save** and Exit
 5. In **terminal**, type *chmod +x /home/rise/rise_player_watchdog.sh*
 6. In **terminal**, type *crontab -e*
