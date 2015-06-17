@@ -2,7 +2,7 @@
 layout: user-post
 title:  "Image Folder Widget"
 date:   2015-02-17 18:20:00
-category: user/content
+category: user/advanced/content
 order: 9
 ---
 

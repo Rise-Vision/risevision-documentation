@@ -2,7 +2,7 @@
 layout: user-post
 title:  "Company Settings"
 date:   2014-10-13 10:52:00
-category: user/company
+category: user/advanced/company
 order: 2
 ---
 

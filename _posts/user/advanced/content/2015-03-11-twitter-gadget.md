@@ -2,7 +2,7 @@
 layout: user-post
 title:  "Twitter Gadget"
 date:   2014-12-01 10:52:00
-category: user/content
+category: user/advanced/content
 order: 11
 ---
 

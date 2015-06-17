@@ -2,7 +2,7 @@
 layout: user-post
 title:  "What is the Store?"
 date:   2014-12-16 10:52:00
-category: user/store
+category: user/advanced/store
 order: 2
 ---
 

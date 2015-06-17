@@ -2,7 +2,7 @@
 layout: user-post
 title:  "Get the Link for an Item from Storage"
 date:   2014-12-12 05:05:00
-category: user/storage
+category: user/advanced/storage
 order: 6
 ---
 

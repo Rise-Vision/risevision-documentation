@@ -6,7 +6,7 @@ title:  "How to Cancel a Subscription"
 
 date:   2015-02-04 21:37:00
 
-category: user/store
+category: user/advanced/store
 
 order: 5
 

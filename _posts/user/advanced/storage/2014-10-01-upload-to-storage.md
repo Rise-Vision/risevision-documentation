@@ -2,7 +2,7 @@
 layout: user-post
 title:  "Upload an Item"
 date:   2014-10-13 10:52:00
-category: user/storage
+category: user/advanced/storage
 order: 2
 ---
 

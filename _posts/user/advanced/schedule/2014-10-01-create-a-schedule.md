@@ -2,7 +2,7 @@
 layout: user-post
 title:  "Create a Schedule"
 date:   2014-10-13 10:52:00
-category: user/schedule
+category: user/advanced/schedule
 order: 2
 ---
 

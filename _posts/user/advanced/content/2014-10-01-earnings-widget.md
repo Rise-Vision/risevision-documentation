@@ -2,7 +2,7 @@
 layout: user-post
 title:  "Earnings Widget"
 date:   2014-10-13 10:52:00
-category: user/content
+category: user/advanced/content
 order: 2
 ---
 

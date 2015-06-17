@@ -2,7 +2,7 @@
 layout: user-post
 title:  "What is a Presentation?"
 date:   2014-10-13 10:52:00
-category: user/presentation
+category: user/advanced/presentation
 parent-order: 1
 order: 1
 ---

@@ -2,7 +2,7 @@
 layout: user-post
 title:  "Download from Storage"
 date:   2015-02-13 22:20:00
-category: user/storage
+category: user/advanced/storage
 order: 5
 ---
 

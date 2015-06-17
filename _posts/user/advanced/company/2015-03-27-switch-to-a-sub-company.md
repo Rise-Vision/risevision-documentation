@@ -2,7 +2,7 @@
 layout: user-post
 title:  "Switch to a Sub-Company"
 date:   2015-03-27 14:00:00
-category: user/company
+category: user/advanced/company
 order: 6
 ---
 

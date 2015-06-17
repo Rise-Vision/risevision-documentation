@@ -2,7 +2,7 @@
 layout: user-post
 title:  "How to View Your Active Subscriptions"
 date:   2015-01-08 18:00:00
-category: user/store
+category: user/advanced/store
 order: 4
 ---
 ##How to view your active subscriptions

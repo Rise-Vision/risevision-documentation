@@ -2,7 +2,7 @@
 layout: user-post
 title:  "Network Settings"
 date:   2015-03-27 14:45:00
-category: user/company
+category: user/advanced/company
 order: 4
 ---
 

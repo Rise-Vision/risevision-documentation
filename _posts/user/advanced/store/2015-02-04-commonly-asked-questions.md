@@ -2,7 +2,7 @@
 layout: user-post
 title:  "Store Commonly Asked Questions"
 date:   2015-02-04 21:37:00
-category: user/store
+category: user/advanced/store
 order: 1
 ---
 

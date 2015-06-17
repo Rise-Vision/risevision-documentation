@@ -2,7 +2,7 @@
 layout: user-post
 title:  "How to Purchase an Item"
 date:   2015-01-08 11:00:00
-category: user/store
+category: user/advanced/store
 order: 3
 ---
 ###How to purchase an item from the Store

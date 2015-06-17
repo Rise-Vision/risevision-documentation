@@ -2,7 +2,7 @@
 layout: user-post
 title:  "Move a Company"
 date:   2015-03-27 10:52:00
-category: user/company
+category: user/advanced/company
 order: 3
 ---
 

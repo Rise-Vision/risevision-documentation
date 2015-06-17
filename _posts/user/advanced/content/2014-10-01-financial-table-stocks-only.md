@@ -2,7 +2,7 @@
 layout: user-post
 title:  "Financial Table - Stocks Only Widget"
 date:   2014-10-01 10:52:00
-category: user/content
+category: user/advanced/content
 order: 3
 ---
 

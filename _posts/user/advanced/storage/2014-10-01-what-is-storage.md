@@ -2,7 +2,7 @@
 layout: user-post
 title:  "What is Storage?"
 date:   2014-10-13 10:52:00
-category: user/storage
+category: user/advanced/storage
 order: 1
 ---
 

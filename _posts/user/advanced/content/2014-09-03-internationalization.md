@@ -2,7 +2,7 @@
 layout: user-post
 title:  "Widget Internationalization"
 date:   2014-10-13 10:52:00
-category: user/content
+category: user/advanced/content
 order: 15
 ---
 

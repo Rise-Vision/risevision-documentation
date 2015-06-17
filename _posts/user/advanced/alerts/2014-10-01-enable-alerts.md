@@ -2,7 +2,7 @@
 layout: user-post
 title:  "Enable Alerts for your Company"
 date:   2014-10-13 10:52:00
-category: user/alerts
+category: user/advanced/alerts
 order: 2
 ---
 

@@ -2,7 +2,7 @@
 layout: user-post
 title:  "User Roles"
 date:   2014-10-13 10:52:00
-category: user/users
+category: user/advanced/users
 order: 2
 ---
 
