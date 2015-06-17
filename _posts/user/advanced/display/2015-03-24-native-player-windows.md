@@ -3,7 +3,7 @@ layout: user-post
 title:  "Native Player on Windows"
 date:   2016-06-17 10:31:00
 category: user/advanced/display
-order: 6
+order: 7
 ---
 
 The Rise Vision Player is the software that must be installed on the computer portion of your display in order to be able to show content from the Rise Vision platform.  It’s the software that takes the presentations and schedules that you create in the platform and sends them to your display screen.

@@ -3,7 +3,7 @@ layout: user-post
 title:  "Native Player on Ubuntu"
 date:   2015-06-17 10:52:00
 category: user/advanced/display
-order: 7
+order: 8
 ---
 
 The Rise Vision Player is the software that must be installed on the computer portion of your display in order to be able to show content from the Rise Vision platform.  It’s the software that takes the presentations and schedules that you create in the platform and sends them to your display screen.

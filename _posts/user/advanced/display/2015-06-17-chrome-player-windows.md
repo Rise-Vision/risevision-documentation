@@ -37,11 +37,11 @@ We support Rise Player on Windows 8.1 running the latest stable version of Chrom
 	* In the open file dialog, make sure that Always ask... is NOT checked
 	* If prompted, follow the steps to install the .net framework 3.5
 5. Once the application is launched, click Add 
- 	*Name: Rise Player
- 	*Path: C:\Program Files\Google\Chrome\Application\chrome.exe
- 	*Arguments: --profile-directory=Default --app-id=mfpgpdablffhbfofnhlpgmokokbahooi
- 	*Check Every: 0.50 minutes
- 	*Select create
+ 	* Name: Rise Player
+ 	* Path: C:\Program Files\Google\Chrome\Application\chrome.exe
+ 	* Arguments: --profile-directory=Default --app-id=mfpgpdablffhbfofnhlpgmokokbahooi
+ 	* Check Every: 0.50 minutes
+ 	* Select create
 6. In the top menu, select Tools,  Settings
 7. Check Load with Windows and click save.
 8. Select the checkbox next to the Rise Player entry.
