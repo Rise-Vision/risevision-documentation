@@ -1,6 +1,6 @@
 ---
 layout: user-post
-title:  "Optimization Guide for Mac OS X"
+title:  "Mac OS X Optimization Guide"
 date:   2015-06-16 10:52:00
 category: user/advanced/display
 order: 3
