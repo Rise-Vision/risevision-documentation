@@ -2,8 +2,8 @@
 layout: user-post
 title:  "Network Requirements"
 date:   2014-10-13 10:52:00
-category: user/player
-order: 2
+category: user/advanced/display
+order: 6
 ---
 
 

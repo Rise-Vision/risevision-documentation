@@ -2,8 +2,8 @@
 layout: user-post
 title:  "Why is my Display Blocked?"
 date:   2015-02-04 10:52:00
-category: user/display
-order: 6
+category: user/advanced/display
+order: 5
 ---
 
 ###What is a Display Block?
