@@ -12,7 +12,7 @@ the Chrome browser and the Rise Player Chrome Application to receive and publish
 
 ###Add a Display
 From Rise Vision select **Displays** and then **Add Display**. Give your Display a name and save it.
-Once saved a Display ID is generated and you will use that ID to register the media player you install Rise Player on next.
+Once saved a *Display ID* is generated and you will use that ID to register the media player you install Rise Player on next.
 
 ###Install Rise Player
 Confirm that your media player has the latest version of Chrome installed and if it doesn’t download it from [www.google.com/chrome](www.google.com/chrome).
