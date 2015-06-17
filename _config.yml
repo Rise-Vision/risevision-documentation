@@ -81,15 +81,15 @@ developerSections: [
 
 userSections: [
     ['user/advanced', 'Advanced',[
-      ['user/advanced/alerts', 'Alerts'],
-      ['user/advanced/company', 'Company'],
-      ['user/advanced/content', 'Content'],
-      ['user/advanced/display', 'Display'],
-      ['user/advanced/presentation', 'Presentation'],
-      ['user/advanced/schedule', 'Schedule'],
-      ['user/advanced/storage', 'Storage',],
-      ['user/advanced/store', 'Store'],
-      ['user/advanced/users', 'Users'],
+      ['user/alerts', 'Alerts'],
+      ['user/company', 'Company'],
+      ['user/content', 'Content'],
+      ['user/display', 'Display'],
+      ['user/presentation', 'Presentation'],
+      ['user/schedule', 'Schedule'],
+      ['user/storage', 'Storage',],
+      ['user/store', 'Store'],
+      ['user/users', 'Users'],
 ]]]
 
 
