@@ -22,9 +22,7 @@ then start it. When prompted enter the **Display ID** you created above.
 
 To stop Rise Player enter the key combination *Control + W* on your keyboard.
 
-Next select the operating system [Windows](https://help.risevision.com/user/player/chrome-app/chrome-player-windows), [Chrome OS](https://help.risevision.
-com/user/player/chrome-app/configure-kiosk-mode), [Ubuntu](https://help.risevision.com/user/player/chrome-app/chrome-player-linux) or [Mac OS X](https://help.
-risevision.com/user/player/chrome-app/chrome-player-mac) you are using and optimize it for digital signage according to their respective guides.
+Next select the operating system [Windows](/display/chrome-player-windows), [Chrome OS](/display/configure-kiosk-mode), [Ubuntu](/display/chrome-player-linux) or [Mac OS X](/display/chrome-player-mac) you are using and optimize it for digital signage according to their respective guides.
 
 Note that if you’re using a non-supported operating system you’ll need to make sure to disable any screen saver, display standby/sleep mode, as well as 
 configuring the Rise Player App to start automatically after a reboot. Rise Player is a Chrome Application that can run anywhere Chrome runs but please take 

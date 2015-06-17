@@ -61,10 +61,12 @@ We support Ubuntu 14.04 running the latest stable version of Chrome
 7. If prompted, press enter for the default editor
 8. Use the arrow keys on your keyboard to scroll to the bottom of this document
 9. Copy/paste the following two lines
+
 	```
 	* * * * * /home/rise/rise_player_watchdog.sh
 	15 01 01 */3 * rm -f /home/rise/player_restarted.log 2> /dev/null
 	```
+	
 10. Press **Control + X** to exit the document
 11. Press **Y**  to save the buffer
 12. Press **Enter** to use the file name already specified
