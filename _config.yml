@@ -80,17 +80,8 @@ developerSections: [
 ]
 
 userSections: [
-    ['user/advanced', 'Advanced',[
-      ['user/advanced/alerts', 'Alerts'],
-      ['user/advanced/company', 'Company'],
-      ['user/advanced/content', 'Content'],
-      ['user/advanced/display', 'Display'],
-      ['user/advanced/presentation', 'Presentation'],
-      ['user/advanced/schedule', 'Schedule'],
-      ['user/advanced/storage', 'Storage',],
-      ['user/advanced/store', 'Store'],
-      ['user/advanced/users', 'Users'],
-]]]
+      ['user/display', 'Display'],
+]
 
 
 # Dates are not included in permalinks
