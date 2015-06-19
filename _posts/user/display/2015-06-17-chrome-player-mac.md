@@ -34,11 +34,30 @@ We support OS X 10.10 running the latest stable version of Chrome
 	* Change the second box to Every Day
 	* Set your preferred reboot time. We recommend 3 AM.
 
-###Configure the Rise Player Application to Autostart
-1. Open **System Preferences**
-2. Select **Users & Groups**
-3. Click on the **Current User**
-	* Select the **Login Items** tab
-	* Open **Finder**
- 	* Navigate to *Your Username\Applications\Chrome Apps*
- 	* Drag the Rise Player Application into **Login Items**
+###Configure a Watchdog script to reopen Rise Player if it closes
+1. Open a text editor and past the following text into it
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.risevision.player</string>
+    <key>ProgramArguments</key>
+        <array>
+            <!-- the following line will need to be changed to reflect the correct path and profile name/id -->
+            <string>/Users/**your username**/Applications/Chrome Apps.localized/**your profile** mfpgpdablffhbfofnhlpgmokokbahooi.app/Contents/MacOS/app_mode_loader</string>
+        </array>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <true/>
+</dict>
+</plist>
+```
+
+2. Replace **your username** with your username
+3. Replace **your profile** with your profile
+4. Save text document, you can name it whatever you wish.
+5. Move document to /Users/**your username**/Library/LaunchAgents
