@@ -34,6 +34,7 @@ sudo gedit /asr/bin/update-notifier
 ```
 sudo chmod +x /usr/bin/update-notifier
 ```
+
 ###Disable Apport
 1. Open **Terminal**
 2. Type 
