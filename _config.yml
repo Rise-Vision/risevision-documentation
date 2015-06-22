@@ -80,7 +80,7 @@ developerSections: [
 ]
 
 userSections: [
-      ['user/advanced', 'Advanced', [
+      ['user/advanced', 'Advanced',[
         ['user/display', 'Displays'],
 ]]
 ]
