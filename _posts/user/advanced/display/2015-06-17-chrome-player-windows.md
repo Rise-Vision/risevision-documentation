@@ -32,7 +32,7 @@ We support Rise Player on Windows 8.1 running the latest stable version of Chrom
 ###Configure Application Monitor
 1. Download the **Application Monitor** install package from *http://www.jockersoft.com/scripts/dl_count.php?fileId=2*
 2. Right click on the zip file and select **Extract All**
-3. Move the newly created appmonitor folder to *c:\*
+3. Move the newly created appmonitor folder to * c:\ *
 4. Launch **Application Monitor** from the folder.
 	+ In the open file dialog, make sure that Always ask... is NOT checked
 	+ If prompted, follow the steps to install the .net framework 3.5
