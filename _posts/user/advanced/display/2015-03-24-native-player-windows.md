@@ -2,7 +2,7 @@
 layout: user-post
 title:  "Native Player on Windows"
 date:   2016-06-17 10:31:00
-category: user/display
+category: user/advanced/display
 order: 7
 ---
 

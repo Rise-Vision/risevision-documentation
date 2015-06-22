@@ -2,7 +2,7 @@
 layout: user-post
 title:  "Ubuntu Optimization Guide"
 date:   2015-06-16 10:52:00
-category: user/display
+category: user/advanced/display
 order: 2
 ---
 We support Ubuntu 14.04 running the latest stable version of Chrome

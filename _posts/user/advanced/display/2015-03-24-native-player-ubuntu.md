@@ -2,7 +2,7 @@
 layout: user-post
 title:  "Native Player on Ubuntu"
 date:   2015-06-17 10:52:00
-category: user/display
+category: user/advanced/display
 order: 8
 ---
 

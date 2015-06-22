@@ -2,7 +2,7 @@
 layout: user-post
 title:  "Windows Optimization"
 date:   2015-06-17 10:52:00
-category: user/display
+category: user/advanced/display
 order: 0
 ---
 We support Rise Player on Windows 8.1 running the latest stable version of Chrome 

@@ -2,7 +2,7 @@
 layout: user-post
 title:  "Chrome OS Optimization Guide"
 date:   2015-06-17 10:52:00
-category: user/display
+category: user/advanced/display
 order: 1
 ---
 We support Rise Player on Chrome OS that is running the latest version of Chrome on the Stable Channel. 
