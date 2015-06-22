@@ -45,17 +45,17 @@ We support Ubuntu 14.04 running the latest stable version of Chrome
 gedit /home/rise/rise_player_watchdog.sh
 ```
 3. Paste the following into the new document
-	```
-	#!/bin/bash
-	CHROME_PS_CHECK=`ps ax | grep chrome | grep app-id=mfpgpdablffhbfofnhlpgmokokbahooi | grep Sl`
-	if [ -z "$CHROME_PS_CHECK" ]; then       #if chrome is not running, then launch it
-   echo "Chrome/Player crashed.  Restarted:  `date`" >> /home/rise/player_restarted.log
-   export DISPLAY=":0"
-   # an assumption was made about the profile directory. if player doesn't start correctly, replace the following
-   # line with the one in the desktop shortcut properties (and append      &>/dev/null &     like you see below)
-   /opt/google/chrome/chrome \"--profile-directory=Profile 1\" --app-id=mfpgpdablffhbfofnhlpgmokokbahooi &>/dev/null &
-	fi
-	```
+```
+#!/bin/bash
+CHROME_PS_CHECK=`ps ax | grep chrome | grep app-id=mfpgpdablffhbfofnhlpgmokokbahooi | grep Sl`
+if [ -z "$CHROME_PS_CHECK" ]; then       #if chrome is not running, then launch it
+echo "Chrome/Player crashed.  Restarted:  `date`" >> /home/rise/player_restarted.log
+export DISPLAY=":0"
+# an assumption was made about the profile directory. if player doesn't start correctly, replace the following
+# line with the one in the desktop shortcut properties (and append      &>/dev/null &     like you see below)
+/opt/google/chrome/chrome \"--profile-directory=Profile 1\" --app-id=mfpgpdablffhbfofnhlpgmokokbahooi &>/dev/null &
+fi
+```
 4. Save and Exit
 5. In **Terminal**, type 
 ```
@@ -68,10 +68,10 @@ crontab -e
 7. If prompted, press enter for the default editor
 8. Use the arrow keys on your keyboard to scroll to the bottom of this document
 9. Copy/paste the following two lines
-	```
-	* * * * * /home/rise/rise_player_watchdog.sh
-	15 01 01 */3 * rm -f /home/rise/player_restarted.log 2> /dev/null
-	```
+```
+* * * * * /home/rise/rise_player_watchdog.sh
+15 01 01 */3 * rm -f /home/rise/player_restarted.log 2> /dev/null
+```
 10. Press **Control + X** to exit the document
 11. Press **Y**  to save the buffer
 12. Press **Enter** to use the file name already specified
