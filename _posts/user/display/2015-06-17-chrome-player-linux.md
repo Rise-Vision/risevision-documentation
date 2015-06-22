@@ -41,13 +41,10 @@ We support Ubuntu 14.04 running the latest stable version of Chrome
 ###Configure a Watchdog script to open Rise Player if it closes
 1. Open a **Terminal**
 2. Type 
-
 ```
 gedit /home/rise/rise_player_watchdog.sh
 ```
-
 3. Paste the following into the new document
-
 	```
 	#!/bin/bash
 	CHROME_PS_CHECK=`ps ax | grep chrome | grep app-id=mfpgpdablffhbfofnhlpgmokokbahooi | grep Sl`
@@ -59,29 +56,22 @@ gedit /home/rise/rise_player_watchdog.sh
    /opt/google/chrome/chrome \"--profile-directory=Profile 1\" --app-id=mfpgpdablffhbfofnhlpgmokokbahooi &>/dev/null &
 	fi
 	```
-	
 4. Save and Exit
 5. In **Terminal**, type 
-
 ```
 chmod +x /home/rise/rise_player_watchdog.sh
 ```
-
 6. In **Terminal**, type 
-
 ```
 crontab -e
 ```
-
 7. If prompted, press enter for the default editor
 8. Use the arrow keys on your keyboard to scroll to the bottom of this document
 9. Copy/paste the following two lines
-
 	```
 	* * * * * /home/rise/rise_player_watchdog.sh
 	15 01 01 */3 * rm -f /home/rise/player_restarted.log 2> /dev/null
 	```
-	
 10. Press **Control + X** to exit the document
 11. Press **Y**  to save the buffer
 12. Press **Enter** to use the file name already specified
@@ -90,10 +80,8 @@ crontab -e
 15. **Right click** the desktop icon for Rise Player and select **Properties**
 16. **Highlight** the entire Command line and copy the text
 17. In **terminal**, type gedit 
-
 ```
 /home/rise/rise_player_watchdog.sh
 ```
-
 18. Replace the line beginning with */opt/google/chrome/chrome* with the text copied from the shortcut.
 19. Save and exit
