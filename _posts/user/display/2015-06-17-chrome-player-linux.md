@@ -27,20 +27,25 @@ We support Ubuntu 14.04 running the latest stable version of Chrome
 6. In terminal type *sudo chmod +x /usr/bin/update-notifier* press enter
 
 ###Disable Apport
-1. Open **terminal**
+1. Open **Terminal**
 2. Type *sudo gedit /etc/default/apport*
 3. Edit the last line in the document to read *enabled=0*
 4. **Save** and exit
 
 ###Configure a scheduled reboot
-1. Open **terminal**
+1. Open **Terminal**
 2. Type *sudo gedit /etc/crontab*
 3. At the bottom, type *0 3 * * * root /sbin/shutdown -r now*
 4. **Save** and exit
 
 ###Configure a Watchdog script to open Rise Player if it closes
-1. Open a Terminal window
-2. Type gedit /home/rise/rise_player_watchdog.sh
+1. Open a **Terminal**
+2. Type 
+
+```
+gedit /home/rise/rise_player_watchdog.sh
+```
+
 3. Paste the following into the new document
 
 	```
@@ -55,9 +60,19 @@ We support Ubuntu 14.04 running the latest stable version of Chrome
 	fi
 	```
 	
-4. **Save** and Exit
-5. In **terminal**, type *chmod +x /home/rise/rise_player_watchdog.sh*
-6. In **terminal**, type *crontab -e*
+4. Save and Exit
+5. In **Terminal**, type 
+
+```
+chmod +x /home/rise/rise_player_watchdog.sh
+```
+
+6. In **Terminal**, type 
+
+```
+crontab -e
+```
+
 7. If prompted, press enter for the default editor
 8. Use the arrow keys on your keyboard to scroll to the bottom of this document
 9. Copy/paste the following two lines
@@ -74,6 +89,11 @@ We support Ubuntu 14.04 running the latest stable version of Chrome
 14. **The following steps are only needed if the player does not automatically start.**
 15. **Right click** the desktop icon for Rise Player and select **Properties**
 16. **Highlight** the entire Command line and copy the text
-17. In **terminal**, type *gedit /home/rise/rise_player_watchdog.sh*
+17. In **terminal**, type gedit 
+
+```
+/home/rise/rise_player_watchdog.sh
+```
+
 18. Replace the line beginning with */opt/google/chrome/chrome* with the text copied from the shortcut.
 19. Save and exit
