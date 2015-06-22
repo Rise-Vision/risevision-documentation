@@ -18,24 +18,41 @@ We support Ubuntu 14.04 running the latest stable version of Chrome
 
 ###Disable System Updates Notifications
 1. Open **terminal**
-2. Type *sudo mv /usr/bin/update-notifier /usr/bin/update-notifier.real* and press enter
-3. Type *sudo gedit /asr/bin/update-notifier* and press enter
+2. Type 
+```
+sudo mv /usr/bin/update-notifier /usr/bin/update-notifier.real
+```
+3. Type 
+```
+sudo gedit /asr/bin/update-notifier
+```
 4. Add two lines to this document 
 	* #!/bin/sh 
 	* exit 0
 5. **Save** and exit the document
-6. In terminal type *sudo chmod +x /usr/bin/update-notifier* press enter
-
+6. In terminal type 
+```
+sudo chmod +x /usr/bin/update-notifier
+```
 ###Disable Apport
 1. Open **Terminal**
-2. Type *sudo gedit /etc/default/apport*
+2. Type 
+```
+sudo gedit /etc/default/apport
+```
 3. Edit the last line in the document to read *enabled=0*
 4. **Save** and exit
 
 ###Configure a scheduled reboot
 1. Open **Terminal**
-2. Type *sudo gedit /etc/crontab*
-3. At the bottom, type *0 3 * * * root /sbin/shutdown -r now*
+2. Type 
+```
+sudo gedit /etc/crontab
+```
+3. At the bottom, type 
+```
+0 3 * * * root /sbin/shutdown -r now
+```
 4. **Save** and exit
 
 ###Configure a Watchdog script to open Rise Player if it closes
