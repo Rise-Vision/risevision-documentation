@@ -36,7 +36,6 @@ We support OS X 10.10 running the latest stable version of Chrome
 
 ###Configure a Watchdog script to reopen Rise Player if it closes
 1. Open a text editor and past the following text into it
-
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -56,7 +55,6 @@ We support OS X 10.10 running the latest stable version of Chrome
 </dict>
 </plist>
 ```
-
 2. Replace **your username** with your username
 3. Replace **your profile** with your profile
 4. Save text document, you can name it whatever you wish.
