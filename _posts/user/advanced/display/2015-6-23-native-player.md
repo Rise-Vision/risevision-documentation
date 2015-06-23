@@ -20,7 +20,7 @@ The word “player” is also used in the term “media player”, which refers 
 This document applies to Windows 8.1 32bit
 
 ###Where can I download Player?
-To download the Native Player software for Windows 8.1, click [here](http://www.risevision.com/native-player/#windows1).
+To download the Native Player software for Windows 8.1, click [here](https://rvaserver2.appspot.com/player/download?os=win).
 
 ###Turn Screensaver Off
 1. From Control Panel select **Appearance and Personalization**
@@ -49,7 +49,7 @@ To download the Native Player software for Windows 8.1, click [here](http://www.
 This document applies to Ubuntu 14.04 32bit
 
 ###Where can I download Player?
-To download the Native Player software for Ubuntu 14.04, click [here](http://www.risevision.com/native-player/#ubuntu1).
+To download the Native Player software for Ubuntu 14.04, click [here](https://rvaserver2.appspot.com/player/download?os=lnx).
 
 ###Disable power save
 1. Click the settings cog in the taskbar and select **System Settings**
