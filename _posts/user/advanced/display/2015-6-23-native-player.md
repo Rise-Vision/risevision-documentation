@@ -7,7 +7,7 @@ order: 5
 ---
 
 
-**Please note that not all Rise Vision features are supported on the Native Player. The [Rise Vision Chrome App Player](user/advanced/display/chrome-player-windows) is recommended.**
+**Please note that not all Rise Vision features are supported on the Native Player. The [Rise Vision Chrome App Player](user/create-a-display) is recommended.**
 
 
 The Rise Vision Player is the software that must be installed on the computer portion of your display in order to be able to show content from the Rise Vision platform.  It’s the software that takes the presentations and schedules that you create in the platform and sends them to your display screen.
