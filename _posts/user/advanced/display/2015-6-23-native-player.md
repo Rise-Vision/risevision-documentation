@@ -6,9 +6,9 @@ category: user/advanced/display
 order: 5
 ---
 
-```
-Please note that not all Rise Vision features are supported on the Native Player. The [Rise Vision Chrome App Player](user/advanced/display/chrome-player-windows) is recommended.
-```
+
+**Please note that not all Rise Vision features are supported on the Native Player. The [Rise Vision Chrome App Player](user/advanced/display/chrome-player-windows) is recommended.**
+
 
 The Rise Vision Player is the software that must be installed on the computer portion of your display in order to be able to show content from the Rise Vision platform.  It’s the software that takes the presentations and schedules that you create in the platform and sends them to your display screen.
 
@@ -101,8 +101,7 @@ sudo gedit /etc/crontab
 4. **Save** and exit
 
 ###Installing on Ubuntu 14.04 32 Bit
-
-1. Download the 32 Bit Linux Ubuntu installation file from [http://www.risevision.com/native-player/](http://www.risevision.com/native-player/)
+1. Download the Rise Vision Native PLayer software [here](https://rvaserver2.appspot.com/player/download?os=lnx)
 2. Install the following packages by typing the following into a Terminal window:
 	* sudo apt-get install (package name)
 	* openjdk-7-jre
