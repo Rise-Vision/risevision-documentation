@@ -7,7 +7,7 @@ order: 5
 ---
 
 ```
-Please note that not all Rise Vision features are supported on the Native Player. The Rise Vision Chrome App Player is recommended.
+Please note that not all Rise Vision features are supported on the Native Player. The [Rise Vision Chrome App Player](user/advanced/display/chrome-player-windows) is recommended.
 ```
 
 The Rise Vision Player is the software that must be installed on the computer portion of your display in order to be able to show content from the Rise Vision platform.  It’s the software that takes the presentations and schedules that you create in the platform and sends them to your display screen.
@@ -15,12 +15,12 @@ The Rise Vision Player is the software that must be installed on the computer po
 The word “player” is also used in the term “media player”, which refers to the computer portion of your display, i.e., to the device that connects to and powers your digital sign.   But in general, when we talk about the Player, we’re referring to the software.
 
 
-###Where can I download Player?
-To download the Player software, go to http://www.risevision.com/player/ and select the version made for the operating system used by your display’s computer/media player. 
-
 ##Windows Native Player Optimization Guide
 
 This document applies to Windows 8.1 32bit
+
+###Where can I download Player?
+To download the Native Player software for Windows 8.1, click [here](http://www.risevision.com/native-player/#windows1).
 
 ###Turn Screensaver Off
 1. From Control Panel select **Appearance and Personalization**
@@ -47,6 +47,9 @@ This document applies to Windows 8.1 32bit
 ##Linux Native Player Optimization Guide
 
 This document applies to Ubuntu 14.04 32bit
+
+###Where can I download Player?
+To download the Native Player software for Ubuntu 14.04, click [here](http://www.risevision.com/native-player/#ubuntu1).
 
 ###Disable power save
 1. Click the settings cog in the taskbar and select **System Settings**
@@ -99,7 +102,7 @@ sudo gedit /etc/crontab
 
 ###Installing on Ubuntu 14.04 32 Bit
 
-1. Download the 32 Bit Linux Ubuntu installation file from http://www.risevision.com/native-player/#/playerUbuntu
+1. Download the 32 Bit Linux Ubuntu installation file from [http://www.risevision.com/native-player/](http://www.risevision.com/native-player/)
 2. Install the following packages by typing the following into a Terminal window:
 	* sudo apt-get install (package name)
 	* openjdk-7-jre
