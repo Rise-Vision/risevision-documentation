@@ -1,10 +1,11 @@
 ---
 layout: user-post
-title:  "Native Player on Windows"
+title:  "Rise Vision Native Player"
 date:   2016-06-17 10:31:00
 category: user/advanced/display
 order: 5
 ---
+
 '''
 Please note that not all Rise Vision features are supported on the Native Player. The Rise Vision Chrome App Player is recommended.
 '''
