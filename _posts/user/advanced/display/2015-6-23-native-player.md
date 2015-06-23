@@ -19,91 +19,85 @@ The word “player” is also used in the term “media player”, which refers 
 To download the Player software, go to http://www.risevision.com/player/ and select the version made for the operating system used by your display’s computer/media player. 
 
 ##Windows Native Player Optimization Guide
-This document only applies to Microsoft Windows Windows 7 and 8.1. It does not refer to optimization tweaks for any other OS.
 
-BIOS Settings
-Upon booting, go into the BIOS and ensure that the Reboot after power failure setting is enabled.
-IMPORTANT** Because of the multiple versions available, please follow your motherboard manufacturer’s instructions. **
+This document applies to Windows 8.1 32bit
 
-**Windows 8.1** 
+###Turn Screensaver Off
+1. From Control Panel select **Appearance and Personalization**
+2. Select **Change Screen Saver** and set **Screensaver as (None)**. Save the change.
 
-1. The Rise Vision Player does not work on Windows 8, but does work on Windows 8.1. Update your Windows 8 computer to Windows 8.1 by following the steps listed at http://windows.microsoft.com/en-us/windows-8/update-from-windows-8-tutorial
-2. Once Windows 8.1 is running, go to the Desktop, right click on the Taskbar and choose Properties. Go to the Navigation tab, and in the “Start Screen” section, ensure that “When I sign in or close all apps on a screen, go to the desktop instead of start” and “show my desktop background on start” are both checked.
+###Configure Power Options
+1. From Control Panel select **System and Security** 
+2. Select **Power Options** and update to use the **High performance** plan
+3. Select **Change plan settings** to the right of the High performance plan title
+4. From the **High performance settings** page, update the options per the below. Settings not shown can remain as the default
+5. Set Hard disk > Turn off hard disk after to *0*
+6. Set Display > Turn off display after to *0*
 
-**Windows Updates & Device Drivers** 
+###Disable Scaling
+1. Right click the Chrome Browser shortcut and select **Properties** then select the **Compatibility** tab 
+2. Uncheck **Disable scaling on high DPI** and select **OK**
 
-1. Ensure all Windows updates are installed, and if preferred Windows is configured to download and install updates automatically. The default time for Windows to install and reboot is daily at 3 am, however users can change this to anytime that is acceptable to them.
-2. Ensure the latest verified and working hardware drivers are installed by navigating to the appropriate website for your Hardware manufacturer, and ensuring that you have the latest drivers. The most important hardware to ensure is up to date are the Video Card, Ethernet Adapter, and Wireless Adapter (if applicable)
-
-**Display Properties** 
-
-1. Change your Screensaver to None.
-2. Change your Power Options so the Display/Monitor never turns off.
-3. Make sure are you using the native or most appropriate Display resolution.
-4. Autohide the Taskbar
-
-**Operating System Settings** 
-
-1. Remove any Antivirus or Antimalware software. These tools typically degrade the quality of content playback.
-2. Set your Computer Settings to “Adjust for Best Performance” in the Advanced System Properties.
-3. Set your Virtual Memory (page file) to be 1.5 x the size of the current memory installed on the computer. Choose the Custom Size radio button, and enter the current size of RAM x 1.5 for both the Initial Size and Maximum Size values, and then press Set. Restart the machine.
-4. Disable System Restore.
-5. Change your Power Options so that your Hard Disk NEVER goes to go Sleep or into System Standby.
-6. Disable Hibernation.
-7. Disable alerts in the Security Center by choosing the option: “Change the way Security Center alerts me” and uncheck all Alerts.
-8. Disable User Account Control.
-9. Disable Windows Defender.
-10. Disable Windows Indexing on the Hard Drive by opening Windows Explorer, right clicking on your Hard Drive and selecting Properties. At the bottom of the window you’ll see “Allow indexing service to index this disk for faster searches,” uncheck this and click OK. Choose to ignore all warnings to complete this action.
-11. Disable any unnecessary programs in the computer startup via MSConfig.
-12. Disable any unnecessary Windows Services some examples are (but not limited to):
-	* Error Reporting Service
-	* Help and Support
-	* Print Spooler
-	* Security Center
-	* Smart Card
-	* System Restore Service
-	* Themes
-	* Windows Time
+###Disable Windows Security Alerts
+1. From Control Panel select **System and Security**
+2. Select **Action Center**
+3. In the left pane, select **Change Action Center Settings**
+4. **Uncheck** all fields under **Security Messages** and **Maintenance Messages**
 
 ##Linux Native Player Optimization Guide
-This help page outlines the recommended Linux OS settings to optimize the performance of your digital signage Display.Before you begin, determine which hardware is best suited for your Display, depending on your Presentation type. For this you may want to check out our Community Forum, or contact one of our Partners for assistance.
 
-This document only applies to Ubuntu Linux 14.04. It does not refer to optimization tweaks for any other OS. Instructions to install can be found at the bottom of this page.
+This document applies to Ubuntu 14.04 32bit
 
-BIOS Settings
-Upon booting, go into the BIOS and ensure that the Reboot after power failure setting is enabled.
+###Disable power save
+1. Click the settings cog in the taskbar and select **System Settings**
+2. Select **Brightness & Lock**
+3. Change **Turn screen on when inactive** for to *Never*
+4. Turn **Lock** off
+5. Click **All Settings**
+6. Select **Power**
+7. Change **Suspend when inactive** for to *Don’t Suspend*
 
-IMPORTANT** Because of the multiple versions available, please follow your motherboard manufacturer’s instructions. **
+###Disable System Updates Notifications
+1. Open **terminal**
+2. Type 
+```
+sudo mv /usr/bin/update-notifier /usr/bin/update-notifier.real
+```
+3. Type 
+```
+sudo gedit /asr/bin/update-notifier
+```
+4. Add two lines to this document 
+	* #!/bin/sh 
+	* exit 0
+5. **Save** and exit the document
+6. In terminal type 
+```
+sudo chmod +x /usr/bin/update-notifier
+```
 
-**Ubuntu Updates & Device Drivers** 
+###Disable Apport
+1. Open **Terminal**
+2. Type 
+```
+sudo gedit /etc/default/apport
+```
+3. Edit the last line in the document to read *enabled=0*
+4. **Save** and exit
 
-1. Ensure all Ubuntu updates are installed. Do this by going to System/ Administration/Update Manager. Click the “Check for Updates” button and install updates until the Update Manager informs you that your system is up to date.
-2. Ensure the latest verified and working hardware drivers are installed by navigating to the appropriate website for your Hardware manufacturer, and ensuring that you have the latest drivers. The most important hardware to ensure is up to date are the Video Card, Ethernet Adapter, and Wireless Adapter (if applicable)
+###Configure a scheduled reboot
+1. Open **Terminal**
+2. Type 
+```
+sudo gedit /etc/crontab
+```
+3. At the bottom, type 
+```
+0 3 * * * root /sbin/shutdown -r now
+```
+4. **Save** and exit
 
-**Display Properties** 
-
-1. Change your Screensaver to None.
-2. Change your Power Management Preferences so the Display/Monitor never turns off.
-3. Make sure are you using the native or most appropriate Display resolution.
-4. Autohide the Panel
-5. If you want the mouse to be hidden while the Presentation is running, install the ‘unclutter’ package. Do this by opening the Ubuntu Software Center, and searching for the Package ‘unclutter’.
-
-**Operating System Settings** 
-
-1. Remove any Antivirus or Antimalware software. These tools typically degrade the quality of content playback.
-2. Change your Power Management Preferences so that your Hard Disk NEVER goes to sleep.
-3. Ensure that the user who is logging into the system to run the Rise Vision Player is set to login automatically.
-
-Even after setting the Screensaver to None and Power Management to never turn off, sometimes you may see the screen go dark after rebooting. To correct this, open a Terminal window, and type “gksu gedit /etc/X11/xorg.conf” (without the quotes) and overwrite the text in there with the following:
-
-	Section “ServerFlags”
-	Option “BlankTime” “0″
-	Option “StandbyTime” “0″
-	Option “SuspendTime” “0″
-	Option “OffTime” “0″
-	EndSection
-
-**Installing on Ubuntu 14.04 32 Bit**
+###Installing on Ubuntu 14.04 32 Bit
 
 1. Download the 32 Bit Linux Ubuntu installation file from http://www.risevision.com/native-player/#/playerUbuntu
 2. Install the following packages by typing the following into a Terminal window:
