@@ -101,7 +101,7 @@ sudo gedit /etc/crontab
 4. **Save** and exit
 
 ###Installing on Ubuntu 14.04 32 Bit
-1. Download the Rise Vision Native PLayer software [here](https://rvaserver2.appspot.com/player/download?os=lnx)
+1. Download the Rise Vision Native Player software [here](https://rvaserver2.appspot.com/player/download?os=lnx)
 2. Install the following packages by typing the following into a Terminal window:
 	* sudo apt-get install (package name)
 	* openjdk-7-jre
