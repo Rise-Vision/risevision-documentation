@@ -15,7 +15,7 @@ From Rise Vision select **Displays** and then **Add Display**. Give your Display
 Once saved a *Display ID* is generated and you will use that ID to register the media player you install Rise Player on next.
 
 ###Install Rise Player
-Confirm that your media player has the latest version of Chrome installed and if it doesn’t download it from [www.google.com/chrome](www.google.com/chrome).
+Confirm that your media player has the latest version of Chrome installed and if it doesn’t download it from [www.google.com/chrome](http://www.google.com/chrome).
 
 Now install [Rise Player](https://chrome.google.com/webstore/detail/rise-vision-chrome-app-pl/mfpgpdablffhbfofnhlpgmokokbahooi) from the Chrome Web Store and 
 then start it. When prompted enter the **Display ID** you created above.
