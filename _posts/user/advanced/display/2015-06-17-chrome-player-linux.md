@@ -24,7 +24,7 @@ sudo mv /usr/bin/update-notifier /usr/bin/update-notifier.real
 ```
 3. Type 
 ```
-sudo gedit /asr/bin/update-notifier
+sudo gedit /usr/bin/update-notifier
 ```
 4. Add two lines to this document 
 	* #!/bin/sh 
