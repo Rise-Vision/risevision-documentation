@@ -1,6 +1,6 @@
 ---
 layout: user-post
-title:  "Windows Optimization"
+title:  "Windows Optimization Guide"
 date:   2015-06-17 10:52:00
 category: user/advanced/display
 order: 0

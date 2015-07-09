@@ -31,6 +31,6 @@ For [Managed Devices](https://support.google.com/chrome/a/answer/1289314?hl=en),
 3. Configure **Kiosk Apps** by adding the [Rise Player Application](https://chrome.google.com/webstore/detail/rise-vision-chrome-app-pl/mfpgpdablffhbfofnhlpgmokokbahooi)
 4. Configure Kiosk Settings for the following
 	* Set **Public Session Kiosk** for *Do not allow Public Session Kiosk*
-5. Configure Rise Player as the Auto-Launch Kiosk App 
-6. Set **Auto Update** to *Allow auto-updates*
-Set **Release Channel** to *Move to Stable Channel*
+	* Configure Rise Player as the **Auto-Launch Kiosk App** 
+5. Set **Auto Update** to *Allow auto-updates*
+6. Set **Release Channel** to *Move to Stable Channel*
