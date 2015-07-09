@@ -9,7 +9,7 @@ order: 4
 
 ###Network Requirements
 Firewall Exceptions
-To function properly with the Rise Vision Player, a display must be able to access certain resources on port 80 (http) and 443 (https). Specifically, the following addresses need to be added to your firewall’s exceptions list.:
+To function properly with the Rise Vision Player, a display must be able to access certain resources on port 80 (http) and 443 (https). Specifically, the following addresses need to be added to your firewall’s exceptions list:
 
 - rvashow2.appspot.com
 - rvaserver2.appspot.com
