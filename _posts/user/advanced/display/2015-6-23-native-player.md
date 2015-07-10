@@ -19,7 +19,7 @@ The word “player” is also used in the term “media player”, which refers 
 
 This document applies to Windows 8.1 32bit
 
-###Where can I download Player?
+###Where Can I Download Player?
 To download the Native Player software for Windows 8.1, click [here](https://rvaserver2.appspot.com/player/download?os=win).
 
 ###Turn Screensaver Off
@@ -48,10 +48,10 @@ To download the Native Player software for Windows 8.1, click [here](https://rva
 
 This document applies to Ubuntu 14.04 32bit
 
-###Where can I download Player?
+###Where Can I Download Player?
 To download the Native Player software for Ubuntu 14.04, click [here](https://rvaserver2.appspot.com/player/download?os=lnx).
 
-###Disable power save
+###Disable Power Save
 1. Click the settings cog in the taskbar and select **System Settings**
 2. Select **Brightness & Lock**
 3. Change **Turn screen on when inactive** for to *Never*
@@ -88,7 +88,7 @@ sudo gedit /etc/default/apport
 3. Edit the last line in the document to read *enabled=0*
 4. **Save** and exit
 
-###Configure a scheduled reboot
+###Configure a Scheduled Reboot
 1. Open **Terminal**
 2. Type 
 ```

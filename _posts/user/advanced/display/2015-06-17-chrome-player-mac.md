@@ -13,7 +13,7 @@ We support OS X 10.10 running the latest stable version of Chrome
 3. Select the **Screen Saver tab**
 4. Change **Start after:** to *Never*
 
-###Disable Power save 
+###Disable Power Save 
 1. Open **System Preferences**
 2. Select **Energy Saver**
 3. Slide the **Turn off display after:** value to *Never*
@@ -34,7 +34,7 @@ We support OS X 10.10 running the latest stable version of Chrome
 	* Change the second box to Every Day
 	* Set your preferred reboot time. We recommend 3 AM.
 
-###Configure a Watchdog script to reopen Rise Player if it closes
+###Configure a Watchdog Script to Open Rise Player if it Closes
 1. Open a text editor and past the following text into it
 ```
 <?xml version="1.0" encoding="UTF-8"?>

@@ -7,7 +7,7 @@ order: 2
 ---
 We support Ubuntu 14.04 running the latest stable version of Chrome
 
-###Disable power save
+###Disable Power Save
 1. Click the settings cog in the taskbar and select **System Settings**
 2. Select **Brightness & Lock**
 3. Change **Turn screen on when inactive** for to *Never*
@@ -44,7 +44,7 @@ sudo gedit /etc/default/apport
 3. Edit the last line in the document to read *enabled=0*
 4. **Save** and exit
 
-###Configure a scheduled reboot
+###Configure a Scheduled Reboot
 1. Open **Terminal**
 2. Type 
 ```
@@ -56,7 +56,7 @@ sudo gedit /etc/crontab
 ```
 4. **Save** and exit
 
-###Configure a Watchdog script to open Rise Player if it closes
+###Configure a Watchdog Script to Open Rise Player if it Closes
 1. Open a **Terminal**
 2. Type 
 ```
