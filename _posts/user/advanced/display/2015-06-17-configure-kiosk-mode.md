@@ -5,7 +5,9 @@ date:   2015-06-17 10:52:00
 category: user/advanced/display
 order: 1
 ---
-We support Rise Player on Managed Chrome OS devices that are restricted to Chrome OS version 42.* on the Stable channel. We recommend only managed devices, this allows Chrome OS to automatically recover if the Chrome browser inadvertantly shuts down. We recommend always remaining 1 or 2 major versions of Chrome OS behind to make sure your content is compatible with the latest version of Google Chrome OS.
+We support Rise Player on Managed Chrome OS devices that are restricted to Chrome OS version 42.* on the Stable channel. 
+
+We support devices that are enrolled in [Google Device Management](https://support.google.com/chrome/a/answer/1289314?hl=en), this allows Chrome OS to automatically recover if the Chrome browser inadvertantly shuts down. We recommend always remaining 1 or 2 major versions of Chrome OS behind to ensure your content is compatible with the latest version of Google Chrome OS.
 
 
 ###Configure Your Google Organizational Unit
