@@ -10,7 +10,7 @@ We support Chrome OS devices that are enrolled in [Google Device Management](htt
 
 ###Configure Your Google Organizational Unit
 
-For [Managed Devices](https://support.google.com/chrome/a/answer/1289314?hl=en), we recommend creating an Organizational Unit for your Digital Signage Players with the settings configured per the below. Settings not shown can be left as default.
+For [Managed Devices](https://support.google.com/chrome/a/answer/1289314?hl=en), we recommend creating an Organizational Unit for your Digital Signage Players with the settings configured per the steps below. Settings not shown can be left as default.
 
 1. Set **Power Management** to *Do not allow device to sleep/shut down when on sign in screen*
 2. Set **Sign-in Screen** to *Never show user names and photos*
