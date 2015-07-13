@@ -22,7 +22,7 @@ For [Managed Devices](https://support.google.com/chrome/a/answer/1289314?hl=en),
 	* Set **Public Session Kiosk** for *Do not allow Public Session Kiosk*
 	* Configure Rise Player as the **Auto-Launch Kiosk App** 
 5. Set **Auto Update** to *Allow auto-updates*
-6. Set **Restrict Google Chrome version to at most** to ** 42.* **
+6. Set **Restrict Google Chrome version to at most** to **42**
 7. Set **Randomly scatter auto-updates over** to **None**
 7. Set **Auto reboot after updates** to **Disallow auto-reboots**
 8. Set **Release Channel** to *Move to Stable Channel*
