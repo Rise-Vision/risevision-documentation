@@ -24,8 +24,8 @@ For [Managed Devices](https://support.google.com/chrome/a/answer/1289314?hl=en),
 5. Set **Auto Update** to *Allow auto-updates*
 6. Set **Restrict Google Chrome version to at most** to one or two versions behind the current version
 7. Set **Randomly scatter auto-updates over** to *None*
-7. Set **Auto reboot after updates** to *Disallow auto-reboots*
-8. Set **Release Channel** to *Move to Stable Channel*
+8. Set **Auto reboot after updates** to *Disallow auto-reboots*
+9. Set **Release Channel** to *Move to Stable Channel*
 
 ###Enroll Your Chromebox
 
@@ -35,5 +35,6 @@ https://support.google.com/chrome/a/answer/1360642?hl=en), under the section “
 1. Power on your Chromebox
 2. Follow the on-screen instructions to connect to a wireless network
 3. At the login screen press **Control+Alt+E** on your keyboard
+	* If an enrollment prompt does not appear, please [wipe your Chromebox](https://support.google.com/chrome/a/answer/1360642?hl=en)
 4. Type in the enrollment email and password associated with your Google account
 5. Select **Enroll device**
