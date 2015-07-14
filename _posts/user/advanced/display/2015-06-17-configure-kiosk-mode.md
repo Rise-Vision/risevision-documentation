@@ -29,12 +29,9 @@ For [Managed Devices](https://support.google.com/chrome/a/answer/1289314?hl=en),
 
 ###Enroll Your Chromebox
 
-Before enrolling your device, you’ll need to recover your Chromebox to it’s default factory settings. See the instructions located at [Google’s help page](
-https://support.google.com/chrome/a/answer/1360642?hl=en), under the section “Wipe a Chromebox”.
-
 1. Power on your Chromebox
 2. Follow the on-screen instructions to connect to a wireless network
 3. At the login screen press **Control+Alt+E** on your keyboard
-	* If an enrollment prompt does not appear, please [wipe your Chromebox](https://support.google.com/chrome/a/answer/1360642?hl=en)
+	>NOTE: If an enrollment prompt does not appear, please [wipe your Chromebox](https://support.google.com/chrome/a/answer/1360642?hl=en)
 4. Type in the enrollment email and password associated with your Google account
 5. Select **Enroll device**
