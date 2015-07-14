@@ -32,7 +32,6 @@ For [Managed Devices](https://support.google.com/chrome/a/answer/1289314?hl=en),
 1. Power on your Chromebox
 2. Follow the on-screen instructions to connect to a wireless network
 3. At the login screen press **Control+Alt+E** on your keyboard
-
-NOTE: If an enrollment prompt does not appear, please wipe your [Chromebox](https://support.google.com/chrome/a/answer/1360642?hl=en)
+	* NOTE: If an enrollment prompt does not appear, please wipe your [Chromebox](https://support.google.com/chrome/a/answer/1360642?hl=en)
 4. Type in the enrollment email and password associated with your Google account
 5. Select **Enroll device**
