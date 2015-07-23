@@ -17,4 +17,4 @@ title: "Rise Vision User Documentation | Rise Vision Help Documentation"
 
 [Add Users](user/add-users)
 
-Have questions? Let us know in the [Community](http://community.risevision.com) or join us on our weekly live [Webinar](http://www.risevision.com/user-training/)!
+Have questions? Let us know in the [Community](http://community.risevision.com) or join us on our weekly live [Webinar](https://www.risevision.com/webinars)!

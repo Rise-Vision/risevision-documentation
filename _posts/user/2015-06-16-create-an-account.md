@@ -12,4 +12,4 @@ First, make sure you have a Google account. If you don’t already have one don�
 From Rise Vision select **Sign Up Free** in the top right corner, then **Start with a Google Account** and enter your Google account credentials. Next, complete 
 the preceding form (it’s just three fields!) select **Save** and that’s it - you now have a Rise Vision account!
 
-Have questions? Let us know in the [Community](http://community.risevision.com) or join us on our weekly live [Webinar](http://www.risevision.com/user-training/)!
+Have questions? Let us know in the [Community](http://community.risevision.com) or join us on our weekly live [Webinar](https://www.risevision.com/webinars)!

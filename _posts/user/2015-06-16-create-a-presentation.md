@@ -17,4 +17,4 @@ be added to your Company and the the Editor will be opened. Feel free to make an
 Creating a blank Presentation is just as simple. From Rise Vision select **Presentations** and then select **Add** in the top right corner. Next, you’ll be 
 presented with a blank Presentation in the Editor from which you can start building whatever you’d like.
 
-Have questions? Let us know in the [Community](http://community.risevision.com) or join us on our weekly live [Webinar](http://www.risevision.com/user-training/)!
+Have questions? Let us know in the [Community](http://community.risevision.com) or join us on our weekly live [Webinar](https://www.risevision.com/webinars)!
