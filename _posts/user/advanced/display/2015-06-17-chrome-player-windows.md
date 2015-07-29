@@ -40,7 +40,7 @@ We support Rise Player on Windows 8.1 running the latest stable version of Chrom
  	* Name: *Rise Player*
  	* Path: *C:\Program Files\Google\Chrome\Application\chrome.exe*
  	* Arguments: *--profile-directory=Default --app-id=mfpgpdablffhbfofnhlpgmokokbahooi*
- 	* Check Every: *0.50 minutes*
+ 	* Check Every: *1.00 minutes*
  	* Select **create**
 6. In the top menu, select **Tools**, **Settings**
 7. Check **Load with Windows** and click save.
