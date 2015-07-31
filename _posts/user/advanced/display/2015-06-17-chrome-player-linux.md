@@ -63,9 +63,10 @@ sudo gedit /etc/crontab
 gedit /home/rise/rise_player_watchdog.sh
 ```
 3. Paste the following into the new document
+
 ```
 #!/bin/bash
-CHROME_PS_CHECK=`ps ax | grep chrome | grep app-id=mfpgpdablffhbfofnhlpgmokokbahooi | grep Sl`
+CHROME_PS_CHECK=`ps ax | grep chrome | grep app-id=mfpgpdablffhbfofnhlpgmokokbahooi`
 if [ -z "$CHROME_PS_CHECK" ]; then       #if chrome is not running, then launch it
 echo "Chrome/Player crashed.  Restarted:  `date`" >> /home/rise/player_restarted.log
 export DISPLAY=":0"
