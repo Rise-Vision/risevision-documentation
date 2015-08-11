@@ -19,7 +19,6 @@
 
         beforeEach(function () {
             browser.get('/user');
-            browser.sleep(30000);
         });
 
 
