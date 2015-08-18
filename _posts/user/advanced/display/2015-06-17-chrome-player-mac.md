@@ -3,7 +3,7 @@ layout: user-post
 title:  "Mac OS X Optimization Guide"
 date:   2015-06-16 10:52:00
 category: user/advanced/display
-order: 3
+order: 4
 ---
 We support OS X 10.10 running the latest stable version of Chrome
 
