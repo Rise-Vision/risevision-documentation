@@ -14,11 +14,11 @@ order: 0
 [Polymer](https://www.polymer-project.org/) is a library that makes it easy to build Web Components. Polymer provides a set of polyfills that bring support for Web Components to modern browsers that don't support them natively.
 
 ## Usage
-Using a Web Component is as simple as importing `webcomponents.js` (to include the polyfills), importing the component, and then using it in an HTML page. For example, here's what the code might look like to include the Google Maps component:
+Using a Web Component is as simple as importing `webcomponents-lite.min.js` (to include the polyfills), importing the component, and then using it in an HTML page. For example, here's what the code might look like to include the Google Maps component:
 
 ```
 <!-- Polyfill Web Components support for older browsers -->
-<script src="components/webcomponentsjs/webcomponents.js"></script>
+<script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
 
 <!-- Import element -->
 <link rel="import" href="google-map.html">
@@ -26,8 +26,3 @@ Using a Web Component is as simple as importing `webcomponents.js` (to include t
 <!-- Use element -->
 <google-map latitude="37.779" longitude="-122.3892"></google-map>
 ```
-
-### [Rise Storage Web Component](https://github.com/Rise-Vision/web-component-rise-storage)
-The Rise Storage Web Component uses Google’s Storage API to retrieve the URL of a file, or the URLs of all files within a folder, from Rise Storage.
-
-[Demo](http://rise-vision.github.io/web-component-rise-storage/)
