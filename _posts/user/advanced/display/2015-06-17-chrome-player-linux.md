@@ -57,7 +57,7 @@ sudo gedit /etc/crontab
 4. **Save** and exit
 
 ###Configure a Watchdog Script to Open Rise Player if it Closes
-0. NOTE: any references to /home/rise refer to the username and home directory. If the user account is bill (for example), replace with /home/bill
+0. NOTE: any references to /home/rise indicate the username and home directory. If the user account is bill (for example), replace with /home/bill
 1. Open a **Terminal**
 2. Type 
 ```
