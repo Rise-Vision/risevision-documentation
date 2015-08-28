@@ -57,6 +57,7 @@ sudo gedit /etc/crontab
 4. **Save** and exit
 
 ###Configure a Watchdog Script to Open Rise Player if it Closes
+0. NOTE: any references to /home/rise indicate the username and home directory. If the user account is bill (for example), replace with /home/bill
 1. Open a **Terminal**
 2. Type 
 ```
@@ -87,6 +88,7 @@ crontab -e
 7. If prompted, press enter for the default editor
 8. Use the arrow keys on your keyboard to scroll to the bottom of this document
 9. Copy/paste the following two lines
+
 ```
 * * * * * /home/rise/rise_player_watchdog.sh
 15 01 01 */3 * rm -f /home/rise/player_restarted.log 2> /dev/null
