@@ -3,7 +3,7 @@ layout: user-post
 title:  "Chrome OS Optimization Guide"
 date:   2015-06-17 10:52:00
 category: user/advanced/display
-order: 2
+order: 4
 ---
 We support Chrome OS devices that are enrolled in [Google Device Management](https://support.google.com/chrome/a/answer/1289314?hl=en), this allows Chrome OS to automatically recover if the Chrome browser inadvertently shuts down. We recommend always remaining 1 or 2 major versions of Chrome OS behind to ensure your content is never adversely impacted by an update.
 

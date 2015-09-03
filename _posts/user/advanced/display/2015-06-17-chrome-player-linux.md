@@ -1,6 +1,6 @@
 ---
 layout: user-post
-title:  "Ubuntu Optimization Guide"
+title:  "Rise Player Chrome Extension for Ubuntu Optimization Guide"
 date:   2015-06-16 10:52:00
 category: user/advanced/display
 order: 3

@@ -1,9 +1,9 @@
 ---
 layout: user-post
-title:  "Windows Optimization Guide"
+title:  "Rise Player Chrome Extension for Windows Optimization Guide"
 date:   2015-06-17 10:52:00
 category: user/advanced/display
-order: 1
+order: 2
 ---
 We support Rise Player on Windows 8.1 running the latest stable version of Chrome 
 
