@@ -16,7 +16,7 @@ Once saved a *Display ID* is generated and you will use that ID to register the 
 ###Install Rise Windows Player
 Rise Windows Player for Windows 8.1 is the preffered way to display beautiful digital signage on your Display.
 
-Download Rise Windows Player [here](http://install-versions.risevision.com/rvplayer-installer.exe). Double click the downloaded rvplayer-installer.exe file, and follow the prompts for installation. When prompted, enter the **Display ID** you created above.
+Download Rise Windows Player [here](http://install-versions.risevision.com/rvplayer-installer.exe). Double click the downloaded **rvplayer-installer.exe** file, and follow the prompts for installation. When prompted, enter the **Display ID** you created above.
 
 To stop Rise Windows Player enter the key combination *Control + W* on your keyboard.
 
@@ -25,7 +25,7 @@ We recommend that you check out the Rise [Windows Player Optimization Guide](use
 ###Install Rise Linux Player
 If your media player has Ubuntu 14.04 installed as it's Operating System, you can use it to display your digital signage with Rise Linux Player!
 
-Download Rise Linux Player [here](http://install-versions.risevision.com/rvplayer-installer.sh). After rvplayer-installer.sh is downloaded, right click it and click **Properties**. Select the **Permissions** tab and *Check* **Allow executing file as program**. Click **Close**. Open a terminal window, navigate to the directory you downloaded rvplayer-installer.sh to, and type ./rvplayer-installer.sh. When prompted, enter the **Display ID** you created above.
+Download Rise Linux Player [here](http://install-versions.risevision.com/rvplayer-installer.sh). Right click **rvplayer-installer.sh**, click **Properties**. Select the **Permissions** tab and *Check* **Allow executing file as program**. Click **Close**. Open a terminal window, navigate to the directory you downloaded rvplayer-installer.sh to, and type ./rvplayer-installer.sh. When prompted, enter the **Display ID** you created above.
 
 We recommend that you check out the [Rise Linux Player Optimization Guide](user/advanced/display/rise-linux-player) to further prepare your media player to display digital signage! to further prepare your media player to display digital signage!
 
@@ -33,7 +33,7 @@ We recommend that you check out the [Rise Linux Player Optimization Guide](user/
 Please consult our [Chrome OS Optimization Guide](user/advanced/display/configure-kiosk-mode) for more information about setting up Rise Player on Chrome OS.
 
 ###Rise Player Chrome Extension on Windows 8.1, Ubuntu 14.04, or Mac OS X
-The Rise Player Chrome Extension is an alternative player that can be used on on OS that has a current version of Google Chrome on it.
+The Rise Player Chrome Extension is an alternative player that can be used on any OS that has a current version of Google Chrome on it.
 
 Confirm that your media player has the latest version of Chrome installed and if it doesn’t download it from [www.google.com/chrome](http://www.google.com/chrome).
 
