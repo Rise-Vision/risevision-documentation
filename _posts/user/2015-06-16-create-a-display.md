@@ -27,7 +27,7 @@ If your media player has Ubuntu 14.04 installed as it's Operating System, you ca
 
 Download Rise Linux Player [here](http://install-versions.risevision.com/rvplayer-installer.sh). Right click **rvplayer-installer.sh**, click **Properties**. Select the **Permissions** tab and *Check* **Allow executing file as program**. Click **Close**. Open a terminal window, navigate to the directory you downloaded rvplayer-installer.sh to, and type ./rvplayer-installer.sh. When prompted, enter the **Display ID** you created above.
 
-We recommend that you check out the [Rise Linux Player Optimization Guide](user/advanced/display/rise-linux-player) to further prepare your media player to display digital signage! to further prepare your media player to display digital signage!
+We recommend that you check out the [Rise Linux Player Optimization Guide](user/advanced/display/rise-linux-player) to further prepare your media player to display digital signage!
 
 ###Install Rise Player on Chrome OS
 Please consult our [Chrome OS Optimization Guide](user/advanced/display/configure-kiosk-mode) for more information about setting up Rise Player on Chrome OS.
