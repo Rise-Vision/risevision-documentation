@@ -1,6 +1,6 @@
 ---
 layout: user-post
-title:  "Rise Player Chrome Extension for Windows Optimization Guide"
+title:  "Windows Rise Player Chrome Extension Optimization Guide"
 date:   2015-06-17 10:52:00
 category: user/advanced/display
 order: 2

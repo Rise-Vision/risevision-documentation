@@ -1,6 +1,6 @@
 ---
 layout: user-post
-title:  "Mac OS X Optimization Guide"
+title:  "Mac OS X Rise Player Chrome Extension Optimization Guide"
 date:   2015-06-16 10:52:00
 category: user/advanced/display
 order: 5
