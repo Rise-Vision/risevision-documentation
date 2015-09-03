@@ -43,15 +43,3 @@ sudo gedit /etc/default/apport
 ```
 3. Edit the last line in the document to read *enabled=0*
 4. **Save** and exit
-
-###Configure a Scheduled Reboot
-1. Open **Terminal**
-2. Type 
-```
-sudo gedit /etc/crontab
-```
-3. At the bottom, type 
-```
-0 3 * * * root /sbin/shutdown -r now
-```
-4. **Save** and exit
