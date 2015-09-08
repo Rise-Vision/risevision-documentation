@@ -5,8 +5,6 @@ date:   2015-06-16 03:20:00
 category: user
 order: 2
 ---
-#Create a Display
-
 ###What’s a Display
 We use the term “Display” to refer to both the screen and computer (media player) that together show your content on your digital signage. The media player uses Rise Player to receive and publish your content on your screen.
 
