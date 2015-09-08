@@ -1,11 +1,11 @@
 ---
 layout: user-post
-title:  "Windows Rise Player Chrome Extension Optimization Guide"
+title:  "Windows Optimization"
 date:   2015-06-17 10:52:00
 category: user/advanced/display
-order: 2
+order: 0
 ---
-We support Rise Player on Windows 8.1 running the latest stable version of Chrome 
+We support Rise Player on Windows 8.1
 
 ###Turn Screensaver Off
 1. From Control Panel select **Appearance and Personalization**

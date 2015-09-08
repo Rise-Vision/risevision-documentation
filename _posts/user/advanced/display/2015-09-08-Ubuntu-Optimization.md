@@ -1,7 +1,7 @@
 ---
 layout: user-post
-title:  "Rise Linux Player Ubuntu Optimization Guide"
-date:   2015-09-03 10:52:00
+title:  "Ubuntu Optimization"
+date:   2015-06-16 10:52:00
 category: user/advanced/display
 order: 1
 ---
@@ -27,7 +27,7 @@ sudo mv /usr/bin/update-notifier /usr/bin/update-notifier.real
 sudo gedit /usr/bin/update-notifier
 ```
 4. Add two lines to this document 
-	* .#!/bin/sh 
+	* #!/bin/sh 
 	* exit 0
 5. **Save** and exit the document
 6. In terminal type 
@@ -42,4 +42,16 @@ sudo chmod +x /usr/bin/update-notifier
 sudo gedit /etc/default/apport
 ```
 3. Edit the last line in the document to read *enabled=0*
+4. **Save** and exit
+
+###Configure a Scheduled Reboot
+1. Open **Terminal**
+2. Type 
+```
+sudo gedit /etc/crontab
+```
+3. At the bottom, type 
+```
+0 3 * * * root /sbin/shutdown -r now
+```
 4. **Save** and exit
