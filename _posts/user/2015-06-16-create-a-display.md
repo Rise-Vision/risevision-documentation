@@ -18,7 +18,7 @@ Select the operating system of your media player from the below options to compl
 
 **Rise Player will automatically start and take control of our display once your installation is complete.**
 
-If you have questions about your Display setup let us know in the [Community](community.risevision.com) or join us on our weekly live [Webinar](risevision.com/webinars)!
+If you have questions about your Display setup let us know in the [Community](www.community.risevision.com) or join us on our weekly live [Webinar](www.risevision.com/webinars)!
 
 ####Windows 8.1
 Download the installer from [here](http://install-versions.risevision.com/rvplayer-installer.exe), double click to run it, and then follow the prompts to complete the installation, including entering the Display ID you created above. We recommend that you configure your operating system as per the [Windows Optimization Guide](user/advanced/display/chrome-player-windows).
