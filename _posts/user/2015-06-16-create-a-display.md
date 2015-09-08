@@ -54,6 +54,6 @@ Once configured, power on your Chromebox, connect it to your network, and at the
 **To stop Rise Player, power cycle your Chromebox. When the Rise Player application is loading, press the key combination of Control + Alt + S on your keyboard to boot into Chrome OS instead of Rise Player.**
 
 ####All Other Operating Systems
-**To stop Rise Player, enter the key combination  of Control + W on your kayboard**
+**To stop Rise Player, enter the key combination  of Control + W on your keyboard**
 
 Ensure that you have the latest version of Chrome installed and if not download it from [www.google.com/chrome](www.google.com/chrome), then install Rise Player from the Chrome Web Store, start it, and when prompted enter the Display ID you created above. If you are using Mac OS configure it as per the [Mac OS Optimization Guide](user/advanced/display/chrome-player-mac) and for all other operating systems disable any screen saver, display standby/sleep mode, as well as configure the Rise Player App to auto-start.
