@@ -19,7 +19,9 @@ title: "Rise Vision User Documentation | Rise Vision Help Documentation"
 
 Management, previewing, and displaying Rise Vision content is supported on the last three stable desktop versions of Google Chrome.
 
-Rise Player is supported on the following Operating Systems
+
+Rise Player is supported on the following Operating Systems:
+
 - Windows 8.1
 - Ubuntu 14.04
 - Mac OS X 10.10
