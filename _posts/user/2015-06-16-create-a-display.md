@@ -34,6 +34,7 @@ Download the installer from [here](http://install-versions.risevision.com/rvplay
 We recommend that all Chrome OS devices be registered under Google Device Management to take use automatically launch the the Player and set the Chrome version 1 or 2 major releases behind the current release to ensure your content is never adversely impacted by an update.
 
 From Google Device Management create an Organizational Unit for your Digital Signage Players and configure the settings as per the following:
+
 1. Set **Power Management** to *Do not allow device to sleep/shut down when on sign in screen*
 2. Set **Sign-in Screen** to *Never show user names and photos*
 3. Configure **Kiosk Apps** by adding the [Rise Player Application](https://chrome.google.com/webstore/detail/rise-vision-chrome-app-pl/mfpgpdablffhbfofnhlpgmokokbahooi)
