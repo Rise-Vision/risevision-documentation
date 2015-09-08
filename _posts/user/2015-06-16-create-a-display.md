@@ -12,7 +12,7 @@ We use the term “Display” to refer to both the screen and computer (media pl
 From Rise Vision select Displays and then Add Display. Give your Display a name and save it. Once saved a Display ID is generated and you will use that ID to register the media player you install Rise Player on next.
 
 ###Install Rise Player
-Select the operating system of your media player from the below options to complete the Rise Player installation and setup your Display. 
+Select the operating system of your media player from the sections below to complete the Rise Player installation and setup your Display.
 
 **If you have a firewall or proxy you may need to configure it to allow our service as per our [network requirements](user/advanced/display/network-requirements).**
 
