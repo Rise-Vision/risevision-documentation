@@ -28,7 +28,7 @@ Download the installer from [here](http://install-versions.risevision.com/rvplay
 ####Ubuntu 14.04
 Download the installer from [here](http://install-versions.risevision.com/rvplayer-installer.sh). Right click the downloaded file, click Properties, select the Permissions tab and check Allow executing file as program, click Close. Open a terminal window, navigate to the directory you downloaded rvplayer-installer.sh to, and type ./rvplayer-installer.sh and press enter, and then follow the prompts to complete the installation, including entering the Display ID you created above. We recommend that you configure your operating system as per the [Ubuntu Optimization Guide](user/advanced/display/Ubuntu-Optimization).
 
-**Top stop Rise Player, enter the key combination of Control + W on your keyboard. Open a terminal window and type killall java, press enter.**
+**To stop Rise Player, enter the key combination of Control + W on your keyboard. Open a terminal window and type killall java, press enter.**
 
 ####Chrome OS
 We recommend that all Chrome OS devices be registered under Google Device Management to take use automatically launch the the Player and set the Chrome version 1 or 2 major releases behind the current release to ensure your content is never adversely impacted by an update.
