@@ -6,7 +6,7 @@ excerpt: "Learn how to use the Rise Vision Platform by digging into our extensiv
 title: "Rise Vision User Documentation | Rise Vision Help Documentation"
 ---
 ###Getting Started with Rise Vision
-Rise Vision runs best, and is tested and supported on
+Rise Vision runs best and is supported on
 
 - Windows 8.1
 - Ubuntu 14.04
