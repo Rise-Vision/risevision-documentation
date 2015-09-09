@@ -9,7 +9,7 @@ order: 2
 We use the term “Display” to refer to both the screen and computer (media player) that together show your content on your digital signage. The media player uses Rise Player to receive and publish your content on your screen.
 
 ###Add a Display
-From Rise Vision select Displays and then Add Display. Give your Display a name and save it. Once saved a Display ID is generated and you will use that ID to register the media player you install Rise Player on next.
+From Rise Vision select Displays and then Add Display. Give your Display a name and save it. Once saved, a Display ID is generated and you will use that ID to register the media player that you install Rise Player on using the steps below
 
 ###Install Rise Player
 Select the operating system of your media player from the sections below to complete the Rise Player installation and setup your Display.
@@ -21,12 +21,12 @@ Select the operating system of your media player from the sections below to comp
 If you have questions about your Display setup let us know in the [Community](https://community.risevision.com) or join us on our weekly live [Webinar](https://www.risevision.com/webinars)!
 
 ####Windows 8.1
-Download the installer from [here](http://install-versions.risevision.com/rvplayer-installer.exe), double click to run it, and then follow the prompts to complete the installation, including entering the Display ID you created above. We recommend that you configure your operating system as per the [Windows Optimization Guide](user/advanced/display/chrome-player-windows).
+Download the installer from [here](http://install-versions.risevision.com/rvplayer-installer.exe), double click to run it, and then follow the prompts to complete the installation, including entering the Display ID you created above. We recommend that you configure your operating system as per the [Windows Optimization Guide](user/advanced/display/Windows-Optimization).
 
 **To stop Rise Player, enter the key combination of Control + W on your keyboard. Press Control + Alt + Delete on your keyboard to open Task Manager. Select both Java(™) Platform SE Binary processes, and end both tasks.**
 
 ####Ubuntu 14.04
-Download the installer from [here](http://install-versions.risevision.com/rvplayer-installer.sh). Right click the downloaded file, click Properties, select the Permissions tab and check Allow executing file as program, click Close. Open a terminal window, navigate to the directory you downloaded rvplayer-installer.sh to, and type ./rvplayer-installer.sh and press enter, and then follow the prompts to complete the installation, including entering the Display ID you created above. We recommend that you configure your operating system as per the Ubuntu Optimization Guide.
+Download the installer from [here](http://install-versions.risevision.com/rvplayer-installer.sh). Right click the downloaded file, click Properties, select the Permissions tab and check Allow executing file as program, click Close. Open a terminal window, navigate to the directory you downloaded rvplayer-installer.sh to, and type ./rvplayer-installer.sh and press enter, and then follow the prompts to complete the installation, including entering the Display ID you created above. We recommend that you configure your operating system as per the [Ubuntu Optimization Guide](user/advanced/display/Ubuntu-Optimization).
 
 **Top stop Rise Player, enter the key combination of Control + W on your keyboard. Open a terminal window and type killall java, press enter.**
 
