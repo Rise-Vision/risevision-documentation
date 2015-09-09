@@ -9,7 +9,7 @@ order: 2
 We use the term “Display” to refer to both the screen and computer (media player) that together show your content on your digital signage. The media player uses Rise Player to receive and publish your content on your screen.
 
 ###Add a Display
-From Rise Vision select Displays and then Add Display. Give your Display a name and save it. Once saved, a Display ID is generated and you will use that ID to register the media player that you install Rise Player on using the steps below
+From Rise Vision select Displays and then Add Display. Give your Display a name and save it. Once saved, a Display ID is generated and you will use that ID to register the media player that you install Rise Player on using the steps below.
 
 ###Install Rise Player
 Select the operating system of your media player from the sections below to complete the Rise Player installation and setup your Display.
