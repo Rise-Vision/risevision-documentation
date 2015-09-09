@@ -11,7 +11,6 @@ Rise Vision runs best and is supported on
 - Windows 8.1
 - Ubuntu 14.04
 - Mac OSX 10.10
-- Chrome OS 44.*
 
 Management, previewing, and displaying of Rise Vision content is tested and supported on the last three stable desktop versions of Google Chrome.
 
