@@ -49,6 +49,7 @@ developerSections: [
       ['developer/core-api/timezone', 'Timezone'],
       ['developer/core-api/presentation', 'Presentation'],
       ['developer/core-api/schedule', 'Schedule'],
+      ['developer/core-api/gadget', 'Gadget'],
       ['developer/core-api/systemmessage', 'System Message']
     ]],
     ['developer/content-api', 'Content API', [
