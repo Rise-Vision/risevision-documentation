@@ -5,7 +5,7 @@ date:   2015-06-17 10:52:00
 category: user/advanced/display
 order: 0
 ---
-We support Rise Player on Windows 8.1
+We support Rise Player on Windows 7
 
 ###Turn Screensaver Off
 1. From Control Panel select **Appearance and Personalization**
