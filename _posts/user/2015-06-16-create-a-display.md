@@ -20,7 +20,7 @@ Select the operating system of your media player from the sections below to comp
 
 If you have questions about your Display setup let us know in the [Community](https://community.risevision.com) or join us on our weekly live [Webinar](https://www.risevision.com/webinars)!
 
-####Windows 8.1
+####Windows 7
 Download the installer from [here](http://install-versions.risevision.com/rvplayer-installer.exe), double click to run it, and then follow the prompts to complete the installation, including entering the Display ID you created above. We recommend that you configure your operating system as per the [Windows Optimization Guide](user/advanced/display/Windows-Optimization).
 
 **To stop Rise Player, enter the key combination of Control + W on your keyboard. Press Control + Alt + Delete on your keyboard to open Task Manager. Select both Java(™) Platform SE Binary processes, and end both tasks.**
