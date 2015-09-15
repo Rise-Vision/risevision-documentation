@@ -8,7 +8,7 @@ title: "Rise Vision User Documentation | Rise Vision Help Documentation"
 ###Getting Started with Rise Vision
 Rise Vision runs best and is supported on
 
-- Windows 8.1
+- Windows 7
 - Ubuntu 14.04
 - Mac OSX 10.10
 
