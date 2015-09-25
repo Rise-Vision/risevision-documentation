@@ -28,3 +28,20 @@ We support Rise Player on Windows 7
 2. Select **Action Center**
 3. In the left pane, select **Change Action Center Settings**
 4. **Uncheck** all fields under **Security Messages** and **Maintenance Messages**
+
+###Disable Windows Onscreen Keyboard 
+Go to Control Panel.  Make sure to go to ‘All Control Panel Items’ if in basic view.
+
+Go to ‘Tablet PC Settings’
+
+Click the ‘Other’ tab
+
+Under ‘Tablet PC Input Panel options’ header, click on ‘Go to Input Panel Settings’.
+If this option is not visible, ensure that the system administrator has allowed you to change a system setting as indicated in this [documentation](http://windows.microsoft.com/en-ca/windows/why-wont-allow-change-system-setting#1TC=windows-7) from Windows.
+
+In the ‘Opening’ tab ensure that the following options are selected
+
+‘Point to the Input Panel icon on the tab’ is selected
+No selections under ‘Choose where to show the Input Panel icons and tab:’
+
+Once done select ‘OK’.
