@@ -26,7 +26,15 @@ Download the installer from [here](http://install-versions.risevision.com/rvplay
 **To stop Rise Player, enter the key combination of Control + W on your keyboard. Press Control + Alt + Delete on your keyboard to open Task Manager. Select both Java(™) Platform SE Binary processes, and end both tasks.**
 
 ####Ubuntu 14.04
-Download the installer from [here](http://install-versions.risevision.com/rvplayer-installer.sh). Right click the downloaded file, click Properties, select the Permissions tab and check Allow executing file as program, click Close. Open a terminal window, navigate to the directory you downloaded rvplayer-installer.sh to, and type ./rvplayer-installer.sh and press enter, and then follow the prompts to complete the installation, including entering the Display ID you created above. We recommend that you configure your operating system as per the [Ubuntu Optimization Guide](user/advanced/display/Ubuntu-Optimization).
+Download the installer from [here](http://install-versions.risevision.com/rvplayer-installer.sh). Open a terminal window, navigate to the directory you downloaded rvplayer-installer.sh to, and type the following commands (do not run the installer as root or via sudo):
+
+```
+chmod +x rvplayer-installer.sh
+./rvplayer-installer.sh
+
+```
+
+Then follow the prompts to complete the installation, including entering the Display ID you created above. We recommend that you configure your operating system as per the [Ubuntu Optimization Guide](user/advanced/display/Ubuntu-Optimization).
 
 **To stop Rise Player, enter the key combination of Control + W on your keyboard. Open a terminal window and type killall java, press enter.**
 
