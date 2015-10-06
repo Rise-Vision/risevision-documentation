@@ -26,9 +26,8 @@ Management, previewing, and displaying of Rise Vision content is tested and supp
 
 Have questions? Let us know in the [Community](http://community.risevision.com) or join us on our weekly live [Webinar](https://www.risevision.com/webinars)!
 
-
+	
 <div class="home-pricing home-pricing-2" style="padding-top: 0px; padding-bottom:40px;">
-<div class="container">
 <div class="content-box ryan-picture-bg remove-bottom">
 <div class="content-box-body">
 <div class="row">
@@ -45,6 +44,9 @@ Have questions? Let us know in the [Community](http://community.risevision.com) 
 </div><!--home pricing-->
 
 <style>
+.home-pricing .btn{
+margin-top:0px;
+}
 .ryan-picture-bg {
 background-image:url('https://s3.amazonaws.com/Rise-Images/Experimental/ryan-webinar.png');
 background-size:cover;
