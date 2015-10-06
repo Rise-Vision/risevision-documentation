@@ -21,3 +21,18 @@ To function properly with the Rise Vision Player, a display must be able to acce
 - p.jwpcdn.com/6/5/jwpsrv.js (Only necessary if your Presentation includes videos)
 - rackcdn.com
 
+###Running Rise Player behind proxy
+In case you are using a proxy and Java is not configured properly, it will prevent Rise Windows or Linux Player from running.
+To make Java aware of the proxy, **create the environment variable _JAVA_OPTIONS** with the value in this form: 
+
+```
+-Dhttp.proxyHost=${httpProxyIP} -Dhttp.proxyPort=${httpProxyIP} -Dhttps.proxyHost=${httpsProxyIP} -Dhttps.proxyPort=${httpsProxyPort}
+```
+
+**Replace httpProxyIP** to the IP of the proxy (e.g. 111.111.111.111)
+
+**Replace httpProxyPort** to the port of the proxy (e.g. 8080)
+
+**The same applies to replacing the values for httpsProxyIP** and **httpsProxyPort**. Depending on your proxy configuration, the values for http and https could match.
+
+Please note that if the _JAVA_OPTIONS environment variable exists, append these values at the end, including a whitespace before the first -D
