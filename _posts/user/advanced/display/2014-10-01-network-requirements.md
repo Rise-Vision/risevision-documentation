@@ -14,9 +14,11 @@ To function properly with the Rise Vision Player, a display must be able to acce
 - rvashow2.appspot.com
 - rvashow.appspot.com
 - rvaserver2.appspot.com
+- storage-dot-rvaserver2.appspot.com
 - store.risevision.com
 - commondatastorage.googleapis.com
 - googleapis.com
+- accounts.google.com
 - talkgadget.google.com
 - s3.amazonaws.com
 - p.jwpcdn.com/6/5/jwpsrv.js (Only necessary if your Presentation includes videos)
