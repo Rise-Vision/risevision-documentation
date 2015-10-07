@@ -38,10 +38,9 @@ Have questions? Let us know in the [Community](http://community.risevision.com) 
 </div>
 </div>
 </div>
-<!--content-box-->
 </div>
 </div>
-</div><!--home pricing-->
+</div>
 
 <style>
 .home-pricing .btn{
