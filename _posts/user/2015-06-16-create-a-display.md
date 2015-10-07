@@ -66,3 +66,34 @@ Once configured, power on your Chromebox, connect it to your network, and at the
 **To stop Rise Player, enter the key combination  of Control + W on your keyboard**
 
 Ensure that you have the latest version of Chrome installed and if not download it from [www.google.com/chrome](http://www.google.com/chrome), then install Rise Player from the Chrome Web Store, start it, and when prompted enter the Display ID you created above. If you are using Mac OS configure it as per the [Mac OS Optimization Guide](user/advanced/display/Mac-Optimization) and for all other operating systems disable any screen saver, display standby/sleep mode, as well as configure the Rise Player App to auto-start.
+
+<div class="home-pricing home-pricing-2" style="padding-top: 0px; padding-bottom:40px;">
+<div class="content-box ryan-picture-bg remove-bottom">
+<div class="content-box-body">
+<div class="row">
+<div class="col-md-8 col-md-offset-4">
+<h2 class="add-top">Upcoming Live Webinars</h2>
+<p class="add-bottom">Join the Getting Started with Rise Vision live webinar hosted and presented by Ryan Cahoy. Ryan is a Founder and Evangelist for Rise Vision, an industry renowned digital signage expert, and an often quoted public speaker. Ryan has over 20 years of digital signage experience and you shouldn’t miss this opportunity to both learn about Rise Vision and take advantage of the live Q&A session with him.</p>
+<a href="https://www.risevision.com/webinars" class="btn btn-primary btn-hg">Register <i class="fa fa-chevron-circle-right icon-right"></i></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<style>
+.home-pricing .btn{
+margin-top:0px;
+}
+.ryan-picture-bg {
+background-image:url('https://s3.amazonaws.com/Rise-Images/Experimental/ryan-webinar.png');
+background-size:cover;
+}
+@media (max-width: 992px) {
+.ryan-picture-bg {
+background-image:none;
+background-size:cover;
+}
+}
+</style>
