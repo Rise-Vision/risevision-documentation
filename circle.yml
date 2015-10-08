@@ -1,6 +1,8 @@
 machine:
   ruby:
     version: 2.1.5
+  node:
+    version: 0.12.2
 general:
   artifacts:
     - dist.tar.gz
