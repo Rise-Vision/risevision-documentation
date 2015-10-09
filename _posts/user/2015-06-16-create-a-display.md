@@ -16,7 +16,7 @@ Select the operating system of your media player from the sections below to comp
 
 **If you have a firewall or proxy you may need to configure it to allow our service as per our [network requirements](user/advanced/display/network-requirements).**
 
-**Rise Player will automatically start and take control of our display once your installation is complete.**
+**Rise Player will automatically start and take control of your display once your installation is complete.**
 
 If you have questions about your Display setup let us know in the [Community](https://community.risevision.com) or join us on our weekly live [Webinar](https://www.risevision.com/webinars)!
 
