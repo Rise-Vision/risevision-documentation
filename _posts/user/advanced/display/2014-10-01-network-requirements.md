@@ -24,6 +24,22 @@ To function properly with the Rise Vision Player, a display must be able to acce
 - p.jwpcdn.com/6/5/jwpsrv.js (Only necessary if your Presentation includes videos)
 - rackcdn.com
 
+###Third Party Cookies
+Ensure that third party cookies are permitted by your browser. If third party cookies are blocked, you may encounter problems while accessing Rise Vision through your web browser.
+
+We recommend Chrome browser when using and viewing applications.
+
+While in Chrome:
+<br>**Navigate to chrome://settings/**
+<br>Select **Show Advanced Settings…**
+
+Under Privacy:
+<br>Select **Content Settings**
+<br>Verify **Allow local data to be set (recommended)** is selected 
+<br>Verify that **Block third-party cookies and site data** is _not_ selected
+
+If you continue to have issues logging in, third-party cookies may be blocked due to your firewall configuration. Please check with your network administrator to ensure you have access to third-party cookies. Also, ensure you have access to the resources noted above in the Network Requirements section.
+
 ###Running Rise Player behind proxy
 In case you are using a proxy and Java is not configured properly, it will prevent Rise Windows or Linux Player from running.
 To make Java aware of the proxy, **create the environment variable _JAVA_OPTIONS** with the value in this form: 
