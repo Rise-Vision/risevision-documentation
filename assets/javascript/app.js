@@ -1,16 +1,5 @@
 "use strict";
-angular.module("risevision.documentation",["ui.router","risevision.common.header", "pascalprecht.translate", "ui.bootstrap","ui.bootstrap.tpls","risevision.google-analytics"])
-    .config(['$translateProvider', function ($translateProvider) {
-        $translateProvider.translations('en', {
-            'DEVELOPER_DOCS': 'Developer Documentation',
-            'USER_DOCS': 'User Documentation',
-            'DEVELOPER': 'Developer',
-            'USER': 'User'
-        });
-
-
-        $translateProvider.preferredLanguage('en');
-    }])
+angular.module("risevision.documentation",["ui.router","risevision.common.header", "ui.bootstrap","ui.bootstrap.tpls","risevision.google-analytics"])
     .run(['$rootScope', '$location', '$window', function($rootScope, $location, $window){
         $rootScope
             .$on('$stateChangeSuccess',
@@ -47,3 +36,9 @@ angular.module("risevision.documentation",["ui.router","risevision.common.header
       });
 
     }]);
+
+
+angular.module('risevision.common.i18n.config', [])
+  .constant('LOCALES_PREFIX',
+  'assets/components/rv-common-i18n/dist/locales/translation_')
+  .constant('LOCALES_SUFIX', '.json');
