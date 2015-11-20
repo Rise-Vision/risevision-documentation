@@ -46,7 +46,7 @@ We support OS X 10.10 running the latest stable version of Chrome
     <key>ProgramArguments</key>
         <array>
             <!-- the following line will need to be changed to reflect the correct path and profile name/id -->
-            <string>/Users/**your username**/Applications/Chrome Apps.localized/**your profile** mfpgpdablffhbfofnhlpgmokokbahooi.app/Contents/MacOS/app_mode_loader</string>
+            <string>/Users/**your username**/Applications/Chrome Apps.localized/**your profile** ilcmohdkjfcfekfmpdppgoaaemgdmhaa.app/Contents/MacOS/app_mode_loader</string>
         </array>
     <key>RunAtLoad</key>
     <true/>

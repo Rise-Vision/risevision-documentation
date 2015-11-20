@@ -47,7 +47,7 @@ From Google Device Management create an Organizational Unit for your Digital Sig
 
 1. Set **Power Management** to *Do not allow device to sleep/shut down when on sign in screen*
 2. Set **Sign-in Screen** to *Never show user names and photos*
-3. Configure **Kiosk Apps** by adding the [Rise Player Application](https://chrome.google.com/webstore/detail/rise-vision-chrome-app-pl/mfpgpdablffhbfofnhlpgmokokbahooi)
+3. Configure **Kiosk Apps** by adding the [Rise Player Application](https://chrome.google.com/webstore/detail/rise-vision-chrome-app-pl/ilcmohdkjfcfekfmpdppgoaaemgdmhaa)
 	* Click **Manage Kiosk Applications**
 	* Select **Chrome Web Store**
 	* Search for *Rise Player*
