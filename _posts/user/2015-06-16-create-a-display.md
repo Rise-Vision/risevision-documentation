@@ -146,8 +146,8 @@ If you have questions or problems with the installation of your Display please l
 ####Ubuntu Installation
 To run the Ubuntu installation open a terminal window, navigate to the directory that contains the installation file, and run the following commands (do not run the installer as root or via sudo).  If you are running the 64 bit installer, replace with installer-lnx-64.sh:
 
-	chmod +x installer-lnx-32.sh
-	./installer-lnx-32.sh
+    chmod +x installer-lnx-32.sh
+    ./installer-lnx-32.sh
 
 And then continue with the Rise Player installation instructions.
 
@@ -203,9 +203,9 @@ If you wish to create your own version of Rise Player, or contribute to ours, yo
 
 <style>
 .home-pricing {
-	color: white;
-	padding-bottom: 0;
-	background: none;
+    color: white;
+    padding-bottom: 0;
+    background: none;
 }
 .home-pricing .btn{
 margin-top:0px;
