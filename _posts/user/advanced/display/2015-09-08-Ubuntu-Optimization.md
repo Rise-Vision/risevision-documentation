@@ -5,7 +5,7 @@ date:   2015-06-16 10:52:00
 category: user/advanced/display
 order: 1
 ---
-We support Ubuntu 14.04.
+We support Ubuntu 14.04 32-bit and 64-bit
 
 ###Disable Power Save
 1. Click the settings cog in the taskbar and select **System Settings**
