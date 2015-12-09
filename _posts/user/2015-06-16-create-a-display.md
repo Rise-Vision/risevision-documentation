@@ -9,6 +9,7 @@ order: 2
 ###What’s a Display
 We use the term “Display” to refer to both the screen and device (media player) that together show your content on your digital signage. And our application, Rise Player, is installed on the media player (device) and it renders and publishes your content on the display.
 
+<<<<<<< 47400d31c94360fcae2bfe3a1a5f9f2c474b2b91
 <!-- SINGLE BANNER -->
 <!-- <div class="col-sm-12 home-pricing home-pricing-2" style="padding-top: 0px;">
 <div class="content-box media-picture-bg remove-bottom">
@@ -23,6 +24,42 @@ We use the term “Display” to refer to both the screen and device (media play
 </div>
 </div>
 </div> -->
+=======
+	Adrian add Store Banner Advertisement Here
+
+###Add a Display
+From [Displays](https://apps.risevision.com/displays) select Add Display. Give your display a name and save it. Once saved, a Display ID is generated and you will use that ID to register the media player that you install Rise Player on. It is best to install Rise Player on a dedicated computer (not your personal computer) as it will continuously run full screen.
+
+To install Rise Player select your operating system and architecture from the choices below, download the installation, and then run the installation on the computer that you will use as the media player for your display.
+
+- [Windows 7 and higher 32 bit](http://install-versions.risevision.com/installer-win-32.exe)
+- [Windows 7 and higher 64 bit](http://install-versions.risevision.com/installer-win-64.exe)
+- [Rise Player Ubuntu 14.04 32 bit](http://install-versions.risevision.com/installer-lnx-32.sh)
+- [Rise Player Ubuntu 14.04 64 bit](http://install-versions.risevision.com/installer-lnx-64.sh)
+
+To run the Ubuntu installation open a terminal window, navigate to the directory that contains the installation file, and run the following commands (do not run the installer as root or via sudo):
+
+	chmod +x rvplayer-installer.sh
+	./rvplayer-installer.sh
+
+To **stop Rise Player on Windows**, press the windows key on your keyboard to bring up the Windows start menu, and then find the Rise Vision group and click the Stop Player shortcut.
+
+To **stop Rise Player On Ubuntu**, press the super key, then type ‘rise’ to display the Stop Player shortcut, then click it.
+
+If you wish to create your own version of Rise Player, or contribute to ours, you can find our open source repositories on GitHub below:
+
+- Player https://github.com/Rise-Vision/rise-player
+- Cache https://github.com/Rise-Vision/rise-cache
+- Installer https://github.com/Rise-Vision/rise-launcher-electron
+- Viewer https://github.com/Rise-Vision/viewer
+
+If you have questions about your Display please let us know in the [Community](http://community.risevision.com).
+- - -
+###Chrome OS Installation
+**Please be aware that we are currently evaluating Chrome Application development due to control and stability issues that we have had with our Rise Player Chrome Application.**
+
+We recommend that all Chrome OS devices be registered under Google Device Management as it will allow Rise Player to launch automatically when the device is turned on, and we further recommend that you restrict your Chrome version to one major release behind the current version to ensure your content is not adversely impacted by an update.
+>>>>>>> Additional edits and clean up
 
 <!-- DUAL BANNER -->
 <a href="https://store.risevision.com/products/?cat=Displays" target="_blank" style="text-decoration: none;">
@@ -41,6 +78,7 @@ We use the term “Display” to refer to both the screen and device (media play
 </div>
 </a>
 
+<<<<<<< 47400d31c94360fcae2bfe3a1a5f9f2c474b2b91
 <a href="https://store.risevision.com/products/?cat=Media%20Players" target="_blank" style="text-decoration: none;">
 <div class="col-lg-6 col-xs-12 home-pricing home-pricing-2" style="padding-top: 0px; margin-bottom: 20px;">
 <div class="content-box bundle-picture-bg remove-bottom">
@@ -80,6 +118,22 @@ From [Displays](https://apps.risevision.com/displays) select Add Display and the
 You can install Rise Player yourself on your device or buy one of our [preconfigured devices from our store](https://store.risevision.com/products/?cat=Media%20Players).
 
 To install Rise Player select your operating system and architecture from the choices below, download the installation, and then run the installation on the device that you will use as the media player for your display.
+=======
+1. Set **Power Management** to *Do not allow device to sleep/shut down when on sign in screen*
+2. Set **Sign-in Screen** to *Never show user names and photos*
+3. Configure **Kiosk Apps** by adding the [Rise Player Application](https://chrome.google.com/webstore/detail/rise-vision-chrome-app-pl/ilcmohdkjfcfekfmpdppgoaaemgdmhaa)
+ 1. Click **Manage Kiosk Applications**
+ 2. Select **Chrome Web Store**
+ 3. Search for *Rise Player*
+4. Configure Kiosk Settings as per the following:
+ 1. Set **Public Session Kiosk** for *Do not allow Public Session Kiosk*
+ 2. Configure Rise Player as the **Auto-Launch Kiosk App**
+5. Set **Auto Update** to *Allow auto-updates*
+6. Set **Restrict Google Chrome version to at most** to *44*.
+7. Set **Randomly scatter auto-updates over** to *None*
+8. Set **Auto reboot after updates** to *Disallow auto-reboots*
+9. Set **Release Channel** to *Move to Stable Channel*
+>>>>>>> Additional edits and clean up
 
 <div class="row" id="riseDownloadPlayer">
 <div class="col-sm-6 col-xs-12" style="
@@ -126,6 +180,11 @@ To install Rise Player select your operating system and architecture from the ch
 ###Install Rise Player
 Please note that if you have a firewall or proxy you may need to configure it to allow our service on port 80 (http) and 443 (https) for the following addresses:
 
+<<<<<<< 47400d31c94360fcae2bfe3a1a5f9f2c474b2b91
+=======
+If you have a firewall or proxy you may need to configure it to allow our service on port 80 (http) and 443 (https) for the following addresses:
+
+>>>>>>> Additional edits and clean up
 - rvashow2.appspot.com
 - rvashow.appspot.com
 - rvaserver2.appspot.com
@@ -187,6 +246,7 @@ From Google Device Management create an Organizational Unit for your Digital Sig
 8. Set **Auto reboot after updates** to *Disallow auto-reboots*
 9. Set **Release Channel** to *Move to Stable Channel*
 
+<<<<<<< 47400d31c94360fcae2bfe3a1a5f9f2c474b2b91
 Once configured, power on your Chromebox, connect it to your network, and at the login screen press Control+Alt+E on your keyboard, and then type in the enrollment email and password associated with your Google account. If an enrollment prompt does not appear, please wipe your Chromebox and repeat this step.
 
 Upon startup you will be prompted to enter the Display ID that was assigned to the Display that was set up in Rise Vision.
@@ -200,6 +260,22 @@ If you wish to create your own version of Rise Player, or contribute to ours, yo
 - Cache https://github.com/Rise-Vision/rise-cache
 - Installer https://github.com/Rise-Vision/rise-launcher-electron
 - Viewer https://github.com/Rise-Vision/viewer
+=======
+<div class="home-pricing home-pricing-2" style="padding-top: 0px; padding-bottom:40px;">
+<div class="content-box ryan-picture-bg remove-bottom">
+<div class="content-box-body">
+<div class="row">
+<div class="col-md-8 col-md-offset-4">
+<h2 class="add-top">Upcoming Live Webinars</h2>
+<p class="add-bottom">Join the Getting Started with Rise Vision live webinar hosted and presented by Ryan Cahoy. Ryan is a Founder and Evangelist for Rise Vision, an industry renowned digital signage expert, and an often quoted public speaker. Ryan has over 20 years of digital signage experience and you shouldn’t miss this opportunity to both learn about Rise Vision and take advantage of the live Q&A session with him.</p>
+<a href="https://www.risevision.com/webinars" class="btn btn-primary btn-hg">Register <i class="fa fa-chevron-circle-right icon-right"></i></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+>>>>>>> Additional edits and clean up
 
 <style>
 .home-pricing {
