@@ -9,6 +9,7 @@ order: 2
 ###What’s a Display
 We use the term “Display” to refer to both the screen and device (media player) that together show your content on your digital signage. And our application, Rise Player, is installed on the media player (device) and it renders and publishes your content on the display.
 
+<<<<<<< cdcfa27f0c3cdd7eecd932c66ef87d4c878e069b
 <<<<<<< 47400d31c94360fcae2bfe3a1a5f9f2c474b2b91
 <!-- SINGLE BANNER -->
 <!-- <div class="col-sm-12 home-pricing home-pricing-2" style="padding-top: 0px;">
@@ -26,6 +27,21 @@ We use the term “Display” to refer to both the screen and device (media play
 </div> -->
 =======
 	Adrian add Store Banner Advertisement Here
+=======
+<div class="home-pricing home-pricing-2" style="padding-top: 0px; padding-bottom:40px;">
+<div class="content-box ryan-picture-bg remove-bottom">
+<div class="content-box-body">
+<div class="row">
+<div class="col-md-8 col-md-offset-4">
+<h2 class="add-top">Upcoming Live Webinars</h2>
+<p class="add-bottom">Join the Getting Started with Rise Vision live webinar hosted and presented by Ryan Cahoy. Ryan is a Founder and Evangelist for Rise Vision, an industry renowned digital signage expert, and an often quoted public speaker. Ryan has over 20 years of digital signage experience and you shouldn’t miss this opportunity to both learn about Rise Vision and take advantage of the live Q&A session with him.</p>
+<a href="https://www.risevision.com/webinars" class="btn btn-primary btn-hg">Register <i class="fa fa-chevron-circle-right icon-right"></i></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+>>>>>>> Initial - position Media banner
 
 ###Add a Display
 From [Displays](https://apps.risevision.com/displays) select Add Display and then give your new display a name and save it. Once saved, a Display ID is generated and you will use that ID to register the media player that you install Rise Player on. It is best to install Rise Player on a dedicated computer (not your personal computer) as it will continuously run full screen.
@@ -198,6 +214,7 @@ If you have a firewall or proxy you may need to configure it to allow our servic
 - p.jwpcdn.com/6/5/jwpsrv.js (Only necessary if your Presentation includes videos)
 - rackcdn.com
 
+<<<<<<< cdcfa27f0c3cdd7eecd932c66ef87d4c878e069b
 And if you are using [Rise Priority Support](https://store.risevision.com/product/14/rise-priority-support) and taking advantage of our remote diagnostic and correction service we will also need port 8041 open for the address connect.risevision.com.
 
 If you have questions or problems with the installation of your Display please let us know in the [Community](http://community.risevision.com) and we will do our best to get you up and running in no time.
@@ -276,6 +293,9 @@ If you wish to create your own version of Rise Player, or contribute to ours, yo
 </div>
 </div>
 >>>>>>> Additional edits and clean up
+=======
+
+>>>>>>> Initial - position Media banner
 
 <style>
 .home-pricing {
