@@ -188,10 +188,14 @@ To install Rise Player select your operating system and architecture from the ch
 </div>
 </div>
 
+<<<<<<< 9b33b6c237f9e3f242d335b90dfec0b0fd2c3b06
 <!-- - [Windows 7 and higher 32 bit](http://install-versions.risevision.com/installer-win-32.exe)
 - [Windows 7 and higher 64 bit](http://install-versions.risevision.com/installer-win-64.exe)
 - [Rise Player Ubuntu 14.04 32 bit](http://install-versions.risevision.com/installer-lnx-32.sh)
 - [Rise Player Ubuntu 14.04 64 bit](http://install-versions.risevision.com/installer-lnx-64.sh) -->
+=======
+Upon startup you will be prompted to enter the Display ID that was assigned to the Display that was set up in Rise Vision.
+>>>>>>> Typo Fix
 
 ###Install Rise Player
 Please note that if you have a firewall or proxy you may need to configure it to allow our service on port 80 (http) and 443 (https) for the following addresses:
