@@ -28,7 +28,7 @@ We use the term “Display” to refer to both the screen and device (media play
 	Adrian add Store Banner Advertisement Here
 
 ###Add a Display
-From [Displays](https://apps.risevision.com/displays) select Add Display. Give your display a name and save it. Once saved, a Display ID is generated and you will use that ID to register the media player that you install Rise Player on. It is best to install Rise Player on a dedicated computer (not your personal computer) as it will continuously run full screen.
+From [Displays](https://apps.risevision.com/displays) select Add Display and then give your new display a name and save it. Once saved, a Display ID is generated and you will use that ID to register the media player that you install Rise Player on. It is best to install Rise Player on a dedicated computer (not your personal computer) as it will continuously run full screen.
 
 To install Rise Player select your operating system and architecture from the choices below, download the installation, and then run the installation on the computer that you will use as the media player for your display.
 
