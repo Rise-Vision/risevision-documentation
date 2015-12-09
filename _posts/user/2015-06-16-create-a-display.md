@@ -33,9 +33,9 @@ We use the term “Display” to refer to both the screen and device (media play
 <div class="content-box-body">
 <div class="row">
 <div class="col-md-8 col-md-offset-4">
-<h2 class="add-top">Upcoming Live Webinars</h2>
-<p class="add-bottom">Join the Getting Started with Rise Vision live webinar hosted and presented by Ryan Cahoy. Ryan is a Founder and Evangelist for Rise Vision, an industry renowned digital signage expert, and an often quoted public speaker. Ryan has over 20 years of digital signage experience and you shouldn’t miss this opportunity to both learn about Rise Vision and take advantage of the live Q&A session with him.</p>
-<a href="https://www.risevision.com/webinars" class="btn btn-primary btn-hg">Register <i class="fa fa-chevron-circle-right icon-right"></i></a>
+<h2>Media Players for your Display!</h2>
+<p class="add-bottom">Check out the wide variety of Media Players we have for sale in our Rise Vision store.  Find just the right fit to power your amazing Presentations!</p>
+<a href="https://store.risevision.com/products/?cat=Media%20Players" class="btn btn-primary btn-hg" target="_blank" >Explore Now <i class="fa fa-chevron-circle-right icon-right"></i></a>
 </div>
 </div>
 </div>
