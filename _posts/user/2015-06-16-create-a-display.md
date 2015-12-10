@@ -9,8 +9,12 @@ order: 2
 ###What’s a Display
 We use the term “Display” to refer to both the screen and device (media player) that together show your content on your digital signage. And our application, Rise Player, is installed on the media player (device) and it renders and publishes your content on the display.
 
+<<<<<<< 1f2d30db2c42e3f93c516821bbd075b77efaaf28
 <!-- SINGLE BANNER -->
 <!-- <div class="col-sm-12 home-pricing home-pricing-2" style="padding-top: 0px;">
+=======
+<div class="col-sm-6 col-xs-12 home-pricing home-pricing-2" style="padding-top: 0px;">
+>>>>>>> New Bundle image
 <div class="content-box media-picture-bg remove-bottom">
 <div class="content-box-body">
 <div class="row">
@@ -41,8 +45,12 @@ We use the term “Display” to refer to both the screen and device (media play
 </div>
 </a>
 
+<<<<<<< 1f2d30db2c42e3f93c516821bbd075b77efaaf28
 <a href="https://store.risevision.com/products/?cat=Media%20Players" target="_blank" style="text-decoration: none;">
 <div class="col-lg-6 col-xs-12 home-pricing home-pricing-2" style="padding-top: 0px; margin-bottom: 20px;">
+=======
+<div class="col-sm-6 col-xs-12 home-pricing home-pricing-2" style="padding-top: 0px;">
+>>>>>>> New Bundle image
 <div class="content-box bundle-picture-bg remove-bottom">
 <div class="content-box-body">
 <div class="row">
@@ -203,13 +211,20 @@ If you wish to create your own version of Rise Player, or contribute to ours, yo
 
 <style>
 .home-pricing {
+<<<<<<< 1f2d30db2c42e3f93c516821bbd075b77efaaf28
     color: white;
     padding-bottom: 0;
     background: none;
+=======
+	color: white;
+	padding-bottom: 0;
+	background: none;
+>>>>>>> New Bundle image
 }
 .home-pricing .btn{
 margin-top:0px;
 }
+<<<<<<< 1f2d30db2c42e3f93c516821bbd075b77efaaf28
 
 .home-pricing h1 {
   font-weight:800;
@@ -292,10 +307,31 @@ div#riseDownloadPlayer a:last-child .btn {
     margin-top: 8px;
 }
 
+=======
+.home-pricing h2 {
+min-height: 52px;
+}
+.media-picture-bg {
+background-image:url('https://s3.amazonaws.com/Rise-Images/Experimental/mediaplayerBanner_001.jpg');
+background-size:cover;
+background-position: -22%;
+
+}
+.bundle-picture-bg {
+background-image:url('https://s3.amazonaws.com/Rise-Images/Experimental/mediaplayerBanner_002.jpg');
+background-size:cover;
+background-position: -22%;
+
+}
+>>>>>>> New Bundle image
 /*@media (max-width: 992px) {
 .ryan-picture-bg {
 background-image:none;
 background-size:cover;
 }
 }*/
+<<<<<<< 1f2d30db2c42e3f93c516821bbd075b77efaaf28
 </style>
+=======
+</style>
+>>>>>>> New Bundle image
