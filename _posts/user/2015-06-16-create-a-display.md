@@ -42,8 +42,7 @@ Then follow the prompts to complete the installation, including entering the Dis
 
 **To stop Rise Player, enter the key combination of Control + W on your keyboard. Open a terminal window and type killall java, press enter.**
 
-####
-OS
+####ChromeOS
 **Development of the Rise Player Chrome Application is currently on hold.  See [this announcement](https://community.risevision.com/rise_vision_inc/topics/chrome-application-player-on-hold-due-to-issues) for further details. Please be aware of this before proceeding with installation.**
 
 We recommend that all Chrome OS devices be registered under Google Device Management. This will allow Rise Player to launch automatically when the device is turned on. We currently recommend that you restrict your Google Chrome version to 47.* to ensure your content is never adversely impacted by an update.
