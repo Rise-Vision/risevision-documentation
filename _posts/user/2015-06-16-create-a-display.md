@@ -55,10 +55,16 @@ We use the term “Display” to refer to both the screen and device (media play
 <div class="content-box-body">
 <div class="row">
 <div class="col-md-12">
+<<<<<<< 896649be5050a36a7097f990f6656c948e937aa0
 <h1>MEDIA <br>PLAYERS</h1>
 <h3 class="add-bottom player-text">We have a variety of preconfigured Media <br>Players for any 
 project.</h3>
 <a href="https://store.risevision.com/products/?cat=Media%20Players" class="btn btn-white" target="_blank" >View in Store <i class="fa fa-chevron-circle-right icon-right"></i></a>
+=======
+<h2>Display Bundles!</h2>
+<p class="add-bottom">Check out the wide variety of Media Players we have for sale in our Rise Vision store.  Find just the right fit to power your amazing Presentations!</p>
+<a href="https://store.risevision.com/products/?cat=Media%20Players" class="btn btn-white btn-hg" target="_blank" >Explore Now <i class="fa fa-chevron-circle-right icon-right"></i></a>
+>>>>>>> Bundle image placeholder
 </div>
 </div>
 </div>
@@ -310,6 +316,7 @@ div#riseDownloadPlayer a:last-child .btn {
 =======
 .home-pricing h2 {
 min-height: 52px;
+text-shadow: 2px 2px 2px black;
 }
 .media-picture-bg {
 background-image:url('https://s3.amazonaws.com/Rise-Images/Experimental/mediaplayerBanner_001.jpg');
