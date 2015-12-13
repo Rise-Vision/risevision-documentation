@@ -71,16 +71,6 @@ project.</h3>
 | Operating System | Windows 7+ or Linux Ubuntu 64bit | Windows 7+ or Linux Ubuntu 64bit | Windows 7+ 64bit |
 | Examples | [Windows](https://goo.gl/u9efvJ) and [Linux](https://goo.gl/Epo4Wc) | [Windows](https://goo.gl/RC2z2B) and [Linux](https://goo.gl/CLsPPC) | [Windows](https://store.risevision.com/product/104/intel-nuc-i5-windows) |
 
-Not sure what type of device hardware you need? Consider the following:
-
-| Hardware Component | Good (I only need to show text and images) | Better (I need to show some video content) | Best (I need to show a lot of videos and dynamic content) |
-| ---- | ---- | ---- | ---- |
-| Processor | Celeron or equal powered processor | Intel Core i3 or equal powered processor | Intel Core i5 or equal powered processor |
-| Memory | 4GB | 6GB + | 8GB + |
-| torage | 32GB | 32GB + | 64GB + |
-| Operating System | Windows 7+ or Linux Ubuntu 64bit | Windows 7+ or Linux Ubuntu 64bit | Windows 7+ 64bit |
-| Examples | [here](https://goo.gl/u9efvJ) and [here](https://goo.gl/Epo4Wc) | [here](https://goo.gl/CLsPPC) and [here](https://goo.gl/RC2z2B) | [here](https://store.risevision.com/product/104/intel-nuc-i5-windows) |
-
 ###Add a Display
 From [Displays](https://apps.risevision.com/displays) select Add Display and then give your new display a name and save it. Once saved, a Display ID is generated and you will use that ID to pair the device that you install Rise Player on. It is best to install Rise Player on a dedicated device (not your personal computer) as it will continuously run full screen.
 
