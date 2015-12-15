@@ -42,10 +42,10 @@ Then follow the prompts to complete the installation, including entering the Dis
 
 **To stop Rise Player, enter the key combination of Control + W on your keyboard. Open a terminal window and type killall java, press enter.**
 
-####Chrome OS
+####ChromeOS
 **Development of the Rise Player Chrome Application is currently on hold.  See [this announcement](https://community.risevision.com/rise_vision_inc/topics/chrome-application-player-on-hold-due-to-issues) for further details. Please be aware of this before proceeding with installation.**
 
-We recommend that all Chrome OS devices be registered under Google Device Management. This will allow Rise Player to launch automatically when the device is turned on. We currently recommend that you restrict your Google Chrome version to 44.* to ensure your content is never adversely impacted by an update.
+We recommend that all Chrome OS devices be registered under Google Device Management. This will allow Rise Player to launch automatically when the device is turned on. We currently recommend that you restrict your Google Chrome version to 47.* to ensure your content is never adversely impacted by an update.
 
 From Google Device Management create an Organizational Unit for your Digital Signage Players and configure the settings as per the following:
 
@@ -59,7 +59,7 @@ From Google Device Management create an Organizational Unit for your Digital Sig
 	* Set **Public Session Kiosk** for *Do not allow Public Session Kiosk*
 	* Configure Rise Player as the **Auto-Launch Kiosk App** 
 5. Set **Auto Update** to *Allow auto-updates*
-6. Set **Restrict Google Chrome version to at most** to 44.*
+6. Set **Restrict Google Chrome version to at most** to 47.*
 7. Set **Randomly scatter auto-updates over** to *None*
 8. Set **Auto reboot after updates** to *Disallow auto-reboots*
 9. Set **Release Channel** to *Move to Stable Channel*
