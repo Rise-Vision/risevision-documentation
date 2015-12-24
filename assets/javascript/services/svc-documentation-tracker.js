@@ -10,14 +10,13 @@ angular.module('risevision.documentation')
         }
       };
 
-      this.promoBannerClicked = function (productName, source, userIsSignedIn, inRVAFrame) {
+      $scope.promoBannerClicked = function (productName, source, userIsSignedIn, inRVAFrame)
          segmentAnalytics.track("Promotional Banner Clicked", {
           "Product Name": productName,
           "Source": source,
           "user Signed In": userIsSignedIn,
           "inApp": inRVAFrame
         });
-      };
-
-    }
+         
+      }
   ]);
