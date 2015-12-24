@@ -1,14 +1,11 @@
-'use strict';
+"use strict";
 
-angular.module('risevision.documentation')
-  .factory('documentationTracker', ['userState', 'segmentAnalytics',
-    function (userState, segmentAnalytics) {
+angular.module("risevision.banner.tracking", [
+   "risevision.common.components.analytics"
+])
 
-      return function (eventName) {
-        if (eventName) {
-          segmentAnalytics.track(eventName);
-        }
-      };
+  .service("bannerTracking", ["segmentAnalytics",
+    function (segmentAnalytics) {
 
       this.promoBannerClicked = function (productName, source, userIsSignedIn, inRVAFrame) {
          segmentAnalytics.track("Promotional Banner Clicked", {
@@ -19,5 +16,8 @@ angular.module('risevision.documentation')
         });
       };
 
-    }
-  ]);
+      this.track = function (eventName, properties) {
+        segmentAnalytics.track(eventName, properties);
+      };
+
+  }]);
