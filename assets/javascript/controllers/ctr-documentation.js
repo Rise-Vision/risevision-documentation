@@ -1,5 +1,8 @@
 angular.module("risevision.documentation")
-    .controller("DocumentationController", function($scope,$location,documentationTracker){
+    .controller("DocumentationController", function( $scope, $location, documentationTracker ) {
     	$scope.documentationTracker = documentationTracker;
-    	$scope.documentationTracker.promoBannerClicked("Rise Display Bundle", "Documentation: Create A Display", true, userState.inRVAFrame());
-    })
+
+    	$scope.promoBannerClicked = function() {
+    		documentationTracker.promoBannerClicked("Rise Display Bundle", "Documentation: Create A Display", true, userState.inRVAFrame());
+    	 };
+    });
