@@ -25,7 +25,7 @@ We use the term “Display” to refer to both the screen and device (media play
 </div> -->
 
 <!-- DUAL BANNER -->
-<a href="https://store.risevision.com/products/?cat=Displays" target="_blank" style="text-decoration: none;" ng-click="documentationTracker('Promotional Banner Clicked', 'Display Bundle', 'Help:Create A Display', true, userState.inRVAFrame() )">
+<a href="https://store.risevision.com/products/?cat=Displays" target="_blank" style="text-decoration: none;">
 <div class="col-lg-6 col-xs-12 home-pricing home-pricing-2" style="padding-top: 0px;">
 <div class="content-box media-picture-bg remove-bottom">
 <div class="content-box-body">
@@ -41,7 +41,7 @@ We use the term “Display” to refer to both the screen and device (media play
 </div>
 </a>
 
-<a href="https://store.risevision.com/products/?cat=Media%20Players" target="_blank" style="text-decoration: none;" ng-click="documentationTracker('Promotional Banner Clicked', 'Media Players', 'Help:Create A Display')">
+<a href="https://store.risevision.com/products/?cat=Media%20Players" target="_blank" style="text-decoration: none;">
 <div class="col-lg-6 col-xs-12 home-pricing home-pricing-2" style="padding-top: 0px; margin-bottom: 20px;">
 <div class="content-box bundle-picture-bg remove-bottom">
 <div class="content-box-body">
