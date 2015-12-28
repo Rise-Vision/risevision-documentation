@@ -45,7 +45,7 @@ Then follow the prompts to complete the installation, including entering the Dis
 ####ChromeOS
 **Development of the Rise Player Chrome Application is currently on hold.  See [this announcement](https://community.risevision.com/rise_vision_inc/topics/chrome-application-player-on-hold-due-to-issues) for further details. Please be aware of this before proceeding with installation.**
 
-We recommend that all Chrome OS devices be registered under Google Device Management. This will allow Rise Player to launch automatically when the device is turned on. We currently recommend that you restrict your Google Chrome version to 47.* to ensure your content is never adversely impacted by an update.
+We recommend that all Chrome OS devices be registered under Chrome device management. This will allow Rise Player to launch automatically when the device is turned on. We currently recommend that you restrict your Google Chrome version to 47.* to ensure your content is never adversely impacted by an update.
 
 From Google Device Management create an Organizational Unit for your Digital Signage Players and configure the settings as per the following:
 
