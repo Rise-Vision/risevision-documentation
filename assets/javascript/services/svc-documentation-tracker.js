@@ -1,8 +1,6 @@
 'use strict';
 
-angular.module('risevision.documentation', [
-   "risevision.common.components.analytics"
-])
+angular.module('risevision.documentation')
   .factory('documentationTracker', ['userState', 'segmentAnalytics',
     function (userState, segmentAnalytics) {
       return function (eventName, productName, source) {
