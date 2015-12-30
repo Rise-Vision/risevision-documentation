@@ -144,10 +144,10 @@ And if you are using [Rise Priority Support](https://store.risevision.com/produc
 If you have questions or problems with the installation of your Display please let us know in the [Community](http://community.risevision.com) and we will do our best to get you up and running in no time.
 - - - 
 ####Ubuntu Installation
-To run the Ubuntu installation open a terminal window, navigate to the directory that contains the installation file, and run the following commands (do not run the installer as root or via sudo):
+To run the Ubuntu installation open a terminal window, navigate to the directory that contains the installation file, and run the following commands (do not run the installer as root or via sudo).  If you are running the 64 bit installer, replace with installer-lnx-64.sh:
 
-	chmod +x rvplayer-installer.sh
-	./rvplayer-installer.sh
+	chmod +x installer-lnx-32.sh
+	./installer-lnx-32.sh
 
 And then continue with the Rise Player installation instructions.
 
