@@ -168,7 +168,7 @@ Please note that support for Raspberry Pi installation is a community initiative
 ####Chrome OS Installation
 **Please be aware that we are currently evaluating Chrome Application development due to control and stability issues that we have had with our Rise Player Chrome Application.**
 
-We recommend that all Chrome OS devices be registered under Google Device Management as it will allow Rise Player to launch automatically when the device is turned on. We recommend that you restrict your Chrome version to one major release behind the current version to ensure your content is not adversely impacted by an update and that you thoroughly test your content on the new version prior to upgrading.
+We recommend that all Chrome OS devices be registered under Chrome device management as it will allow Rise Player to launch automatically when the device is turned on. We recommend that you restrict your Chrome version to one major release behind the current version to ensure your content is not adversely impacted by an update and that you thoroughly test your content on the new version prior to upgrading.
 
 From Google Device Management create an Organizational Unit for your Digital Signage Players and configure the settings as per the following:
 
@@ -182,7 +182,7 @@ From Google Device Management create an Organizational Unit for your Digital Sig
  1. Set **Public Session Kiosk** for *Do not allow Public Session Kiosk*
  2. Configure Rise Player as the **Auto-Launch Kiosk App**
 5. Set **Auto Update** to *Allow auto-updates*
-6. Set **Restrict Google Chrome version to at most** to *44*.
+6. Set **Restrict Google Chrome version to at most** to *47.**.
 7. Set **Randomly scatter auto-updates over** to *None*
 8. Set **Auto reboot after updates** to *Disallow auto-reboots*
 9. Set **Release Channel** to *Move to Stable Channel*
