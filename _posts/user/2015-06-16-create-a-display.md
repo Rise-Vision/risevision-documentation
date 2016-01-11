@@ -138,6 +138,7 @@ Please note that if you have a firewall or proxy you may need to configure it to
 - s3.amazonaws.com
 - p.jwpcdn.com/6/5/jwpsrv.js (Only necessary if your Presentation includes videos)
 - rackcdn.com
+- 1e100.net
 
 And if you are using [Rise Priority Support](https://store.risevision.com/product/14/rise-priority-support) and taking advantage of our remote diagnostic and correction service we will also need port 8041 open for the address connect.risevision.com.
 
