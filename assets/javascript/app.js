@@ -1,5 +1,6 @@
 "use strict";
-angular.module("risevision.documentation",["ui.router","risevision.common.header", "ui.bootstrap","ui.bootstrap.tpls","risevision.google-analytics"])
+angular.module("risevision.documentation",["ui.router","ui.bootstrap","ui.bootstrap.tpls",
+    "risevision.common.components.analytics"])
     .run(['$rootScope', '$location', '$window', function($rootScope, $location, $window){
         $rootScope
             .$on('$stateChangeSuccess',
@@ -35,10 +36,9 @@ angular.module("risevision.documentation",["ui.router","risevision.common.header
         $state.go('page-not-found');
       });
 
-    }]);
-
-
-angular.module('risevision.common.i18n.config', [])
-  .constant('LOCALES_PREFIX',
-  'assets/components/rv-common-i18n/dist/locales/translation_')
-  .constant('LOCALES_SUFIX', '.json');
+    }])
+    .run(['segmentAnalytics', 'SEGMENT_API_KEY',
+      function (segmentAnalytics, SEGMENT_API_KEY) {
+        segmentAnalytics.load(SEGMENT_API_KEY, false);
+      }
+    ]);;

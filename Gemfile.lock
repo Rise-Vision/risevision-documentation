@@ -93,6 +93,3 @@ DEPENDENCIES
   jekyll-lunr-js-search (= 0.1.1)
   jekyll-sitemap
   jekyll_github_sample
-
-BUNDLED WITH
-   1.10.3
