@@ -4,16 +4,13 @@
   {% include head.html %}
 
   <body>
-    <analytics analytics-account-id="'UA-82239-1'"></analytics>
-    <common-header nav-options="navOptions" ng-controller="CommonHeaderNavbarCtrl" hide-shopping-cart="true" hide-help-menu="true"></common-header>
+    {% include header-navbar.html %}
 
-      <div class="container">
-            <div ui-view></div>
-      </div>
+    <div class="container">
+          <div ui-view></div>
+    </div>
 
-      {% include jscomponents.html %}
+    {% include jscomponents.html %}
 
   </body>
 </html>
-
-

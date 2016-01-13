@@ -1,0 +1,33 @@
+<nav class="navbar navbar-default" ng-controller="HeaderNavbarCtrl">
+  <div class="container">
+    <div class="navbar-header" style="width: 100%">
+      <div class="pull-right">
+        <a href="https://apps.risevision.com/signup" target="_blank" class="btn btn-lg btn-primary">Sign Up Free <i class="fa fa-google"></i></a>
+        <a href="https://apps.risevision.com/signin" target="_blank" class="btn btn-lg btn-link">Sign In</a>
+      </div><!--pull-right-->
+
+      <a href="https://www.risevision.com" target="_blank" class="navbar-brand hidden-xs">
+        <img src="assets/images/logo.svg" class="img-responsive">
+      </a>
+      <div class="navbar-collapse navbar-left">
+        <button ng-init="isCollapsed = true" class="btn btn-lg btn-default visible-xs" ng-click="isCollapsed = !isCollapsed"><i class="fa fa-bars"></i></button>
+        <ul class="nav navbar-nav hidden-xs">
+          <li ng-repeat="nav in navs">
+            <a href="{% raw %}{{nav.link}}{% endraw %}" target="{% raw %}{{nav.target}}{% endraw %}">{% raw %}{{nav.title}}{% endraw %}</a>
+          </li>
+        </ul>
+      </div>
+    </div><!--navbar-header-->
+  </div>
+  
+  <div class="collapsed-nav animated fadeIn half-top half-bottom hidden-lg hidden-md hidden-sm" collapse="isCollapsed">
+    <ul class="nav nav-pills nav-stacked">
+      <li>
+        <a href="https://www.risevision.com" target="_blank">Home</a>
+      </li>
+      <li ng-repeat="nav in navs">
+        <a href="{% raw %}{{nav.link}}{% endraw %}" target="{% raw %}{{nav.target}}{% endraw %}">{% raw %}{{nav.title}}{% endraw %}</a>
+      </li>
+    </ul>
+  </div>
+</nav>
