@@ -112,8 +112,8 @@ To install Rise Player select your operating system and architecture from the ch
     right: 0;
     top: 23%;
     ">
-    <a href="http://install-versions.risevision.com/installer-lnx-32.sh"><button class="btn btn-white btn-block" ng-click="documentationTracker('Player Download')">Download Ubuntu [32-bit]</button></a>
-    <a href="http://install-versions.risevision.com/installer-lnx-64.sh"><button class="btn btn-white btn-block" ng-click="documentationTracker('Player Download')">Download Ubuntu [64-bit]</button></a>
+    <a href="http://install-versions.risevision.com/installer-lnx-32.sh"><button class="btn btn-white btn-block" ng-click="documentationTracker('Player Download')">Download Ubuntu 14.04 [32-bit]</button></a>
+    <a href="http://install-versions.risevision.com/installer-lnx-64.sh"><button class="btn btn-white btn-block" ng-click="documentationTracker('Player Download')">Download Ubuntu 14.04 [64-bit]</button></a>
 </div>
 </div>
 </div>
