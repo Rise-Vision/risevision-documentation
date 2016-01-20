@@ -25,7 +25,7 @@ We use the term “Display” to refer to both the screen and device (media play
 </div> -->
 
 <!-- DUAL BANNER -->
-<a href="https://store.risevision.com/products/?cat=Displays" target="_blank" style="text-decoration: none;">
+<a href="https://store.risevision.com/products/?cat=Displays" target="_blank" style="text-decoration: none;" ng-click="documentationTracker("Promo Banner Clicked","Rise Display Bundle", "Documentation: Create A Display", true, userState.inRVAFrame())">
 <div class="col-lg-6 col-xs-12 home-pricing home-pricing-2" style="padding-top: 0px;">
 <div class="content-box media-picture-bg remove-bottom">
 <div class="content-box-body">
@@ -41,7 +41,7 @@ We use the term “Display” to refer to both the screen and device (media play
 </div>
 </a>
 
-<a href="https://store.risevision.com/products/?cat=Media%20Players" target="_blank" style="text-decoration: none;">
+<a href="https://store.risevision.com/products/?cat=Media%20Players" target="_blank" style="text-decoration: none;" ng-click="documentationTracker("Promo Banner Clicked","Media Players", "Documentation: Create A Display", true, userState.inRVAFrame())">>
 <div class="col-lg-6 col-xs-12 home-pricing home-pricing-2" style="padding-top: 0px; margin-bottom: 20px;">
 <div class="content-box bundle-picture-bg remove-bottom">
 <div class="content-box-body">
@@ -146,8 +146,8 @@ If you have questions or problems with the installation of your Display please l
 ####Ubuntu Installation
 To run the Ubuntu installation open a terminal window, navigate to the directory that contains the installation file, and run the following commands (do not run the installer as root or via sudo).  If you are running the 64 bit installer, replace with installer-lnx-64.sh:
 
-	chmod +x installer-lnx-32.sh
-	./installer-lnx-32.sh
+    chmod +x installer-lnx-32.sh
+    ./installer-lnx-32.sh
 
 And then continue with the Rise Player installation instructions.
 
@@ -203,9 +203,9 @@ If you wish to create your own version of Rise Player, or contribute to ours, yo
 
 <style>
 .home-pricing {
-	color: white;
-	padding-bottom: 0;
-	background: none;
+    color: white;
+    padding-bottom: 0;
+    background: none;
 }
 .home-pricing .btn{
 margin-top:0px;
