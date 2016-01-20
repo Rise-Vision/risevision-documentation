@@ -1,5 +1,6 @@
 "use strict";
-angular.module("risevision.documentation",["ui.router","risevision.common.header", "ui.bootstrap","ui.bootstrap.tpls","risevision.google-analytics", "risevision.common.components.analytics"])
+angular.module("risevision.documentation",["ui.router","ui.bootstrap","ui.bootstrap.tpls",
+    "risevision.common.components.analytics"])
     .run(['$rootScope', '$location', '$window', function($rootScope, $location, $window){
         $rootScope
             .$on('$stateChangeSuccess',
