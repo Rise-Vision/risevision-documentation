@@ -51,6 +51,14 @@ npm install
 ```bash
 gulp bundle-install
 ```
+* Note: for Mac OS you may need to run the following commands
+ ```bash
+ xcode-select --install
+ gem install nokogiri
+ bundle config build.nokogiri --use-system-libraries
+ gulp bundle-install
+ ```
+
 
 * download components with bower
 ```bash
