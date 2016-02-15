@@ -166,7 +166,7 @@ To **stop Rise Player on Windows**, press the windows key on your keyboard to br
 Please note that support for Raspberry Pi installation is a community initiative dubbed "Riseberry" and you can find more information on it [here](https://community.risevision.com/rise_vision_inc/topics/community-supported-raspberry-pi-2-instructions-riseberry).
 - - - 
 ####Chrome OS Installation
-**Please be aware that we are currently evaluating Chrome Application development due to control and stability issues that we have had with our Rise Player Chrome Application.**
+**Please be aware that we have put further development of the Rise Vision Chrome Application Player on hold due to issues we have had with providing a reliable service with Chrome Applications. We are continuing to make the Chrome App Player available to those that prefer to use it with Chrome OS, but please be advised that this is not our recommended solution as of this writing. We are continuing to monitor the Chrome Application platform and should the circumstances change we will reconsider restarting the project. We sincerely apologize for any inconveniences that this has caused.**
 
 We recommend that all Chrome OS devices be registered under Chrome device management as it will allow Rise Player to launch automatically when the device is turned on. We recommend that you restrict your Chrome version to one major release behind the current version to ensure your content is not adversely impacted by an update and that you thoroughly test your content on the new version prior to upgrading.
 
