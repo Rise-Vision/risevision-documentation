@@ -112,8 +112,10 @@ To install Rise Player select your operating system and architecture from the ch
     right: 0;
     top: 23%;
     ">
-    <a href="http://install-versions.risevision.com/installer-lnx-32.sh"><button class="btn btn-white btn-block" ng-click="documentationTracker('Player Download')">Download Ubuntu 14.04 LTS [32-bit]</button></a>
-    <a href="http://install-versions.risevision.com/installer-lnx-64.sh"><button class="btn btn-white btn-block" ng-click="documentationTracker('Player Download')">Download Ubuntu 14.04 LTS [64-bit]</button></a>
+    <a href="http://install-versions.risevision.com/installer-lnx-64.sh">
+    <button class="btn btn-white btn-block" ng-click="documentationTracker('Player Download')">Download Ubuntu 14.04 LTS [64-bit]</button></a>
+    <a href="#">
+    </a>
 </div>
 </div>
 </div>
@@ -146,8 +148,8 @@ If you have questions or problems with the installation of your Display please l
 ####Ubuntu Installation
 To run the Ubuntu installation open a terminal window, navigate to the directory that contains the installation file, and run the following commands (do not run the installer as root or via sudo).  If you are running the 64 bit installer, replace with installer-lnx-64.sh:
 
-	chmod +x installer-lnx-32.sh
-	./installer-lnx-32.sh
+	chmod +x installer-lnx-64.sh
+	./installer-lnx-64.sh
 
 And then continue with the Rise Player installation instructions.
 
