@@ -68,8 +68,8 @@ project.</h3>
 | Processor | Celeron or equivalent processor | Intel Core i3 or equivalent processor | Intel Core i5 or equivalent processor |
 | Memory | 4GB | 6GB + | 8GB + |
 | Storage | 32GB | 32GB + | 64GB + |
-| Operating System | Windows 7+ or Linux Ubuntu 64bit | Windows 7+ or Linux Ubuntu 64bit | Windows 7+ 64bit |
-| Examples | [Windows](https://goo.gl/u9efvJ) and [Linux](https://goo.gl/Epo4Wc) | [Windows](https://goo.gl/RC2z2B) and [Linux](https://goo.gl/CLsPPC) | [Windows](https://store.risevision.com/product/104/intel-nuc-i5-windows) |
+| Operating System | Windows 10 Professional or Linux Ubuntu 64bit | Windows 10 Professional or Linux Ubuntu 64bit | Windows 10 Professional 64bit |
+| Examples | [Windows](https://store.risevision.com/product/200/intel-nuc-celeron-windows) and [Linux](https://store.risevision.com/product/203/intel-nuc-celeron-linux) | [Windows](https://store.risevision.com/product/201/intel-nuc-i3-windows) and [Linux](https://store.risevision.com/product/204/intel-nuc-i3-linux) | [Windows](https://store.risevision.com/product/202/intel-nuc-i5-windows) |
 
 ###Add a Display
 From [Displays](https://apps.risevision.com/displays) select Add Display and then give your new display a name and save it. Once saved, a Display ID is generated and you will use that ID to pair the device that you install Rise Player on. It is best to install Rise Player on a dedicated device (not your personal computer) as it will continuously run full screen.
@@ -77,7 +77,7 @@ From [Displays](https://apps.risevision.com/displays) select Add Display and the
 
 <div id="downloadPlayerAnchor"></div>
 ###Download Rise Player
-You can install Rise Player yourself on your device or buy one of our [preconfigured devices from our store](https://store.risevision.com/products/?cat=Media%20Players).
+You can install Rise Player yourself on your device or buy one of our [preconfigured devices from our store](https://store.risevision.com/products/?cat=Media%20Players). We recommend Windows 10 Professional or Linux Ubuntu 14.04 LTS as your operating system.
 
 To install Rise Player select your operating system and architecture from the choices below, download the installation, and then run the installation on the device that you will use as the media player for your display.
 
@@ -146,7 +146,7 @@ And if you are using [Rise Priority Support](https://store.risevision.com/produc
 If you have questions or problems with the installation of your Display please let us know in the [Community](http://community.risevision.com) and we will do our best to get you up and running in no time.
 - - - 
 ####Ubuntu Installation
-To run the Ubuntu installation open a terminal window, navigate to the directory that contains the installation file, and run the following commands (do not run the installer as root or via sudo).  If you are running the 64 bit installer, replace with installer-lnx-64.sh:
+To run the Ubuntu installation open a terminal window, navigate to the directory that contains the installation file, and run the following commands (do not run the installer as root or via sudo):
 
 	chmod +x installer-lnx-64.sh
 	./installer-lnx-64.sh
