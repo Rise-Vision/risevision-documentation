@@ -187,7 +187,7 @@ From Google Device Management create an Organizational Unit for your Digital Sig
  1. Set **Public Session Kiosk** for *Do not allow Public Session Kiosk*
  2. Configure Rise Player as the **Auto-Launch Kiosk App**
 5. Set **Auto Update** to *Allow auto-updates*
-6. Set **Restrict Google Chrome version to at most** to *47.**.
+6. Set **Restrict Google Chrome version to at most** to *48.**.
 7. Set **Randomly scatter auto-updates over** to *None*
 8. Set **Auto reboot after updates** to *Disallow auto-reboots*
 9. Set **Release Channel** to *Move to Stable Channel*
