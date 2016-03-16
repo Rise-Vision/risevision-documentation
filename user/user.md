@@ -8,9 +8,8 @@ title: "Rise Vision User Documentation | Rise Vision Help Documentation"
 ###Getting Started with Rise Vision
 Rise Vision runs best and is supported on
 
-- Windows 7
+- Windows 10 Professional
 - Ubuntu 14.04
-- Mac OSX 10.10
 
 Management, previewing, and displaying of Rise Vision content is tested and supported on the last three stable desktop versions of Google Chrome.
 
