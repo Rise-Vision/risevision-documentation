@@ -162,8 +162,6 @@ Please note that Microsoft has introduced a new system for verifying the authent
 
 And then continue with the Rise Player installation instructions.
 
-To **stop Rise Player on Windows 7**, press the windows key on your keyboard to bring up the Windows start menu, and then find the Rise Vision group and click the Stop Player shortcut.
-
 To **stop Rise Player on Windows 10**, press control+alt+delete on your keyboard, click the power button in the bottom right of the screen, click Restart. Once the computer restarts, click cancel when Rise Player begins it's countdown.
 
 - - - 
