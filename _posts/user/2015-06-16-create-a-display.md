@@ -95,8 +95,8 @@ To install Rise Player select your operating system and architecture from the ch
     right: 0;
     top: 23%;
     ">
-    <a href="http://install-versions.risevision.com/installer-win-32.exe"><button class="btn btn-primary btn-block" ng-click="documentationTracker('Player Download')">Download Windows 7+ [32-bit]</button></a>
-    <a href="http://install-versions.risevision.com/installer-win-64.exe"><button class="btn btn-primary btn-block" ng-click="documentationTracker('Player Download')">Download Windows 7+ [64-bit]</button></a>
+    <a href="http://install-versions.risevision.com/installer-win-32.exe"><button class="btn btn-primary btn-block" ng-click="documentationTracker('Player Download')">Download Windows 10 [32-bit]</button></a>
+    <a href="http://install-versions.risevision.com/installer-win-64.exe"><button class="btn btn-primary btn-block" ng-click="documentationTracker('Player Download')">Download Windows 10 [64-bit]</button></a>
 </div>
 </div>
 <div class="col-sm-6 col-xs-12" style="
