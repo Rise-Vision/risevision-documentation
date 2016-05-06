@@ -1,132 +1,129 @@
 ---
 layout: user-post
-title:  "Create a Display"
+title:  "Displays"
 date:   2015-06-16 03:20:00
 category: user
 order: 2
 
 ---
-###What’s a Display
-We use the term “Display” to refer to both the screen and device (media player) that together show your content on your digital signage. And our application, Rise Player, is installed on the media player (device) and it renders and publishes your content on the display.
+A Display is a screen that is connected to a [Media Player](#media-player-anchor) (a computer), and that Media Player has [Rise Player](#rise-player-anchor) software installed on it. Rise Player software is uniquely addressed by a [Display ID](#displayID-anchor). All four together (the screen, [Media Player](#media-player-anchor), [Rise Player](#rise-player-anchor) and the [Display ID](#displayID-anchor)) together make a “Display” within Rise Vision.
 
-<!-- SINGLE BANNER -->
-<!-- <div class="col-sm-12 home-pricing home-pricing-2" style="padding-top: 0px;">
-<div class="content-box media-picture-bg remove-bottom">
-<div class="content-box-body">
-<div class="row">
-<div class="col-md-6 col-xs-offset-6">
-<h2>Media Players for your Display!</h2>
-<p class="add-bottom">Check out the wide variety of Media Players we have for sale in our Rise Vision store.  Find just the right fit to power your amazing Presentations!</p>
-<a href="https://store.risevision.com/products/?cat=Media%20Players" class="btn btn-primary" target="_blank">Explore Now <i class="fa fa-chevron-circle-right icon-right"></i></a>
-</div>
-<p></p></div>
-</div>
-</div>
-</div> -->
+###How do I add a Display?
+You can add a  Display to your Company and then install Rise Player on your [Media Player](#media-player-anchor) using a [Display ID](#displayID-anchor).  You also have the option to install Rise Player, and use a [Claim ID](#claimID-anchor) to add a Display from your [Media Player](#media-player-anchor). Either way works, but the second approach is more commonly used when adding many Displays at the same time.
 
-<!-- DUAL BANNER -->
-<a href="https://store.risevision.com/products/?cat=Displays" target="_blank" style="text-decoration: none;">
-<div class="col-lg-6 col-xs-12 home-pricing home-pricing-2" style="padding-top: 0px;">
-<div class="content-box media-picture-bg remove-bottom">
-<div class="content-box-body">
-<div class="row">
-<div class="col-md-12">
-<h1>DISPLAY <br>BUNDLES</h1>
-<h3 class="add-bottom bundle-text">Get everything you need in one convenient bundle with the option to have it installed!</h3>
-<a href="https://store.risevision.com/products/?cat=Displays" class="btn btn-primary" target="_blank" >View in Store <i class="fa fa-chevron-circle-right icon-right"></i></a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</a>
+<style type="text/css">
+      .video-box {
+        position: relative;
+        z-index: 100;
+        overflow: hidden;
+        border: 2px solid #CCC;
+        border-radius: 4px;
+        margin-bottom: 16px;
+        background: #FFF;
+      }
+</style>
 
-<a href="https://store.risevision.com/products/?cat=Media%20Players" target="_blank" style="text-decoration: none;">
-<div class="col-lg-6 col-xs-12 home-pricing home-pricing-2" style="padding-top: 0px; margin-bottom: 20px;">
-<div class="content-box bundle-picture-bg remove-bottom">
-<div class="content-box-body">
-<div class="row">
-<div class="col-md-12">
-<h1>MEDIA <br>PLAYERS</h1>
-<h3 class="add-bottom player-text">We have a variety of preconfigured Media <br>Players for any 
-project.</h3>
-<a href="https://store.risevision.com/products/?cat=Media%20Players" class="btn btn-white" target="_blank" >View in Store <i class="fa fa-chevron-circle-right icon-right"></i></a>
+<div class="video-box">
+  <video class="demo img-responsive" autoplay loop preload="auto" style="margin: 0 auto -2px;">
+  <source src="https://s3.amazonaws.com/Rise-Images/Animations/addadisplay.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+  </video>
 </div>
-</div>
-</div>
-</div>
-</div>
-</a>
 
+<span id="displayID-anchor"></span>
+####To add a Display using Display ID
+From [apps.risevision.com](https://apps.risevision.com/) click on the **[+ Add Display]** button and follow the on-screen instructions to set up your Media Player.
 
+<span id="claimID-anchor"></span>
+####To add a Display using Claim ID
+From [apps.risevision.com](https://apps.risevision.com/), under your Account Settings you will find your Company’s unique [Claim ID](#claimID-anchor). Be sure to make a note of it. From the Rise Player installation screen on your Media Player, choose to install with your [Claim ID](#claimID-anchor). Enter the ID and give your Display a name. It will be automatically added to Rise Vision, under your Company.
 
-<br/>
-**Not sure what type of device hardware you need? Consider the following:**
+<span id="media-player-anchor"></span>
+###What is a Media Player?
+A Media Player is a dedicated computer that runs Rise Player. It renders your Presentations and Web Pages on your Display and it must have an Internet connection at all times.
+
+###What are the hardware requirements to run Rise Player?
+Consider the following when choosing Media Player hardware:
 
 | Hardware Component | Good (I only need to show text and images) | Better (I need to show some video content) | Best (I need to show a lot of videos and dynamic content) |
 | ---- | ---- | ---- | ---- |
 | Processor | Celeron or equivalent processor | Intel Core i3 or equivalent processor | Intel Core i5 or equivalent processor |
 | Memory | 4GB | 6GB + | 8GB + |
 | Storage | 32GB | 32GB + | 64GB + |
-| Operating System | Windows 10 Professional or Linux Ubuntu 64bit | Windows 10 Professional or Linux Ubuntu 64bit | Windows 10 Professional 64bit |
+| Operating System | Windows 10 Professional 32 bit / 64 bit, or Linux Ubuntu 32bit / 64bit | Windows 10 Professional 32 bit / 64 bit, or Linux Ubuntu 32bit / 64bit | Windows 10 Professional 32 bit / 64 bit |
 | Examples | [Windows](https://store.risevision.com/product/200/intel-nuc-celeron-windows) and [Linux](https://store.risevision.com/product/203/intel-nuc-celeron-linux) | [Windows](https://store.risevision.com/product/201/intel-nuc-i3-windows) and [Linux](https://store.risevision.com/product/204/intel-nuc-i3-linux) | [Windows](https://store.risevision.com/product/202/intel-nuc-i5-windows) |
 
-###Add a Display
-From [Displays](https://apps.risevision.com/displays) select Add Display and then give your new display a name and save it. Once saved, a Display ID is generated and you will use that ID to pair the device that you install Rise Player on. It is best to install Rise Player on a dedicated device (not your personal computer) as it will continuously run full screen.
+
+###Do you sell preconfigured Media Players?
+We have preconfigured [Media Players](#media-player-anchor) available in our Store specifically for use with Rise Vision. All you need to do is turn them on and enter your [Claim ID](#claimID-anchor) or [Display ID](#displayID-anchor).
 
 
-<div id="downloadPlayerAnchor"></div>
-###Download Rise Player
-You can install Rise Player yourself on your device or buy one of our [preconfigured devices from our store](https://store.risevision.com/products/?cat=Media%20Players). We recommend Windows 10 Professional or Linux Ubuntu 14.04 LTS as your operating system.
-
-To install Rise Player select your operating system and architecture from the choices below, download the installation, and then run the installation on the device that you will use as the media player for your display.
-
-<div class="row" id="riseDownloadPlayer">
-<div class="col-sm-6 col-xs-12" style="
-    position:relative;
-    background-color: #ECECEC;
-    padding: 15px;
-">
-<div class="col-xs-4">
-<img src="https://www.seeklogo.net/wp-content/uploads/2012/12/windows-8-icon-logo-vector-400x400.png">
-</div>
-<div class="col-xs-8" style="
-    position: absolute;
-    right: 0;
-    top: 23%;
-    ">
-    <a href="http://install-versions.risevision.com/installer-win-32.exe"><button class="btn btn-primary btn-block" ng-click="documentationTracker('Player Download')">Download Windows 10 [32-bit]</button></a>
-    <a href="http://install-versions.risevision.com/installer-win-64.exe"><button class="btn btn-primary btn-block" ng-click="documentationTracker('Player Download')">Download Windows 10 [64-bit]</button></a>
-</div>
-</div>
-<div class="col-sm-6 col-xs-12" style="
-    position:relative;
-    background-color: #C7D5D8;
-    padding: 15px;
-    ">
-<div class="col-xs-4">
-<img src="http://design.ubuntu.com/wp-content/uploads/logo-ubuntu_cof-orange-hex.png">
-</div>
-<div class="col-xs-8" style="
-    position: absolute;
-    right: 0;
-    top: 23%;
-    ">
-    <a href="http://install-versions.risevision.com/installer-lnx-64.sh">
-    <button class="btn btn-white btn-block" ng-click="documentationTracker('Player Download')">Download Ubuntu 14.04 LTS [64-bit]</button></a>
-    <a href="#">
+<div class="col-xs-12 home-pricing home-pricing-2" style="padding-top: 0px; margin-bottom: 20px;">
+    <a href="https://store.risevision.com/products/?cat=Media%20Players" target="_blank" style="text-decoration: none;">
     </a>
-</div>
-</div>
+    <div class="content-box bundle-picture-bg remove-bottom">
+        <a href="https://store.risevision.com/products/?cat=Media%20Players" target="_blank" style="text-decoration: none;">
+        </a>
+        <div class="content-box-body" style="padding:16px 33px">
+            <a href="https://store.risevision.com/products/?cat=Media%20Players" target="_blank" style="text-decoration: none;">
+            </a>
+            <div class="row">
+                <a href="https://store.risevision.com/products/?cat=Media%20Players" target="_blank" style="text-decoration: none;">
+                </a>
+                <div class="col-md-12">
+                    <a href="https://store.risevision.com/products/?cat=Media%20Players" target="_blank" style="text-decoration: none;">
+                        <h1>MEDIA <br>PLAYERS</h1>
+                        <h3 class="add-bottom player-text">We have a variety of preconfigured Media <br>Players for any 
+project.</h3>
+                    </a><a href="https://store.risevision.com/products/?cat=Media%20Players" class="btn btn-white" target="_blank">View in Store <i class="fa fa-chevron-circle-right icon-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
-<!-- - [Windows 7 and higher 32 bit](http://install-versions.risevision.com/installer-win-32.exe)
-- [Windows 7 and higher 64 bit](http://install-versions.risevision.com/installer-win-64.exe)
-- [Rise Player Ubuntu 14.04 32 bit](http://install-versions.risevision.com/installer-lnx-32.sh)
-- [Rise Player Ubuntu 14.04 64 bit](http://install-versions.risevision.com/installer-lnx-64.sh) -->
+<span id="rise-player-anchor"></span>
+###What is Rise Player?
+Rise Player is software that runs on your Media Player (a dedicated computer), and it renders your Presentations and Web Pages on your Display.
 
-###Install Rise Player
-Please note that if you have a firewall or proxy you may need to configure it to allow our service on port 80 (http) and 443 (https) for the following addresses:
+###What operating systems does Rise Player support?
+Rise Player is available for [Windows 10 32-bit](http://install-versions.risevision.com/installer-win-32.exe), [Windows 10 64-bit](http://install-versions.risevision.com/installer-win-64.exe), [Ubuntu 32bit](http://install-versions.risevision.com/installer-lnx-32.sh) and [Ubuntu 64bit](http://install-versions.risevision.com/installer-lnx-64.sh)
+
+###How do I install Rise Player?
+Pick your operating system below, download the applicable installer and copy it to the Media Player that you intend to use.
+
+####Windows Installation
+Run the Rise Player installer on your dedicated Media Player and follow the on-screen setup instructions.
+
+<a href="http://install-versions.risevision.com/installer-win-32.exe"><button class="btn btn-primary" ng-click="documentationTracker('Player Download')">Download Windows 10 [32-bit]</button></a>
+<a href="http://install-versions.risevision.com/installer-win-64.exe"><button class="btn btn-primary" ng-click="documentationTracker('Player Download')">Download Windows 10 [64-bit]</button></a>
+
+####Ubuntu Installation
+Open a terminal window, navigate to the directory that contains the Rise Player installer, and run the following commands  (do not run the installer as root or via sudo):
+
+```
+chmod +x installer-lnx-32.sh
+./installer-lnx-32.sh
+
+OR
+
+chmod +x installer-lnx-64.sh
+./installer-lnx-64.sh
+```
+Once entered, follow the on-screen setup instructions.
+
+<a href="http://install-versions.risevision.com/installer-lnx-32.sh">
+    <button class="btn btn-primary" ng-click="documentationTracker('Player Download')">Download Ubuntu 14.04 LTS [32-bit]</button>
+</a>
+<a href="http://install-versions.risevision.com/installer-lnx-64.sh">
+    <button class="btn btn-primary" ng-click="documentationTracker('Player Download')">Download Ubuntu 14.04 LTS [64-bit]</button>
+</a>
+
+###How do I stop Rise Player?
+Press **[CTRL+Q]** to stop Rise Player at any time.
+
+###What if I have a Firewall / Proxy?
+Please note that if you have a Firewall or Proxy, you may need to configure it to allow our service on port 80 (http) and 443 (https) for the following addresses:
 
 - rvashow2.appspot.com
 - rvashow.appspot.com
@@ -141,37 +138,16 @@ Please note that if you have a firewall or proxy you may need to configure it to
 - p.jwpcdn.com/6/5/jwpsrv.js (Only necessary if your Presentation includes videos)
 - rackcdn.com
 
-And if you are using [Rise Priority Support](https://store.risevision.com/product/14/rise-priority-support) and taking advantage of our remote diagnostic and correction service we will also need port 8041 open for the address connect.risevision.com.
+###Can I run Rise Player on a Raspberry PI?
+Raspberry Pi installation is a community-supported initiative dubbed "Riseberry". You can find more information on it [here](https://community.risevision.com/rise_vision_inc/topics/community-supported-raspberry-pi-2-instructions-riseberry).
 
-If you have questions or problems with the installation of your Display please let us know in the [Community](http://community.risevision.com) and we will do our best to get you up and running in no time.
-- - - 
-####Ubuntu Installation
-To run the Ubuntu installation open a terminal window, navigate to the directory that contains the installation file, and run the following commands (do not run the installer as root or via sudo):
+###Can I run Rise Player on Android?
+Third parties provide Android Media Players, and they can be found on our Store. A third party Android Player is available from the Google Play Store [here](https://play.google.com/store/apps/details?id=com.myrise.riseplayer&hl=en).
 
-	chmod +x installer-lnx-64.sh
-	./installer-lnx-64.sh
+###Can I run Rise Player on Chrome OS?
+Development of the Rise Vision Chrome Application Player is on hold due to issues with providing a reliable service with Chrome Applications. We are continuing to make the [Chrome App Player](https://chrome.google.com/webstore/detail/rise-player/ilcmohdkjfcfekfmpdppgoaaemgdmhaa) available to Chrome OS, but this is not our recommended solution. We are continuing to monitor the Chrome Application platform and, should circumstances change, we will reconsider restarting the project. We sincerely apologize for any inconvenience that this has caused.
 
-And then continue with the Rise Player installation instructions.
-
-To **stop Rise Player On Ubuntu**, press the super key, then type ‘rise’ to display the Stop Player shortcut, then click it.
-- - - 
-####Windows Installation
-If your browser asks "Do you want to run or save..." click "Run" if you are downloading from the dedicated Rise Player device, otherwise click "Save" and copy the installation to the Rise Player dedicated device and then run the installation on it.
-
-Please note that Microsoft has introduced a new system for verifying the authenticity of desktop applications called SmartScreen that may trigger warnings when you download and install Rise Player. While this new system does insure that you are downloading an application that has not been tampered with, it also introduces errant warnings, especially with newly released software applications and updates. **If you see "Rise Player Installation is not commonly downloaded and could harm your computer."  Click on "Actions" and then "Run anyway" and if you see "Windows protected your PC.  Windows SmartScreen prevented an unrecognized app from starting. Running this app might put your PC at risk." Click on "More info" to reveal other options and then click "Run anyway".**
-
-And then continue with the Rise Player installation instructions.
-
-To **stop Rise Player on Windows 10**, press control+alt+delete on your keyboard, click the power button in the bottom right of the screen, click Restart. Once the computer restarts, click cancel when Rise Player begins it's countdown.
-
-- - - 
-####Raspberry Pi Installation
-Please note that support for Raspberry Pi installation is a community initiative dubbed "Riseberry" and you can find more information on it [here](https://community.risevision.com/rise_vision_inc/topics/community-supported-raspberry-pi-2-instructions-riseberry).
-- - - 
-####Chrome OS Installation
-**Please be aware that we have put further development of the Rise Vision Chrome Application Player on hold due to issues we have had with providing a reliable service with Chrome Applications. We are continuing to make the Chrome App Player available to those that prefer to use it with Chrome OS, but please be advised that this is not our recommended solution as of this writing. We are continuing to monitor the Chrome Application platform and should the circumstances change we will reconsider restarting the project. We sincerely apologize for any inconveniences that this has caused.**
-
-We recommend that all Chrome OS devices be registered under Chrome device management as it will allow Rise Player to launch automatically when the device is turned on. We recommend that you restrict your Chrome version to one major release behind the current version to ensure your content is not adversely impacted by an update and that you thoroughly test your content on the new version prior to upgrading.
+We recommend that all Chrome OS devices be registered under Chrome device management as it will allow Rise Player to launch automatically when the device is turned on. We recommend that you restrict your Chrome version to one major release behind the current version to ensure your Displays  are  not adversely impacted by an update and that you thoroughly test your Displays  on the new version prior to upgrading.
 
 From Google Device Management create an Organizational Unit for your Digital Signage Players and configure the settings as per the following:
 
@@ -196,13 +172,13 @@ Upon startup you will be prompted to enter the Display ID that was assigned to t
 
 To stop Rise Player, power cycle your Chromebox. When the Rise Player application is loading, press the key combination of Control + Alt + S on your keyboard to boot into Chrome OS instead of Rise Player.
 
-###Create Your Own Rise Player
+###How do I create my own Rise Player?
 If you wish to create your own version of Rise Player, or contribute to ours, you can find our open source repositories on GitHub below:
 
-- Player https://github.com/Rise-Vision/rise-player
-- Cache https://github.com/Rise-Vision/rise-cache
-- Installer https://github.com/Rise-Vision/rise-launcher-electron
-- Viewer https://github.com/Rise-Vision/viewer
+- Player [https://github.com/Rise-Vision/rise-player](https://github.com/Rise-Vision/rise-player)
+- Cache [https://github.com/Rise-Vision/rise-cache](https://github.com/Rise-Vision/rise-cache)
+- Installer [https://github.com/Rise-Vision/rise-launcher-electron](https://github.com/Rise-Vision/rise-launcher-electron)
+- Viewer [https://github.com/Rise-Vision/viewer](https://github.com/Rise-Vision/viewer)
 
 <style>
 .home-pricing {
@@ -259,8 +235,8 @@ background-image:url('https://s3.amazonaws.com/Rise-Images/Experimental/mediapla
 
 .bundle-picture-bg {
   background-color:#3c3c3c;
-  background-size: auto 100%;
-  background-position: 100% 0 !important;
+  background-size: auto 130%;
+  background-position: 89% 41% !important;
   background-repeat: no-repeat;
 }  
 
@@ -273,20 +249,22 @@ background-image:url('https://s3.amazonaws.com/Rise-Images/Experimental/mediapla
 
 @media screen and (max-width: 1199px) {
   .bundle-picture-bg {
-      background-position: 90% 0 !important;
+      background-position: 93% 46% !important;
   }  
 }
 
 @media all and (max-width: 490px) {
   .media-picture-bg {
-  background: none !important;
+   background-size: 44%;
+   background-position: 96% 53% !important;
   background-color:#e9ffed !important
   }  
 }
 
 @media all and ( max-width: 490px ) {
  .bundle-picture-bg {
-    background: none !important;
+    background-size: 44%;
+   background-position: 96% 53% !important;
     background-color:#3c3c3c !important;
   }
 }
@@ -302,3 +280,5 @@ background-size:cover;
 }
 }*/
 </style>
+
+
