@@ -2,7 +2,7 @@
 layout: user-post
 title:  "Displays"
 date:   2015-06-16 03:20:00
-category: user
+category: user/
 order: 2
 
 ---

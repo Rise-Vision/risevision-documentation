@@ -2,7 +2,7 @@
 layout: user-post
 title:  "Sign Up"
 date:   2015-06-16 2:35:00
-category: user
+category: user/
 order: 0
 ---
 
