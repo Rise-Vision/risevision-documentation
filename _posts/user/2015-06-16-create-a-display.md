@@ -138,6 +138,8 @@ Please note that if you have a Firewall or Proxy, you may need to configure it t
 - p.jwpcdn.com/6/5/jwpsrv.js (Only necessary if your Presentation includes videos)
 - rackcdn.com
 
+And if you are using [Rise Priority Support](https://store.risevision.com/product/14/rise-priority-support) and taking advantage of our remote diagnostic and correction service we will also need port 8041 open for the address connect.risevision.com.
+
 ###Can I run Rise Player on a Raspberry PI?
 Raspberry Pi installation is a community-supported initiative dubbed "Riseberry". You can find more information on it [here](https://community.risevision.com/rise_vision_inc/topics/community-supported-raspberry-pi-2-instructions-riseberry).
 
