@@ -2,7 +2,7 @@
 layout: user-post
 title:  "Schedules"
 date:   2015-06-16 03:24:00
-category: user
+category: user/
 order: 3
 ---
 

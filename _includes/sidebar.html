@@ -3,16 +3,18 @@
         <div id="navigation" class="docs-sidebar">
             <div id="linkLevel" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
             {% if page.type == 'developer' %}
+                {% assign pageTypeCategory = page.type  %}
                 {% assign sections = site.developerSections %}
                 <a href="/developer" itemprop="url" style="display: none">developer</a>
             {% elsif page.type == 'user' %}
+                {% assign pageTypeCategory = 'user/'  %}
                 {% assign sections = site.userSections %}
                 <a href="/user" itemprop="url" style="display: none">user</a>
             {% endif %}
             <!-- Docs Categories -->
             <ul class="nav-top-ul">
-                {% if site.categories[page.type] != null %}
-                    {% assign pages = site.categories[page.type] | sort:"order"  %}
+                {% if site.categories[pageTypeCategory] != null %}
+                    {% assign pages = site.categories[pageTypeCategory] | sort:"order"  %}
 
                     <li>
                         <div id="linkLevel1-{{ page.type | replace: ' ', ''}}" itemscope itemtype="http://data-vocabulary.org/Breadcrumb" itemprop="child">
