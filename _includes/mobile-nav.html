@@ -5,6 +5,7 @@
         {% assign sections = site.userSections %}
     {% endif %}
     <select class="form-control docs-nav">
+      <option value="" disabled selected hidden>Select Help Page:</option>
       {% for section in sections %}
             {% assign label = section[1] %}
             {% assign subSections = section[2] %}
