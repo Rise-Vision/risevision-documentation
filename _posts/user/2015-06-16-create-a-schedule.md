@@ -15,21 +15,15 @@ But keep in mind that a Display **cannot** be double-booked. It can only be assi
 Presentations and Web Pages are added to a Schedule’s Playlist. The Playlist controls the order they appear in, how long they should appear (Duration), when they should appear (Timeline) and where they appear (Distribution). The Timeline and Distribution for the Playlist works within the scope of the Timeline and Distribution for the Schedule. For example: If your Schedule says that it plays from 9 to 5 Monday through Friday (Timeline) on Displays 1, 2, and 3 (Distribution), and you add a Presentation to your Schedule Playlist that plays from 9 to 6 Monday through Saturday on Displays 1, 2, 3 and 4 it will never show up after 5pm, nor play on Saturday and won’t appear on Display 4. The Schedule Timeline and Distribution controls the boundaries of ‘when’ and ‘where’ things can play. The Playlist Timeline and Distribution can only work within that scope.
 
 <style type="text/css">
-      .video-box {
-        position: relative;
-        z-index: 100;
-        overflow: hidden;
-        border: 2px solid #CCC;
+    .video-box {
+        border: 1px solid #e6e6e6;
+        background: #FFF;
+        padding: 20px;
         border-radius: 4px;
-        margin-top: 16px;
-        margin-bottom: 16px;
-        text-align: center;
-      }
-    </style>
+        box-shadow: 0 10px 20px rgba(0,0,0,0.05), 0 6px 6px rgba(0,0,0,0.13);
+    }
+</style>
 
-<div class="video-box">
-	<video class="demo img-responsive" autoplay loop preload="auto" poster="https://s3.amazonaws.com/Rise-Images/Animations/loader.png">
-    <source src="https://s3.amazonaws.com/Rise-Images/Animations/howitworks.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-    </video>
+<div class="video-box add-top">
+    <img src="https://s3.amazonaws.com/Rise-Images/Animations/howitworks.gif">
 </div>
