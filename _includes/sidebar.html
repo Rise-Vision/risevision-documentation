@@ -8,7 +8,7 @@
                 <a href="/developer" itemprop="url" style="display: none">developer</a>
             {% elsif page.type == 'user' %}
                 {% assign pageTypeCategory = 'user/'  %}
-                {% assign sections = site.userSections %}
+                {% assign sections = [] %}
                 <a href="/user" itemprop="url" style="display: none">user</a>
             {% endif %}
             <!-- Docs Categories -->
