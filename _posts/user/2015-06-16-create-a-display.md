@@ -13,21 +13,16 @@ You can add a  Display to your Company and then install Rise Player on your [Med
 
 <style type="text/css">
       .video-box {
-        position: relative;
-        z-index: 100;
-        overflow: hidden;
-        border: 2px solid #CCC;
-        border-radius: 4px;
-        margin-bottom: 16px;
+        border: 1px solid #e6e6e6;
         background: #FFF;
+        padding: 20px;
+        border-radius: 4px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.05), 0 6px 6px rgba(0,0,0,0.13);
       }
 </style>
 
-<div class="video-box">
-  <video class="demo img-responsive" autoplay loop preload="auto" style="margin: 0 auto -2px;">
-  <source src="https://s3.amazonaws.com/Rise-Images/Animations/addadisplay.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-  </video>
+<div class="video-box text-center">
+  <img style="width: auto;" src="https://s3.amazonaws.com/Rise-Images/Animations/addadisplay.gif">
 </div>
 
 <span id="displayID-anchor"></span>
