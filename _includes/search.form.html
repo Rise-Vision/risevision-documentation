@@ -8,6 +8,8 @@
             id="search-query"
             name="q"
             placeholder="Search Documentation"
-            autocomplete="off">
+            autocomplete="off" 
+            ng-model="searchQuery" 
+            ng-change="documentationTracker('Documentation Search',{q: searchQuery, type:'{{page.type}}'})">
     </div>
 </div>
