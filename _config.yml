@@ -80,10 +80,9 @@ developerSections: [
     ['developer/common-header', 'Common Header']
 ]
 
-#userSections: [
-#    ['user/advanced/', 'Advanced', [
-#      ['user/advanced/display', 'Displays']
-#]]]
+userSections: [
+  ['user/', 'User Documentation']
+]
 
 
 # Dates are not included in permalinks
