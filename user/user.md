@@ -9,19 +9,14 @@ title: "Rise Vision User Documentation | Rise Vision Help Documentation"
 ###How does Rise Vision work?
 <style type="text/css">
       .video-box {
-        position: relative;
-        z-index: 100;
-        overflow: hidden;
-        border: 2px solid #CCC;
+        border: 1px solid #e6e6e6;
+        background: #FFF;
+        padding: 20px;
         border-radius: 4px;
-        margin-bottom: 16px;
-        text-align: center;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.05), 0 6px 6px rgba(0,0,0,0.13);
       }
     </style>
 
 <div class="video-box">
-	<video class="demo img-responsive" autoplay loop preload="auto" poster="https://s3.amazonaws.com/Rise-Images/Animations/loader.png">
-    <source src="https://s3.amazonaws.com/Rise-Images/Animations/howitworks.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-    </video>
+	<img src="https://s3.amazonaws.com/Rise-Images/Animations/howitworks.gif">
 </div>
