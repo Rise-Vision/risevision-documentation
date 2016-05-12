@@ -39,6 +39,7 @@
 
         it("should show search results", function(done){
             searchPage.getSearchInput().sendKeys("users").then(function(){
+                browser.sleep(500);
                 expect(searchPage.getSearchResultsPanel().isDisplayed()).to.eventually.be.true;
                 expect(searchPage.getSearchResults().count()).to.eventually.be.above(1);
                 done();
