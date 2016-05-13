@@ -4,7 +4,7 @@ angular.module("risevision.documentation")
     $rootScope.navs = [
     {
       title: "Training",
-      link: "https://www.risevision.com/webinars",
+      link: "https://store.risevision.com/product/30/rise-training",
       target: "_blank"
     },
     {
