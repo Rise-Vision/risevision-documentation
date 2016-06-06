@@ -115,7 +115,7 @@ Once entered, follow the on-screen setup instructions.
 </a>
 
 ###How do I stop Rise Player?
-Press **[CTRL+Q]** to stop Rise Player at any time.
+Press **[CTRL+SHIFT+Q]** to stop Rise Player at any time.
 
 ###What if I have a Firewall / Proxy?
 Please note that if you have a Firewall or Proxy, you may need to configure it to allow our service on port 80 (http) and 443 (https) for the following addresses:
