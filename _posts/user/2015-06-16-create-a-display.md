@@ -121,6 +121,7 @@ Press **[CTRL+SHIFT+Q]** to stop Rise Player at any time.
 
 ###Does Rise Player support extended desktop over multiple displays?
 Rise Player for Windows does support extended desktop over multiple displays. In order to utilize your extended desktop, you will need to take the following steps:
+
 1. Stop Windows player by pressing **[CTRL+SHIFT+Q]**
 2. Navigate to C:\Users\%USERNAME%\AppData\local\rvplayer, open RiseDisplayNetworkII.ini with Notepad.
 3. Enter the following in two new lines. *"xxxx"* should be the desired resolution of your desktop.
