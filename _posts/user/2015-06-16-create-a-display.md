@@ -82,6 +82,8 @@ project.</h3>
 Rise Player is software that runs on your Media Player (a dedicated computer), and it renders your Presentations and Web Pages on your Display.
 
 ###What operating systems does Rise Player support?
+You can install the Rise Player on any operating system, but we still only recommend and support Windows 10 or Ubuntu 14.04 or higher.
+
 Rise Player is available for [Windows 10 32-bit](http://install-versions.risevision.com/installer-win-32.exe), [Windows 10 64-bit](http://install-versions.risevision.com/installer-win-64.exe), [Ubuntu 32bit](http://install-versions.risevision.com/installer-lnx-32.sh) and [Ubuntu 64bit](http://install-versions.risevision.com/installer-lnx-64.sh)
 
 ###How do I install Rise Player?
@@ -116,6 +118,16 @@ Once entered, follow the on-screen setup instructions.
 
 ###How do I stop Rise Player?
 Press **[CTRL+SHIFT+Q]** to stop Rise Player at any time.
+
+###Does Rise Player support extended desktop over multiple displays?
+Rise Player for Windows does support extended desktop over multiple displays. In order to utilize your extended desktop, you will need to take the following steps.
+1. Stop Windows player by pressing **[CTRL+SHIFT+Q]**
+2. Navigate to C:\Users\%USERNAME%\AppData\local\rvplayer, open RiseDisplayNetworkII.ini with Notepad.
+3. Enter the following in two new lines. *"xxxx"* should be the desired resolution of your desktop.
+screenwidth=xxxx
+screenheight=xxxx
+4. Save and close RiseDisplayNetworkII.ini, and restart your Player.
+
 
 ###What if I have a Firewall / Proxy?
 Please note that if you have a Firewall or Proxy, you may need to configure it to allow our service on port 80 (http) and 443 (https) for the following addresses:
