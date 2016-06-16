@@ -82,7 +82,7 @@ project.</h3>
 Rise Player is software that runs on your Media Player (a dedicated computer), and it renders your Presentations and Web Pages on your Display.
 
 ###What operating systems does Rise Player support?
-You can install the Rise Player on any operating system, but we only recommend and support Windows 7 and 10, or Ubuntu 14.04 or higher.
+You can install the Rise Player on any operating system, but we only recommend and support Windows 7 and 10, or Ubuntu 14.04.
 
 Rise Player is available for [Windows 32-bit](http://install-versions.risevision.com/installer-win-32.exe), [Windows 64-bit](http://install-versions.risevision.com/installer-win-64.exe), [Ubuntu 32bit](http://install-versions.risevision.com/installer-lnx-32.sh) and [Ubuntu 64bit](http://install-versions.risevision.com/installer-lnx-64.sh)
 
