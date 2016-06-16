@@ -128,7 +128,6 @@ screenwidth=xxxx
 screenheight=xxxx
 4. Save and close RiseDisplayNetworkII.ini, and restart your Player.
 
-
 ###What if I have a Firewall / Proxy?
 Please note that if you have a Firewall or Proxy, you may need to configure it to allow our service on port 80 (http) and 443 (https) for the following addresses:
 
