@@ -130,6 +130,17 @@ Rise Player for Windows does support extended desktop over multiple displays. In
    
 4. Save and close RiseDisplayNetworkII.ini, and restart your Player.
 
+###What if I want to enable pinch to zoom on my player?
+Pinch to zoom is disabled by default in Rise Player. You can enable pinch to zoom with the following steps.
+
+1. Stop player by pressing **{CTRL+SHIFT+Q]**
+2. Navigate to C:\Users\%USERNAME%\AppData\local\rvplayer, open RiseDisplayNetworkII.ini
+3. Enter the following in a new line
+
+	- **enablepinchtozoom=true**
+
+4. Save and close RiseDisplayNetworkII.ini, and restart your Player.
+
 ###What if I have a Firewall / Proxy?
 Please note that if you have a Firewall or Proxy, you may need to configure it to allow our service on port 80 (http) and 443 (https) for the following addresses:
 
