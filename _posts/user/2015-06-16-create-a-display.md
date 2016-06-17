@@ -127,7 +127,6 @@ Rise Player for Windows does support extended desktop over multiple displays. In
 3. Enter the following in two new lines. *"xxxx"* should be the desired resolution of your desktop.
     - **screenwidth=xxxx**
 	- **screenheight=xxxx**
-   
 4. Save and close RiseDisplayNetworkII.ini, and restart your Player.
 
 ###What if I want to enable pinch to zoom on my player?
@@ -136,9 +135,7 @@ Pinch to zoom is disabled by default in Rise Player. You can enable pinch to zoo
 1. Stop player by pressing **{CTRL+SHIFT+Q]**
 2. In Windows Navigate to C:\Users\%USERNAME%\AppData\local\rvplayer, open RiseDisplayNetworkII.ini **OR** In Ubuntu Navigate to /home/%user%/rvplayer, open RiseDisplayNetworkII.ini
 3. Enter the following in a new line
-
 	- **enablepinchtozoom=true**
-
 4. Save and close RiseDisplayNetworkII.ini, and restart your Player.
 
 ###What if I have a Firewall / Proxy?
