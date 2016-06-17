@@ -132,7 +132,7 @@ Rise Player for Windows does support extended desktop over multiple displays. In
 ###What if I want to enable pinch to zoom on my player?
 Pinch to zoom is disabled by default in Rise Player. You can enable pinch to zoom with the following steps.
 
-1. Stop player by pressing **{CTRL+SHIFT+Q]**
+1. Stop player by pressing **[CTRL+SHIFT+Q]**
 2. In Windows Navigate to C:\Users\%USERNAME%\AppData\local\rvplayer, open RiseDisplayNetworkII.ini **OR** In Ubuntu Navigate to /home/%user%/rvplayer, open RiseDisplayNetworkII.ini
 3. Enter the following in a new line
 	- **enablepinchtozoom=true**
