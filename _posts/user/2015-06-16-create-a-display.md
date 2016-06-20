@@ -162,10 +162,10 @@ Raspberry Pi installation is a community-supported initiative dubbed "Riseberry"
 ###Can I run Rise Player on Android?
 Third parties provide Android Media Players, and they can be found on our Store. A third party Android Player is available from the Google Play Store [here](https://play.google.com/store/apps/details?id=com.myrise.riseplayer&hl=en).
 
-###Can I run Rise Player on Chrome OS?
-Development of the Rise Vision Chrome Application Player is on hold due to issues with providing a reliable service with Chrome Applications. We are continuing to make the [Chrome App Player](https://chrome.google.com/webstore/detail/rise-player/ilcmohdkjfcfekfmpdppgoaaemgdmhaa) available to Chrome OS, but this is not our recommended solution. We are continuing to monitor the Chrome Application platform and, should circumstances change, we will reconsider restarting the project. We sincerely apologize for any inconvenience that this has caused.
+###Rise Player on Chrome OS
+Rise Player on Chrome OS is no longer directly supported or maintained by Rise Vision at this time. It has been released as an [open source project](https://github.com/Rise-Vision/player-chromeapp) to the [community](https://community.risevision.com/rise_vision_inc) and is available [here](https://github.com/Rise-Vision/player-chromeapp).
 
-We recommend that all Chrome OS devices be registered under Chrome device management as it will allow Rise Player to launch automatically when the device is turned on. We recommend that you restrict your Chrome version to one major release behind the current version to ensure your Displays  are  not adversely impacted by an update and that you thoroughly test your Displays  on the new version prior to upgrading.
+If you want to use Rise Vision on Chrome OS we recommend that all Chrome OS devices be registered under Chrome device management as it will allow Rise Player to launch automatically when the device is turned on. We recommend that you restrict your Chrome version to one major release behind the current version to ensure your Displays are not adversely impacted by an update and that you thoroughly test your Displays on the new version prior to upgrading.
 
 From Google Device Management create an Organizational Unit for your Digital Signage Players and configure the settings as per the following:
 
