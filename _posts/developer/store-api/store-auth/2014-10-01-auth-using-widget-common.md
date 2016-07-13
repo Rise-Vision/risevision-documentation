@@ -3,7 +3,7 @@ layout: developer-post
 title:  "Using the widget-common Library"
 date:   2014-10-13 10:52:00
 category: developer/store-api/store-auth
-order: 4
+order: 3
 ---
 
 The Store authorization process has been implemented in one of our common libraries:
