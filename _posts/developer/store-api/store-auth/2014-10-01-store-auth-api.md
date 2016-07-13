@@ -3,7 +3,7 @@ layout: developer-post
 title:  "Authorization API"
 date:   2014-10-13 10:52:00
 category: developer/store-api/store-auth
-order: 3
+order: 2
 ---
 
 You need to call Store Authorization API when you need to check if the App is authorized or not. Typically you would call it upon startup and then as soon (or shortly before) the authorization expires. You should not call this API needlessly as there is a protection mechanism that would block your App if you call our server too often.
@@ -131,6 +131,3 @@ Here are some of the things that may go wrong, with some possible solutions:
 **Issue:** The Server responds that the Widget is not authorized despite the fact that it has been Purchased
 
 **Solution:** Ensure that the Presentation and Display that are being used are from the same Company where the Widget has been Purchased.
-
-
-
