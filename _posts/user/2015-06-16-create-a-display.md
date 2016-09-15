@@ -1,7 +1,7 @@
 ---
 layout: user-post
 title:  "Displays"
-date:   2015-06-16 03:20:00
+date:   2016-09-15 03:20:00
 category: user/
 order: 2
 
@@ -174,7 +174,7 @@ From Google Device Management create an Organizational Unit for your Digital Sig
 3. Configure **Kiosk Apps** by adding the [Rise Player Application](https://chrome.google.com/webstore/detail/rise-vision-chrome-app-pl/ilcmohdkjfcfekfmpdppgoaaemgdmhaa)
  1. Click **Manage Kiosk Applications**
  2. Select **Chrome Web Store**
- 3. Search for *Rise Player*
+ 3. Search for *ilcmohdkjfcfekfmpdppgoaaemgdmhaa*
 4. Configure Kiosk Settings as per the following:
  1. Set **Public Session Kiosk** for *Do not allow Public Session Kiosk*
  2. Configure Rise Player as the **Auto-Launch Kiosk App**
