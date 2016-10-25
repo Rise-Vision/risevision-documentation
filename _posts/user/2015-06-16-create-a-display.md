@@ -43,7 +43,7 @@ Consider the following when choosing Media Player hardware:
 | Hardware Component | Good (I only need to show text and images) | Better (I need to show some video content) | Best (I need to show a lot of videos and dynamic content) |
 | ---- | ---- | ---- | ---- |
 | Processor | Celeron or equivalent processor | Intel Core i3 or equivalent processor | Intel Core i5 or equivalent processor |
-| Memory | 4GB | 6GB + | 8GB + |
+| Memory | 4GB | 4GB + | 8GB + |
 | Storage | 32GB | 32GB + | 64GB + |
 | Operating System | Windows 10 Professional 32 bit / 64 bit, or Linux Ubuntu 32bit / 64bit | Windows 10 Professional 32 bit / 64 bit, or Linux Ubuntu 32bit / 64bit | Windows 10 Professional 32 bit / 64 bit |
 | Examples | [Windows](https://store.risevision.com/product/200/intel-nuc-celeron-windows) and [Linux](https://store.risevision.com/product/203/intel-nuc-celeron-linux) | [Windows](https://store.risevision.com/product/201/intel-nuc-i3-windows) and [Linux](https://store.risevision.com/product/204/intel-nuc-i3-linux) | [Windows](https://store.risevision.com/product/202/intel-nuc-i5-windows) |
@@ -82,8 +82,6 @@ project.</h3>
 Rise Player is software that runs on your Media Player (a dedicated computer), and it renders your Presentations and Web Pages on your Display.
 
 ###What operating systems does Rise Player support?
-You can install the Rise Player on any operating system, but we only recommend and support Windows 7 and 10, or Ubuntu 14.04.
-
 Rise Player is available for [Windows 32-bit](http://install-versions.risevision.com/installer-win-32.exe), [Windows 64-bit](http://install-versions.risevision.com/installer-win-64.exe), [Ubuntu 32bit](http://install-versions.risevision.com/installer-lnx-32.sh) and [Ubuntu 64bit](http://install-versions.risevision.com/installer-lnx-64.sh)
 
 ###How do I install Rise Player?
