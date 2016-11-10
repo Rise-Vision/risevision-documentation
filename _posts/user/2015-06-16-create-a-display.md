@@ -151,6 +151,8 @@ Please note that if you have a Firewall or Proxy, you may need to configure it t
 - s3.amazonaws.com
 - p.jwpcdn.com/6/5/jwpsrv.js (Only necessary if your Presentation includes videos)
 - rackcdn.com
+
+Additionally, port 3000 will need to be open on the following address:
 - display-messaging.risevision.com
 
 And if you are using [Rise Priority Support](https://store.risevision.com/product/14/rise-priority-support) and taking advantage of our remote diagnostic and correction service we will also need port 8041 open for the address connect.risevision.com.
