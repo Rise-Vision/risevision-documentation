@@ -9,7 +9,7 @@ angular.module("risevision.documentation")
     },
     {
       title: "User Documentation",
-      link: $state.href("user", {}, {absolute: true})
+      link: "https://risevision.zendesk.com"
     },
     {
       title: "Developer Documentation",
