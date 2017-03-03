@@ -9,7 +9,7 @@ angular.module("risevision.documentation")
     },
     {
       title: "User Documentation",
-      link: "https://risevision.zendesk.com"
+      link: "https://risevision.zendesk.com/hc"
     },
     {
       title: "Developer Documentation",
