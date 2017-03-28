@@ -5,6 +5,11 @@ favicon: devdocs_favicon.ico
 excerpt: "Learn how to use the Rise Vision APIs to build digital signage applications and widgets"
 title: "Rise Vision Developer Documentation | Rise Vision API"
 ---
+
+<div class="panel-body bg-warning">
+<strong>Disclaimer:</strong> APIs are provided as is and usage is supported by the Community. We will investigate and fix eventual API issues but we don't support and will not investigate custom code.
+</div>
+
 ##Introduction
 
 Rise Vision provides a number of APIs to help you build digital signage applications and widgets that work with Rise Vision Platform and Rise Store:
