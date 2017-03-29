@@ -16,16 +16,15 @@
          Need Help?
          </button>
          </li>
-         <li style="float:left"> 
+         <li style="float:left">
         <button ng-init="isCollapsed = true" class="btn btn-lg btn-default visible-xs" ng-click="isCollapsed = !isCollapsed"><i class="fa fa-bars"></i></button>
         </li>
         <li class="dropdown" dropdown><button class="btn btn-primary dropdown-toggle hidden-xs" dropdown-toggle>Need Help<i class="fa fa-question icon-right"></i></button>
           <div class="dropdown-menu app-navigation" role="menu">
             <ul>
               <li><a id="askCommunityButton" href="https://community.risevision.com/rise_vision_inc" target="_blank">Ask the Community</a></li>
-              <li><a id="prioritySupportButton" href="https://apps.risevision.com/support" target="_blank">Priority Support <span class="text-green">Fastest</span></a>
+              <li><a id="prioritySupportButton" href="https://apps.risevision.com/support" target="_blank">Get Support</span></a>
               </li>
-              <li><a id="sendUsANoteButton" href="https://apps.risevision.com/send-note" target="_blank">Send Us a Note</a></li>
               <li><a id="signUpForWebinarsButton" href="https://www.risevision.com/webinars" target="_blank">Free Webinars</a></li>
               <li><a id="documentationButton" href="https://help.risevision.com/user" target="_blank">User Documentation</a></li>
               <li><a id="signUpForTrainingButton" href="https://store.risevision.com/product/30/rise-training" target="_blank">Rise Training</a></li>
@@ -38,7 +37,7 @@
         <img src="assets/images/logo.svg" class="img-responsive">
       </a>
       <div class="navbar-collapse navbar-left">
-        
+
         <ul class="nav navbar-nav hidden-xs">
           <li ng-repeat="nav in navs">
             <a href="{% raw %}{{nav.link}}{% endraw %}" target="{% raw %}{{nav.target}}{% endraw %}">{% raw %}{{nav.title}}{% endraw %}</a>
@@ -47,7 +46,7 @@
       </div>
     </div><!--navbar-header-->
   </div>
-  
+
   <div class="collapsed-nav animated fadeIn half-top half-bottom hidden-lg hidden-md hidden-sm" collapse="isCollapsed">
     <ul class="nav nav-pills nav-stacked">
       <li>
@@ -62,9 +61,8 @@
    <div class="collapsed-nav animated fadeIn half-top half-bottom hidden-lg hidden-md hidden-sm" collapse="helpIsCollapsed">
     <ul class="nav nav-pills nav-stacked">
        <li><a id="askCommunityButton" href="https://community.risevision.com/rise_vision_inc" target="_blank">Ask the Community</a></li>
-        <li><a id="prioritySupportButton" href="https://apps.risevision.com/support" target="_blank">Priority Support <span class="text-green">Fastest</span></a>
+        <li><a id="prioritySupportButton" href="https://apps.risevision.com/support" target="_blank">Get Support</a>
         </li>
-        <li><a id="sendUsANoteButton" href="https://apps.risevision.com/send-note" target="_blank">Send Us a Note</a></li>
         <li><a id="signUpForWebinarsButton" href="https://www.risevision.com/webinars" target="_blank">Free Webinars</a></li>
         <li><a id="documentationButton" href="https://help.risevision.com/user" target="_blank">User Documentation</a></li>
         <li><a id="signUpForTrainingButton" href="https://store.risevision.com/product/30/rise-training" target="_blank">Rise Training</a>
