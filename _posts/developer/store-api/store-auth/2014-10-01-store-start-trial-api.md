@@ -9,9 +9,9 @@ order: 4
 You need to call Store Start Trial API if you want to start a trial outside of your widget. Normally you don't need to use this API because trial starts automatically when a widget calls Authorization API the first time. However when you call Store Authorization API with the `startTrial=false` parameter, the trial never starts. If you want to start a trial from the widget itself, you can either use Authorization API without `startTrial=false` parameter or call Start Trial API. If you want to start a trial outside of the widget, then it's better to use Start Trial API.
 
 
-##Store Authorization API Endpoint
+##Start Trial API Endpoint
 
-To call Store Authorization API, send the following GET request **over SSL**:
+To call Start Trial API, send the following GET request **over SSL**:
 
 `https://store-dot-rvaserver2.appspot.com/v1/product/{product_code}/company/{company_id}/trial/start?callback={callback_function_name}`
 
@@ -37,3 +37,13 @@ _ _ _
 Success: `myCallback({"error":""});`
 
 Error: `myCallback({"error":"Company not found."});`
+
+**Example GET request without** `callback`
+
+`https://store-dot-rvaserver2.appspot.com/v1/product/1212112121212121212121/company/23232323232323232323232323/trial/start`
+
+*Response:*
+
+Success: `{"error":""}`
+
+Error: `{"error":"Company not found."}`
