@@ -29,6 +29,7 @@ To call Store Authorization API, send the following GET request **over SSL**:
 
 `srv` OPTIONAL is a comma-separated list of Server IDs you want to get signatures for.
 
+`startTrial` OPTIONAL is a boolean flag indicating if trial should start automatically. The default value is `true`. If you don't want a new trial to start, then pass `false`.
 
 **API Response Parameters**
 
