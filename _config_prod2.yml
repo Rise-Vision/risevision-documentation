@@ -1,4 +1,4 @@
 # Production Site settings
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://help1.risevision.com"
-absoluteurl: "https://help1.risevision.com/"
+url: "https://developer1.risevision.com"
+absoluteurl: "https://developer1.risevision.com/"

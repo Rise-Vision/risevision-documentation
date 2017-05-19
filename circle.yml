@@ -20,8 +20,8 @@ deployment:
       commands:
         - ./configure-stage.sh $(echo -n $CIRCLE_BRANCH |sed 's/\//-/g')
         - NODE_ENV=stage npm run ci-build
-        - ssh help@webserver-stage.risevision.com 'mkdir -p /rise-front-end/help';
-        - rsync -rptz -e ssh --delete _site help@webserver-stage.risevision.com:/rise-front-end/help/$(echo -n $CIRCLE_BRANCH |sed 's/\//-/g')
+        - ssh devhub@webserver-stage.risevision.com 'mkdir -p /rise-front-end/developer-hub';
+        - rsync -rptz -e ssh --delete _site devhub@webserver-stage.risevision.com:/rise-front-end/developer-hub
         - tar czvf dist.tar.gz _site
   production:
       branch: master
@@ -29,13 +29,11 @@ deployment:
         # It deploys to production server 2.
         - NODE_ENV=prod2 npm run ci-build
         - echo "deploying to production webserver1.risevision.com";
-        - ssh help@webserver1.risevision.com 'mkdir -p /rise-front-end/help';
-        - rsync -rptz -e ssh --delete _site help@webserver1.risevision.com:/rise-front-end/help;
+        - ssh devhub@webserver1.risevision.com 'mkdir -p /rise-front-end/developer-hub';
+        - rsync -rptz -e ssh --delete _site devhub@webserver1.risevision.com:/rise-front-end/developer-hub;
         # It then deploys to production server 1.
         - NODE_ENV=prod npm run ci-build
         - echo "deploying to production webserver.risevision.com";
-        - ssh help@webserver.risevision.com 'mkdir -p /rise-front-end/help';
-        - rsync -rptz -e ssh --delete _site help@webserver.risevision.com:/rise-front-end/help;
+        - ssh devhub@webserver.risevision.com 'mkdir -p /rise-front-end/developer-hub';
+        - rsync -rptz -e ssh --delete _site devhub@webserver.risevision.com:/rise-front-end/developer-hub;
         - tar czvf dist.tar.gz _site
-        # Clean up stage by moving the branch directory to /tmp (and cleaning at a regular interval)
-        - FILENAME=$(git log -1 --pretty=%B | grep Merge | sed -e 's/.*from Rise-Vision\///g' | sed 's/\//-/g') ; RENAMETIME=$(date +%s) ; ssh help@webserver-stage.risevision.com "if [[ -d /rise-front-end/help/$FILENAME && -n "$FILENAME" ]]; then mv -f /rise-front-end/help/$FILENAME /tmp/$RENAMETIME-$FILENAME; fi"
