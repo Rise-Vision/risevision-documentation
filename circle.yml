@@ -18,7 +18,6 @@ deployment:
   staging:
       branch: /(feature|fix|chore|doc|build).*/
       commands:
-        - ./configure-stage.sh $(echo -n $CIRCLE_BRANCH |sed 's/\//-/g')
         - NODE_ENV=stage npm run ci-build
         - ssh devhub@webserver-stage.risevision.com 'mkdir -p /rise-front-end/developer-hub';
         - rsync -rptz -e ssh --delete _site devhub@webserver-stage.risevision.com:/rise-front-end/developer-hub
