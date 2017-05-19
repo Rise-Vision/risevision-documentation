@@ -6,19 +6,19 @@ category: developer/getting-started/registration
 parent-order: 0
 order: 0
 image:
-    - url: assets/images/app-registration-how-to/list-no-apps.png
+    - url: assets/documentation/images/app-registration-how-to/list-no-apps.png
       caption: ''
       alt: 'App Registration landing page.'
-    - url: assets/images/app-registration-how-to/without-permission.png
+    - url: assets/documentation/images/app-registration-how-to/without-permission.png
       caption: ''
       alt: 'App Registration without permission.'
-    - url: assets/images/app-registration-how-to/app-registration.png
+    - url: assets/documentation/images/app-registration-how-to/app-registration.png
       caption: ''
       alt: 'App Registration register an app'
-    - url: assets/images/app-registration-how-to/list-with-apps.png
+    - url: assets/documentation/images/app-registration-how-to/list-with-apps.png
       caption: ''
       alt: 'App Registration apps list.'
-    - url: assets/images/app-registration-how-to/app-edition.png
+    - url: assets/documentation/images/app-registration-how-to/app-edition.png
       caption: ''
       alt: 'App Registration app edition.'
 ---

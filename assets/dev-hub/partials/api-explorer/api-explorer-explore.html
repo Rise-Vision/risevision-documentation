@@ -1,0 +1,13 @@
+<div class="row methodTitle">
+    <div class="col-md-6">
+        <div>
+            <h3>{{title}} <small><a ng-href="{{documentationUrl}}{{resourceName}}/{{method.id}}" target="_blank"><span class="fa fa-info-circle fa-2x"></span></a></small></h3>
+        </div>
+        <div>
+            <p>Method: {{method.httpMethod}}</p>
+            <p>{{method.description}}</p>
+        </div>
+    </div>
+</div>
+
+<div ui-view></div>

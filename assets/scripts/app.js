@@ -1,17 +1,25 @@
 "use strict";
-angular.module("risevision.documentation",["ui.router","ui.bootstrap","ui.bootstrap.tpls",
-    "risevision.common.components.analytics"])
-    .run(['$rootScope', '$location', '$window', function($rootScope, $location, $window){
-        $rootScope
-            .$on('$stateChangeSuccess',
-            function(event){
+angular.module("risevision.documentation",[
+    "ui.router",
+    "ui.bootstrap",
+    "ui.bootstrap.tpls"
+  ]);
+  
+angular.module("risevision.developer",[
+    "risevision.developer.hub",
+    "risevision.documentation"
+  ])
+  .run(['$rootScope', '$location', '$window', function($rootScope, $location, $window){
+      $rootScope
+          .$on('$stateChangeSuccess',
+          function(event){
 
-                if (!$window.ga)
-                    return;
+              if (!$window.ga)
+                  return;
 
-                $window.ga('send', 'pageview', { page: $location.path() });
-            });
-    }])
+              $window.ga('send', 'pageview', { page: $location.path() });
+          });
+  }])
   .run(['$rootScope', '$state', '$stateParams',
     function($rootScope, $state, $stateParams ) {
 

@@ -14,7 +14,6 @@ var prefix      = require('gulp-autoprefixer');
 var cp          = require('child_process');
 var bower       = require('gulp-bower');
 var del         = require('delete');
-var deploy      = require('gulp-gh-pages');
 var argv        = require('minimist')(process.argv.slice(2));
 var rename      = require("gulp-rename");
 var modRewrite  = require('connect-modrewrite');
@@ -160,7 +159,7 @@ gulp.task('bower-install', ['bower-rm'], function(cb){
  *  Remove all bower dependencies
  */
 gulp.task('bower-rm', function(){
-    return del.sync('assets/components');
+    return del.sync('bower_components');
 });
 
 //------------------------- Watch --------------------------------
@@ -174,33 +173,6 @@ gulp.task('watch', function () {
 });
 
 //------------------------- Deployment --------------------------------
-var options = {
-            prod: {
-                remoteUrl: "https://github.com/Rise-Vision/rv-doc-prod.git"
-            },
-            stage: {
-                remoteUrl: "https://github.com/Rise-Vision/rv-doc-stage.git"
-            }
-        };
-
-/**
- *  Deploy to gh-pages
- */
-gulp.task("deploy", function () {
-
-    // Remove temp folder created by gulp-gh-pages
-    if (argv.clean) {
-        var os = require('os');
-        var path = require('path');
-        var repoPath = path.join(os.tmpdir(), 'tmpRepo');
-        gutil.log('Delete ' + gutil.colors.magenta(repoPath));
-        del.sync(repoPath, {force: true});
-    }
-    gutil.log('Repository ' + options[env]["remoteUrl"]);
-
-    return gulp.src("./_site/**/*")
-        .pipe(deploy(options[env]));
-});
 
 /**
  * Copy and rename CNAME file depending on the target environment
@@ -235,6 +207,3 @@ gulp.task('bower-clean-install', ['bower-rm', 'bower-install']);
  * compile the jekyll site, launch BrowserSync & watch files.
  */
 gulp.task('default', ['browser-sync', 'watch']);
-
-
-

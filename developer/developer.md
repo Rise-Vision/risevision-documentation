@@ -28,7 +28,7 @@ Allows client applications to view and update digital signage-related objects su
 
 Relationships between these objects can be described as follows:
 
-![Core ERD]({{ site.baseurl }}assets/images/core_erd.png)
+![Core ERD]({{ site.baseurl }}assets/documentation/images/core_erd.png)
 
 Utility read-only objects, such as:
 

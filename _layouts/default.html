@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html ng-app="risevision.documentation" itemscope itemtype="http://schema.org/Article">
+<html ng-app="risevision.developer" itemscope itemtype="http://schema.org/Article">
 
   {% include head.html %}
 
   <body>
-    {% include header-navbar.html %}
+    <common-header nav-options="navOptions" ng-controller="CommonHeaderNavbarCtrl" hide-shopping-cart="true" hide-help-menu="true"></common-header>
 
     <div class="container">
           <div ui-view></div>

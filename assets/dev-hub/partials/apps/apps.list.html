@@ -1,0 +1,78 @@
+<div id="appsPage" class="app-header add-bottom">
+    <div class="title-block">
+        <h1>{{'APPS' | translate}}</h1>
+    </div>
+    <div class="global-actions">
+        <button class="btn btn-lg btn-primary" ng-click="addNewApp()">
+          {{'REGISTER_AN_APP' | translate}} <i class="fa fa-white fa-plus icon-right"></i>
+        </button>
+    </div>
+</div>
+
+<!--div rv-spinner
+     rv-spinner-key="rv-dev-hub-apps-loader"
+     rv-spinner-start-active="1"
+     rv-spinner-backdrop-class="spinner-backdrop"
+        ></div-->
+
+<div class="row">
+    <div class="col-md-12 col-xs-12">
+        <div>
+            <p>To learn more about how to register an application that uses the Rise Vision application programming interfaces (API's) please click <a href="http://help.risevision.com/#/developer/getting-started/registration/app-registration" target="_blank">here</a>.</p>
+            <p>If you would like to build upon the applications that we have already created with our API's please check out our open source repositories on GitHub <a href="https://github.com/Rise-Vision" target="_blank">here</a>.</p>
+            <p>And, if you have any questions along the way please don't hesitate to join our lively Community <a href="http://community.risevision.com" target="_blank">here</a>.</p>
+        </div>
+
+        <div class="empty-state" ng-if="loadingComplete && showNoAppMessage">
+            <div class="tag">
+                <!-- Icon -->
+                <i class="fa  fa-bolt fa-5x"></i>
+                <!-- Main Title -->
+                <h3>{{'APP_NO_APP_YET_MESSAGE' | translate}}</h3>
+            </div>
+        </div>
+        <div class="panel table-responsive" ng-show="loadingComplete && showAppTable">
+            <table class="table table--hover">
+                <thead class="table-header">
+                    <tr class="table-header__row u_clickable">
+                        <th class="table-header__cell" ng-click="sortBy('company.companyName')">
+                            {{'APP_COMPANY_NAME' | translate}}
+                                <i ng-if="sortByCat == 'company.companyName'" class="fa" ng-class="{false: 'fa-long-arrow-up', true: 'fa-long-arrow-down'}[sortReverse]"></i>
+                        </th>
+                        <th class="table-header__cell" ng-click="sortBy('name')">
+                            {{'APP_NAME' | translate}}
+                                  <i ng-if="sortByCat == 'name'" class="fa" ng-class="{false: 'fa-long-arrow-up', true: 'fa-long-arrow-down'}[sortReverse]"></i>
+                        </th>
+                        <th class="table-header__cell hidden-sm hidden-xs hidden-md" ng-click="sortBy('description')">
+                            {{'APP_DESCRIPTION' | translate}}
+                                  <i ng-if="sortByCat == 'description'" class="fa" ng-class="{false: 'fa-long-arrow-up', true: 'fa-long-arrow-down'}[sortReverse]"></i>
+                        </th>
+                        <th class="table-header__cell hidden-sm hidden-xs" ng-click="sortBy('activity.firstCall')">
+                            {{'APP_FIRST_CALL' | translate}}
+                                  <i ng-if="sortByCat == 'activity.firstCall'" class="fa" ng-class="{false: 'fa-long-arrow-up', true: 'fa-long-arrow-down'}[sortReverse]"></i>
+                        </th>
+                        <th class="table-header__cell hidden-sm hidden-xs" ng-click="sortBy('activity.lastCall')">
+                            {{'APP_LAST_CALL' | translate}}
+                                  <i ng-if="sortByCat == 'activity.lastCall'" class="fa" ng-class="{false: 'fa-long-arrow-up', true: 'fa-long-arrow-down'}[sortReverse]"></i>
+                           
+                        </th>
+                        <th class="table-header__cell text-right hidden-xs" ng-click="sortBy('activity.avgCallsPerDay')">
+                            {{'APP_AVERAGE_CALLS' | translate}}                                  
+                                <i ng-if="sortByCat == 'activity.avgCallsPerDay'" class="fa" ng-class="{false: 'fa-long-arrow-up', true: 'fa-long-arrow-down'}[sortReverse]"></i>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="table-body">
+                    <tr class="table-body__row" ng-click="editApp(app.id)" ng-repeat="app in apps | orderBy:sortByCat:sortReverse">
+                        <td class="table-body__cell"><a href=""><strong>{{ app.company.name }}</strong></a></td>
+                        <td class="table-body__cell"><a href=""><strong>{{ app.name }}</strong></a></td>
+                        <td class="table-body__cell hidden-sm hidden-xs hidden-md"><a href="">{{ app.description }}</a></td>
+                        <td class="table-body__cell hidden-sm hidden-xs"><a class="text-nowrap" href="">{{ app.activity.firstCall | date :'dd-MMM-yyyy H:mm'}}</a></td>
+                        <td class="table-body__cell hidden-sm hidden-xs"><a class="text-nowrap" href="">{{ app.activity.lastCall | date :'dd-MMM-yyyy H:mm'}}</a></td>
+                        <td class="table-body__cell col-xs-1 text-right hidden-xs"><a class="text-nowrap" href="">{{ app.activity.avgCallsPerDay | number : 2}}</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

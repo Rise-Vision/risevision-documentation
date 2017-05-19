@@ -5,7 +5,7 @@
  */
 
 "use strict";
-angular.module("risevision.documentation")
+angular.module("risevision.developer")
     .config (["$stateProvider", "$urlRouterProvider", function ($stateProvider, $urlRouterProvider) {
 
         $urlRouterProvider.otherwise('/page-not-found');
@@ -82,5 +82,30 @@ angular.module("risevision.documentation")
                 url: '/page-not-found',
                 templateUrl: 'page-not-found.html'
             })
+
+            .state('apps', {
+                template: "<div ui-view></div>",
+                controller: 'MainAppController'
+            })
+            .state('apps.withoutPermission', {
+                url: '/apps/userWithoutPermission',
+                templateUrl: 'assets/dev-hub/partials/apps/apps.withoutPermission.html'
+            })
+            .state('apps.list', {
+                url: '/apps/list',
+                templateUrl: 'assets/dev-hub/partials/apps/apps.list.html',
+                controller: 'AppManagementController'
+            })
+            .state('apps.add', {
+                url: '/apps/add',
+                templateUrl: 'assets/dev-hub/partials/apps/app-form.html',
+                controller: 'AddAppController'
+            })
+            .state('apps.edit', {
+                url: '/apps/edit/:id',
+                templateUrl: 'assets/dev-hub/partials/apps/app-edit.html',
+                controller: 'EditAppController'
+            });
+
 
     }]);
