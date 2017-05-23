@@ -7,7 +7,7 @@ angular.module("risevision.developer.hub")
     ["$rootScope", "$scope", "$state", "$log", "getRest", "$http",
         function($rootScope, $scope, $state, $log, getRest, $http){
 
-            $scope.documentationUrl = "http://help.risevision.com/#/developer/core-api/"
+            $scope.documentationUrl = "http://developer.risevision.com/documentation/core-api/"
 
             $http.get('/assets/dev-hub/data/descriptions.json').success (function(data) {
                 $rootScope.descriptions = data;
