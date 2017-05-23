@@ -56,9 +56,9 @@ angular.module("risevision.developer.hub",[
             return deferred.promise;
         };
     }])
-    .factory('DevHubCache', function ($cacheFactory) {
+    .factory('DevHubCache', ['$cacheFactory', function ($cacheFactory) {
         return $cacheFactory('DevHubCache');
-    })
+    }])
     .config(['$translateProvider', function ($translateProvider) {
         $translateProvider.translations('en', {
             'RV_DEVELOPER_HUB': 'Rise Vision Developer Hub',

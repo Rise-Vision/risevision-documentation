@@ -11,6 +11,10 @@ var gutil       = require('gulp-util');
 var browserSync = require('browser-sync');
 var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
+var uglify      = require("gulp-uglify");
+var usemin      = require("gulp-usemin");
+var sourcemaps  = require('gulp-sourcemaps');
+var minifyCss   = require('gulp-minify-css');
 var cp          = require('child_process');
 var bower       = require('gulp-bower');
 var del         = require('delete');
@@ -174,13 +178,60 @@ gulp.task('watch', function () {
 
 //------------------------- Deployment --------------------------------
 
+gulp.task("html", function() {
+  return gulp.src(["_site/index.html"])
+    .pipe(usemin({
+      css: [minifyCss, 'concat'],
+      // html: [function() {return minifyHtml({empty: true})} ],
+      js: [
+        sourcemaps.init({largeFile: true}),
+        'concat',
+        uglify({ compress: {
+          sequences     : false,  //-- join consecutive statemets with the “comma operator”
+          properties    : true,   // optimize property access: a["foo"] → a.foo
+          dead_code     : true,   // discard unreachable code
+          drop_debugger : true,   // discard “debugger” statements
+          unsafe        : false,  // some unsafe optimizations (see below)
+          conditionals  : false,  //-- optimize if-s and conditional expressions
+          comparisons   : true,   // optimize comparisons
+          evaluate      : false,  //-- evaluate constant expressions
+          booleans      : false,  //-- optimize boolean expressions
+          loops         : true,   // optimize loops
+          unused        : false,  //-- drop unused variables/functions
+          hoist_funs    : true,   // hoist function declarations
+          hoist_vars    : false,  // hoist variable declarations
+          if_return     : true,   // optimize if-s followed by return/continue
+          join_vars     : true,   // join var declarations
+          cascade       : true,   // try to cascade `right` into `left` in sequences
+          side_effects  : false,  // drop side-effect-free statements
+          warnings      : true,   // warn about potentially dangerous optimizations/code
+          global_defs   : {}      // global definitions
+        }}),
+        sourcemaps.write('.')
+      ]
+    }))
+    .pipe(gulp.dest("_site/"))
+    .on('error',function(e){
+      console.error(String(e));
+    });
+});
+
+gulp.task("fonts", function() {
+  return gulp.src("./bower_components/rv-common-style/dist/fonts/**/*")
+    .pipe(gulp.dest("_site/fonts"));
+});
+
 /**
  * Copy and rename CNAME file depending on the target environment
  */
-gulp.task("build", ['jekyll-build'], function() {
-    gulp.src("./cname-config/CNAME-"+env)
-    .pipe(rename("CNAME"))
-    .pipe(gulp.dest("./_site"));
+gulp.task("CNAME", function() {
+  gulp.src("./cname-config/CNAME-"+env)
+  .pipe(rename("CNAME"))
+  .pipe(gulp.dest("./_site"));  
+});
+
+gulp.task("build", function(cb) {
+  runSequence('jekyll-build', ['html', 'fonts', 'CNAME'], cb);
 });
 
 //-------------------------- Test ----------------------------------

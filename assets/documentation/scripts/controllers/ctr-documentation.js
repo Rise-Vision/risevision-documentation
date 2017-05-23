@@ -1,4 +1,5 @@
 angular.module("risevision.documentation")
-    .controller("DocumentationController", function($scope,$location,documentationTracker){
-    	$scope.documentationTracker = documentationTracker;
-    })
+  .controller("DocumentationController", ["$scope", "documentationTracker", 
+  function($scope, documentationTracker) {
+  	$scope.documentationTracker = documentationTracker;
+  }]);
