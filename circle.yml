@@ -19,8 +19,8 @@ deployment:
       branch: /(feature|fix|chore|doc|build).*/
       commands:
         - NODE_ENV=stage npm run ci-build
-        - ssh devhub@webserver-stage.risevision.com 'mkdir -p /rise-front-end/developer-hub';
-        - rsync -rptz -e ssh --delete _site devhub@webserver-stage.risevision.com:/rise-front-end/developer-hub
+        - ssh help@webserver-stage.risevision.com 'mkdir -p /rise-front-end/developer-hub';
+        - rsync -rptz -e ssh --delete _site help@webserver-stage.risevision.com:/rise-front-end/developer-hub
         - tar czvf dist.tar.gz _site
   production:
       branch: master
@@ -28,11 +28,11 @@ deployment:
         # It deploys to production server 2.
         - NODE_ENV=prod2 npm run ci-build
         - echo "deploying to production webserver1.risevision.com";
-        - ssh devhub@webserver1.risevision.com 'mkdir -p /rise-front-end/developer-hub';
-        - rsync -rptz -e ssh --delete _site devhub@webserver1.risevision.com:/rise-front-end/developer-hub;
+        - ssh help@webserver1.risevision.com 'mkdir -p /rise-front-end/developer-hub';
+        - rsync -rptz -e ssh --delete _site help@webserver1.risevision.com:/rise-front-end/developer-hub;
         # It then deploys to production server 1.
         - NODE_ENV=prod npm run ci-build
         - echo "deploying to production webserver.risevision.com";
-        - ssh devhub@webserver.risevision.com 'mkdir -p /rise-front-end/developer-hub';
-        - rsync -rptz -e ssh --delete _site devhub@webserver.risevision.com:/rise-front-end/developer-hub;
+        - ssh help@webserver.risevision.com 'mkdir -p /rise-front-end/developer-hub';
+        - rsync -rptz -e ssh --delete _site help@webserver.risevision.com:/rise-front-end/developer-hub;
         - tar czvf dist.tar.gz _site
