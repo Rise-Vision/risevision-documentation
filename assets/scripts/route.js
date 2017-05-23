@@ -10,8 +10,8 @@ angular.module("risevision.developer")
 
         $urlRouterProvider.otherwise('/page-not-found');
 
-        $urlRouterProvider.when('/', '/user');
-        $urlRouterProvider.when('/index.html', '/user');
+        $urlRouterProvider.when('/', '/documentation');
+        $urlRouterProvider.when('/index.html', '/documentation');
 
         $urlRouterProvider.rule(function($injector, $location) {
 
@@ -28,29 +28,29 @@ angular.module("risevision.developer")
         });
 
         $stateProvider
-            .state('developer', {
-                url: '/developer',
-                templateUrl: 'developer/developer.html',
+            .state('documentation', {
+                url: '/documentation',
+                templateUrl: 'documentation/documentation.html',
                 controller: 'DocumentationController'
             })
-            .state('developer-developer', {
-                url: '/developer/developer',
-                templateUrl: 'developer/developer.html',
+            .state('documentation-documentation', {
+                url: '/documentation/documentation',
+                templateUrl: 'documentation/documentation.html',
                 controller: 'DocumentationController'
             })
-            .state('developer-post', {
-              url: '/developer/:post',
-              templateUrl: function(params){ return "{{site.absoluteurl}}developer/" + params.post + ".html"; },
+            .state('documentation-post', {
+              url: '/documentation/:post',
+              templateUrl: function(params){ return "{{site.absoluteurl}}documentation/" + params.post + ".html"; },
               controller: 'DocumentationController'
             })
-            .state('developer-post-category', {
-                url: '/developer/:category/:post',
-                templateUrl: function(params){ return "{{site.absoluteurl}}developer/" + params.category +"/" + params.post + ".html"; },
+            .state('documentation-post-category', {
+                url: '/documentation/:category/:post',
+                templateUrl: function(params){ return "{{site.absoluteurl}}documentation/" + params.category +"/" + params.post + ".html"; },
                 controller: 'DocumentationController'
             })
-            .state('developer-post-sub', {
-                url: '/developer/:category/:subCategory/:post',
-                templateUrl: function(params){ return "{{site.absoluteurl}}developer/" + params.category + "/" + params.subCategory + "/" + params.post + ".html"; },
+            .state('documentation-post-sub', {
+                url: '/documentation/:category/:subCategory/:post',
+                templateUrl: function(params){ return "{{site.absoluteurl}}documentation/" + params.category + "/" + params.subCategory + "/" + params.post + ".html"; },
                 controller: 'DocumentationController'
             })
             .state('user', {

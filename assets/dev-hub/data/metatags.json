@@ -4,7 +4,7 @@
         "description": "Use Rise Vision APIs to build digital signage applications and widgets for the Rise Vision Platform",
         "name": "Explore Rise Vision APIs",
         "image": "https://s3.amazonaws.com/Store-Products/Meta/api-console.png",
-        "url": "http://developer.risevison.com/#/api-explorer"
+        "url": "http://developer.risevison.com/api-explorer"
     },
 
     "developer": {

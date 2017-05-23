@@ -2,10 +2,10 @@
     <div class="docs-sidebar-wrapper">
         <div id="navigation" class="docs-sidebar">
             <div id="linkLevel" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-            {% if page.type == 'developer' %}
+            {% if page.type == 'documentation' %}
                 {% assign pageTypeCategory = page.type  %}
-                {% assign sections = site.developerSections %}
-                <a href="/developer" itemprop="url" style="display: none">developer</a>
+                {% assign sections = site.documentationSections %}
+                <a href="/documentation" itemprop="url" style="display: none">documentation</a>
             {% elsif page.type == 'user' %}
                 {% assign pageTypeCategory = 'user/'  %}
                 {% assign sections = [] %}

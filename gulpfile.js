@@ -1,4 +1,4 @@
-/**
+ /**
  * This script is based on https://github.com/shakyShane/jekyll-gulp-sass-browser-sync
  * Created by rodrigopavezi on 10/6/14.
  */
@@ -169,7 +169,7 @@ gulp.task('bower-rm', function(){
  */
 gulp.task('watch', function () {
     gulp.watch('_sass/*.scss', ['sass', 'jekyll-rebuild-dev']);
-    gulp.watch(['*.yml','index.html', '_layouts/*.html', '_includes/*.html', '_posts/**/*.md', 'assets/**/*', 'developer/**/*', 'user/**/*', '404.md'], ['jekyll-rebuild-dev']);
+    gulp.watch(['*.yml','index.html', '_layouts/*.html', '_includes/*.html', '_posts/**/*.md', 'assets/**/*', 'documentation/**/*', 'user/**/*', '404.md'], ['jekyll-rebuild-dev']);
 });
 
 //------------------------- Deployment --------------------------------

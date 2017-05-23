@@ -11,7 +11,7 @@ angular.module("risevision.developer")
     },
     {
       title: "Developer Documentation",
-      link: $state.href("developer", {}, {absolute: true})
+      link: $state.href("documentation", {}, {absolute: true})
     },
     {
       title: "User Documentation",
