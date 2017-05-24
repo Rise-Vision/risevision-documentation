@@ -5,12 +5,6 @@
 
     <meta name="google-site-verification" content="TlOPTOwxW_tar1Ahw1CMuBOhby7fdny45la5-RQrmyw" />
 
-    <!-- app css -->
-    <!-- build:css dist/website.min.css -->
-    <link rel="stylesheet" href="{{ "assets/css/main.css" | prepend: site.baseurl }}">
-    <link rel="stylesheet" href="{{ "bower_components/rv-common-style/dist/css/rise.min.css" | prepend: site.baseurl }}">
-    <!-- endbuild -->
-
     <link rel="canonical" href="https://developer.risevision.com/" itemprop="url">
 
     <link rel="icon" href="{% raw %}{{favicon}}{% endraw %}" type="image/x-icon">
@@ -43,4 +37,10 @@
     <meta property="og:url" content="{% raw %}{{url}}{% endraw %}" />
     <meta property="og:image" content="{% raw %}{{image}}{% endraw %}" />
     <meta property="og:description" content="{% raw %}{{description}}{% endraw %}" />
+    
+    <!-- app css -->
+    <!-- build:css css/website.min.css -->
+    <link rel="stylesheet" href="{{ "bower_components/rv-common-style/dist/css/rise.min.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "assets/css/main.css" | prepend: site.baseurl }}">
+    <!-- endbuild -->
 </head>

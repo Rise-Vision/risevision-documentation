@@ -221,6 +221,11 @@ gulp.task("fonts", function() {
     .pipe(gulp.dest("./_site/fonts"));
 });
 
+gulp.task("locales", function() {
+  return gulp.src("./bower_components/rv-common-i18n/dist/locales/**/*")
+    .pipe(gulp.dest("./_site/locales"));
+});
+
 /**
  * Copy and rename CNAME file depending on the target environment
  */
@@ -231,7 +236,7 @@ gulp.task("CNAME", function() {
 });
 
 gulp.task("build", function(cb) {
-  runSequence('jekyll-build', ['html', 'fonts', 'CNAME'], cb);
+  runSequence('jekyll-build', ['html', 'fonts', 'locales', 'CNAME'], cb);
 });
 
 //-------------------------- Test ----------------------------------
