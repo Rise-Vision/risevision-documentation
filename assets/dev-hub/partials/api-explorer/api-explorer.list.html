@@ -5,15 +5,15 @@
                 <thead class="table-header">
                     <tr class="table-header__row u_clickable">
                         <th class="table-header__cell" ng-click="sortBy('id')">
-                            {{'RESOURCE_NAME' | translate}}
+                            {{'dev-hub.RESOURCE_NAME' | translate}}
                                 <i ng-if="sortByCat == 'id'" class="fa" ng-class="{false: 'fa-long-arrow-up', true: 'fa-long-arrow-down'}[sortReverse]"></i>
                         </th>
                         <th class="table-header__cell hidden-xs" ng-click="sortBy('description')">
-                            {{'RESOURCE_DESCRIPTION' | translate}}
+                            {{'dev-hub.RESOURCE_DESCRIPTION' | translate}}
                                <i ng-if="sortByCat == 'description'" class="fa" ng-class="{false: 'fa-long-arrow-up', true: 'fa-long-arrow-down'}[sortReverse]"></i>
                         </th>
                         <th class="table-header__cell col-xs-1" ng-click="sortBy('httpMethod')">
-                            {{'RESOURCE_METHOD' | translate}}
+                            {{'dev-hub.RESOURCE_METHOD' | translate}}
                                 <i ng-if="sortByCat == 'httpMethod'" class="fa" ng-class="{false: 'fa-long-arrow-up', true: 'fa-long-arrow-down'}[sortReverse]"></i>
                         </th>
                     </tr>

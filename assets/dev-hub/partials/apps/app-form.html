@@ -1,6 +1,6 @@
 <div class="app-header add-bottom">
     <div class="title-block">
-        <h1>{{'APP_REGISTRATION' | translate}}</h1>
+        <h1>{{'dev-hub.APP_REGISTRATION' | translate}}</h1>
     </div>
 </div>
 
@@ -9,36 +9,36 @@
         <form role="form" name="form" class="css-form" novalidate>
             <!-- Name -->
             <div class="form-group" >
-                <label for="appNameField" id="appNameLabel">{{'APP_NAME' | translate}}*</label>
+                <label for="appNameField" id="appNameLabel">{{'dev-hub.APP_NAME' | translate}}*</label>
                 <input type="text" class="form-control" name="appNameField" id="appNameField" ng-model="app.name" required>
-                <span ng-show="form.appNameField.$dirty && form.appNameField.$error.required" class="validation-error-message">{{'NAME_REQUIRED_ERROR' | translate}}</span>
+                <span ng-show="form.appNameField.$dirty && form.appNameField.$error.required" class="validation-error-message">{{'dev-hub.NAME_REQUIRED_ERROR' | translate}}</span>
             </div>
             <!-- Description -->
             <div class="form-group">
-                <label for="appDescriptionTextArea" id="appDescriptionLabel" >{{'APP_DESCRIPTION' | translate}}</label>
+                <label for="appDescriptionTextArea" id="appDescriptionLabel" >{{'dev-hub.APP_DESCRIPTION' | translate}}</label>
                 <textarea type="text" class="form-control" id="appDescriptionTextArea" ng-model="app.description"></textarea>
             </div>
             <!-- Client ID -->
             <div class="form-group">
-                <label for="appClientIdField" id="appClientIdLabel">{{'APP_CLIENT_ID' | translate}} <span class=" fa fa-info-circle" ng-click="info()"></span></label>
+                <label for="appClientIdField" id="appClientIdLabel">{{'dev-hub.APP_CLIENT_ID' | translate}} <span class=" fa fa-info-circle" ng-click="info()"></span></label>
                 <input type="text" class="form-control" id="appClientIdField" name="appClientIdField" ng-model="app.clientId" ng-pattern="/^((?!-)[A-Za-z0-9-]{1,63}(?!-)\.)+[A-Za-z]{2,30}$/i" ng-change="hideExistentClientIdMessage()"/>
-                <span ng-show="form.appClientIdField.$dirty && form.appClientIdField.$error.pattern" class="validation-error-message">{{'WRONG_CLIENT_ID_FORMAT' | translate}}</span>
-                <span ng-show="form.appClientIdField.$dirty && showExistentClientIdMessage" class="validation-error-message">{{'EXISTENT_CLIENT_ID' | translate}}</span>
+                <span ng-show="form.appClientIdField.$dirty && form.appClientIdField.$error.pattern" class="validation-error-message">{{'dev-hub.WRONG_CLIENT_ID_FORMAT' | translate}}</span>
+                <span ng-show="form.appClientIdField.$dirty && showExistentClientIdMessage" class="validation-error-message">{{'dev-hub.EXISTENT_CLIENT_ID' | translate}}</span>
             </div>
             <!-- url -->
             <div class="form-group">
-                <label for="appUrlField" id="appUrlLabel">{{'APP_URL' | translate}}</label>
+                <label for="appUrlField" id="appUrlLabel">{{'dev-hub.APP_URL' | translate}}</label>
                 <input type="url" class="form-control" name="appUrlField" id="appUrlField" ng-model="app.url">
-                <span ng-show="form.appUrlField.$dirty && form.appUrlField.$error.url" class="validation-error-message">{{'WRONG_URL_FORMAT' | translate}}</span>
+                <span ng-show="form.appUrlField.$dirty && form.appUrlField.$error.url" class="validation-error-message">{{'dev-hub.WRONG_URL_FORMAT' | translate}}</span>
             </div>
             <div class="pull-right">
                 <!-- Save -->
                 <button type="button" ng-disabled="!form.$valid" class="btn btn-success btn-fixed-width" ng-click="save(app)">
-                    {{'SAVE_BUTTON' | translate}} <i class="fa fa-white fa-check icon-right"></i>
+                    {{'common.save' | translate}} <i class="fa fa-white fa-check icon-right"></i>
                 </button>
                 <!-- Cancel  -->
                 <a ui-sref="apps.list" class="btn btn-default btn-fixed-width">
-                    {{'CANCEL_BUTTON' | translate}} <i class="fa fa-white fa-times icon-right"></i>
+                    {{'common.cancel' | translate}} <i class="fa fa-white fa-times icon-right"></i>
                 </a>
             </div>
         </form>

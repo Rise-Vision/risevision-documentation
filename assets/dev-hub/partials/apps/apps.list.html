@@ -1,10 +1,10 @@
 <div id="appsPage" class="app-header add-bottom">
     <div class="title-block">
-        <h1>{{'APPS' | translate}}</h1>
+        <h1>{{'dev-hub.APPS' | translate}}</h1>
     </div>
     <div class="global-actions">
         <button class="btn btn-lg btn-primary" ng-click="addNewApp()">
-          {{'REGISTER_AN_APP' | translate}} <i class="fa fa-white fa-plus icon-right"></i>
+          {{'dev-hub.REGISTER_AN_APP' | translate}} <i class="fa fa-white fa-plus icon-right"></i>
         </button>
     </div>
 </div>
@@ -28,7 +28,7 @@
                 <!-- Icon -->
                 <i class="fa  fa-bolt fa-5x"></i>
                 <!-- Main Title -->
-                <h3>{{'APP_NO_APP_YET_MESSAGE' | translate}}</h3>
+                <h3>{{'dev-hub.APP_NO_APP_YET_MESSAGE' | translate}}</h3>
             </div>
         </div>
         <div class="panel table-responsive" ng-show="loadingComplete && showAppTable">
@@ -36,28 +36,28 @@
                 <thead class="table-header">
                     <tr class="table-header__row u_clickable">
                         <th class="table-header__cell" ng-click="sortBy('company.companyName')">
-                            {{'APP_COMPANY_NAME' | translate}}
+                            {{'dev-hub.APP_COMPANY_NAME' | translate}}
                                 <i ng-if="sortByCat == 'company.companyName'" class="fa" ng-class="{false: 'fa-long-arrow-up', true: 'fa-long-arrow-down'}[sortReverse]"></i>
                         </th>
                         <th class="table-header__cell" ng-click="sortBy('name')">
-                            {{'APP_NAME' | translate}}
+                            {{'dev-hub.APP_NAME' | translate}}
                                   <i ng-if="sortByCat == 'name'" class="fa" ng-class="{false: 'fa-long-arrow-up', true: 'fa-long-arrow-down'}[sortReverse]"></i>
                         </th>
                         <th class="table-header__cell hidden-sm hidden-xs hidden-md" ng-click="sortBy('description')">
-                            {{'APP_DESCRIPTION' | translate}}
+                            {{'dev-hub.APP_DESCRIPTION' | translate}}
                                   <i ng-if="sortByCat == 'description'" class="fa" ng-class="{false: 'fa-long-arrow-up', true: 'fa-long-arrow-down'}[sortReverse]"></i>
                         </th>
                         <th class="table-header__cell hidden-sm hidden-xs" ng-click="sortBy('activity.firstCall')">
-                            {{'APP_FIRST_CALL' | translate}}
+                            {{'dev-hub.APP_FIRST_CALL' | translate}}
                                   <i ng-if="sortByCat == 'activity.firstCall'" class="fa" ng-class="{false: 'fa-long-arrow-up', true: 'fa-long-arrow-down'}[sortReverse]"></i>
                         </th>
                         <th class="table-header__cell hidden-sm hidden-xs" ng-click="sortBy('activity.lastCall')">
-                            {{'APP_LAST_CALL' | translate}}
+                            {{'dev-hub.APP_LAST_CALL' | translate}}
                                   <i ng-if="sortByCat == 'activity.lastCall'" class="fa" ng-class="{false: 'fa-long-arrow-up', true: 'fa-long-arrow-down'}[sortReverse]"></i>
                            
                         </th>
                         <th class="table-header__cell text-right hidden-xs" ng-click="sortBy('activity.avgCallsPerDay')">
-                            {{'APP_AVERAGE_CALLS' | translate}}                                  
+                            {{'dev-hub.APP_AVERAGE_CALLS' | translate}}                                  
                                 <i ng-if="sortByCat == 'activity.avgCallsPerDay'" class="fa" ng-class="{false: 'fa-long-arrow-up', true: 'fa-long-arrow-down'}[sortReverse]"></i>
                         </th>
                     </tr>

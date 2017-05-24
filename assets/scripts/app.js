@@ -1,31 +1,18 @@
 "use strict";
-angular.module("risevision.documentation",[
-    "ui.router",
-    "ui.bootstrap",
-    "ui.bootstrap.tpls",
-    "risevision.common.header"
-  ]);
-  
-angular.module('risevision.common.i18n.config', [])
-  .constant('LOCALES_PREFIX',
-    'bower_components/rv-common-i18n/dist/locales/translation_')
-  .constant('LOCALES_SUFIX', '.json');
-  
+angular.module("risevision.documentation",[]);
+angular.module("risevision.developer.hub",[
+  "risevision.common.header",
+  "risevision.common.app", 
+  "risevision.common.apis",
+  "risevision.common.core.endpoint",
+  "risevision.common.monitoring.activity"
+]);
+
 angular.module("risevision.developer",[
     "risevision.developer.hub",
-    "risevision.documentation"
+    "risevision.documentation",
+    "risevision.common.header"
   ])
-  .run(['$rootScope', '$location', '$window', function($rootScope, $location, $window){
-      $rootScope
-          .$on('$stateChangeSuccess',
-          function(event){
-
-              if (!$window.ga)
-                  return;
-
-              $window.ga('send', 'pageview', { page: $location.path() });
-          });
-  }])
   .run(['$rootScope', '$state', '$stateParams',
     function($rootScope, $state, $stateParams ) {
 
@@ -50,9 +37,4 @@ angular.module("risevision.developer",[
         $state.go('page-not-found');
       });
 
-    }])
-    .run(['segmentAnalytics', 'SEGMENT_API_KEY',
-      function (segmentAnalytics, SEGMENT_API_KEY) {
-        segmentAnalytics.load(SEGMENT_API_KEY, false);
-      }
-    ]);;
+    }]);

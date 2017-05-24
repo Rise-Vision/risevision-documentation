@@ -104,7 +104,7 @@ gulp.task('jekyll-build', function (done) {
 /**
  * Rebuild Jekyll & do page reload
  */
-gulp.task('jekyll-rebuild-dev', ['jekyll-build'], function () {
+gulp.task('jekyll-rebuild-dev', ['build'], function () {
     browserSync.reload();
 });
 
@@ -113,7 +113,7 @@ gulp.task('jekyll-rebuild-dev', ['jekyll-build'], function () {
 /**
  * Wait for jekyll-build, then launch the Server
  */
-gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
+gulp.task('browser-sync', ['sass', 'build'], function() {
     browserSync({
         startPath: '/index.html',
         server: {
@@ -235,7 +235,7 @@ gulp.task("build", function(cb) {
 });
 
 //-------------------------- Test ----------------------------------
-gulp.task("server", ['jekyll-build'], factory.testServer({
+gulp.task("server", ['build'], factory.testServer({
   rootPath: "./_site",
   html5mode: true
 }));
