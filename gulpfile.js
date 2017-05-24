@@ -1,4 +1,4 @@
-/**
+ /**
  * This script is based on https://github.com/shakyShane/jekyll-gulp-sass-browser-sync
  * Created by rodrigopavezi on 10/6/14.
  */
@@ -11,10 +11,13 @@ var gutil       = require('gulp-util');
 var browserSync = require('browser-sync');
 var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
+var uglify      = require("gulp-uglify");
+var usemin      = require("gulp-usemin");
+var sourcemaps  = require('gulp-sourcemaps');
+var minifyCss   = require('gulp-minify-css');
 var cp          = require('child_process');
 var bower       = require('gulp-bower');
 var del         = require('delete');
-var deploy      = require('gulp-gh-pages');
 var argv        = require('minimist')(process.argv.slice(2));
 var rename      = require("gulp-rename");
 var modRewrite  = require('connect-modrewrite');
@@ -101,7 +104,7 @@ gulp.task('jekyll-build', function (done) {
 /**
  * Rebuild Jekyll & do page reload
  */
-gulp.task('jekyll-rebuild-dev', ['jekyll-build'], function () {
+gulp.task('jekyll-rebuild-dev', ['build'], function () {
     browserSync.reload();
 });
 
@@ -110,7 +113,7 @@ gulp.task('jekyll-rebuild-dev', ['jekyll-build'], function () {
 /**
  * Wait for jekyll-build, then launch the Server
  */
-gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
+gulp.task('browser-sync', ['sass', 'build'], function() {
     browserSync({
         startPath: '/index.html',
         server: {
@@ -160,7 +163,7 @@ gulp.task('bower-install', ['bower-rm'], function(cb){
  *  Remove all bower dependencies
  */
 gulp.task('bower-rm', function(){
-    return del.sync('assets/components');
+    return del.sync('bower_components');
 });
 
 //------------------------- Watch --------------------------------
@@ -170,49 +173,74 @@ gulp.task('bower-rm', function(){
  */
 gulp.task('watch', function () {
     gulp.watch('_sass/*.scss', ['sass', 'jekyll-rebuild-dev']);
-    gulp.watch(['*.yml','index.html', '_layouts/*.html', '_includes/*.html', '_posts/**/*.md', 'assets/**/*', 'developer/**/*', 'user/**/*', '404.md'], ['jekyll-rebuild-dev']);
+    gulp.watch(['*.yml','index.html', '_layouts/*.html', '_includes/*.html', '_posts/**/*.md', 'assets/**/*', 'documentation/**/*', 'user/**/*', '404.md'], ['jekyll-rebuild-dev']);
 });
 
 //------------------------- Deployment --------------------------------
-var options = {
-            prod: {
-                remoteUrl: "https://github.com/Rise-Vision/rv-doc-prod.git"
-            },
-            stage: {
-                remoteUrl: "https://github.com/Rise-Vision/rv-doc-stage.git"
-            }
-        };
 
-/**
- *  Deploy to gh-pages
- */
-gulp.task("deploy", function () {
+gulp.task("html", function() {
+  return gulp.src(["./_site/index.html"])
+    .pipe(usemin({
+      css: [minifyCss, 'concat'],
+      // html: [function() {return minifyHtml({empty: true})} ],
+      js: [
+        sourcemaps.init({largeFile: true}),
+        'concat',
+        uglify({ compress: {
+          sequences     : false,  //-- join consecutive statemets with the “comma operator”
+          properties    : true,   // optimize property access: a["foo"] → a.foo
+          dead_code     : true,   // discard unreachable code
+          drop_debugger : true,   // discard “debugger” statements
+          unsafe        : false,  // some unsafe optimizations (see below)
+          conditionals  : false,  //-- optimize if-s and conditional expressions
+          comparisons   : true,   // optimize comparisons
+          evaluate      : false,  //-- evaluate constant expressions
+          booleans      : false,  //-- optimize boolean expressions
+          loops         : true,   // optimize loops
+          unused        : false,  //-- drop unused variables/functions
+          hoist_funs    : true,   // hoist function declarations
+          hoist_vars    : false,  // hoist variable declarations
+          if_return     : true,   // optimize if-s followed by return/continue
+          join_vars     : true,   // join var declarations
+          cascade       : true,   // try to cascade `right` into `left` in sequences
+          side_effects  : false,  // drop side-effect-free statements
+          warnings      : true,   // warn about potentially dangerous optimizations/code
+          global_defs   : {}      // global definitions
+        }}),
+        sourcemaps.write('.')
+      ]
+    }))
+    .pipe(gulp.dest("./_site/"))
+    .on('error',function(e){
+      console.error(String(e));
+    });
+});
 
-    // Remove temp folder created by gulp-gh-pages
-    if (argv.clean) {
-        var os = require('os');
-        var path = require('path');
-        var repoPath = path.join(os.tmpdir(), 'tmpRepo');
-        gutil.log('Delete ' + gutil.colors.magenta(repoPath));
-        del.sync(repoPath, {force: true});
-    }
-    gutil.log('Repository ' + options[env]["remoteUrl"]);
+gulp.task("fonts", function() {
+  return gulp.src("./bower_components/rv-common-style/dist/fonts/**/*")
+    .pipe(gulp.dest("./_site/fonts"));
+});
 
-    return gulp.src("./_site/**/*")
-        .pipe(deploy(options[env]));
+gulp.task("locales", function() {
+  return gulp.src("./bower_components/rv-common-i18n/dist/locales/**/*")
+    .pipe(gulp.dest("./_site/locales"));
 });
 
 /**
  * Copy and rename CNAME file depending on the target environment
  */
-gulp.task("build", ['jekyll-build'], function() {
-    gulp.src("./cname-config/CNAME-"+env)
-    .pipe(rename("CNAME"))
-    .pipe(gulp.dest("./_site"));
+gulp.task("CNAME", function() {
+  gulp.src("./cname-config/CNAME-"+env)
+  .pipe(rename("CNAME"))
+  .pipe(gulp.dest("./_site"));  
+});
+
+gulp.task("build", function(cb) {
+  runSequence('jekyll-build', ['html', 'fonts', 'locales', 'CNAME'], cb);
 });
 
 //-------------------------- Test ----------------------------------
-gulp.task("server", ['jekyll-build'], factory.testServer({
+gulp.task("server", ['build'], factory.testServer({
   rootPath: "./_site",
   html5mode: true
 }));
@@ -235,6 +263,3 @@ gulp.task('bower-clean-install', ['bower-rm', 'bower-install']);
  * compile the jekyll site, launch BrowserSync & watch files.
  */
 gulp.task('default', ['browser-sync', 'watch']);
-
-
-

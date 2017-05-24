@@ -77,7 +77,7 @@ Pay attention on the YAML front matter block when creating a new post:
 layout: post
 title:  "Companies"
 date:   2014-10-01 10:52:00
-category: developer/core-api
+category: documentation/core-api
 parent-order: 0
 order: 0
 ---

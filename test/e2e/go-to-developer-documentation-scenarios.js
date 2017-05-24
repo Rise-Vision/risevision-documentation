@@ -18,12 +18,12 @@
     describe("Go to Developer Documentation", function () {
 
         beforeEach(function () {
-            browser.get('/developer');
+            browser.get('/documentation');
         });
 
 
         it("should show user documentation when /user is accessed", function() {
-            expect(browser.getLocationAbsUrl()).to.eventually.have.string("/developer");
+            expect(browser.getLocationAbsUrl()).to.eventually.have.string("/documentation");
         });
 
         it("should show user documentation title", function() {

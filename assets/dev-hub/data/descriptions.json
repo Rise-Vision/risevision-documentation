@@ -1,0 +1,43 @@
+{
+    "core.company.add": "Adds a new Company object under a parent Company identified by parentId.",
+    "core.company.get": "Returns the complete Company object identified by id.",
+    "core.company.list": "Returns a paged list of all Companies under the Company identified by companyId.",
+    "core.company.lookup": "Returns the complete Company object identified by authKey.",
+    "core.company.patch": "Updates one or more fields of an existing Company identified by id.",
+    "core.company.move": "Moves the Company identified by authKey from its current position in the hierarchy under the currently logged in User's Company.",
+    "core.company.delete": "Deletes the Company identified by id.",
+    "core.company.regenerateField": "Regenerates the value of a key field identified by fieldName for the Company identified by id.",
+
+    "core.display.get": "Returns the complete Display object identified by id.",
+    "core.display.list": "Returns a paged list of all Displays under the Company identified by companyId.",
+    "core.display.add": "Adds a new Display object under a Company identified by companyId.",
+    "core.display.patch": "Updates one or more fields of an existing Display identified by id.",
+    "core.display.delete": "Deletes the Display identified by id.",
+
+    "core.user.get": "Returns the complete User object identified by username.",
+    "core.user.list": "Returns a paged list of all Users of the Company identified by companyId.",
+    "core.user.add": "Adds a new User object under a Company identified by companyId.",
+    "core.user.patch": "Updates one or more fields of an existing User identified by username.",
+    "core.user.delete": "Deletes the User identified by username.",
+
+    "core.country.list": "Returns a list of all Countries and their Codes (includes States for US and Provinces for Canada).",
+
+    "core.timezone.list": "Returns a list of all Time Zones and their Offsets from UTC (in minutes).",
+
+    "core.presentation.get": "Returns the complete Presentation object identified by id.",
+    "core.presentation.list": "Returns a paged list of all Presentations under the Company identified by companyId.",
+    "core.template.list": "Returns a paged list of all Templates available to the Company identified by companyId. The list includes the Company's own templates as well as templates of all Companies above the given Company (the Company's parent Company, the parent's parent Company etc all the way to the top level Company).",
+    "core.presentation.add": "Adds a new Presentation object under a Company identified by companyId.",
+    "core.presentation.patch": "Updates one or more fields of an existing Presentation identified by id.",
+    "core.presentation.delete": "Deletes the Presentation identified by id.",
+    "core.presentation.publish": "Publishes the latest saved revision of the Presentation identified by id to the Displays.",
+    "core.presentation.restore": "Restores the Presentation identified by id to the currently published revision. If the latest saved revision has not been published it will be overwritten with the published revision.",
+
+    "core.schedule.get": "Returns the complete Schedule object identified by id.",
+    "core.schedule.list": "Returns a paged list of all Schedules under the Company identified by companyId.",
+    "core.schedule.add": "Adds a new Schedule object under a Company identified by companyId.",
+    "core.schedule.patch": "Updates one or more fields of an existing Schedule identified by id.",
+    "core.schedule.delete": "Deletes the Schedule identified by id.",
+
+    "core.systemmessage.list": "Returns a list of System Messages for the Company identified by companyId."
+}

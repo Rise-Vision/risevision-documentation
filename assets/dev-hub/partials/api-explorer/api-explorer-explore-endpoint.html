@@ -1,0 +1,42 @@
+
+<div class="row">
+    <div class="col-md-6">
+        <form role="form" name="form" class="css-form" novalidate>
+            <div ng-repeat="(key, value) in method.parameters">
+                <div class="form-group" >
+                    <label for="{{key}}">{{key}} {{value.required ? '*' : ''}}</label> <span>({{value.type}})</span>
+                    <input class="form-control" id="{{key}}" name="id" ng-model="requestParameters[key]" ng-required="value.required">
+                </div>
+            </div>
+            <div class="form-group" >
+                <label for="fields">fields</label> <span>(Selector specifying which fields to include in a partial response.)</span>
+                <input class="form-control" id="fields" name="fields" ng-model="requestParameters.fields">
+            </div>
+
+            <div class="pull-right">
+            <!-- Execute -->
+                <button type="button" class="btn btn-primary btn-fixed-width" ng-click="execute(method.id,requestParameters)">
+                    {{'common.apply' | translate}} <i class="fa fa-white fa-check icon-right"></i>
+                </button>
+                <!-- Cancel -->
+                <a ui-sref="api-explorer.list" class="btn btn-default btn-fixed-width">
+                    {{'common.cancel' | translate}} <i class="fa fa-white fa-times icon-right"></i>
+                </a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div rv-spinner
+     rv-spinner-key="rv-dev-hub-api-explorer-execute-loader"
+     rv-spinner-start-active="1"
+     rv-spinner-backdrop-class="spinner-backdrop"
+        ng-show="showSpinner"></div>
+<div class="row">
+    <div class="col-md-12" ng-show="showResponse" id="response">
+        <div><h3>Response</h3></div>
+        <div>
+            <pre  class="response highlight" ng-bind-html="response"></pre>
+        </div>
+    </div>
+</div>

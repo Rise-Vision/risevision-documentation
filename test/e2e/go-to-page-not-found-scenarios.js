@@ -35,8 +35,8 @@
       expect(browser.getLocationAbsUrl()).to.eventually.have.string("/page-not-found");
     });
 
-    it("should go to 404 URL when page is not found and link starts with developer", function() {
-      browser.get('/developer/anyThingThatDoesNotExistPage');
+    it("should go to 404 URL when page is not found and link starts with documentation", function() {
+      browser.get('/documentation/anyThingThatDoesNotExistPage');
       expect(browser.getLocationAbsUrl()).to.eventually.have.string("/page-not-found");
     });
 

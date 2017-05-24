@@ -1,6 +1,6 @@
 ---
-layout: user-post
-type: user
+layout: documentation-post
+type: documentation
 favicon: devdocs_favicon.ico
 excerpt: "Page not found"
 title: "Sorry, this page can't be found"

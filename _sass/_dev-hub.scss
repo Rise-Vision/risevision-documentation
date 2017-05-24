@@ -1,0 +1,43 @@
+.css-form input.ng-invalid.ng-dirty {
+  border-color:#a94442;
+  -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075);
+  box-shadow:inset 0 1px 1px rgba(0,0,0,.075)
+}
+
+.css-form input.ng-invalid.ng-dirty:focus {
+  border-color:#843534;
+  -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 6px #ce8483;
+  box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 6px #ce8483
+}
+
+
+.validation-error-message {
+  color: #a94442;
+}
+
+.button-like-a-link {
+  background:none!important;
+  border:none;
+  padding:0!important;
+  cursor: pointer;
+}
+
+.response {
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+
+.methodTitle {
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 1400px) {
+  .appActivityDetails {
+    div {
+      position: static;
+      width: auto;
+    }
+  }
+}

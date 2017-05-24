@@ -37,47 +37,47 @@ exclude:
 
 
 # Default categories (in order) to appear in the navigation
-developerSections: [
-	['developer/getting-started', 'Getting Started', [
-      ['developer/getting-started/registration', 'Registration']
+documentationSections: [
+	['documentation/getting-started', 'Getting Started', [
+      ['documentation/getting-started/registration', 'Registration']
     ]],
-    ['developer/core-api', 'Core API', [
-      ['developer/core-api/company', 'Company'],
-      ['developer/core-api/display', 'Display'],
-      ['developer/core-api/user', 'User'],
-      ['developer/core-api/country', 'Country'],
-      ['developer/core-api/timezone', 'Timezone'],
-      ['developer/core-api/presentation', 'Presentation'],
-      ['developer/core-api/schedule', 'Schedule'],
-      ['developer/core-api/gadget', 'Gadget'],
-      ['developer/core-api/systemmessage', 'System Message']
+    ['documentation/core-api', 'Core API', [
+      ['documentation/core-api/company', 'Company'],
+      ['documentation/core-api/display', 'Display'],
+      ['documentation/core-api/user', 'User'],
+      ['documentation/core-api/country', 'Country'],
+      ['documentation/core-api/timezone', 'Timezone'],
+      ['documentation/core-api/presentation', 'Presentation'],
+      ['documentation/core-api/schedule', 'Schedule'],
+      ['documentation/core-api/gadget', 'Gadget'],
+      ['documentation/core-api/systemmessage', 'System Message']
     ]],
-    ['developer/content-api', 'Content API', [
-      ['developer/content-api/presentations', 'Presentations'],
-      ['developer/content-api/displays', 'Displays']
+    ['documentation/content-api', 'Content API', [
+      ['documentation/content-api/presentations', 'Presentations'],
+      ['documentation/content-api/displays', 'Displays']
     ]],
-    ['developer/viewer-api', 'Viewer API', [
-      ['developer/viewer-api/content', 'Content'],
-      ['developer/viewer-api/notifications', 'Notifications']
+    ['documentation/viewer-api', 'Viewer API', [
+      ['documentation/viewer-api/content', 'Content'],
+      ['documentation/viewer-api/notifications', 'Notifications']
     ]],
-    ['developer/player-api', 'Player API', [
-      ['developer/player-api/cache', 'Cache'],
-      ['developer/player-api/installer', 'Installer'],
-      ['developer/player-api/player', 'Player'],
-      ['developer/player-api/viewer', 'Viewer']
+    ['documentation/player-api', 'Player API', [
+      ['documentation/player-api/cache', 'Cache'],
+      ['documentation/player-api/installer', 'Installer'],
+      ['documentation/player-api/player', 'Player'],
+      ['documentation/player-api/viewer', 'Viewer']
     ]],
-    ['developer/store-api', 'Store API',[
-      ['developer/store-api/store-auth', 'Store Authorization'],
-      ['developer/store-api/subscription-status', 'Subscription Status']
+    ['documentation/store-api', 'Store API',[
+      ['documentation/store-api/store-auth', 'Store Authorization'],
+      ['documentation/store-api/subscription-status', 'Subscription Status']
     ]],
-    ['developer/storage-api', 'Storage API'],
-    ['developer/presentations', 'Presentations', [
-      ['developer/presentations/multi-page', 'Multi-Page Presentations'],
-      ['developer/presentations/presentation-tutorials', 'Presentation Tutorials']
+    ['documentation/storage-api', 'Storage API'],
+    ['documentation/presentations', 'Presentations', [
+      ['documentation/presentations/multi-page', 'Multi-Page Presentations'],
+      ['documentation/presentations/presentation-tutorials', 'Presentation Tutorials']
     ]],
-    ['developer/widget-api', 'Widgets'],
-    ['developer/web-components', 'Web Components'],
-    ['developer/common-header', 'Common Header']
+    ['documentation/widget-api', 'Widgets'],
+    ['documentation/web-components', 'Web Components'],
+    ['documentation/common-header', 'Common Header']
 ]
 
 userSections: [

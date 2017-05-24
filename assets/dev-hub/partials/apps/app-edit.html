@@ -1,0 +1,90 @@
+<div class="app-header add-bottom">
+    <div class="title-block">
+        <h1>{{'dev-hub.APP' | translate}}</h1>
+    </div>
+</div>
+
+<!--div rv-spinner
+     rv-spinner-key="rv-dev-hub-app-loader"
+     rv-spinner-start-active="1"
+     rv-spinner-backdrop-class="spinner-backdrop"
+        ></div-->
+
+<div class="row">
+    <div class="col-md-12 col-xs-12">
+        <form role="form" name="form" novalidate class="css-form">
+            <!-- Company Name -->
+            <div class="form-group">
+                <label for="appCompanyField" id="appCompanyLabel">{{'dev-hub.APP_COMPANY_NAME' | translate}}</label>
+                <input type="text" ng-disabled="true" class="form-control" id="appCompanyField" name="appCompanyField" ng-model="app.company.name">
+            </div>
+            <!-- Name -->
+            <div class="form-group">
+                <label for="appNameField" id="appNameLabel">{{'dev-hub.APP_NAME' | translate}}</label>
+                <input type="text" class="form-control" name="appNameField" id="appNameField" ng-model="app.name" required>
+                <span ng-show="form.appNameField.$dirty && form.appNameField.$error.required" class="validation-error-message">{{'dev-hub.NAME_REQUIRED_ERROR' | translate}}</span>
+            </div>
+            <!-- Description -->
+            <div class="form-group">
+                <label for="appDescriptionTextArea" id="appDescriptionLabel" >{{'dev-hub.APP_DESCRIPTION' | translate}}</label>
+                <textarea type="text" class="form-control" id="appDescriptionTextArea" ng-model="app.description"></textarea>
+            </div>
+            <!-- Client ID -->
+            <div class="form-group">
+                <label for="appClientIdField" id="appClientIdLabel">{{'dev-hub.APP_CLIENT_ID' | translate}}</label>
+                <input type="text" class="form-control" id="appClientIdField" name="appClientIdField" ng-model="app.clientId" ng-pattern="/^((?!-)[A-Za-z0-9-]{1,63}(?!-)\.)+[A-Za-z]{2,30}$/i" ng-change="hideExistentClientIdMessage()"/>
+                <span ng-show="form.appClientIdField.$dirty && form.appClientIdField.$error.pattern" class="validation-error-message">{{'dev-hub.WRONG_CLIENT_ID_FORMAT' | translate}}</span>
+                <span ng-show="form.appClientIdField.$dirty && showExistentClientIdMessage" class="validation-error-message">{{'dev-hub.EXISTENT_CLIENT_ID' | translate}}</span>
+            </div>
+            <!-- url -->
+            <div class="form-group">
+                <label for="appUrlField" id="appUrlLabel">{{'dev-hub.APP_URL' | translate}}</label>
+                <input type="url" class="form-control" name="appUrlField" id="appUrlField" ng-model="app.url">
+                <span ng-show="form.appUrlField.$dirty && form.appUrlField.$error.url" class="validation-error-message">{{'dev-hub.WRONG_URL_FORMAT' | translate}}</span>
+            </div>
+            <div class="row">
+                <div class="form-group appActivityDetails">
+                    <div class="col-md-2 col-xs-2">
+                        <label for="appCreatedField" id="appCreatedLabel">{{'dev-hub.APP_CREATED' | translate}}</label>
+                        <input type="datetime" ng-disabled="true" class="form-control" id="appCreatedField" name="appCreatedField" value="{{app.creationDate | date :'dd-MMM-yyyy H:mm'}}">
+                    </div>
+                    <div class="col-md-2 col-xs-2">
+                        <label for="appModifiedField" id="appModifiedLabel">{{'dev-hub.APP_MODIFIED' | translate}}</label>
+                        <input type="datetime" ng-disabled="true" class="form-control" id="appModifiedField" name="appModifiedField" value="{{app.changeDate | date :'dd-MMM-yyyy H:mm'}}">
+                    </div>
+                    <div class="col-md-2 col-xs-2">
+                        <label for="appFirstCallField" id="appFirstCallLabel">{{'dev-hub.APP_FIRST_CALL' | translate}}</label>
+                        <input type="datetime" ng-disabled="true" class="form-control" id="appFirstCallField" name="appFirstCallField" value="{{app.activity.firstCall | date :'dd-MMM-yyyy H:mm'}}">
+                    </div>
+                    <div class="col-md-2 col-xs-2">
+                        <label for="appLastCallField" id="appLastCallLabel">{{'dev-hub.APP_LAST_CALL' | translate}}</label>
+                        <input type="datetime" ng-disabled="true" class="form-control" id="appLastCallField" name="appLastCallField" value="{{app.activity.lastCall | date :'dd-MMM-yyyy H:mm'}}">
+                    </div>
+                    <div class="col-md-2 col-xs-2">
+                        <label for="appAverageCallsField" id="appAverageCallsLabel">{{'dev-hub.APP_AVERAGE_CALLS' | translate}}</label>
+                        <input type="datetime" ng-disabled="true" class="form-control" id="appAverageCallsField" name="appAverageCallsField" value="{{ app.activity.avgCallsPerDay | number : 2}}">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="form-group col-md-12 col-xs-12">
+                    <!-- Delete -->
+                    <button class="btn btn-danger btn-fixed-width pull-left" ng-click="deleteApp(app.id)">
+                        {{'common.delete' | translate}} <i class="fa fa-white fa-trash-o icon-right"></i>
+                    </button>
+                    <div class="pull-right">
+                        <!-- Save -->
+                        <button type="button" ng-disabled="!form.$valid" class="btn btn-success btn-fixed-width" ng-click="save(app)">
+                            {{'common.save' | translate}} <i class="fa fa-white fa-check icon-right"></i>
+                        </button>
+                        <!-- Cancel -->
+                        <a ui-sref="apps.list" class="btn btn-default btn-fixed-width">
+                            {{'common.cancel' | translate}} <i class="fa fa-white fa-times icon-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

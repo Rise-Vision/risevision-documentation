@@ -1,3 +1,4 @@
 # Production Site settings
-url: "https://help-stage.risevision.com"
 baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://developer-stage.risevision.com"
+absoluteurl: "https://developer-stage.risevision.com/"
