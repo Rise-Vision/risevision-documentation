@@ -179,7 +179,7 @@ gulp.task('watch', function () {
 //------------------------- Deployment --------------------------------
 
 gulp.task("html", function() {
-  return gulp.src(["_site/index.html"])
+  return gulp.src(["./_site/index.html"])
     .pipe(usemin({
       css: [minifyCss, 'concat'],
       // html: [function() {return minifyHtml({empty: true})} ],
@@ -210,7 +210,7 @@ gulp.task("html", function() {
         sourcemaps.write('.')
       ]
     }))
-    .pipe(gulp.dest("_site/"))
+    .pipe(gulp.dest("./_site/"))
     .on('error',function(e){
       console.error(String(e));
     });
@@ -218,7 +218,7 @@ gulp.task("html", function() {
 
 gulp.task("fonts", function() {
   return gulp.src("./bower_components/rv-common-style/dist/fonts/**/*")
-    .pipe(gulp.dest("_site/fonts"));
+    .pipe(gulp.dest("./_site/fonts"));
 });
 
 /**

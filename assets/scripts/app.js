@@ -2,8 +2,14 @@
 angular.module("risevision.documentation",[
     "ui.router",
     "ui.bootstrap",
-    "ui.bootstrap.tpls"
+    "ui.bootstrap.tpls",
+    "risevision.common.header"
   ]);
+  
+angular.module('risevision.common.i18n.config', [])
+  .constant('LOCALES_PREFIX',
+    'bower_components/rv-common-i18n/dist/locales/translation_')
+  .constant('LOCALES_SUFIX', '.json');
   
 angular.module("risevision.developer",[
     "risevision.developer.hub",
