@@ -2,6 +2,19 @@ angular.module("risevision.developer")
   .controller("CommonHeaderNavbarCtrl", ["$scope", "$rootScope", "$state",
   function($scope, $rootScope, $state) {
     $rootScope.navOptions = [{
+      title: "Developer Documentation",
+      link: $state.href("documentation", {}, {absolute: true}),
+      cid: true,
+      states: [
+        "documentation",
+        "documentation-documentation",
+        "documentation-post",
+        "documentation-post-category",
+        "documentation-post-sub",
+        "page-not-found"
+      ]
+    },
+    {
       title: "App Registration",
       link: $state.href("apps.list"),
       cid: true,
@@ -22,19 +35,6 @@ angular.module("risevision.developer")
         "api-explorer.list",
         "api-explorer.explore",
         "api-explorer.explore.endpoint"
-      ]
-    },
-    {
-      title: "Developer Documentation",
-      link: $state.href("documentation", {}, {absolute: true}),
-      cid: true,
-      states: [
-        "documentation",
-        "documentation-documentation",
-        "documentation-post",
-        "documentation-post-category",
-        "documentation-post-sub",
-        "page-not-found"
       ]
     }];
     
