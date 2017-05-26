@@ -29,7 +29,7 @@ A way to build your own applications with the capability of utilizing our Rise V
 
     
 
-1. Go to our App registration site on http://developer.risevision.com
+1. Go to our App registration site on https://developer.risevision.com/apps/list
     
     {% figure_img app-registration-images 0 %}
 
