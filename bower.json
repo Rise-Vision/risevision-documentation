@@ -10,8 +10,8 @@
     "tests"
   ],
   "dependencies": {
-    "rv-common-style": "https://github.com/Rise-Vision/common-style.git#v1.4.20",
-    "common-header": "https://github.com/Rise-Vision/common-header.git#v1.13.16",
+    "rv-common-style": "https://github.com/Rise-Vision/common-style.git#v1.4.32",
+    "common-header": "https://github.com/Rise-Vision/common-header.git#v1.13.20",
     "lunr.js": "0.5.5",
     "date.format": "1.2.3",
     "uri.js": "1.14.1",
