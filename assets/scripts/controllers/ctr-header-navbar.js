@@ -39,8 +39,11 @@ angular.module("risevision.developer")
     }];
     
     $scope.navSelected = 'documentation';
+    $scope.hideCH = false;
+
     $rootScope.$on('$stateChangeSuccess', function () {
       $scope.navSelected = $state.current.name;
+      $scope.hideCH = $state.current.name.indexOf('common.auth') !== -1;
     });
 
   }]);
