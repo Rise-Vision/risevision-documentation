@@ -7,16 +7,11 @@ machine:
   ruby:
     version: 2.1.5
   node:
-    version: 8.1.4
+    version: 4.2.2
 general:
   artifacts:
     - dist.tar.gz
 dependencies:
-  pre:
-    - wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-    - echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee -a /etc/apt/sources.list
-    - sudo apt-get update -qq
-    - sudo apt-get install -y google-chrome-stable
   post:
     - bower install --force-latest
 deployment:

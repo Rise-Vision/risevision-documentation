@@ -29,7 +29,7 @@
         "connect-modrewrite": "0.7.9",
         "gulp-bower": "0.0.7",
         "run-sequence": "^0.3.6",
-        "widget-tester": "git://github.com/Rise-Vision/widget-tester.git"
+        "widget-tester": "git://github.com/Rise-Vision/widget-tester.git#1.6.5"
     },
     "repository": {
         "type": "git",
