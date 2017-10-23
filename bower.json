@@ -10,7 +10,7 @@
     "tests"
   ],
   "dependencies": {
-    "rv-common-style": "https://github.com/Rise-Vision/common-style.git#v1.4.33",
+    "rv-common-style": "https://github.com/Rise-Vision/common-style.git#feature/authentication",
     "common-header": "https://github.com/Rise-Vision/common-header.git#feature/store-integration",
     "lunr.js": "0.5.5",
     "date.format": "1.2.3",
@@ -27,7 +27,7 @@
     "angular-mocks": "~1.5.0",
     "angular-sanitize": "~1.5.0",
     "angular-bootstrap": "0.13.1",
-    "rv-common-style": "v1.4.33"
+    "rv-common-style": "feature/authentication"
   },
   "homepage": "https://github.com/Rise-Vision/risevision-documentation",
   "authors": [
