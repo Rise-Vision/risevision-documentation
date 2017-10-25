@@ -2,7 +2,7 @@
 angular.module("risevision.developer.hub")
     .config(["uiStatusDependencies", function (uiStatusDependencies) {
         uiStatusDependencies.addDependencies({
-            "hasManagementRoles": "registerdAsRiseVisionUser",
+            "hasManagementRoles": "registeredAsRiseVisionUser",
             "canAddApps": "hasManagementRoles",
             "canEditApps": "hasManagementRoles",
             "canAccessList": ""
