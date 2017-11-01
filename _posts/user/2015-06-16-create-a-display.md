@@ -162,7 +162,7 @@ Raspberry Pi installation is a community-supported initiative dubbed "Riseberry"
 Third parties provide Android Media Players, and they can be found on our Store. A third party Android Player is available from the Google Play Store [here](https://play.google.com/store/apps/details?id=com.myrise.riseplayer&hl=en).
 
 ###Rise Player on Chrome OS
-**Rise Player on Chrome OS has been released as an [open source project](https://github.com/Rise-Vision/player-chromeapp) to the [community](https://community.risevision.com/rise_vision_inc) and it is no longer directly supported or maintained by Rise Vision at this time.**
+**Rise Player on Chrome OS has been released as an [open source project](https://github.com/Rise-Vision/player-chromeapp) to the [community](https://help.risevision.com/hc/en-us/community/topics/) and it is no longer directly supported or maintained by Rise Vision at this time.**
 
 If you want to use Rise Vision on Chrome OS we recommend that all Chrome OS devices be registered under Chrome device management as it will allow Rise Player to launch automatically when the device is turned on. We recommend that you restrict your Chrome version to one major release behind the current version to ensure your Displays are not adversely impacted by an update and that you thoroughly test your Displays on the new version prior to upgrading.
 
@@ -297,5 +297,3 @@ background-size:cover;
 }
 }*/
 </style>
-
-

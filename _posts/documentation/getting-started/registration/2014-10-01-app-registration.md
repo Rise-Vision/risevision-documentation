@@ -60,4 +60,4 @@ A way to build your own applications with the capability of utilizing our Rise V
     {% figure_img app-registration-images 4 %}
 
 
-And we are done! Now you should be able to manage your apps. And, if you have any questions along the way please don't hesitate to join our lively [Community](http://community.risevision.com).
+And we are done! Now you should be able to manage your apps. And, if you have any questions along the way please don't hesitate to join our lively [Community](https://help.risevision.com/hc/en-us/community/topics/).
