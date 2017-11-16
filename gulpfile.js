@@ -217,12 +217,12 @@ gulp.task("html", function() {
 });
 
 gulp.task("fonts", function() {
-  return gulp.src("./bower_components/rv-common-style/dist/fonts/**/*")
+  return gulp.src("./bower_components/common-header/dist/fonts/**/*")
     .pipe(gulp.dest("./_site/fonts"));
 });
 
 gulp.task("locales", function() {
-  return gulp.src("./bower_components/rv-common-i18n/dist/locales/**/*")
+  return gulp.src("./bower_components/common-header/dist/locales/**/*")
     .pipe(gulp.dest("./_site/locales"));
 });
 
