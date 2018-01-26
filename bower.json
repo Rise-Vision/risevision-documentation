@@ -25,8 +25,6 @@
     "uri.js": "1.14.1",
     "lunr.js": "0.5.5",
     "angular": "~1.5.0",
-    "bootstrap": "3.3.7",
-    "angular-bootstrap": "0.13.1",
     "angular-mocks": "~1.5.0",
     "angular-sanitize": "~1.5.0",
     "angular-ui-router": "^0.2.18",
