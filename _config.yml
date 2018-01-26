@@ -87,9 +87,8 @@ userSections: [
 
 # Dates are not included in permalinks
 permalink: /:categories/:title
-relative_permalinks: true
 
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll_github_sample
   - jekyll-lunr-js-search
