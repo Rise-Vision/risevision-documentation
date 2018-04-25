@@ -35,7 +35,7 @@ angular.module("risevision.developer.hub")
 
         var getApps = function(selectedCompanyId) {
             //$loading.start("rv-dev-hub-apps-loader");
-            var listAppsResult = listApps()
+            var listAppsResult = listApps(selectedCompanyId)
                 .then(function (apps) {
                     $scope.apps = apps;
                     getCompleteApp();
