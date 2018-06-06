@@ -3,7 +3,7 @@ title: Rise Vision Documentation
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://localhost:8000" # the base hostname & protocol for your site
 metaImageUrl: "https://s3.amazonaws.com/Store-Products/Meta"
-faviconUrl: "http://s3.amazonaws.com/Rise-Images/favicons"
+faviconUrl: "https://s3.amazonaws.com/Rise-Images/favicons"
 hashTag: ""
 html5mode: "true"
 basehref: "/"
