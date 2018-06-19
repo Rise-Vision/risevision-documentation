@@ -10,8 +10,7 @@ angular.module("risevision.developer")
 
         $urlRouterProvider.otherwise('/page-not-found');
 
-        $urlRouterProvider.when('/', '/documentation');
-        $urlRouterProvider.when('/index.html', '/documentation');
+        $urlRouterProvider.when('/index.html', '/');
 
         $urlRouterProvider.rule(function($injector, $location) {
 
@@ -30,6 +29,11 @@ angular.module("risevision.developer")
         $stateProvider
             .state('documentation', {
                 url: '/documentation',
+                templateUrl: 'documentation/documentation.html',
+                controller: 'DocumentationController'
+            })
+            .state('documentation-root', {
+                url: '/',
                 templateUrl: 'documentation/documentation.html',
                 controller: 'DocumentationController'
             })
